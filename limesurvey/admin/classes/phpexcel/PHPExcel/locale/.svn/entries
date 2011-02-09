@@ -1,7 +1,7 @@
 10
 
 dir
-9672
+9715
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/classes/phpexcel/PHPExcel/locale
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -35,10 +35,10 @@ dir
 ru
 dir
 
-de
+sv
 dir
 
-sv
+de
 dir
 
 fi
@@ -50,10 +50,10 @@ dir
 cs
 dir
 
-es
+fr
 dir
 
-fr
+es
 dir
 
 nl
@@ -62,12 +62,12 @@ dir
 pl
 dir
 
-hu
+no
 dir
 
 it
 dir
 
-no
+hu
 dir
 

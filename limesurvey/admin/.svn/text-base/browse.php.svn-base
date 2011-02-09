@@ -158,13 +158,19 @@ if ($subaction == "id")
         $fnames[] = array("lastname", "Last name", $clang->gT("Last name"), 0);
         $fnames[] = array("email", "Email", $clang->gT("Email"), 0);
     }
-    $fnames[] = array("submitdate", "Submission date", $clang->gT("Completed"), "0", 'D');
+    $fnames[] = array("submitdate", $clang->gT("Submission date"), $clang->gT("Completed"), "0", 'D');
     $fnames[] = array("completed", $clang->gT("Completed"), "0");
 
     foreach ($fieldmap as $field)
     {
         if ($field['fieldname']=='lastpage' || $field['fieldname'] == 'submitdate')
             continue;
+        if ($field['type']=='interview_time')
+            continue;
+        if ($field['type']=='page_time')
+            continue;
+        if ($field['type']=='answer_time')
+            continue;            
 
         $question=$field['question'];
         if ($field['type'] != "|")
@@ -602,7 +608,7 @@ elseif ($subaction == "all")
         $fnames[] = array("email", "Email", $clang->gT("Email"), 0);
     }
 
-    $fnames[] = array("submitdate", "Completed", $clang->gT("Completed"), "0", 'D');
+    $fnames[] = array("submitdate", $clang->gT("Completed"), $clang->gT("Completed"), "0", 'D');
     $fields = createFieldMap($surveyid, 'full', false, false, $language);
 
     foreach ($fields as $fielddetails)
@@ -610,7 +616,6 @@ elseif ($subaction == "all")
         if ($fielddetails['fieldname']=='lastpage' || $fielddetails['fieldname'] == 'submitdate')
             continue;
 
-        
         $question=$fielddetails['question'];
         if ($fielddetails['type'] != "|")
         {
@@ -719,7 +724,10 @@ elseif ($subaction == "all")
     
     //LETS COUNT THE DATA
     $dtquery = "SELECT count(*) FROM $sql_from $sql_where";
-    
+    if ($sql_where!="")
+    {
+        $dtquery .=" WHERE $sql_where";
+    }
     $dtresult=db_execute_num($dtquery) or safe_die("Couldn't get response data<br />$dtquery<br />".$connect->ErrorMsg());
     while ($dtrow=$dtresult->FetchRow()) {$dtcount=$dtrow[0];}
 
@@ -989,7 +997,7 @@ elseif ($surveyinfo['savetimings']=="Y" && $subaction == "time"){
         }
     }
     
-    $fields=createFieldMap($surveyid,'full');
+    $fields=createTimingsFieldMap($surveyid,'full');
 
     foreach ($fields as $fielddetails)
     {

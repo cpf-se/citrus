@@ -1,7 +1,7 @@
 10
 
 dir
-9672
+9715
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/templates/bluengrey
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -774,40 +774,6 @@ has-props
 
 52
 
-ie_fix_6.css
-file
-
-
-
-
-2011-02-09T13:11:17.830750Z
-f43eccfa8450a28a68e8971df6d8fe70
-2010-04-16T19:30:31.601596Z
-8603
-tpartner
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2299
-
 slider-handle.gif
 file
 
@@ -841,6 +807,40 @@ has-props
 
 
 933
+
+ie_fix_6.css
+file
+
+
+
+
+2011-02-09T13:11:17.830750Z
+f43eccfa8450a28a68e8971df6d8fe70
+2010-04-16T19:30:31.601596Z
+8603
+tpartner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2299
 
 ie_fix_7.css
 file

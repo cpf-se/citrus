@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: database.php 9657 2011-01-07 20:53:00Z c_schmitz $
+ * $Id: database.php 9705 2011-01-20 15:50:59Z shnoulle $
  */
 //Last security audit on 2009-10-11
 
@@ -177,6 +177,7 @@ if(isset($surveyid))
                 $connect->Execute("DELETE FROM {$dbprefix}answers WHERE qid={$row['qid']}"); // Checked
                 $connect->Execute("DELETE FROM {$dbprefix}questions WHERE qid={$row['qid']} or parent_qid={$row['qid']}"); // Checked
                 $connect->Execute("DELETE FROM {$dbprefix}defaultvalues WHERE qid={$row['qid']}"); // Checked
+                $connect->Execute("DELETE FROM {$dbprefix}quota_members WHERE qid={$qid}");
             }
         }
         $query = "DELETE FROM ".db_table_name('assessments')." WHERE sid=$surveyid AND gid=$gid";
@@ -805,6 +806,7 @@ if(isset($surveyid))
             $connect->Execute("DELETE FROM {$dbprefix}answers WHERE qid={$qid}"); // Checked
             $connect->Execute("DELETE FROM {$dbprefix}questions WHERE qid={$qid} or parent_qid={$qid}"); // Checked
             $connect->Execute("DELETE FROM {$dbprefix}defaultvalues WHERE qid={$qid}"); // Checked
+            $connect->Execute("DELETE FROM {$dbprefix}quota_members WHERE qid={$qid}");
             fixsortorderQuestions($gid, $surveyid);
 
             $qid="";

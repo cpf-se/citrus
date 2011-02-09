@@ -1,4 +1,4 @@
-//$Id: admin_core.js 9671 2011-01-11 13:14:28Z shnoulle $    
+//$Id: admin_core.js 9680 2011-01-13 19:26:43Z shnoulle $    
 
 $(document).ready(function(){
     setupAllTabs();
@@ -237,7 +237,7 @@ $(document).ready(function(){
        });
     });
 
-    if ($("body.full #question_type").length > 0){
+    if ($("#question_type").length > 0){
         $("#question_type").msDropDown();
 
         $("#question_type").change(function(event){
