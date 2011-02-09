@@ -1,14 +1,14 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/ja/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2010-03-01T01:44:33.470202Z
-8444
+2010-08-23T10:19:09.174623Z
+9084
 gandalfar
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2011-02-09T14:45:01.551124Z
-fff570ec60c2113ef77821bc3d93592c
-2010-03-01T01:44:33.470202Z
-8444
+2011-02-09T14:53:36.260398Z
+c774e04a25f59287030bf1b98a817645
+2010-08-23T10:19:09.174623Z
+9084
 gandalfar
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-214806
+225800
 
 ja.po
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2011-02-09T14:45:01.551124Z
-313792baf1b68e52396cbacd1c5ab790
-2010-03-01T01:44:33.470202Z
-8444
+2011-02-09T14:53:36.260398Z
+193f7039cdc4cd3271fd194431e214b9
+2010-08-23T10:19:09.174623Z
+9084
 gandalfar
 
 
@@ -92,7 +92,7 @@ gandalfar
 
 
 
-493841
+524515
 
 index.html
 file

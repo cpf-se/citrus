@@ -85,15 +85,127 @@
   height: 12px;
 }
 
-.survey-assessment,survey-completed {
+div.assessment-heading {
+	font-weight: bold;
+}
+
+.assessment-heading,
+.survey-completed {
   text-align: center;
   width: 75%;
   border: 1px solid #111;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 .survey-cleared {
   text-align: center;
   margin: 0 auto;
+}
+
+.warning-text {
+	color:#FF0000;
+	font-weight: bold;
+}
+
+.register-wrapper {
+	text-align: center;
+}
+
+.register-message-1 {
+	font-weight: bold;
+}
+
+.register-message-2 {
+}
+
+.register-form {
+	margin-bottom: 10px;
+}
+
+.register-form table.register {
+	margin: 0 auto 0 auto;
+    width: auto;
+}
+
+.register-form table.register td {
+  padding: 2px;
+}
+
+.survey-load {
+	text-align: center;
+}
+
+.load-survey,
+.save-survey {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.load-heading,
+.save-heading {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.load-message {
+}
+
+.load-form table,
+.save-form table {
+	margin: 0 auto 0 auto;
+    width: auto;
+}
+
+.return-to-survey {
+}
+
+.save-message{
+}
+
+.save-form{
+}
+
+.survey-list-wrapper {
+	margin:0;
+	padding:20px 10px;
+	text-align:center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.survey-list-heading {
+	font-weight: bold;
+}
+
+
+.survey-list-heading h1 {
+	font-size: large;
+	color: #328639;
+}
+
+.survey-list {
+}
+
+.survey-list ul {
+	padding: 0;
+	margin-left: 0;
+}
+
+.survey-list li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
+.survey-contact {
+	padding-bottom: 10px;
+}
+
+.language-changer {
+}
+
+.language-changer a {
+	color: #000000;
+	font-size: 0.9em;
 }
 
 .survey-groupdescription {
@@ -124,6 +236,7 @@
 
 .survey-navigator {
   margin: 0 0 10px;
+  text-align: center;
 }
 
 .survey-survey-description {
@@ -271,6 +384,10 @@ text-align:center;
   text-align: center;
 }
 
+.grayboxheader .center-cell {
+	background: transparent url(box_bg.gif) 0 0 repeat-x;
+}
+
 .grayboxfont {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -285,6 +402,9 @@ text-align:center;
   color: #000;
 }
 
+.warning{
+    display:block;
+}
 .error {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -549,6 +669,12 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
   text-align: right;
 }
 
+table.rank td.helptext {
+	font-size:10px;
+	font-style:italic;
+	padding: 3px;
+}
+
 /* DEFINED ABOVE UNDER "General list styles" - - - - -
 .multiple-opt
 */
@@ -663,8 +789,10 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 .yes-no {}
 .gender {}
 */
-#limesurvey table.question thead th,#limesurvey table.question .repeat th
-  {
+#limesurvey table.question thead th,
+#limesurvey table.question thead td,
+#limesurvey table.question .repeat th,
+#limesurvey table.question .repeat td {
   vertical-align: bottom;
   text-align: center;
   background-color: #F5F9F9;
@@ -813,6 +941,7 @@ ul.cols-8 li,ul.cols-8-ul,table.cols-8 td {
 
 #tokenform li {
   padding-bottom: 5px;
+  list-style: none;
 }
 
 #tokenform img {
@@ -928,3 +1057,66 @@ td.statsImageholder {
   font-weight: bold;
   text-align: right;
 }
+
+/* Question Index */
+.outerframe.withindex {
+  margin-left: 1em;
+  margin-right: 26em;
+}
+
+#index {
+  position: absolute;
+  right: 0;
+  width: 25em;
+  top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background: #fff;
+  border-left: 4px double #999;
+}
+
+#index h2 { 
+  margin: 0;
+  padding: 3px;
+  height: 23px;
+  background: url("box_bg.gif") repeat-x;
+  text-align: center;
+  font-family: "Verdana,Geneva,Arial,Helvetica,sans-serif";
+  font-size: 13px;
+}
+
+#index h3 {
+  color: #000099;
+  margin: 0.5em 0 0 0.5em;
+}
+
+#index .container {
+  width: 24em;
+}
+
+#index .container .row {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  border-top: 1px solid #fff;
+}
+
+#index .container .row:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+
+#index .container .row .hdr {
+  width: 3em;
+  text-align: right;
+  display: inline-block;
+  padding: 0 0.5em 0 0;
+}
+
+#index .container .row.odd { background: #EEE; }
+#index .container .row.current { background: #000099; color: #fff; }
+#index .container .row.missing { background: #CC0000; color: #fff; }
+#index .container input { margin: 1em; }

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/limesurvey/!svn/ver/8947/source/limesurvey/classes/adodb/drivers
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/adodb/drivers
 END
 adodb-mssql_n.inc.php
 K 25
@@ -97,7 +97,7 @@ adodb-mssql.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-mssql.inc.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/adodb/drivers/adodb-mssql.inc.php
 END
 adodb-sqlitepo.inc.php
 K 25
@@ -105,11 +105,11 @@ svn:wc:ra_dav:version-url
 V 96
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-sqlitepo.inc.php
 END
-adodb-pdo_mssql.inc.php
+adodb-oci8po.inc.php
 K 25
 svn:wc:ra_dav:version-url
-V 97
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-pdo_mssql.inc.php
+V 94
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-oci8po.inc.php
 END
 adodb-access.inc.php
 K 25
@@ -117,11 +117,11 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-access.inc.php
 END
-adodb-oci8po.inc.php
+adodb-pdo_mssql.inc.php
 K 25
 svn:wc:ra_dav:version-url
-V 94
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-oci8po.inc.php
+V 97
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-pdo_mssql.inc.php
 END
 adodb-db2oci.inc.php
 K 25
@@ -141,41 +141,17 @@ svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/8662/source/limesurvey/classes/adodb/drivers/adodb-mysql.inc.php
 END
+adodb-mssqlnative.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/adodb/drivers/adodb-mssqlnative.inc.php
+END
 adodb-postgres.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-postgres.inc.php
-END
-adodb-mssqlnative.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 99
-/svnroot/limesurvey/!svn/ver/8655/source/limesurvey/classes/adodb/drivers/adodb-mssqlnative.inc.php
-END
-adodb-pdo_mysql.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 97
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-pdo_mysql.inc.php
-END
-adodb-fbsql.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-fbsql.inc.php
-END
-adodb-db2.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-db2.inc.php
-END
-adodb-ads.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-ads.inc.php
 END
 adodb-oci805.inc.php
 K 25
@@ -183,11 +159,35 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-oci805.inc.php
 END
+adodb-ads.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-ads.inc.php
+END
+adodb-db2.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-db2.inc.php
+END
+adodb-fbsql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-fbsql.inc.php
+END
+adodb-pdo_mysql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-pdo_mysql.inc.php
+END
 adodb-mysqli.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/8947/source/limesurvey/classes/adodb/drivers/adodb-mysqli.inc.php
+/svnroot/limesurvey/!svn/ver/9061/source/limesurvey/classes/adodb/drivers/adodb-mysqli.inc.php
 END
 adodb-sybase_ase.inc.php
 K 25
@@ -283,7 +283,7 @@ adodb-oci8.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/drivers/adodb-oci8.inc.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/adodb/drivers/adodb-oci8.inc.php
 END
 adodb-sqlanywhere.inc.php
 K 25

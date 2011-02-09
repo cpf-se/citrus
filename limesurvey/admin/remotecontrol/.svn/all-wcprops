@@ -1,25 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/limesurvey/!svn/ver/8985/source/limesurvey/admin/remotecontrol
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/remotecontrol
 END
 lsrc.client.php
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8930/source/limesurvey/admin/remotecontrol/lsrc.client.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/remotecontrol/lsrc.client.php
 END
 lsrc.testclient.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/remotecontrol/lsrc.testclient.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/remotecontrol/lsrc.testclient.php
 END
 lsrc.helper.php
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8930/source/limesurvey/admin/remotecontrol/lsrc.helper.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/remotecontrol/lsrc.helper.php
 END
 index.html
 K 25
@@ -43,5 +43,5 @@ lsrc.server.php
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8985/source/limesurvey/admin/remotecontrol/lsrc.server.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/remotecontrol/lsrc.server.php
 END

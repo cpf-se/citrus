@@ -1,15 +1,15 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/gl/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2010-02-23T23:07:19.710282Z
-8430
-calidonia
+2010-10-09T23:00:07.902755Z
+9200
+c_schmitz
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2011-02-09T14:45:08.071369Z
-4dde9170f50827f0011d8c1a7db71cbb
-2010-02-23T23:07:19.710282Z
-8430
-calidonia
+2011-02-09T14:53:44.780717Z
+7bc0ba4f496e22bde52a61d59cea9cfd
+2010-10-09T23:00:07.902755Z
+9200
+c_schmitz
 
 
 
@@ -58,7 +58,7 @@ calidonia
 
 
 
-521298
+501812
 
 index.html
 file
@@ -100,11 +100,11 @@ file
 
 
 
-2011-02-09T14:45:08.071369Z
-42a9551fdc2f9cd7ba0423ff1932ba84
-2010-02-23T23:07:19.710282Z
-8430
-calidonia
+2011-02-09T14:53:44.820719Z
+4120e2db5482421cb260586e803c95e0
+2010-10-09T23:00:07.902755Z
+9200
+c_schmitz
 has-props
 
 
@@ -126,5 +126,5 @@ has-props
 
 
 
-195119
+205335
 

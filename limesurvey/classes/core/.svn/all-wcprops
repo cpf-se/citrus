@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/limesurvey/!svn/ver/9008/source/limesurvey/classes/core
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core
 END
 ArGlyphs.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/core/ArGlyphs.class.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core/ArGlyphs.class.php
 END
 arabic.php
 K 25
@@ -19,23 +19,23 @@ startup.php
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/limesurvey/!svn/ver/8758/source/limesurvey/classes/core/startup.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core/startup.php
 END
 language.php
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/limesurvey/!svn/ver/8649/source/limesurvey/classes/core/language.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core/language.php
 END
 sanitize.php
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/limesurvey/!svn/ver/8649/source/limesurvey/classes/core/sanitize.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core/sanitize.php
 END
 surveytranslator.php
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/9008/source/limesurvey/classes/core/surveytranslator.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core/surveytranslator.php
 END

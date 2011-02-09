@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: sanitize.php 8649 2010-04-28 21:38:53Z c_schmitz $
+ * $Id: sanitize.php 9648 2011-01-07 13:06:39Z c_schmitz $
  *
  * Copyright (c) 2002,2003 Free Software Foundation
  * developed under the custody of the
@@ -74,12 +74,8 @@ define("FLOAT", 32);
 define("LDAP", 64);
 define("UTF8", 128);
 
-// get register_globals ini setting - jp
-$register_globals = (bool) ini_get('register_globals');
-if ($register_globals == TRUE) { define("REGISTER_GLOBALS", 1); } else { define("REGISTER_GLOBALS", 0); }
-
 // get magic_quotes_gpc ini setting - jp
-$magic_quotes = (bool) ini_get('magic_quotes_gpc');
+$magic_quotes = (bool) @ini_get('magic_quotes_gpc');
 if ($magic_quotes == TRUE) { define("MAGIC_QUOTES", 1); } else { define("MAGIC_QUOTES", 0); }
 
 // addslashes wrapper to check for gpc_magic_quotes - gz
@@ -287,6 +283,7 @@ function sanitize_labelname($string)
 // make float float!
 function sanitize_float($float, $min='', $max='')
 {
+    $float = str_replace(',','.',$float);
     $float = floatval($float);
     if((($min != '') && ($float < $min)) || (($max != '') && ($float > $max)))
     return FALSE;
@@ -375,7 +372,7 @@ function sanitize_languagecodeS($codestringtosanitize) {
 }
 
 function sanitize_token($codetosanitize) {
-    return preg_replace('/[^_a-z0-9-]/i', '', $codetosanitize);
+    return preg_replace('/[^_a-z0-9]/i', '', $codetosanitize);
 }
 
 function sanitize_signedint($integer, $min='', $max='')

@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/limesurvey/!svn/ver/8897/source/limesurvey/admin/scripts/edit_area
-END
-edit_area_compressor.php
-K 25
-svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/edit_area_compressor.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area
 END
 elements_functions.js
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/elements_functions.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area/elements_functions.js
+END
+edit_area_compressor.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area/edit_area_compressor.php
 END
 edit_area_functions.js
 K 25
@@ -25,19 +25,19 @@ highlight.js
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/highlight.js
-END
-edit_area.js
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/svnroot/limesurvey/!svn/ver/8897/source/limesurvey/admin/scripts/edit_area/edit_area.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area/highlight.js
 END
 license_bsd.txt
 K 25
 svn:wc:ra_dav:version-url
 V 91
 /svnroot/limesurvey/!svn/ver/6914/source/limesurvey/admin/scripts/edit_area/license_bsd.txt
+END
+edit_area.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area/edit_area.js
 END
 manage_area.js
 K 25
@@ -57,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/6914/source/limesurvey/admin/scripts/edit_area/license_apache.txt
 END
+edit_area.css
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area/edit_area.css
+END
 resize_area.js
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /svnroot/limesurvey/!svn/ver/6914/source/limesurvey/admin/scripts/edit_area/resize_area.js
-END
-edit_area.css
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/edit_area.css
 END
 regexp.js
 K 25
@@ -81,17 +81,17 @@ svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/edit_area_full.js
 END
-keyboard.js
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/keyboard.js
-END
 search_replace.js
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/6914/source/limesurvey/admin/scripts/edit_area/search_replace.js
+END
+keyboard.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/keyboard.js
 END
 autocompletion.js
 K 25
@@ -121,5 +121,5 @@ template.html
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/8878/source/limesurvey/admin/scripts/edit_area/template.html
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/edit_area/template.html
 END

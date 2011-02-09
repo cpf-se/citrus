@@ -1,19 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/limesurvey/!svn/ver/9021/source/limesurvey/admin/scripts
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts
 END
 subquestions.js
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/limesurvey/!svn/ver/9021/source/limesurvey/admin/scripts/subquestions.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/subquestions.js
+END
+emailtemplates.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/emailtemplates.js
 END
 assessments.js
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/assessments.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/assessments.js
 END
 conditions.js
 K 25
@@ -31,43 +37,37 @@ surveysettings.js
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/8640/source/limesurvey/admin/scripts/surveysettings.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/surveysettings.js
 END
 surveytoolbar.js
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/surveytoolbar.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/surveytoolbar.js
 END
 globalsettings.js
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/globalsettings.js
-END
-DD_belatedPNG_0.0.8a-min.js
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/svnroot/limesurvey/!svn/ver/8842/source/limesurvey/admin/scripts/DD_belatedPNG_0.0.8a-min.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/globalsettings.js
 END
 answers.js
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/limesurvey/!svn/ver/9021/source/limesurvey/admin/scripts/answers.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/answers.js
 END
 surveysecurity.js
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/8634/source/limesurvey/admin/scripts/surveysecurity.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/surveysecurity.js
 END
 listsurvey.js
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/8656/source/limesurvey/admin/scripts/listsurvey.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/listsurvey.js
 END
 statistics.js
 K 25
@@ -81,41 +81,47 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/pngfix.js
 END
-templates.js
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/limesurvey/!svn/ver/7699/source/limesurvey/admin/scripts/templates.js
-END
 printablesurvey.js
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/printablesurvey.js
 END
+templates.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/7699/source/limesurvey/admin/scripts/templates.js
+END
+translation.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/translation.js
+END
 admin_core.js
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/8962/source/limesurvey/admin/scripts/admin_core.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/admin_core.js
 END
 browse.js
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/limesurvey/!svn/ver/8636/source/limesurvey/admin/scripts/browse.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/browse.js
 END
 users.js
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/users.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/users.js
 END
 saved.js
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/limesurvey/!svn/ver/8634/source/limesurvey/admin/scripts/saved.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/saved.js
 END
 labels.js
 K 25
@@ -127,5 +133,5 @@ tokens.js
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/tokens.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/tokens.js
 END

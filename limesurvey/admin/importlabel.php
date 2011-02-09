@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: importlabel.php 8651 2010-04-29 16:45:35Z c_schmitz $
+ * $Id: importlabel.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 //Ensure script is not run directly, avoid path disclosure
@@ -18,7 +18,7 @@ include_once("login_check.php");
 
 // A FILE TO IMPORT A DUMPED SURVEY FILE, AND CREATE A NEW SURVEY
 
-$importlabeloutput = "<div class='header'>".$clang->gT("Import Label Set")."</div>\n";
+$importlabeloutput = "<div class='header ui-widget-header'>".$clang->gT("Import Label Set")."</div>\n";
 
 $sFullFilepath = $tempdir . DIRECTORY_SEPARATOR . $_FILES['the_file']['name'];
 $aPathInfo = pathinfo($sFullFilepath);
@@ -32,7 +32,7 @@ if (!@move_uploaded_file($_FILES['the_file']['tmp_name'], $sFullFilepath))
     return;
 }
 
-$importlabeloutput .= "<div class='messagebox'><div class='successheader'>".$clang->gT("Success")."</div><br />\n";
+$importlabeloutput .= "<div class='messagebox ui-corner-all'><div class='successheader'>".$clang->gT("Success")."</div><br />\n";
 $importlabeloutput .= $clang->gT("File upload succeeded.")."<br /><br />\n";
 $importlabeloutput .= $clang->gT("Reading file..")."<br /><br />\n";
 $options['checkforduplicates']='off';
@@ -49,7 +49,18 @@ elseif (strtolower($sExtension)=='lsl')
 {
     $aImportResults=XMLImportLabelsets($sFullFilepath, $options);
 }
+  else
+{
+    $importlabeloutput .= "<br />\n<div class='warningheader'>".$clang->gT("Error")."</div><br />\n";
+    $importlabeloutput .= "<strong><u>".$clang->gT("Label set import summary")."</u></strong><br />\n";
+    $importlabeloutput .= $clang->gT("Uploaded label set file needs to have an .lsl extension.")."<br /><br />\n";
+    $importlabeloutput .= "<input type='submit' value='".$clang->gT("Return to label set administration")."' onclick=\"window.open('$scriptname?action=labels', '_top')\" />\n";
+    $importlabeloutput .= "</div><br />\n";
+}
 unlink($sFullFilepath);  
+
+if (isset($aImportResults))
+{
 if (count($aImportResults['warnings'])>0)
 {
     $importlabeloutput .= "<br />\n<div class='warningheader'>".$clang->gT("Warnings")."</div><ul>\n";
@@ -59,6 +70,16 @@ if (count($aImportResults['warnings'])>0)
     } 
     $importlabeloutput .= "</ul>\n";
 }
+
+$importlabeloutput .= "<br />\n<div class='successheader'>".$clang->gT("Success")."</div><br />\n";
+$importlabeloutput .= "<strong><u>".$clang->gT("Label set import summary")."</u></strong><br />\n";
+$importlabeloutput .= "<ul style=\"text-align:left;\">\n\t<li>".$clang->gT("Label sets").": {$aImportResults['labelsets']}</li>\n";
+$importlabeloutput .= "\t<li>".$clang->gT("Labels").": {$aImportResults['labels']}</li></ul>\n";
+$importlabeloutput .= "<p><strong>".$clang->gT("Import of label set(s) is completed.")."</strong><br /><br />\n";
+$importlabeloutput .= "<input type='submit' value='".$clang->gT("Return to label set administration")."' onclick=\"window.open('$scriptname?action=labels', '_top')\" />\n";
+$importlabeloutput .= "</div><br />\n";
+}
+
 
 $importlabeloutput .= "<br />\n<div class='successheader'>".$clang->gT("Success")."</div><br />\n";
 $importlabeloutput .= "<strong><u>".$clang->gT("Label set import summary")."</u></strong><br />\n";

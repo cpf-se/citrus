@@ -212,6 +212,8 @@ function db_upgrade($oldversion) {
         modify_database("", "ALTER TABLE prefix_answers DROP COLUMN default_value"); echo $modifyoutput; flush();
         modify_database("", "ALTER TABLE prefix_questions DROP COLUMN lid"); echo $modifyoutput; flush();
         modify_database("", "ALTER TABLE prefix_questions DROP COLUMN lid1"); echo $modifyoutput; flush();
+        // add field for timings and table for extended conditions
+        modify_database("", "ALTER TABLE prefix_surveys ADD savetimings char(1) default 'N'"); echo $modifyoutput; flush();
         modify_database("", "CREATE TABLE prefix_sessions(
                              sesskey VARCHAR( 64 ) NOT NULL DEFAULT '',
                              expiry TIMESTAMP NOT NULL ,
@@ -221,11 +223,80 @@ function db_upgrade($oldversion) {
                              sessdata TEXT DEFAULT '',
                              PRIMARY KEY ( sesskey )
                              );"); echo $modifyoutput; flush();     
-        modify_database("", "create INDEX sess_expiry on prefix_sessions( expiry );"); echo $modifyoutput; flush();
-        modify_database("", "create INDEX sess_expireref on prefix_sessions ( expireref );"); echo $modifyoutput; flush();
+        modify_database("", "create INDEX sess2_expiry on prefix_sessions( expiry );"); echo $modifyoutput; flush();
+        modify_database("", "create INDEX sess2_expireref on prefix_sessions ( expireref );"); echo $modifyoutput; flush();
                                   
         modify_database("", "UPDATE prefix_settings_global SET stg_value='143' WHERE stg_name='DBVersion'"); echo $modifyoutput; flush();
+
+
+        
     }
+    if ($oldversion < 145)
+    {
+        modify_database("", "ALTER TABLE prefix_surveys ADD savetimings CHAR(1) NULL default 'N'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD showXquestions CHAR(1) NULL default 'Y'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD showgroupinfo CHAR(1) NULL default 'B'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD shownoanswer CHAR(1) NULL default 'Y'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD showqnumcode CHAR(1) NULL default 'X'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bouncetime bigint NULL"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bounceprocessing character varying(1) NULL default 'N'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bounceaccounttype character varying(4) NULL"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bounceaccounthost character varying(200) NULL"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bounceaccountpass character varying(100) NULL"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bounceaccountencryption character varying(3) NULL"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD bounceaccountuser character varying(200) NULL"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD showwelcome CHAR(1) NULL default 'Y'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD showprogress CHAR(1) NULL default 'Y'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD allowjumps CHAR(1) NULL default 'N'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD navigationdelay smallint NOT NULL default '0'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD nokeyboard char(1) default 'N'"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE prefix_surveys ADD alloweditaftercompletion char(1) default 'N'"); echo $modifyoutput; flush();
+        modify_database("", "CREATE TABLE prefix_survey_permissions (
+                            sid integer DEFAULT 0 NOT NULL,
+                            uid integer DEFAULT 0 NOT NULL,
+                            permission character varying(20) NOT NULL,
+                            create_p integer DEFAULT 0 NOT NULL,
+                            read_p integer DEFAULT 0 NOT NULL,
+                            update_p integer DEFAULT 0 NOT NULL,
+                            delete_p integer DEFAULT 0 NOT NULL,
+                            import_p integer DEFAULT 0 NOT NULL,
+                            export_p integer DEFAULT 0 NOT NULL
+                        );"); echo $modifyoutput; flush();    
+        modify_database("", "ALTER TABLE ONLY prefix_survey_permissions ADD CONSTRAINT prefix_survey_permissions_pkey PRIMARY KEY (sid,uid,permission);"); echo $modifyoutput; flush();
+		upgrade_surveypermissions_table145();
+        
+        // drop the old survey rights table
+        modify_database("", "DROP TABLE prefix_surveys_rights"); echo $modifyoutput; flush();
+        
+        // Add new fields for email templates
+        modify_database("", "ALTER TABLE prefix_surveys_languagesettings ADD email_admin_notification_subj character varying(255)");
+        modify_database("", "ALTER TABLE prefix_surveys_languagesettings ADD email_admin_responses_subj character varying(255)");
+        modify_database("", "ALTER TABLE prefix_surveys_languagesettings ADD email_admin_notification text");
+        modify_database("", "ALTER TABLE prefix_surveys_languagesettings ADD email_admin_responses text");
+        
+        //Add index to questions table to speed up subquestions
+        modify_database("", "create INDEX parent_qid_idx on prefix_questions( parent_qid );"); echo $modifyoutput; flush();
+                                    
+        modify_database("", "ALTER TABLE prefix_surveys ADD emailnotificationto text DEFAULT NULL"); echo $modifyoutput; flush();
+        upgrade_survey_table145();                                           
+        modify_database("", "ALTER TABLE prefix_surveys DROP COLUMN notification"); echo $modifyoutput; flush();
+                   
+        modify_database("","ALTER TABLE prefix_conditions ALTER COLUMN method TYPE CHAR(5)"); echo $modifyoutput; flush();
+        
+        modify_database("","ALTER TABLE prefix_surveys RENAME COLUMN private TO anonymized;"); echo $modifyoutput; flush();
+        modify_database("","ALTER TABLE prefix_surveys ALTER COLUMN anonymized TYPE char(1) Default 'N' NOT NULL ;"); echo $modifyoutput; flush();
+        modify_database("", "CREATE TABLE prefix_failed_login_attempts (
+                                  id serial PRIMARY KEY NOT NULL,
+                                  ip character varying(37) NOT NULL,
+                                  last_attempt character varying(20) NOT NULL,
+                                  number_attempts integer NOT NULL
+                                );"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE ONLY prefix_failed_login_attempts ADD CONSTRAINT prefix_failed_login_attempts_pkey PRIMARY KEY (\"id\");"); echo $modifyoutput; flush();
+        modify_database("", "ALTER TABLE  prefix_surveys_languagesettings ADD surveyls_numberformat integer default 0 NOT NULL"); echo $modifyoutput; flush();
+      
+        modify_database("", "UPDATE prefix_settings_global SET stg_value='145' WHERE stg_name='DBVersion'"); echo $modifyoutput; flush();
+    }
+    
 
     echo '<br /><br />Database update finished ('.date('Y-m-d H:i:s').')<br />';
     return true;
@@ -278,7 +349,7 @@ function upgrade_token_tables134()
 function upgrade_survey_tables139()
 {
     global $modifyoutput,$dbprefix;
-    $surveyidquery = db_select_tables_like($dbprefix."survey_%");
+    $surveyidquery = db_select_tables_like($dbprefix."survey\_%");
     $surveyidresult = db_execute_num($surveyidquery);
     if (!$surveyidresult) {return "Database Error";}
     else
@@ -341,6 +412,7 @@ function upgrade_tables143()
             }
             $insertarray['sid']=$row['sid'];
             $insertarray['gid']=$row['gid'];
+            $insertarray['type']=$row['type'];
             $insertarray['parent_qid']=$row['qid'];
             $insertarray['title']=$row['code'];
             $insertarray['question']=$row['answer'];
@@ -381,7 +453,7 @@ function upgrade_tables143()
             $labelresult = db_execute_assoc($labelquery);
             while ( $lrow = $labelresult->FetchRow() )
             {
-                modify_database("","INSERT INTO {$dbprefix}answers (qid, code, answer, sortorder, language) VALUES ({$row['qid']},".db_quoteall($lrow['code']).",".db_quoteall($lrow['title']).",{$lrow['sortorder']},".db_quoteall($lrow['language']).")"); echo $modifyoutput; flush();
+                modify_database("","INSERT INTO {$dbprefix}answers (qid, code, answer, sortorder, language, assessment_value) VALUES ({$row['qid']},".db_quoteall($lrow['code']).",".db_quoteall($lrow['title']).",{$lrow['sortorder']},".db_quoteall($lrow['language']).",{$lrow['assessment_value']})"); echo $modifyoutput; flush();
                 //$labelids[]
             }
             if ($row['type']=='1')
@@ -390,7 +462,7 @@ function upgrade_tables143()
                 $labelresult = db_execute_assoc($labelquery);
                 while ( $lrow = $labelresult->FetchRow() )
                 {
-                    modify_database("","INSERT INTO {$dbprefix}answers (qid, code, answer, sortorder, language, scale_id) VALUES ({$row['qid']},".db_quoteall($lrow['code']).",".db_quoteall($lrow['title']).",{$lrow['sortorder']},".db_quoteall($lrow['language']).",1)"); echo $modifyoutput; flush();
+                    modify_database("","INSERT INTO {$dbprefix}answers (qid, code, answer, sortorder, language, scale_id, assessment_value) VALUES ({$row['qid']},".db_quoteall($lrow['code']).",".db_quoteall($lrow['title']).",{$lrow['sortorder']},".db_quoteall($lrow['language']).",1,{$lrow['assessment_value']})"); echo $modifyoutput; flush();
                 }
             }
         }
@@ -417,6 +489,7 @@ function upgrade_tables143()
                     $insertarray['qid']=$aQIDReplacements[$row['qid'].'_'.$lrow['code'].'_1'];
                 }
                 $insertarray['sid']=$row['sid'];
+                $insertarray['type']=$row['type'];
                 $insertarray['gid']=$row['gid'];
                 $insertarray['parent_qid']=$row['qid'];
                 $insertarray['title']=$lrow['code'];
@@ -435,21 +508,6 @@ function upgrade_tables143()
         }
     }
 
-    // convert Ranking question type
-
-    $query="SELECT a.qid, count(a.qid) as answercount FROM {$dbprefix}answers a, {$dbprefix}questions q where a.qid=q.qid and q.type='R' group by a.qid";
-    $queryresult = db_execute_assoc($query);
-    if (!$queryresult)
-    {
-        return "Database Error";
-    }
-    else
-    {
-        while ( $row = $queryresult->FetchRow() )
-        {
-            modify_database("","INSERT INTO {$dbprefix}question_attributes (qid, attribute, value) VALUES ({$row['qid']},'ranking_slots',".db_quoteall($row['answercount']).")"); echo $modifyoutput; flush();
-        }
-    }
 
 
 

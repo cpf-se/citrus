@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation
+END
+functionlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/functionlist.txt
+END
+ExceptionHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/ExceptionHandler.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/Exception.php
+END
+FormulaParser.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/FormulaParser.php
+END
+Function.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/Function.php
+END
+FormulaToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/FormulaToken.php
+END
+Functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Calculation/Functions.php
+END

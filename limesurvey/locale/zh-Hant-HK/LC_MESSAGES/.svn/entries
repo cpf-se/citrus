@@ -1,15 +1,15 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/zh-Hant-HK/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2009-12-23T11:48:50.740600Z
-8201
-c_schmitz
+2010-09-09T10:58:32.226010Z
+9120
+gandalfar
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2011-02-09T14:45:03.371193Z
-0758265666093fbf5279a3be1130c3cf
-2009-12-23T11:48:50.740600Z
-8201
-c_schmitz
+2011-02-09T14:53:38.770492Z
+213865a2aa11474a49e030288259eccb
+2010-09-09T10:58:32.226010Z
+9120
+gandalfar
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-144162
+183058
 
 zh-Hant-HK.po
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2011-02-09T14:45:03.371193Z
-5c0d4eb5bb3c72a780ba816df9eecbf7
-2009-12-23T11:48:50.740600Z
-8201
-c_schmitz
+2011-02-09T14:53:38.770492Z
+22f23d53774f1efcb075428080584c6a
+2010-09-09T10:58:32.226010Z
+9120
+gandalfar
 
 
 
@@ -92,7 +92,7 @@ c_schmitz
 
 
 
-357808
+487342
 
 index.html
 file

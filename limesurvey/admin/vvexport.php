@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: vvexport.php 8540 2010-03-31 11:37:19Z texens $
+ * $Id: vvexport.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -19,11 +19,7 @@
 
 include_once("login_check.php");
 
-$sumquery5 = "SELECT b.* FROM {$dbprefix}surveys AS a INNER JOIN {$dbprefix}surveys_rights AS b ON a.sid = b.sid WHERE a.sid=$surveyid AND b.uid = ".$_SESSION['loginID']; //Getting rights for this survey and user
-$sumresult5 = db_execute_assoc($sumquery5); //Checked
-$sumrows5 = $sumresult5->FetchRow();
-
-if ($sumrows5['export'] != "1" && $_SESSION['USER_RIGHT_SUPERADMIN'] != 1)
+if (!bHasSurveyPermission($surveyid, 'responses','export'))
 {
     return;
 }
@@ -51,7 +47,7 @@ if (!$subaction == "export")
 
     $vvoutput = browsemenubar($clang->gT("Export VV file")).
         "<form id='vvexport' method='post' action='admin.php?action=vvexport&amp;sid=$surveyid'>"
-    ."<div class='header'>".$clang->gT("Export a VV survey file")."</div>"
+    ."<div class='header ui-widget-header'>".$clang->gT("Export a VV survey file")."</div>"
     ."<ul>"
     ."<li>"
     ."<label for='sid'>".$clang->gT("Export Survey").":</label>"

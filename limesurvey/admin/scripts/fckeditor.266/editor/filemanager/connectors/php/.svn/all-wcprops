@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 113
-/svnroot/limesurvey/!svn/ver/8614/source/limesurvey/admin/scripts/fckeditor.266/editor/filemanager/connectors/php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/fckeditor.266/editor/filemanager/connectors/php
 END
 connector.php
 K 25
@@ -49,7 +49,7 @@ config.php
 K 25
 svn:wc:ra_dav:version-url
 V 124
-/svnroot/limesurvey/!svn/ver/8614/source/limesurvey/admin/scripts/fckeditor.266/editor/filemanager/connectors/php/config.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/fckeditor.266/editor/filemanager/connectors/php/config.php
 END
 io.php
 K 25

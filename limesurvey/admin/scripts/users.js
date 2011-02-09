@@ -1,7 +1,9 @@
-// $Id: users.js 8633 2010-04-25 12:57:33Z c_schmitz $
+// $Id: users.js 9648 2011-01-07 13:06:39Z c_schmitz $
 
 $(document).ready(function(){
-    $("#users").tablesorter({sortList: [[1,0]] });
+    $("#users").tablesorter({
+                            widgets: ['zebra'],            
+                            sortList: [[1,0]] });
 	var tog=false;
 	$("#checkall").click(function() {
 	    $("input[type=checkbox]").attr("checked",!tog);

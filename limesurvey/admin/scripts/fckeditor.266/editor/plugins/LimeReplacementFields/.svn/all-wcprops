@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 116
-/svnroot/limesurvey/!svn/ver/8451/source/limesurvey/admin/scripts/fckeditor.266/editor/plugins/LimeReplacementFields
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/fckeditor.266/editor/plugins/LimeReplacementFields
 END
 LimeReplacementFields.png
 K 25
@@ -19,5 +19,5 @@ fckplugin.js
 K 25
 svn:wc:ra_dav:version-url
 V 129
-/svnroot/limesurvey/!svn/ver/8451/source/limesurvey/admin/scripts/fckeditor.266/editor/plugins/LimeReplacementFields/fckplugin.js
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/fckeditor.266/editor/plugins/LimeReplacementFields/fckplugin.js
 END

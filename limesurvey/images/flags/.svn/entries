@@ -1,14 +1,14 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/images/flags
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2010-08-01T21:43:15.940153Z
-9011
+2011-01-07T13:06:39.856760Z
+9648
 c_schmitz
 has-props
 
@@ -161,6 +161,40 @@ has-props
 
 
 430
+
+pa.png
+file
+
+
+
+
+2011-02-09T14:53:52.270997Z
+6c9cbebdb45907ef4814e3ffbeec547c
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+408
 
 bs.png
 file
@@ -570,6 +604,40 @@ has-props
 
 377
 
+nl-informal.png
+file
+
+
+
+
+2011-02-09T14:53:52.270997Z
+132685fac5385dd52eeb7628e28a84ea
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+363
+
 lt.png
 file
 
@@ -672,40 +740,6 @@ has-props
 
 392
 
-pt.png
-file
-
-
-
-
-2011-02-09T13:08:29.964475Z
-68d4c2bfe91cfb7b8dfd8e0999b2c4ea
-2008-07-01T22:01:49.426679Z
-5205
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-460
-
 ca.png
 file
 
@@ -739,6 +773,40 @@ has-props
 
 
 390
+
+pt.png
+file
+
+
+
+
+2011-02-09T13:08:29.964475Z
+68d4c2bfe91cfb7b8dfd8e0999b2c4ea
+2008-07-01T22:01:49.426679Z
+5205
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+460
 
 pt-BR.png
 file
@@ -876,6 +944,40 @@ has-props
 
 477
 
+it-formal.png
+file
+
+
+
+
+2011-02-09T14:53:52.280998Z
+7ebea4010d664b2aae166c6784a4182e
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+570
+
 id.png
 file
 
@@ -910,40 +1012,6 @@ has-props
 
 578
 
-de-informal.png
-file
-
-
-
-
-2011-02-09T13:08:31.434530Z
-7e866e1785c0424964ff892ffc923c1e
-2008-07-01T22:01:49.426679Z
-5205
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-417
-
 ie.png
 file
 
@@ -977,6 +1045,40 @@ has-props
 
 
 481
+
+de-informal.png
+file
+
+
+
+
+2011-02-09T13:08:31.434530Z
+7e866e1785c0424964ff892ffc923c1e
+2008-07-01T22:01:49.426679Z
+5205
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+417
 
 el.png
 file
@@ -1759,6 +1861,40 @@ has-props
 
 
 299
+
+be.png
+file
+
+
+
+
+2011-02-09T14:53:52.280998Z
+594e69da41fa0fa86c4aae9ab74e9f64
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2943
 
 index.html
 file

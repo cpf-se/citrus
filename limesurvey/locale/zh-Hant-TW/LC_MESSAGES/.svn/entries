@@ -1,15 +1,15 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/zh-Hant-TW/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2008-08-30T23:55:41.928016Z
-5528
-lspootle
+2010-10-21T20:42:11.029398Z
+9298
+gandalfar
 
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2011-02-09T14:45:07.691354Z
-67fd3bb0bf0e141e2e2e151bb2d78ec3
-2008-08-30T23:55:41.928016Z
-5528
-lspootle
+2011-02-09T14:53:44.350701Z
+1af40ca6fcee52e0c8f8b2e05dd8610c
+2010-10-21T20:42:11.029398Z
+9298
+gandalfar
 has-props
 
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-95060
+183826
 
 zh-Hant-TW.po
 file
@@ -100,11 +100,11 @@ file
 
 
 
-2011-02-09T14:45:07.701355Z
-3a0d8ba0b1a094354845a9ae8b3c8722
-2008-08-30T23:44:57.092386Z
-5527
-lspootle
+2011-02-09T14:53:44.390702Z
+36415271600be48fb542bf2329300946
+2010-10-21T20:42:11.029398Z
+9298
+gandalfar
 
 
 
@@ -126,5 +126,5 @@ lspootle
 
 
 
-366454
+503169
 

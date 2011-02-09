@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: htmleditor-popup.php 8987 2010-07-27 12:59:34Z c_schmitz $
+ * $Id: htmleditor-popup.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 //Ensure script is not run directly, avoid path disclosure
@@ -59,6 +59,7 @@ if (!isset($_GET['fieldname']) || !isset($_GET['fieldtext']))
 else {
     $fieldname=$_GET['fieldname'];
     $fieldtext=$_GET['fieldtext'];
+    if (get_magic_quotes_gpc()) $fieldtext = stripslashes($fieldtext);
     $controlidena=$_GET['fieldname'].'_popupctrlena';
     $controliddis=$_GET['fieldname'].'_popupctrldis';
 

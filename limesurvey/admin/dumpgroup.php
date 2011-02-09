@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: dumpgroup.php 8943 2010-07-16 14:18:37Z mennodekker $
+ * $Id: dumpgroup.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 
@@ -24,7 +24,7 @@
 if (!isset($dbprefix) || isset($_REQUEST['dbprefix'])) {die("Cannot run this script directly");}
 include_once("login_check.php");
 require_once("export_data_functions.php");      
-if(!bHasRight($surveyid,'export')) safe_die("You are not allowed to export question groups."); 
+if(!bHasSurveyPermission($surveyid,'surveycontent','export')) safe_die("You are not allowed to export question groups."); 
 
 $gid = returnglobal('gid');
 $surveyid = returnglobal('sid');
@@ -94,7 +94,7 @@ exit;
 
 function getXMLStructure($xml,$gid)
 {
-    global $dbprefix; 
+    global $dbprefix, $connect; 
     // Groups 
     $gquery = "SELECT *
                FROM {$dbprefix}groups 
@@ -125,19 +125,32 @@ function getXMLStructure($xml,$gid)
                FROM {$dbprefix}conditions c, {$dbprefix}questions q, {$dbprefix}questions b 
                WHERE (c.cqid=q.qid) 
                AND (c.qid=b.qid) 
-               AND (q.gid=$gid) 
-               AND (b.gid=$gid)";
+               AND (q.gid={$gid}) 
+               AND (b.gid={$gid})";
     BuildXMLFromQuery($xml,$cquery,'conditions');
 
     //Question attributes
-    $query = "SELECT {$dbprefix}question_attributes.qaid, {$dbprefix}question_attributes.qid, {$dbprefix}question_attributes.attribute,  {$dbprefix}question_attributes.value
-          FROM {$dbprefix}question_attributes JOIN {$dbprefix}questions ON {$dbprefix}questions.qid = {$dbprefix}question_attributes.qid AND {$dbprefix}questions.gid=$gid";
+    $surveyid=$connect->GetOne("select sid from {$dbprefix}groups where gid={$gid}");
+    $sBaseLanguage=GetBaseLanguageFromSurveyID($surveyid);
+    if ($connect->databaseType == 'odbc_mssql' || $connect->databaseType == 'odbtp' || $connect->databaseType == 'mssql_n' || $connect->databaseType =='mssqlnative')
+    {
+        $query="SELECT qa.qid, qa.attribute, cast(qa.value as varchar(4000)) as value 
+          FROM {$dbprefix}question_attributes qa JOIN {$dbprefix}questions  q ON q.qid = qa.qid AND q.sid={$surveyid} and q.gid={$gid} 
+          where q.language='{$sBaseLanguage}' group by qa.qid, qa.attribute,  cast(qa.value as varchar(4000))";
+    }
+    else {
+        $query="SELECT qa.qid, qa.attribute, qa.value
+          FROM {$dbprefix}question_attributes qa JOIN {$dbprefix}questions  q ON q.qid = qa.qid AND q.sid={$surveyid} and q.gid={$gid}         
+          where q.language='{$sBaseLanguage}' group by qa.qid, qa.attribute, qa.value";
+    }
     BuildXMLFromQuery($xml,$query,'question_attributes');
     
     // Default values
-    $query = "SELECT DISTINCT dv.*
-              FROM {$dbprefix}defaultvalues dv, {$dbprefix}questions q  
-              WHERE dv.qid=q.qid 
-              AND q.gid=$gid order by dv.language, dv.scale_id";
+    $query = "SELECT dv.*
+                FROM {$dbprefix}defaultvalues dv
+                JOIN {$dbprefix}questions ON {$dbprefix}questions.qid = dv.qid 
+                AND {$dbprefix}questions.language=dv.language 
+                AND {$dbprefix}questions.gid=$gid 
+                order by dv.language, dv.scale_id"; 
     BuildXMLFromQuery($xml,$query,'defaultvalues');                 
 }

@@ -103,10 +103,12 @@ div.questiontext {
 
 #groupheader {
   margin: 1%;
+  font-style:italic;
 }
 
 #groupdescription {
   margin: 1%;
+  color: #777777;
 }
 
 #container {
@@ -301,10 +303,16 @@ input.saveall,input.clearall {
   font-size: 1em;
 }
 
+.warning {
+  display:block;
+}
+.error,.errormandatory,.warningjs {
+  color: red;
+}
 .errormandatory,.warningjs {
   font-size: 12px;
   font-weight: 700;
-  color: RED;
+  color: red;
 }
 
 font,.text {
@@ -342,6 +350,131 @@ td.answertext {
   font-size: 12px;
   font-weight: bold;
 }
+
+.survey-name {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.survey-description {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin:6px auto;
+}
+
+.welcome-text {
+}
+
+.x-questions {
+	color: #333333;
+	font-size: 0.8em;
+}
+
+.submit-buttons {
+}
+
+.clear-all {
+}
+
+.save-all {
+}
+
+.assessment-table {
+	margin: 0 auto;
+	width: 75%;
+	border-collapse: collapse;
+	border: 1px solid #2f5376;
+}
+
+.assessment-table th,
+.assessment-table td {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.assessment-heading {
+	background-color: #DDDDDD;
+	text-align: center;
+	font-size: small;
+	font-weight: bold;
+	border-bottom: 1px solid #2f5376;
+}
+
+.assessments-container {
+	background-color: #FFFFFF;
+}
+
+td.clearall-result {
+	text-align: center;
+}
+
+td.clearall-result .warning-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #FF0000;
+}
+
+.warning-text {
+	color:#FF0000;
+	font-weight: bold;
+}
+
+.register-message-1 {
+	font-weight: bold;
+}
+
+.register-message-2 {
+}
+
+.load-error {
+	color:#FF0000;
+}
+
+.load-heading {
+}
+
+.load-message {
+}
+
+.load-form {
+}
+
+.return-to-survey {
+}
+
+.save-error{
+	color: #FF0000;
+}
+
+.save-heading{
+}
+
+.save-message{
+}
+
+.save-form{
+}
+
+#listingContent .survey-contact {
+}
+
+#listingContent .language-changer {
+}
+
+#listingContent .language-changer a {
+	color: #000000;
+}
+
+#listingList ul {
+	padding: 0;
+}
+
+#listingList li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
 
 /* -------------------------------------------------
    START: Question styles  ------------------------- */
@@ -704,14 +837,30 @@ ul.cols-2-ul label,ul.cols-3-ul label,ul.cols-4-ul label,ul.cols-5-ul label,ul.c
 .yes-no {}
 .gender {}
 */
-#limesurvey table.question tbody th.arraycaptionleft,#limesurvey table.question thead th,#limesurvey table.question .repeat th
-  {
+#limesurvey table.question tbody th.arraycaptionleft,
+#limesurvey table.question thead th,
+#limesurvey table.question .repeat th {
   text-align: center;
   padding: 3px 10px;
   background-color: #D1D1D1;
   vertical-align: middle !important;
   font-size: 0.6em;
   font-weight: bold;
+}
+
+#limesurvey .array-flexible-duel-scale table.question tr.repeat th {
+	background-color: #F6F6F6;
+}
+
+#limesurvey .array-flexible-duel-scale table.question .header_answer_text,
+#limesurvey .array-flexible-duel-scale table.question tr.repeat th.header_answer_text,
+#limesurvey .array-flexible-duel-scale table.question .header_separator,
+#limesurvey .array-flexible-duel-scale table.question .header_answer_text_right {
+	background-color: #FFFFFF;
+}
+
+#limesurvey .array-flexible-duel-scale table.question tr.repeat {
+	background-color: #F6F6F6;
 }
 
 #limesurvey table.question .answer tbody td {
@@ -772,7 +921,7 @@ ul.cols-2-ul label,ul.cols-3-ul label,ul.cols-4-ul label,ul.cols-5-ul label,ul.c
 
 .ui-slider-disabled .ui-slider-handle {
   opacity: 0.5;
-  filter: alpha(opacity = 50);
+  filter: alpha(opacity =           50);
 }
 
 .ui-slider-1 {
@@ -903,6 +1052,12 @@ td.rank label,td.rank td strong {
   min-height: 60px;
 }
 
+table.rank td.helptext {
+  font-size: 10px;
+  font-style: italic;
+  padding-top: 5px;
+}
+
 li.other .answer-comment {
   margin-top: -1.65em;
 }
@@ -937,6 +1092,7 @@ form.captcha label {
 
 #tokenform li {
   padding-bottom: 5px;
+  list-style: none;
 }
 
 #tokenform img {
@@ -1083,3 +1239,83 @@ td.statsImageholder {
 #listingList a.surveytitle {
   margin-left: 0px;
 }
+
+table.assessments{
+ width: 100%;
+}
+
+table.assessments td{
+ padding: 0 10px;
+}
+
+table.assessments{
+ width: 100%;
+}
+
+table.assessments th{
+ font-weight:bold;
+ padding: 0 10px;
+}
+
+/* Question Index */
+.outerframe.withindex {
+  margin-left: 1em;
+  margin-right: 26em;
+}
+
+#index {
+  position: absolute;
+  right: 0;
+  width: 25em;
+  top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background: #E9E9E9;
+  border-left: 1px solid #000;
+}
+
+#index h2 {
+  text-align: center;
+  font-weight: bold;
+  padding: 1em;
+  color: #FFF;
+  background: #2F5376;
+}
+
+#index h3 {
+  margin: 0.5em 0 0 0.5em;
+  color: #444;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+#index .container {
+  width: 24em;
+}
+
+#index .container .row {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  border-top: 1px solid #fff;
+}
+
+#index .container .row:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+
+#index .container .row .hdr {
+  width: 3em;
+  text-align: right;
+  display: inline-block;
+  padding: 0 0.5em 0 0;
+}
+
+#index .container .row.odd { background: #CCC; }
+#index .container .row.current { background: #444; color: #fff; }
+#index .container .row.missing { background: #CC0000; color: #fff; }
+#index .container input { margin: 1em; }

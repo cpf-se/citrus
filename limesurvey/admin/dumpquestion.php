@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: dumpquestion.php 8942 2010-07-16 14:07:55Z mennodekker $
+ * $Id: dumpquestion.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 
@@ -26,7 +26,7 @@
 if (!isset($dbprefix) || isset($_REQUEST['dbprefix'])) {die("Cannot run this script directly");}
 include_once("login_check.php");
 require_once("export_data_functions.php");      
-if(!bHasRight($surveyid,'export')) safe_die("You are not allowed to export questions.");
+if(!bHasSurveyPermission($surveyid,'surveycontent','export')) safe_die("You are not allowed to export questions.");
  
 
 $qid = returnglobal('qid');
@@ -83,7 +83,7 @@ exit;
 
 function getXMLStructure($xml,$qid)
 {
-    global $dbprefix;
+    global $dbprefix, $connect;
     // Questions table
     $qquery = "SELECT *
                FROM {$dbprefix}questions 
@@ -103,10 +103,22 @@ function getXMLStructure($xml,$qid)
                WHERE qid = $qid order by language, scale_id, sortorder";
     BuildXMLFromQuery($xml,$aquery);
 
+    
+    
     // Question attributes
-    $query = "SELECT *
-              FROM {$dbprefix}question_attributes 
-              WHERE qid=$qid order by qid, attribute";
+    $surveyid=$connect->GetOne("select sid from {$dbprefix}questions where qid={$qid}");
+    $sBaseLanguage=GetBaseLanguageFromSurveyID($surveyid);
+    if ($connect->databaseType == 'odbc_mssql' || $connect->databaseType == 'odbtp' || $connect->databaseType == 'mssql_n' || $connect->databaseType =='mssqlnative')
+    {
+        $query="SELECT qa.qid, qa.attribute, cast(qa.value as varchar(4000)) as value 
+          FROM {$dbprefix}question_attributes qa JOIN {$dbprefix}questions  q ON q.qid = qa.qid AND q.sid={$surveyid} and q.qid={$qid} 
+          where q.language='{$sBaseLanguage}' group by qa.qid, qa.attribute,  cast(qa.value as varchar(4000))";
+    }
+    else {
+        $query="SELECT qa.qid, qa.attribute, qa.value
+          FROM {$dbprefix}question_attributes qa JOIN {$dbprefix}questions  q ON q.qid = qa.qid AND q.sid={$surveyid} and q.qid={$qid}         
+          where q.language='{$sBaseLanguage}' group by qa.qid, qa.attribute, qa.value";
+    }
     BuildXMLFromQuery($xml,$query);
 
     // Default values

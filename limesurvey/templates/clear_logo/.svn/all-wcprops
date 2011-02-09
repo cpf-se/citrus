@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/clear_logo
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo
 END
 chart.jpg
 K 25
@@ -13,13 +13,13 @@ clearall.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/6027/source/limesurvey/templates/clear_logo/clearall.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/clearall.pstpl
 END
 load.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/load.pstpl
+/svnroot/limesurvey/!svn/ver/9260/source/limesurvey/templates/clear_logo/load.pstpl
 END
 print_img_checkbox.png
 K 25
@@ -31,19 +31,19 @@ print_question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/6522/source/limesurvey/templates/clear_logo/print_question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/print_question.pstpl
 END
 register.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/register.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/register.pstpl
 END
 assessment.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/assessment.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/assessment.pstpl
 END
 template.js
 K 25
@@ -61,19 +61,19 @@ surveylist.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/surveylist.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/surveylist.pstpl
 END
 navigator.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/navigator.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/navigator.pstpl
 END
 welcome.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/6484/source/limesurvey/templates/clear_logo/welcome.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/welcome.pstpl
 END
 favicon.ico
 K 25
@@ -85,19 +85,19 @@ save.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/save.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/save.pstpl
 END
 groupdescription.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/groupdescription.pstpl
+/svnroot/limesurvey/!svn/ver/9260/source/limesurvey/templates/clear_logo/groupdescription.pstpl
 END
 template.css
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/clear_logo/template.css
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/template.css
 END
 preview.png
 K 25
@@ -109,7 +109,7 @@ question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/clear_logo/question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/question.pstpl
 END
 print_survey.pstpl
 K 25
@@ -121,13 +121,13 @@ completed.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/completed.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/completed.pstpl
 END
 privacy.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/6424/source/limesurvey/templates/clear_logo/privacy.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/privacy.pstpl
 END
 ie_fix_6.css
 K 25
@@ -141,17 +141,17 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/clear_logo/ie_fix_7.css
 END
-ie_fix_8.css
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/svnroot/limesurvey/!svn/ver/8863/source/limesurvey/templates/clear_logo/ie_fix_8.css
-END
 Logo-LimeSurvey.jpg
 K 25
 svn:wc:ra_dav:version-url
 V 92
 /svnroot/limesurvey/!svn/ver/6484/source/limesurvey/templates/clear_logo/Logo-LimeSurvey.jpg
+END
+ie_fix_8.css
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/limesurvey/!svn/ver/8863/source/limesurvey/templates/clear_logo/ie_fix_8.css
 END
 endgroup.pstpl
 K 25
@@ -163,13 +163,13 @@ startpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8446/source/limesurvey/templates/clear_logo/startpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/startpage.pstpl
 END
 survey.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/6915/source/limesurvey/templates/clear_logo/survey.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/clear_logo/survey.pstpl
 END
 printanswers.pstpl
 K 25
@@ -187,7 +187,7 @@ endpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/endpage.pstpl
+/svnroot/limesurvey/!svn/ver/9260/source/limesurvey/templates/clear_logo/endpage.pstpl
 END
 limesurvey_logo.png
 K 25
@@ -205,7 +205,7 @@ startgroup.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/clear_logo/startgroup.pstpl
+/svnroot/limesurvey/!svn/ver/9260/source/limesurvey/templates/clear_logo/startgroup.pstpl
 END
 readme.txt
 K 25

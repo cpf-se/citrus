@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svnroot/limesurvey/!svn/ver/9011/source/limesurvey/images
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images
 END
 global.png
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svnroot/limesurvey/!svn/ver/8231/source/limesurvey/images/global.png
+END
+tools.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/tools.png
 END
 browse.png
 K 25
@@ -19,7 +25,13 @@ copy_disabled.png
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/copy_disabled.png
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/copy_disabled.png
+END
+conditions_delete_16.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/conditions_delete_16.png
 END
 saved.png
 K 25
@@ -27,17 +39,41 @@ svn:wc:ra_dav:version-url
 V 68
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/saved.png
 END
+bounce_disabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/bounce_disabled.png
+END
 copyright.txt
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/2900/source/limesurvey/images/copyright.txt
 END
+saved_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/saved_30.png
+END
 blank.gif
 K 25
 svn:wc:ra_dav:version-url
 V 68
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/blank.gif
+END
+ajax-loader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/ajax-loader.gif
+END
+do_16.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/do_16.png
 END
 logout.png
 K 25
@@ -69,17 +105,41 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/dol.png
 END
+add_disabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/add_disabled.png
+END
+next_20.png
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/next_20.png
+END
 dumplabelmulti.png
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /svnroot/limesurvey/!svn/ver/8649/source/limesurvey/images/dumplabelmulti.png
 END
+responses.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/responses.png
+END
 answers.png
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/answers.png
+END
+translate_disabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/translate_disabled.png
 END
 edit.png
 K 25
@@ -99,17 +159,29 @@ svn:wc:ra_dav:version-url
 V 77
 /svnroot/limesurvey/!svn/ver/8577/source/limesurvey/images/defaultanswers.png
 END
+delete_disabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/delete_disabled.png
+END
 showhelp.png
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/showhelp.png
 END
-delete_disabled.png
+add_30.png
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/delete_disabled.png
+V 69
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/add_30.png
+END
+extendedconditions.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/extendedconditions.png
 END
 handle.png
 K 25
@@ -117,23 +189,35 @@ svn:wc:ra_dav:version-url
 V 69
 /svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/handle.png
 END
+saved_disabled_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/saved_disabled_30.png
+END
 slider-handle.gif
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svnroot/limesurvey/!svn/ver/5750/source/limesurvey/images/slider-handle.gif
 END
-invite.png
+dataentry_30.png
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/invite.png
+V 75
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/dataentry_30.png
 END
 viewlast.png
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/viewlast.png
+END
+invite.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/invite.png
 END
 security_small.png
 K 25
@@ -147,17 +231,17 @@ svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/expired.png
 END
-import_disabled.png
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/limesurvey/!svn/ver/8970/source/limesurvey/images/import_disabled.png
-END
 exportsql.png
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/exportsql.png
+END
+import_disabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/import_disabled.png
 END
 tokens.png
 K 25
@@ -171,17 +255,23 @@ svn:wc:ra_dav:version-url
 V 69
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/backup.png
 END
+slider-bg-1.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/slider-bg-1.png
+END
 handle-right.png
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/handle-right.png
 END
-slider-bg-1.png
+addgrouptoken.png
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/slider-bg-1.png
+V 76
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/addgrouptoken.png
 END
 security.png
 K 25
@@ -195,6 +285,12 @@ svn:wc:ra_dav:version-url
 V 74
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/assessments.png
 END
+emailtemplates_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/emailtemplates_30.png
+END
 deactivate.png
 K 25
 svn:wc:ra_dav:version-url
@@ -207,6 +303,18 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/limesurvey/!svn/ver/2897/source/limesurvey/images/cut.gif
 END
+next.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/next.png
+END
+resetsurveylogic_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/resetsurveylogic_30.png
+END
 export.png
 K 25
 svn:wc:ra_dav:version-url
@@ -217,13 +325,19 @@ edithtmlpopup_disabled.png
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/edithtmlpopup_disabled.png
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/edithtmlpopup_disabled.png
 END
 importcsv.png
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/importcsv.png
+END
+edit_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/edit_30.png
 END
 docs.png
 K 25
@@ -243,6 +357,12 @@ svn:wc:ra_dav:version-url
 V 73
 /svnroot/limesurvey/!svn/ver/8231/source/limesurvey/images/surveylist.png
 END
+token_manage_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/token_manage_30.png
+END
 chart.jpg
 K 25
 svn:wc:ra_dav:version-url
@@ -260,6 +380,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 76
 /svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/edithtmlpopup.png
+END
+down_all.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/down_all.png
 END
 token_delete.png
 K 25
@@ -285,6 +411,18 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/inactive.png
 END
+previous_disabled_20.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/previous_disabled_20.png
+END
+do_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/do_30.png
+END
 profile_edit.png
 K 25
 svn:wc:ra_dav:version-url
@@ -296,6 +434,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 67
 /svnroot/limesurvey/!svn/ver/7722/source/limesurvey/images/down.png
+END
+download.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/download.png
 END
 scenario_edit.png
 K 25
@@ -327,11 +471,29 @@ svn:wc:ra_dav:version-url
 V 81
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/dataentry_disabled.png
 END
+slider.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/slider.png
+END
 checkdb.png
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/checkdb.png
+END
+dataentry_disabled_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/dataentry_disabled_30.png
+END
+conditions_edit_16.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/conditions_edit_16.png
 END
 returnhome.png
 K 25
@@ -351,6 +513,18 @@ svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/speaker.png
 END
+conditions_deleteall_16.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/conditions_deleteall_16.png
+END
+bounce_settings.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/bounce_settings.png
+END
 exportcsv.png
 K 25
 svn:wc:ra_dav:version-url
@@ -362,6 +536,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/exportvv.png
+END
+translate_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/translate_30.png
 END
 activate.png
 K 25
@@ -375,17 +555,41 @@ svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/reorder.png
 END
+reorder_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/reorder_30.png
+END
 help.gif
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svnroot/limesurvey/!svn/ver/2897/source/limesurvey/images/help.gif
 END
+success_notice.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/success_notice.png
+END
 donate.png
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/donate.png
+END
+assessments_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/assessments_30.png
+END
+bounce.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/bounce.png
 END
 badsecurity.png
 K 25
@@ -399,11 +603,29 @@ svn:wc:ra_dav:version-url
 V 74
 /svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/handle-left.png
 END
+answers_20.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/answers_20.png
+END
 up.png
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/limesurvey/!svn/ver/7722/source/limesurvey/images/up.png
+END
+survey_security_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/survey_security_30.png
+END
+add_20.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/add_20.png
 END
 do_small.png
 K 25
@@ -416,6 +638,18 @@ K 25
 svn:wc:ra_dav:version-url
 V 74
 /svnroot/limesurvey/!svn/ver/7699/source/limesurvey/images/labelssmall.png
+END
+sliderBg.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/sliderBg.png
+END
+reorder_disabled_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/reorder_disabled_30.png
 END
 dataforward.png
 K 25
@@ -434,6 +668,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 78
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/conditions_copy.png
+END
+tokens_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/tokens_30.png
 END
 export_disabled.png
 K 25
@@ -465,11 +705,11 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/add_small.png
 END
-deleteanswer.png
+dumpgroup.png
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/deleteanswer.png
+V 72
+/svnroot/limesurvey/!svn/ver/8598/source/limesurvey/images/dumpgroup.png
 END
 downarrow.png
 K 25
@@ -477,17 +717,11 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/downarrow.png
 END
-dumpgroup.png
+deleteanswer.png
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/svnroot/limesurvey/!svn/ver/8598/source/limesurvey/images/dumpgroup.png
-END
-seperator.gif
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svnroot/limesurvey/!svn/ver/6071/source/limesurvey/images/seperator.gif
+V 75
+/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/deleteanswer.png
 END
 scenario_delete.png
 K 25
@@ -495,11 +729,23 @@ svn:wc:ra_dav:version-url
 V 78
 /svnroot/limesurvey/!svn/ver/6234/source/limesurvey/images/scenario_delete.png
 END
+seperator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/6071/source/limesurvey/images/seperator.gif
+END
 activate_disabled.png
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/activate_disabled.png
+END
+browse_disabled_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/browse_disabled_30.png
 END
 usergroup.png
 K 25
@@ -513,6 +759,12 @@ svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/iterate.png
 END
+print_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/print_30.png
+END
 templatepermissions_small.png
 K 25
 svn:wc:ra_dav:version-url
@@ -525,11 +777,11 @@ svn:wc:ra_dav:version-url
 V 69
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/delete.png
 END
-copyconditions.png
+browse_30.png
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/copyconditions.png
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/browse_30.png
 END
 subquestions.png
 K 25
@@ -537,11 +789,41 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/limesurvey/!svn/ver/8530/source/limesurvey/images/subquestions.png
 END
+copyconditions.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/copyconditions.png
+END
+delete_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/delete_30.png
+END
 resetsurveylogic_disabled.png
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/resetsurveylogic_disabled.png
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/resetsurveylogic_disabled.png
+END
+tokenifygroup.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/tokenifygroup.png
+END
+next_disabled_20.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/next_disabled_20.png
+END
+emailtemplates.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/emailtemplates.png
 END
 slider-bg-2.png
 K 25
@@ -567,29 +849,41 @@ svn:wc:ra_dav:version-url
 V 68
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/minus.gif
 END
-resetsurveylogic.png
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/resetsurveylogic.png
-END
 token_remind.png
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svnroot/limesurvey/!svn/ver/6853/source/limesurvey/images/token_remind.png
 END
-paused.png
+resetsurveylogic.png
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svnroot/limesurvey/!svn/ver/8613/source/limesurvey/images/paused.png
+V 79
+/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/resetsurveylogic.png
+END
+create_dummy_token.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/create_dummy_token.png
+END
+survey_settings_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/survey_settings_30.png
 END
 conditions_add.png
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/conditions_add.png
+END
+paused.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/limesurvey/!svn/ver/8613/source/limesurvey/images/paused.png
 END
 noedit.png
 K 25
@@ -621,17 +915,17 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/tokenify.png
 END
-databack.png
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/databack.png
-END
 statistics.png
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/statistics.png
+END
+databack.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/databack.png
 END
 dataentry.png
 K 25
@@ -639,23 +933,35 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/dataentry.png
 END
+activate_deactivate_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/activate_deactivate_30.png
+END
+statistics_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/statistics_30.png
+END
 summary.png
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/summary.png
 END
-save.png
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/save.png
-END
 token_invite.png
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svnroot/limesurvey/!svn/ver/6853/source/limesurvey/images/token_invite.png
+END
+save.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/save.png
 END
 dataend.png
 K 25
@@ -669,17 +975,23 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/8649/source/limesurvey/images/dumplabel.png
 END
+display_export.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/display_export.png
+END
+resetsurveylogic_disabled_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/resetsurveylogic_disabled_30.png
+END
 emailsettings.png
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/emailsettings.png
-END
-importold.png
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/importold.png
 END
 conditions.png
 K 25
@@ -687,11 +999,17 @@ svn:wc:ra_dav:version-url
 V 73
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/conditions.png
 END
-databegin.png
+importold.png
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/databegin.png
+/svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/importold.png
+END
+security_16.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/security_16.png
 END
 slider-handle2.gif
 K 25
@@ -699,17 +1017,41 @@ svn:wc:ra_dav:version-url
 V 77
 /svnroot/limesurvey/!svn/ver/5750/source/limesurvey/images/slider-handle2.gif
 END
+databegin.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/databegin.png
+END
+deletegroup.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/deletegroup.png
+END
 plus.png
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/plus.png
 END
+export_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/export_30.png
+END
 conditions_deleteall.png
 K 25
 svn:wc:ra_dav:version-url
 V 83
 /svnroot/limesurvey/!svn/ver/6224/source/limesurvey/images/conditions_deleteall.png
+END
+translate_disabled_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/translate_disabled_30.png
 END
 add.png
 K 25
@@ -729,6 +1071,12 @@ svn:wc:ra_dav:version-url
 V 80
 /svnroot/limesurvey/!svn/ver/6224/source/limesurvey/images/conditions_delete.png
 END
+quota_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/quota_30.png
+END
 print.png
 K 25
 svn:wc:ra_dav:version-url
@@ -747,17 +1095,17 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/templates.png
 END
-labels.png
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svnroot/limesurvey/!svn/ver/8538/source/limesurvey/images/labels.png
-END
 token_do.png
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/token_do.png
+END
+labels.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/limesurvey/!svn/ver/8538/source/limesurvey/images/labels.png
 END
 exportr.png
 K 25
@@ -783,6 +1131,12 @@ svn:wc:ra_dav:version-url
 V 73
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/trafficred.png
 END
+timeStatistics.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/timeStatistics.png
+END
 importldap.png
 K 25
 svn:wc:ra_dav:version-url
@@ -794,6 +1148,24 @@ K 25
 svn:wc:ra_dav:version-url
 V 76
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/edit_disabled.png
+END
+previous_20.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/previous_20.png
+END
+trash.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/trash.png
+END
+placeholder.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/placeholder.png
 END
 index.html
 K 25
@@ -818,4 +1190,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 73
 /svnroot/limesurvey/!svn/ver/6070/source/limesurvey/images/exportspss.png
+END
+error_notice.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/error_notice.png
+END
+scanner_30.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/scanner_30.png
 END

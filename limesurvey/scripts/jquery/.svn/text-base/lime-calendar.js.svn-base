@@ -1,16 +1,18 @@
-// This file will auto convert slider divs to sliders
 $(document).ready(function(){
-	// call the init slider routine for each element of the .multinum-slider class
 	$(".popupdate").each(function(i,e) { 
         var basename = e.id.substr(6);         
         format=$('#dateformat'+basename).val();
         language=$('#datelanguage'+basename).val();
         yearrange=$('#dateyearrange'+basename).val();
+        range=yearrange.split(':');
         $(e).datepicker({ dateFormat: format,  
                           showOn: 'both',
                           changeYear: true, 
                           changeMonth: true,
-                          yearRange: yearrange, 
+                          yearRange: yearrange,
+                          defaultDate:new Date(range[0]),
+                          minDate:new Date(range[0]),
+                          maxDate: new Date(range[1],12,31),
                           duration: 'fast'
                         }, $.datepicker.regional[language]);
     });

@@ -1,7 +1,7 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/scripts/edit_area/langs
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -60,14 +60,14 @@ c_schmitz
 
 1749
 
-es.js
+mk.js
 file
 
 
 
 
-2011-02-09T13:09:46.637341Z
-c51c4378eec18a18367db665c5da1381
+2011-02-09T13:09:46.717344Z
+709e6e248ea163f1873c362b65129d8f
 2010-07-01T14:06:30.428092Z
 8878
 c_schmitz
@@ -92,7 +92,7 @@ c_schmitz
 
 
 
-1771
+2383
 
 fr.js
 file
@@ -128,14 +128,14 @@ c_schmitz
 
 1960
 
-mk.js
+es.js
 file
 
 
 
 
-2011-02-09T13:09:46.717344Z
-709e6e248ea163f1873c362b65129d8f
+2011-02-09T13:09:46.637341Z
+c51c4378eec18a18367db665c5da1381
 2010-07-01T14:06:30.428092Z
 8878
 c_schmitz
@@ -160,41 +160,7 @@ c_schmitz
 
 
 
-2383
-
-hr.js
-file
-
-
-
-
-2011-02-09T13:09:46.717344Z
-c5b57293d0f05f2eee99c70dc574e936
-2010-07-01T14:06:30.428092Z
-8878
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1551
+1771
 
 nl.js
 file
@@ -229,6 +195,40 @@ c_schmitz
 
 
 1581
+
+hr.js
+file
+
+
+
+
+2011-02-09T13:09:46.717344Z
+c5b57293d0f05f2eee99c70dc574e936
+2010-07-01T14:06:30.428092Z
+8878
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1551
 
 pl.js
 file
@@ -434,40 +434,6 @@ c_schmitz
 
 2466
 
-bg.js
-file
-
-
-
-
-2011-02-09T13:09:47.817385Z
-d7613d13ccef5b0d7bfec0d61301e8c7
-2010-07-01T14:06:30.428092Z
-8878
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2679
-
 de.js
 file
 
@@ -501,6 +467,40 @@ c_schmitz
 
 
 1791
+
+bg.js
+file
+
+
+
+
+2011-02-09T13:09:47.817385Z
+d7613d13ccef5b0d7bfec0d61301e8c7
+2010-07-01T14:06:30.428092Z
+8878
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2679
 
 ja.js
 file

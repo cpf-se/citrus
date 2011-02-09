@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/limesurvey/!svn/ver/8896/source/limesurvey/admin/install
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install
 END
 cmd_install.php
 K 25
@@ -13,25 +13,25 @@ createdb.php
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/limesurvey/!svn/ver/8641/source/limesurvey/admin/install/createdb.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install/createdb.php
 END
 create-mysql.sql
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/8662/source/limesurvey/admin/install/create-mysql.sql
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install/create-mysql.sql
 END
 create-mssqlnative.sql
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8661/source/limesurvey/admin/install/create-mssqlnative.sql
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install/create-mssqlnative.sql
 END
 create-postgres.sql
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/8662/source/limesurvey/admin/install/create-postgres.sql
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install/create-postgres.sql
 END
 resetadminpw.php
 K 25
@@ -49,11 +49,11 @@ index.php
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/install/index.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install/index.php
 END
 create-mssql.sql
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/8661/source/limesurvey/admin/install/create-mssql.sql
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/install/create-mssql.sql
 END

@@ -1,7 +1,7 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/upload/images/smiley/msn
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -230,40 +230,6 @@ has-props
 
 992
 
-tounge_smile.gif
-file
-
-
-
-
-2011-02-09T13:07:40.652634Z
-73ff8aee8bede562b0bf18b8786fecbe
-2007-12-08T15:32:56.787756Z
-3757
-lemeur
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1055
-
 regular_smile.gif
 file
 
@@ -297,6 +263,40 @@ has-props
 
 
 1036
+
+tounge_smile.gif
+file
+
+
+
+
+2011-02-09T13:07:40.652634Z
+73ff8aee8bede562b0bf18b8786fecbe
+2007-12-08T15:32:56.787756Z
+3757
+lemeur
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1055
 
 devil_smile.gif
 file
@@ -366,40 +366,6 @@ has-props
 
 322
 
-sad_smile.gif
-file
-
-
-
-
-2011-02-09T13:07:40.662635Z
-98c1a52fc0cc02bdc5a39dce35d0b7cf
-2007-12-08T15:32:56.787756Z
-3757
-lemeur
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1039
-
 shades_smile.gif
 file
 
@@ -434,14 +400,14 @@ has-props
 
 1059
 
-wink_smile.gif
+sad_smile.gif
 file
 
 
 
 
 2011-02-09T13:07:40.662635Z
-2acb3656cf7889187530b7455beca2c9
+98c1a52fc0cc02bdc5a39dce35d0b7cf
 2007-12-08T15:32:56.787756Z
 3757
 lemeur
@@ -466,7 +432,7 @@ has-props
 
 
 
-1041
+1039
 
 whatchutalkingabout_smile.gif
 file
@@ -501,6 +467,40 @@ has-props
 
 
 1034
+
+wink_smile.gif
+file
+
+
+
+
+2011-02-09T13:07:40.662635Z
+2acb3656cf7889187530b7455beca2c9
+2007-12-08T15:32:56.787756Z
+3757
+lemeur
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1041
 
 teeth_smile.gif
 file

@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/limespired
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired
 END
 load.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/load.pstpl
+/svnroot/limesurvey/!svn/ver/9304/source/limesurvey/templates/limespired/load.pstpl
 END
 chart.jpg
 K 25
@@ -19,7 +19,7 @@ clearall.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/clearall.pstpl
+/svnroot/limesurvey/!svn/ver/9304/source/limesurvey/templates/limespired/clearall.pstpl
 END
 footer-r.png
 K 25
@@ -37,19 +37,19 @@ print_question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/6522/source/limesurvey/templates/limespired/print_question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/print_question.pstpl
 END
 register.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/register.pstpl
+/svnroot/limesurvey/!svn/ver/9304/source/limesurvey/templates/limespired/register.pstpl
 END
 assessment.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/assessment.pstpl
+/svnroot/limesurvey/!svn/ver/9304/source/limesurvey/templates/limespired/assessment.pstpl
 END
 template.js
 K 25
@@ -67,13 +67,13 @@ surveylist.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/surveylist.pstpl
+/svnroot/limesurvey/!svn/ver/9304/source/limesurvey/templates/limespired/surveylist.pstpl
 END
 navigator.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/templates/limespired/navigator.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/navigator.pstpl
 END
 blank.gif
 K 25
@@ -97,7 +97,7 @@ save.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/save.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/save.pstpl
 END
 groupdescription.pstpl
 K 25
@@ -109,13 +109,13 @@ template.css
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/limespired/template.css
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/template.css
 END
-header-l.png
+preview.png
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/templates/limespired/header-l.png
+V 84
+/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/templates/limespired/preview.png
 END
 logo.gif
 K 25
@@ -123,11 +123,11 @@ svn:wc:ra_dav:version-url
 V 81
 /svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/logo.gif
 END
-preview.png
+header-l.png
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/templates/limespired/preview.png
+V 85
+/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/templates/limespired/header-l.png
 END
 box_left.gif
 K 25
@@ -145,19 +145,19 @@ question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/7766/source/limesurvey/templates/limespired/question.pstpl
-END
-print_survey.pstpl
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/limesurvey/!svn/ver/8436/source/limesurvey/templates/limespired/print_survey.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/question.pstpl
 END
 header-r.png
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/templates/limespired/header-r.png
+END
+print_survey.pstpl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/limesurvey/!svn/ver/8436/source/limesurvey/templates/limespired/print_survey.pstpl
 END
 completed.pstpl
 K 25
@@ -171,17 +171,17 @@ svn:wc:ra_dav:version-url
 V 86
 /svnroot/limesurvey/!svn/ver/5747/source/limesurvey/templates/limespired/privacy.pstpl
 END
-slider-handle.gif
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/svnroot/limesurvey/!svn/ver/6818/source/limesurvey/templates/limespired/slider-handle.gif
-END
 ie_fix_6.css
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/limespired/ie_fix_6.css
+END
+slider-handle.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/limesurvey/!svn/ver/6818/source/limesurvey/templates/limespired/slider-handle.gif
 END
 ie_fix_7.css
 K 25
@@ -217,7 +217,7 @@ startpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8425/source/limesurvey/templates/limespired/startpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/startpage.pstpl
 END
 screenshot.jpg
 K 25
@@ -259,7 +259,7 @@ endpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/6625/source/limesurvey/templates/limespired/endpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/limespired/endpage.pstpl
 END
 limesurvey_logo.png
 K 25

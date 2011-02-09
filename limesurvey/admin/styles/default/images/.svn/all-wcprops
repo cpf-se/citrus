@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/7701/source/limesurvey/admin/styles/default/images
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/images
 END
 ui-bg_inset-soft_95_fef1ec_1x100.png
 K 25
@@ -21,11 +21,23 @@ svn:wc:ra_dav:version-url
 V 88
 /svnroot/limesurvey/!svn/ver/7701/source/limesurvey/admin/styles/default/images/desc.gif
 END
+prev-horizontal.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/images/prev-horizontal.png
+END
 ui-bg_glass_65_ffffff_1x400.png
 K 25
 svn:wc:ra_dav:version-url
 V 111
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/admin/styles/default/images/ui-bg_glass_65_ffffff_1x400.png
+END
+next-horizontal.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/images/next-horizontal.png
 END
 ui-bg_flat_75_F8F8FF_40x100.png
 K 25
@@ -33,17 +45,17 @@ svn:wc:ra_dav:version-url
 V 111
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/admin/styles/default/images/ui-bg_flat_75_F8F8FF_40x100.png
 END
-ui-icons_cd0a0a_256x240.png
-K 25
-svn:wc:ra_dav:version-url
-V 107
-/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/admin/styles/default/images/ui-icons_cd0a0a_256x240.png
-END
 ajax-loader.gif
 K 25
 svn:wc:ra_dav:version-url
 V 95
 /svnroot/limesurvey/!svn/ver/7699/source/limesurvey/admin/styles/default/images/ajax-loader.gif
+END
+ui-icons_cd0a0a_256x240.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/limesurvey/!svn/ver/7484/source/limesurvey/admin/styles/default/images/ui-icons_cd0a0a_256x240.png
 END
 ui-bg_flat_0_aaaaaa_40x100.png
 K 25
@@ -69,6 +81,12 @@ svn:wc:ra_dav:version-url
 V 107
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/admin/styles/default/images/ui-icons_2e83ff_256x240.png
 END
+arrows.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/images/arrows.png
+END
 ui-bg_highlight-soft_75_F8F8FF_1x100.png
 K 25
 svn:wc:ra_dav:version-url
@@ -81,17 +99,23 @@ svn:wc:ra_dav:version-url
 V 107
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/admin/styles/default/images/ui-icons_888888_256x240.png
 END
+ui-bg_glass_55_fbf9ee_1x400.png
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/limesurvey/!svn/ver/6606/source/limesurvey/admin/styles/default/images/ui-bg_glass_55_fbf9ee_1x400.png
+END
 ui-bg_glass_75_dadada_1x400.png
 K 25
 svn:wc:ra_dav:version-url
 V 111
 /svnroot/limesurvey/!svn/ver/6606/source/limesurvey/admin/styles/default/images/ui-bg_glass_75_dadada_1x400.png
 END
-ui-bg_glass_55_fbf9ee_1x400.png
+shadow.png
 K 25
 svn:wc:ra_dav:version-url
-V 111
-/svnroot/limesurvey/!svn/ver/6606/source/limesurvey/admin/styles/default/images/ui-bg_glass_55_fbf9ee_1x400.png
+V 90
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/images/shadow.png
 END
 asc.gif
 K 25

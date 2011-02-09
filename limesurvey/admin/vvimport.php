@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: vvimport.php 8630 2010-04-24 15:12:46Z c_schmitz $
+ * $Id: vvimport.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 include_once("login_check.php");
@@ -77,7 +77,7 @@ if ($subaction != "upload")
     {
 
         $vvoutput = browsemenubar($clang->gT("Import VV file")).
-		"<div class='header'>".$clang->gT("Import a VV survey file")."</div>
+		"<div class='header ui-widget-header'>".$clang->gT("Import a VV survey file")."</div>
 		<form id='vvexport' enctype='multipart/form-data' method='post' action='admin.php?sid=$surveyid'>
 		<ul>		
 		<li><label for='the_file'>".$clang->gT("File:")."</label><input type='file' size=50 id='the_file' name='the_file' /></li>

@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: LimeSurvey  Portuguese language file\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-04 18:00+0200\n"
-"PO-Revision-Date: 2010-06-05 01:33-0000\n"
-"Last-Translator: António Correia <pardalpc@gmail.com>\n"
-"Language-Team: fedora-trans-pt@redhat.com\n"
+"PO-Revision-Date: 2010-10-08 11:52+0100\n"
+"Last-Translator: Rui Gouveia <rui.gouveia@gmail.com>\n"
+"Language-Team: trans-pt@lists.fedoraproject.org\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.5.2\n"
+"X-Generator: Virtaal 0.6.1\n"
 "X-Poedit-Language: portuguese\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: D:\\web\\xampp\\htdocs\\limesurvey\n"
@@ -909,18 +909,16 @@ msgstr "Todas as respostas"
 #: /var/lib/limesurvey-svn/subversion1x/admin/exportresults.php:99
 #: /var/lib/limesurvey-svn/subversion1x/admin/vvexport.php:63
 #: /var/lib/limesurvey-svn/subversion1x/admin/export_data_spss.php:120
-#, fuzzy
 msgid "Completed responses only"
-msgstr "Apenas registos completos"
+msgstr "Apenas respostas completas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/statistics.php:261
 #: /var/lib/limesurvey-svn/subversion1x/admin/browse.php:538
 #: /var/lib/limesurvey-svn/subversion1x/admin/exportresults.php:101
 #: /var/lib/limesurvey-svn/subversion1x/admin/vvexport.php:65
 #: /var/lib/limesurvey-svn/subversion1x/admin/export_data_spss.php:122
-#, fuzzy
 msgid "Incomplete responses only"
-msgstr "Respostas incompletas:"
+msgstr "Apenas respostas incompletas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/statistics.php:264
 msgid "View summary of all available fields"
@@ -1029,9 +1027,8 @@ msgid "Date (YYYY-MM-DD) equals"
 msgstr "Data (AAAA-MM-DD) é igual a"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/statistics.php:727
-#, fuzzy
 msgid "Date is"
-msgstr "Data"
+msgstr "A data é"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/statistics.php:733
 msgid "AND/OR Date is"
@@ -2251,7 +2248,6 @@ msgid "Reading file.."
 msgstr "A ler ficheiro..."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importquestion.php:87
-#, fuzzy
 msgid "Question import summary"
 msgstr "Resumo da importação da pergunta"
 
@@ -2267,13 +2263,11 @@ msgstr "Perguntas secundárias"
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:85
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:79
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:138
-#, fuzzy
 msgid "Label sets"
 msgstr "Conjuntos de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importquestion.php:95
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:87
-#, fuzzy
 msgid "Question attributes:"
 msgstr "Atributos da pergunta:"
 
@@ -2299,16 +2293,18 @@ msgstr "Este ficheiro é demasiado antigo. Apenas ficheiros do LimeSurvey versã
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importgroup.php:271
 #: /var/lib/limesurvey-svn/subversion1x/admin/importquestion.php:279
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:322
-#, fuzzy
 msgid "You can't import a question which doesn't support at least the survey base language."
-msgstr "Não pode importar uma pergunta que não suporte o idioma-base do inquérito actual."
+msgstr ""
+"Não pode importar uma pergunta que não suporte pelo menos o idioma base do "
+"inquérito."
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importgroup.php:255
 #: /var/lib/limesurvey-svn/subversion1x/admin/importquestion.php:293
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:336
-#, fuzzy
 msgid "You can't import answers which doesn't support at least the survey base language."
-msgstr "Não pode importar um grupo que não suporte o idioma-base do inquérito actual."
+msgstr ""
+"Não pode importar respostas que não suportem pelo menos o idioma base do "
+"inquérito."
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importquestion.php:253
 #: /var/lib/limesurvey-svn/subversion1x/admin/importquestion.php:308
@@ -2550,7 +2546,6 @@ msgstr "Última página vista"
 #: /var/lib/limesurvey-svn/subversion1x/admin/exportresults.php:517
 #: /var/lib/limesurvey-svn/subversion1x/admin/exportresults.php:518
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2295
-#, fuzzy
 msgid "Start language"
 msgstr "Idioma inicial"
 
@@ -2605,9 +2600,8 @@ msgid "Tokens problem - token table missing"
 msgstr "Problemas com códigos - falta a tabela dos códigos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:45
-#, fuzzy
 msgid "Responses"
-msgstr "ID da resposta"
+msgstr "Respostas"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/exportresults.php:833
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/statistics.php:152
@@ -2627,7 +2621,6 @@ msgid "Survey"
 msgstr "Inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:52
-#, fuzzy
 msgid "Date created"
 msgstr "Data de criação"
 
@@ -2644,9 +2637,8 @@ msgid "Anonymous answers"
 msgstr "Respostas anónimas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:56
-#, fuzzy
 msgid "Full"
-msgstr "Nome completo"
+msgstr "Completo"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:57
 #: /var/lib/limesurvey-svn/subversion1x/admin/import_resources_zip.php:160
@@ -2676,9 +2668,8 @@ msgid "Closed"
 msgstr "Fechado"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:84
-#, fuzzy
 msgid "Open"
-msgstr "Ligado"
+msgstr "Aberto"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1884
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:2125
@@ -2987,7 +2978,6 @@ msgstr "Notificação por email detalhada com códigos do resultado"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:489
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:806
-#, fuzzy
 msgid "Regenerate question codes:"
 msgstr "Recriar os códigos da pergunta:"
 
@@ -3011,7 +3001,6 @@ msgstr "URL do inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:823
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:830
-#, fuzzy
 msgid "Survey URL for language:"
 msgstr "URL do inquérito para o idioma:"
 
@@ -3136,9 +3125,8 @@ msgid "Impossible to delete this group because there is at least one question ha
 msgstr "Não é possível apagar este grupo porque existe pelo menos uma pergunta contendo uma condição no seu conteúdo"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1022
-#, fuzzy
 msgid "Export this question group"
-msgstr "Exportar grupo de perguntas actual"
+msgstr "Exportar este grupo de perguntas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1034
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:611
@@ -3175,12 +3163,12 @@ msgid "Edit Current Question"
 msgstr "Editar pergunta actual"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1187
-#, fuzzy
 msgid "Deleting this question will also delete any answer options and subquestions it includes. Are you sure you want to continue?"
-msgstr "Ao apagar esta pergunta também apagará qualquer resposta que contenha. Tem a certeza que quer continuar?"
+msgstr ""
+"Ao apagar esta pergunta também apagará qualquer resposta que contenha assim "
+"como perguntas secundárias. Tem a certeza que quer continuar?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1188
-#, fuzzy
 msgid "Delete current question"
 msgstr "Apagar pergunta actual"
 
@@ -3190,7 +3178,6 @@ msgid "It's impossible to delete this question because there is at least one que
 msgstr "É impossível apagar esta pergunta porque existe pelo menos uma pergunta contendo uma condição sobre ela."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1196
-#, fuzzy
 msgid "Disabled - Delete current question"
 msgstr "Desactivado - Eliminar pergunta actual"
 
@@ -3212,19 +3199,16 @@ msgid "Set Conditions for this Question"
 msgstr "Definir condições para esta pergunta"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1253
-#, fuzzy
 msgid "Edit subquestions for this question"
-msgstr "Editar/adicionar opções de resposta para essa pergunta"
+msgstr "Editar perguntas secundárias para essa pergunta"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1264
-#, fuzzy
 msgid "Edit answer options for this question"
-msgstr "Editar/adicionar opções de resposta para essa pergunta"
+msgstr "Editar opções de resposta para essa pergunta"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1274
-#, fuzzy
 msgid "Edit default answers for this question"
-msgstr "Editar/Adicionar respostas a esta pergunta"
+msgstr "Editar respostas por omissão para esta pergunta"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1279
 msgid "Hide Details of this Question"
@@ -3332,9 +3316,8 @@ msgid "Other questions having conditions on this question:"
 msgstr "Outras perguntas com condições nesta pergunta:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1393
-#, fuzzy
 msgid "Some example answer option"
-msgstr "Nova opção de resposta"
+msgstr "Alguns exemplos de opções de resposta"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1447
 msgid "Edit answer options"
@@ -3355,15 +3338,13 @@ msgstr "Código"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1471
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1669
-#, fuzzy
 msgid "Label set browser"
-msgstr "Conjuntos de etiquetas"
+msgstr "Navegador dos conjuntos de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1472
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1670
-#, fuzzy
 msgid "Quick-add subquestions"
-msgstr "Adicionar pergunta"
+msgstr "Adicionar pergunta secundária (rápido)"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1473
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1712
@@ -3371,9 +3352,9 @@ msgid "Error: You are trying to use duplicate answer codes."
 msgstr "Erro: Está a tentar utilizar códigos de resposta duplicados."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1489
-#, fuzzy, php-format
+#, php-format
 msgid "Answer scale %s"
-msgstr "Resposta era"
+msgstr "Escala da resposta %s"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/assessments.php:75
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importsurvey.php:650
@@ -3407,9 +3388,8 @@ msgstr "Conjuntos de etiquetas disponiveis"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1597
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1840
-#, fuzzy
 msgid "Match language"
-msgstr "Idioma base"
+msgstr "Corresponder idioma"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1598
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1606
@@ -3435,23 +3415,21 @@ msgstr "Insira as questões secundárias"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1611
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1853
-#, fuzzy
 msgid "Save changes"
-msgstr "Guardar alterações"
+msgstr "Gravar alterações"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1640
 msgid "Some example subquestion"
 msgstr "Exemplos de perguntas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1671
-#, fuzzy
 msgid "Error: You are trying to use duplicate subquestion codes."
-msgstr "Erro: Está a tentar utilizar códigos de etiquetas duplicados."
+msgstr ""
+"Erro: Está a tentar utilizar códigos de perguntas secundárias duplicados."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1710
-#, fuzzy
 msgid "Edit subquestions"
-msgstr "Editar pergunta"
+msgstr "Editar perguntas secundárias"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1712
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:290
@@ -3459,28 +3437,26 @@ msgid "Error: 'other' is a reserved keyword."
 msgstr "Erro: 'Other'/'Outro' são palavras reservadas."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1745
-#, fuzzy
 msgid "Y-Scale"
-msgstr "Escala"
+msgstr "Escala-Y"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1749
-#, fuzzy
 msgid "X-Scale"
-msgstr "Escala"
+msgstr "Escala-X"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1759
 msgid "Subquestion"
 msgstr "Pergunta secundária"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1807
-#, fuzzy
 msgid "Subquestion:"
-msgstr "Pergunta:"
+msgstr "Pergunta secundária:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1859
-#, fuzzy
 msgid "You cannot add/remove subquestions or edit their codes because the survey is active."
-msgstr "Não pode adicionar respostas ou editar códigos para este tipo de pergunta porque o inquérito está activo."
+msgstr ""
+"Não pode adicionar/remover perguntas secundárias ou editar os respectivos "
+"códigos porque o inquérito está activo."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:1877
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2302
@@ -3674,26 +3650,22 @@ msgid "Export To File"
 msgstr "Exportar para ficheiro"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2182
-#, fuzzy
 msgid "Export group structure"
 msgstr "Exportar estrutura do grupo"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2188
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2235
-#, fuzzy
 msgid "LimeSurvey group file (*.csv)"
-msgstr "Ficheiro de grupos LimeSurvey (*.csv)"
+msgstr "Ficheiro de grupo LimeSurvey (*.csv)"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2211
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2258
-#, fuzzy
 msgid "Export to file"
 msgstr "Exportar para ficheiro"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2229
-#, fuzzy
 msgid "Export question structure"
-msgstr "Exportar estrutura das perguntas"
+msgstr "Exportar estrutura de perguntas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2279
 msgid "Survey Security"
@@ -3795,9 +3767,8 @@ msgid "Template Preview:"
 msgstr "Pré-visualizar modelo:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:2606
-#, fuzzy
 msgid "Template preview image"
-msgstr "Pré-visualizar modelo:"
+msgstr "Imagem de pré-visualização do modelo"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1672
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:2032
@@ -4098,9 +4069,8 @@ msgid "Date format:"
 msgstr "Formato da data:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3133
-#, fuzzy
 msgid "Create, import or copy survey"
-msgstr "Criar ou importar inquérito"
+msgstr "Criar, importar ou copiar inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3142
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3195
@@ -4148,7 +4118,6 @@ msgstr "Data de expiração:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3454
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3463
-#, fuzzy
 msgid "Import survey"
 msgstr "Importar inquérito"
 
@@ -4158,7 +4127,6 @@ msgstr "Seleccione o ficheiro de saída do inquérito (*.lss, *.csv):"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3461
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3481
-#, fuzzy
 msgid "Convert resource links and INSERTANS fields?"
 msgstr "Converter os endereços de recursos e campos INSERTANS?"
 
@@ -4178,20 +4146,17 @@ msgstr "Novo titulo do inquérito:"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/vvimport.php:64
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3483
-#, fuzzy
 msgid "Exclude quotas?"
-msgstr "Excluir IDs dos registos?"
+msgstr "Excluir quotas?"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/vvimport.php:64
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3485
-#, fuzzy
 msgid "Exclude answers?"
-msgstr "Excluir IDs dos registos?"
+msgstr "Excluir respostas?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3487
-#, fuzzy
 msgid "Reset conditions?"
-msgstr "Ver condições:"
+msgstr "Redefinir condições?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3535
 msgid "Warning: You are still using the default password ('password'). Please change your password and re-login again."
@@ -4248,7 +4213,6 @@ msgid "Backup Entire Database"
 msgstr "Efectuar uma cópia de segurança de toda a Base de Dados"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3604
-#, fuzzy
 msgid "Edit label sets"
 msgstr "Editar conjunto de etiquetas"
 
@@ -4271,9 +4235,8 @@ msgid "Surveys"
 msgstr "inquéritos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3626
-#, fuzzy
 msgid "Create, import, or copy a survey"
-msgstr "Criar ou importar inquérito"
+msgstr "Criar, importar ou copiar um inquérito"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/common.php:291
 # D:\xampp\xampp\htdocs\phpsurveyor/common.php:293
@@ -4311,7 +4274,6 @@ msgid "Create a new question group inside your survey."
 msgstr "Crie um novo grupo de perguntas dentro do seu inquérito."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/html.php:3653
-#, fuzzy
 msgid "Create one or more questions inside the new question group."
 msgstr "Crie uma ou mais perguntas dentro do novo grupo de perguntas."
 
@@ -4365,7 +4327,11 @@ msgstr "Não foi possível criar a pergunta."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/database.php:510
 msgid "Question could not be updated. There are conditions for other questions that rely on the answers to this question and changing the type will cause problems. You must delete these conditions before you can change the type of this question."
-msgstr "Não foi possível actualizar a pergunta. Existem condições noutras perguntas que dependem das respostas dadas a esta pergunta e alterando o tipo pode causar problemas. Tem de apagar estas condições antes de poder mudar o tipo da pergunta."
+msgstr ""
+"Não foi possível actualizar a pergunta. Existem condições noutras perguntas "
+"que dependem das respostas dadas a esta pergunta e alterando o tipo pode "
+"causar problemas. Tem de apagar estas condições antes de poder mudar o tipo "
+"da pergunta."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/database.php:593
 #: /var/lib/limesurvey-svn/subversion1x/admin/database.php:660
@@ -4416,7 +4382,9 @@ msgstr "Actualização de respostas falhou"
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:659
 #: /var/lib/limesurvey-svn/subversion1x/admin/database.php:910
 msgid "Answers with a code of 0 (zero) or blank code are not allowed, and will not be saved"
-msgstr "Não são permitidas e não serão gravadas respostas com código 0 (zero) ou em branco"
+msgstr ""
+"Não são permitidas e não serão gravadas respostas com código 0 (zero) ou em "
+"branco"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:660
 #: /var/lib/limesurvey-svn/subversion1x/admin/database.php:911
@@ -4575,9 +4543,11 @@ msgid ""
 msgstr ""
 "Caro(a) {FIRSTNAME},\n"
 "\n"
-"Este email confirma que completou o inquérito intitulado {SURVEYNAME} e que as suas respostas foram gravadas. Agradecemos a sua participação.\n"
+"Este email confirma que completou o inquérito intitulado {SURVEYNAME} e que "
+"as suas respostas foram gravadas. Agradecemos a sua participação.\n"
 "\n"
-"Se tiver outras perguntas relacionadas com este email, por favor, contacte {ADMINNAME} através do endereço electrónico {ADMINEMAIL}.\n"
+"Se tiver outras perguntas relacionadas com este email, por favor, contacte "
+"{ADMINNAME} através do endereço electrónico {ADMINEMAIL}.\n"
 "\n"
 "Com os melhores cumprimentos,\n"
 "\n"
@@ -4663,7 +4633,6 @@ msgid "Warnings"
 msgstr "Avisos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:64
-#, fuzzy
 msgid "Label set import summary"
 msgstr "Resumo da importação do conjunto de etiquetas"
 
@@ -4673,9 +4642,8 @@ msgid "Labels"
 msgstr "Etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:67
-#, fuzzy
 msgid "Import of label set(s) is completed."
-msgstr "Está completa a importação do conjunto de etiquetas."
+msgstr "Importação do conjunto de etiquetas concluída."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:68
 msgid "Return to label set administration"
@@ -4687,15 +4655,16 @@ msgstr "Este ficheiro não é de um conjunto de etiquetas LimeSurvey. A importa�
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:232
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:337
-#, fuzzy
 msgid "Label set was not imported because the same label set already exists."
-msgstr "O conjunto de etiquetas não foi importado porque o mesmo conjunto de etiquetas já existe."
+msgstr ""
+"O conjunto de etiquetas não foi importado porque o mesmo conjunto de "
+"etiquetas já existe."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:232
 #: /var/lib/limesurvey-svn/subversion1x/admin/importlabel.php:337
-#, fuzzy, php-format
+#, php-format
 msgid "Existing LID: %s"
-msgstr "A editar resposta (ID %s)"
+msgstr "LID existente: %s"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/dumpdb.php:33
 msgid "Export database"
@@ -4726,22 +4695,18 @@ msgid "Question group:"
 msgstr "Grupo de perguntas:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:98
-#, fuzzy
 msgid "Copy subquestions?"
-msgstr "Copiar pergunta"
+msgstr "Copiar perguntas secundárias?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:101
-#, fuzzy
 msgid "Copy answer options?"
-msgstr "Editar as opções de resposta"
+msgstr "Copiar as opções das respostas?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:104
-#, fuzzy
 msgid "Copy advanced settings?"
-msgstr "Mostrar configurações avançadas"
+msgstr "Copiar configurações avançadas?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:107
-#, fuzzy
 msgid "Copy question"
 msgstr "Copiar pergunta"
 
@@ -4756,9 +4721,8 @@ msgid "Default answer for scale %s:"
 msgstr "Resposta por omissão para a escala %s:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:145
-#, fuzzy
 msgid "Default answer value:"
-msgstr "Idioma por omissão:"
+msgstr "Valor da resposta por omissão:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:154
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:190
@@ -4770,9 +4734,8 @@ msgid "Default value for option 'Other':"
 msgstr "Valor por omissão para a opção 'Outro':"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:190
-#, fuzzy
 msgid "Checked"
-msgstr "Verificar agora"
+msgstr "Marcado"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:214
 msgid "Use same default value across languages:"
@@ -4851,14 +4814,12 @@ msgid "...or import a question"
 msgstr "...ou importe uma pergunta"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:517
-#, fuzzy
 msgid "Select LimeSurvey question file (*.lsq/*.csv)"
-msgstr "Ficheiro de inquérito LimeSurvey (*.csv)"
+msgstr "Seleccione ficheiro de perguntas LimeSurvey (*.lsq/*.csv)"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:521
-#, fuzzy
 msgid "Convert resource links?"
-msgstr "Converter os endereços dos recursos?"
+msgstr "Converter endereços de recursos?"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/questionhandling.php:586
 #: /var/lib/limesurvey-svn/subversion1x/admin/questionhandling.php:621
@@ -4924,15 +4885,13 @@ msgstr "Email para {NAME} ({EMAIL}) falhou."
 #: /var/lib/limesurvey-svn/subversion1x/admin/usercontrol.php:108
 #: /var/lib/limesurvey-svn/subversion1x/admin/usercontrol.php:176
 #: /var/lib/limesurvey-svn/subversion1x/admin/usercontrol.php:277
-#, fuzzy
 msgid "Incorrect username and/or password!"
 msgstr "Nome de utilizador e/ou senha incorrectos!"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/common.php:189
 #: /var/lib/limesurvey-svn/subversion1x/admin/usercontrol.php:160
-#, fuzzy
 msgid "Logged in"
-msgstr "Sessão iniciada como:"
+msgstr "Sessão iniciada"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/usercontrol.php:161
 #: /var/lib/limesurvey-svn/subversion1x/admin/usercontrol.php:302
@@ -5297,7 +5256,6 @@ msgid "Set templates that this user may access"
 msgstr "Definir os modelos que este utilizador pode aceder"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/userrighthandling.php:142
-#, fuzzy
 msgid "Template name"
 msgstr "Nome do modelo"
 
@@ -5308,9 +5266,8 @@ msgid "Allowed"
 msgstr "Permitido"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/userrighthandling.php:145
-#, fuzzy
 msgid "Check or uncheck all items"
-msgstr "Verificar duplicados?"
+msgstr "Marcar ou desmarcar todos os itens"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/userrighthandling.php:283
 msgid "SuperAdministrator"
@@ -5351,14 +5308,12 @@ msgid "Set Parent successful."
 msgstr "Definição do nível superior bem sucedida."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/userrighthandling.php:399
-#, fuzzy
 msgid "User control"
 msgstr "Controle de utilizadores"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/userrighthandling.php:411
-#, fuzzy
 msgid "No of surveys"
-msgstr "Ir para o inquérito"
+msgstr "Nº de inquéritos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/userrighthandling.php:413
 msgid "Created by"
@@ -5623,7 +5578,7 @@ msgstr "EUC-KR Coreano"
 #: /var/lib/limesurvey-svn/subversion1x/admin/vvimport.php:37
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:74
 msgid "GB2312 Simplified Chinese"
-msgstr "GB2313 Chinês Simplificado"
+msgstr "GB2312 Chinês Simplificado"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/tokens.php:1636
 #: /var/lib/limesurvey-svn/subversion1x/admin/vvimport.php:38
@@ -5968,9 +5923,8 @@ msgid "Import question group"
 msgstr "Importar pergunta de grupo"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:77
-#, fuzzy
 msgid "Question group import summary"
-msgstr "Resumo da importação da pergunta"
+msgstr "Resumo da importação do grupo de perguntas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:83
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:75
@@ -5979,32 +5933,29 @@ msgid "Conditions"
 msgstr "Condições"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:90
-#, fuzzy
 msgid "Question group import is complete."
-msgstr "Importação de pergunta concluída."
+msgstr "Importação do grupo de perguntas concluída."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:91
-#, fuzzy
 msgid "Go to question group"
-msgstr "Importar pergunta de grupo"
+msgstr "Ir para o grupo de perguntas"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importgroup.php:255
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:310
-#, fuzzy
 msgid "You can't import a group which doesn't support at least the survey base language."
-msgstr "Não pode importar um grupo que não suporte o idioma-base do inquérito actual."
+msgstr ""
+"Não pode importar um grupo que não suporte pelo menos o idioma base do "
+"inquérito."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importgroup.php:906
 msgid "The languages of the imported group file must at least include the base language of this survey."
 msgstr "As linguagens do grupo de ficheiros importado tem de incluir no mínimo a linguagem base deste inquérito."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:55
-#, fuzzy
 msgid "Survey copy summary"
-msgstr "Sumário da importação do inquérito"
+msgstr "Sumário da cópia do inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:58
-#, fuzzy
 msgid "Survey import summary"
 msgstr "Sumário da importação do inquérito"
 
@@ -6015,22 +5966,20 @@ msgstr "Idiomas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:71
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:130
-#, fuzzy
 msgid "Default answers"
-msgstr "A apagar respostas"
+msgstr "Respostas por omissão"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:83
-#, fuzzy
 msgid "Not imported label sets"
 msgstr "Conjuntos de etiquetas não importados"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:83
-#, fuzzy
 msgid "(Label sets were not imported since you do not have the permission to create new label sets.)"
-msgstr "(Não foram importados novos conjuntos de etiquetas visto não ter permissões para criar novos conjuntos de etiquetas.)"
+msgstr ""
+"(Não foram importados novos conjuntos de etiquetas visto não ter permissões "
+"para criar novos conjuntos de etiquetas.)"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:85
-#, fuzzy
 msgid "Question attributes"
 msgstr "Atributos da pergunta"
 
@@ -6055,9 +6004,8 @@ msgid "quota language settings"
 msgstr "configurações da quota da linguagem"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:99
-#, fuzzy
 msgid "Copy of survey is completed."
-msgstr "A importação do inquérito está completa."
+msgstr "A cópia do inquérito está concluída."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:100
 #: /var/lib/limesurvey-svn/subversion1x/admin/importsurvey.php:104
@@ -6470,7 +6418,9 @@ msgstr "Num modelo standard as alterações não podem ser gravadas."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/templates.php:971
 msgid "You can't save changes because the template directory is not writable."
-msgstr "Você não pode gravar as alterações, porque não tem permissão de escrita no directório de modelos."
+msgstr ""
+"Você não pode gravar as alterações, porque não tem permissão de escrita no "
+"directório de modelos."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/templates.php:975
 msgid "Other Files:"
@@ -6521,9 +6471,10 @@ msgstr "Este grupo não contém nenhumas perguntas."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:104
 #: /var/lib/limesurvey-svn/subversion1x/admin/surveytable_functions.php:195
-#, fuzzy
 msgid "This question is a subquestion type question but has no configured subquestions."
-msgstr "Esta pergunta é do tipo de respostas múltiplas, mas não tem respostas definidas."
+msgstr ""
+"Esta pergunta é do tipo de pergunta secundária, mas não tem perguntas "
+"secundárias definidas."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:114
 #: /var/lib/limesurvey-svn/subversion1x/admin/surveytable_functions.php:205
@@ -6537,15 +6488,15 @@ msgstr "Esta pergunta não tem definido o 'tipo' de pergunta."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:134
 #: /var/lib/limesurvey-svn/subversion1x/admin/surveytable_functions.php:223
-#, fuzzy
 msgid "This question requires answers, but none are set."
-msgstr "Esta pergunta requer um conjunto de etiquetas, mas nenhum foi definido."
+msgstr "Esta pergunta requer respostas, mas nenhuma está definida."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:141
 #: /var/lib/limesurvey-svn/subversion1x/admin/surveytable_functions.php:231
-#, fuzzy
 msgid "This question requires a second answer set but none is set."
-msgstr "Esta pergunta requer um segundo conjunto de etiquetas, mas nenhum foi definido."
+msgstr ""
+"Esta pergunta requer um segundo conjunto de respostas, mas nenhum está "
+"definido."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:196
 #: /var/lib/limesurvey-svn/subversion1x/admin/surveytable_functions.php:288
@@ -6588,9 +6539,8 @@ msgid "Add or delete questions"
 msgstr "Adicionar ou apagar perguntas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:261
-#, fuzzy
 msgid "Add or delete subquestions or change their codes"
-msgstr "Adicionar ou apagar perguntas"
+msgstr "Adicionar ou apagar perguntas secundárias ou alterar os seus códigos"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:242
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:262
@@ -6599,20 +6549,17 @@ msgstr "Contudo, ainda pode:"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:242
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:262
-#, fuzzy
 msgid "Edit your questions code/title/text and advanced options"
-msgstr "Editar (alterar) os códigos, textos ou tipos das perguntas"
+msgstr "Edite os códigos/títulos/textos e opções avançadas das suas perguntas"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:242
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:262
-#, fuzzy
 msgid "Edit your group names or descriptions"
-msgstr "Modificar o nome ou a descrição do inquérito"
+msgstr "Edite os nomes dos grupos ou descrições"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:262
-#, fuzzy
 msgid "Add, remove or edit answer options"
-msgstr "Adicionar nova opção de resposta"
+msgstr "Adicionar, remover ou editar opção de resposta"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:242
 #: /var/lib/limesurvey-svn/subversion1x/admin/activate.php:262
@@ -6677,9 +6624,8 @@ msgstr "Administração de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:70
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:123
-#, fuzzy
 msgid "Export multiple label sets"
-msgstr "Exportar conjunto de etiquetas"
+msgstr "Exportar múltiplos conjuntos de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:74
 msgid "Labelsets"
@@ -6700,7 +6646,6 @@ msgstr "Por favor, seleccione..."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:93
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:157
-#, fuzzy
 msgid "Create or import new label set(s)"
 msgstr "Criar ou importar novo conjunto de etiquetas"
 
@@ -6709,23 +6654,20 @@ msgid "Show Help"
 msgstr "Mostrar ajuda"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:119
-#, fuzzy
 msgid "You have to select at least one label set."
-msgstr "Não seleccionou nenhum inquérito para apagar."
+msgstr "Tem de seleccionar pelo menos um conjunto de etiquetas."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:125
-#, fuzzy
 msgid "Please choose the label sets you want to export:"
-msgstr "Seleccione as colunas que deseja exportar."
+msgstr "Por favor, seleccione os conjuntos de etiquetas que deseja exportar:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:125
 msgid "(Select multiple label sets by using the Ctrl key)"
 msgstr "(Seleccione múltiplas etiquetas usando a tecla Ctrl)"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:137
-#, fuzzy
 msgid "Export selected label sets"
-msgstr "Apagar conjunto de etiquetas"
+msgstr "Exportar conjuntos de etiquetas seleccionados"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:157
 msgid "Create New Label Set"
@@ -6765,18 +6707,16 @@ msgstr "Actualizar"
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:216
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:219
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:233
-#, fuzzy
 msgid "Import label set(s)"
-msgstr "Importar conjunto de etiquetas"
+msgstr "Importar conjunto(s) de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:222
 msgid "Select label set file (*.lsl,*.csv):"
 msgstr "Seleccione o ficheiro de etiquetas (*.lsl,*.csv):"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:226
-#, fuzzy
 msgid "Don't import if label set already exists:"
-msgstr "O conjunto de etiquetas não foi importado porque o mesmo conjunto de etiquetas já existe."
+msgstr "Não importar se o conjunto de etiquetas já existe:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:230
 #: /var/lib/limesurvey-svn/subversion1x/admin/questiongrouphandling.php:72
@@ -6796,9 +6736,8 @@ msgid "Delete label set"
 msgstr "Apagar conjunto de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:261
-#, fuzzy
 msgid "Export this label set"
-msgstr "Exportar conjunto de etiquetas"
+msgstr "Exportar este conjunto de etiquetas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/labels.php:264
 msgid "Close Window"
@@ -7174,9 +7113,8 @@ msgid "All token entries have been deleted."
 msgstr "Todos os códigos foram apagados."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:744
-#, fuzzy
 msgid "Reset token invitation status"
-msgstr "Estado do convite:"
+msgstr "Redefinir o estado de convite dos tokens"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:745
 msgid "All token entries have been set to 'Not invited'."
@@ -7203,14 +7141,12 @@ msgid "Set all entries to 'No invitation sent'."
 msgstr "Definir todos os registos com 'Convite Não Enviado'."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:769
-#, fuzzy
 msgid "Are you sure you want to delete all unique token strings?"
-msgstr "Tem certeza que deseja excluir todos os números com código único?"
+msgstr "Tem a certeza que deseja apagar todos os tokens de caracteres únicos?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:769
-#, fuzzy
 msgid "Delete all unique token strings"
-msgstr "Apagar todos os números com código único"
+msgstr "Apagar todos os tokens de caracteres únicos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:771
 msgid "Are you really sure you want to delete ALL token entries?"
@@ -7320,9 +7256,8 @@ msgid "Invalid email address:"
 msgstr "Endereço de email inválido:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1023
-#, fuzzy
 msgid "This participant opted out of this survey."
-msgstr "Obrigado por se ter registado para participar neste inquérito."
+msgstr "Este participante optou por ser excluído deste inquérito."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1049
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1051
@@ -7358,14 +7293,12 @@ msgstr "Enviar lembrete por email para este registo"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1114
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1116
-#, fuzzy
 msgid "Delete the selected entries"
-msgstr "Apagar todos os códigos"
+msgstr "Apagar as entradas seleccionadas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1118
-#, fuzzy
 msgid "Are you sure you want to delete the selected entries?"
-msgstr "Tem a certeza que quer apagar este registo?"
+msgstr "Tem a certeza que quer apagar as entradas seleccionadas?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1122
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1124
@@ -7453,9 +7386,8 @@ msgstr "A enviar para o código ID"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1311
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1604
-#, fuzzy
 msgid "Sending to Token IDs"
-msgstr "A enviar para o código ID"
+msgstr "A enviar para os Token ID"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/tokens.php:775
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1412
@@ -7490,23 +7422,22 @@ msgid "There are {EMAILCOUNT} emails still to be sent."
 msgstr "Existem {EMAILCOUNT} emails que ainda não foram enviados."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1468
-#, fuzzy
 msgid "There were no eligible emails to send. This will be because none satisfied the criteria of:"
-msgstr "Não houve emails válidos para enviar. Nenhum satisfez os critérios - destinatários terem um endereço de email, tendo sido enviado um convite, mas não tendo ainda preenchido o inquérito."
+msgstr ""
+"Não houve emails válidos para enviar. Isto aconteceu porque nenhum satisfez "
+"os critérios:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1469
-#, fuzzy
 msgid "having a valid email address"
-msgstr "Endereço de email inválido:"
+msgstr "ter um endereço de email válido"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1470
 msgid "not having been sent an invitation already"
 msgstr "Não foram enviados convites ainda"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1471
-#, fuzzy
 msgid "having already completed the survey"
-msgstr "Você já completou este inquérito."
+msgstr "tendo já completado o inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1472
 msgid "having a token"
@@ -7518,19 +7449,16 @@ msgstr "Email de lembrete:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1545
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1558
-#, fuzzy
 msgid "Send reminder to token ID(s):"
-msgstr "A enviar para o código ID"
+msgstr "Enviar lembretes para token(s) ID(s):"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1549
-#, fuzzy
 msgid "Sending to:"
-msgstr "A enviar para o código ID"
+msgstr "A enviar para:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1550
-#, fuzzy
 msgid "All token entries to whom a reminder email would apply"
-msgstr "Todos os códigos foram apagados."
+msgstr "Todas as entradas token para quem um e-mail de lembrete seria aplicável"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1553
 msgid "Start at Token ID:"
@@ -7570,16 +7498,17 @@ msgstr "Criar códigos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1826
 msgid "Clicking yes will generate tokens for all those in this token list that have not been issued one. Is this OK?"
-msgstr "Clicando em 'Sim' irá gerar códigos para todos nesta lista de códigos que ainda não tenham um. Está correcto?"
+msgstr ""
+"Clicando em 'Sim' irá gerar códigos para todos nesta lista de códigos que "
+"ainda não tenham um. Está correcto?"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1875
 msgid "{TOKENCOUNT} tokens have been created"
 msgstr "Foram criados {TOKENCOUNT} códigos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1895
-#, fuzzy
 msgid "Marked tokens have been deleted."
-msgstr "Todos os códigos foram apagados."
+msgstr "Os tokens marcados foram excluídos."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1897
 msgid "No tokens were selected for deletion"
@@ -7633,9 +7562,8 @@ msgid "Update token attribute descriptions"
 msgstr "Actualizar descrições dos atributos dos códigos"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1982
-#, fuzzy
 msgid "Updating token attribute descriptions failed:"
-msgstr "Actualização das descrições dos códigos falhou:"
+msgstr "A actualização das descrições do atributo do token falhou:"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1983
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1988
@@ -7645,18 +7573,16 @@ msgid "Back to attribute field management."
 msgstr "Voltar à gestão de campos de atributos."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:1987
-#, fuzzy
 msgid "Token attribute descriptions were successfully updated."
-msgstr "Descrições dos códigos foram actualizadas com sucesso."
+msgstr "As descrições do atributo do token foram actualizadas com sucesso."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:2015
 msgid "Update token attributes"
 msgstr "Actualizar atributos do código"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:2019
-#, fuzzy
 msgid "Adding attribute fields failed:"
-msgstr "Adição de campos falhou:"
+msgstr "A adição de campos de atributos falhou:"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/userrighthandling.php:617
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:2024
@@ -7737,9 +7663,8 @@ msgid "New token was added."
 msgstr "Foi adicionado um novo código"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:2294
-#, fuzzy
 msgid "Add another token entry"
-msgstr "Adicionar um novo código"
+msgstr "Adicionar uma nova entrada token"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/tokens.php:2312
 msgid "Upload CSV File"
@@ -8332,9 +8257,8 @@ msgstr "Todas as definições dos inquéritos cumprem os standards de consistên
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/dbchecker.php:184
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:218
-#, fuzzy
 msgid "The following survey language settings should be deleted"
-msgstr "Os seguintes inquéritos devem ser apagados"
+msgstr "As seguintes configurações de idioma do inquérito devem ser excluídas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:220
 #, php-format
@@ -8343,9 +8267,10 @@ msgstr "SLID `%s`porque falta o inquérito"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/dbchecker.php:219
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:226
-#, fuzzy
 msgid "All survey language settings meet consistency standards"
-msgstr "Todas as definições dos inquéritos cumprem os standards de consistência"
+msgstr ""
+"Todas as configurações de idioma do inquérito cumprem os standards de "
+"consistência"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:252
 msgid "The following questions should be deleted"
@@ -8361,9 +8286,9 @@ msgid "The following groups should be deleted"
 msgstr "Os seguintes grupos devem ser apagados"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:272
-#, fuzzy, php-format
+#, php-format
 msgid "GID `%s` because there is no matching survey."
-msgstr "Não existe inquérito correspondente."
+msgstr "GID `%s` porque não existe um inquérito correspondente."
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/dbchecker.php:240
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:277
@@ -8475,14 +8400,12 @@ msgid "Deleting Survey ID"
 msgstr "A apagar inquérito com ID"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:594
-#, fuzzy
 msgid "Deleting survey language settings"
-msgstr "configurações da quota da linguagem"
+msgstr "A excluir configurações de idioma do inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/integritycheck.php:596
-#, fuzzy
 msgid "Deleting survey language setting"
-msgstr "configurações da quota da linguagem"
+msgstr "A excluir configuração de idioma do inquérito"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/assessments.php:75
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importsurvey.php:650
@@ -9120,9 +9043,11 @@ msgid "Update server busy"
 msgstr "Servidor de actualização ocupado"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/update/updater.php:167
-#, fuzzy
 msgid "The update server seems to be currently busy. This happens most likely if the necessary update files for a new version are prepared."
-msgstr "O servidor de actualizações parece estar ocupado de momento. Isto acontece mais provavelmente se os ficheiros de actualização, necessários para uma nova versão, estão preparados."
+msgstr ""
+"O servidor de actualizações parece estar ocupado de momento. Isto acontece "
+"mais frequentemente se os ficheiros de actualização necessários para uma "
+"nova versão estão preparados."
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/update/updater.php:168
 msgid "Please be patient and try again in about 10 minutes."
@@ -9709,9 +9634,8 @@ msgid "Save question group"
 msgstr "Gravar grupo de perguntas"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questiongrouphandling.php:70
-#, fuzzy
 msgid "Select question group file (*.lsg/*.csv):"
-msgstr "Ficheiro de grupos LimeSurvey (*.csv)"
+msgstr "Seleccione ficheiro de grupo de perguntas (*.lsg/*.csv):"
 
 #: /var/lib/limesurvey-svn/subversion1x/admin/questiongrouphandling.php:129
 msgid "Edit Group"
@@ -10660,9 +10584,10 @@ msgstr "Neste campo só se aceitam números"
 #: /var/lib/limesurvey-svn/subversion1x/qanda.php:5940
 #: /var/lib/limesurvey-svn/subversion1x/qanda.php:6093
 #: /var/lib/limesurvey-svn/subversion1x/qanda.php:6742
-#, fuzzy
 msgid "Error: There are no answer options for this question and/or they don't exist in this language."
-msgstr "Erro: o conjunto de etiquetas utilizado nesta pergunta não está disponível neste idioma."
+msgstr ""
+"Erro: Não existem opções de resposta para esta pergunta e/ou não existem "
+"neste idioma."
 
 #: /var/lib/limesurvey-svn/subversion1x/qanda.php:6087
 msgid "Error: There are no answers defined for this question."
@@ -10692,9 +10617,8 @@ msgid "Survey Administrator"
 msgstr "Administrador do inquérito"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:341
-#, fuzzy
 msgid "Array Dual Scale"
-msgstr "Grelha (Etiquetas Flexíveis) Escala Dupla"
+msgstr "Matriz de dupla escala"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:346
 msgid "5 Point Choice"
@@ -10702,37 +10626,35 @@ msgstr "Escolher entre 5 Pontos"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:351
 msgid "Array (5 Point Choice)"
-msgstr "Grelha (Escolher entre 5 Pontos)"
+msgstr "Matriz (Escolher entre 5 Pontos)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:356
 msgid "Array (10 Point Choice)"
-msgstr "Grelha (Escolher entre 10 Pontos)"
+msgstr "Matriz (Escolher entre 10 Pontos)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:361
 msgid "Array (Yes/No/Uncertain)"
-msgstr "Grelha (Sim/Não/Incerto)"
+msgstr "Matriz (Sim/Não/Incerto)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:366
 msgid "Date"
 msgstr "Data"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:371
-#, fuzzy
 msgid "Array (Increase/Same/Decrease)"
-msgstr "Grelha (Aumentar, Manter, Reduzir)"
+msgstr "Matriz (Aumentar/Manter/Reduzir)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:376
 msgid "Array"
-msgstr "Grelha"
+msgstr "Matriz"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:381
 msgid "Gender"
 msgstr "Sexo"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:386
-#, fuzzy
 msgid "Array by column"
-msgstr "Mostrar colunas"
+msgstr "Matriz por coluna"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:391
 msgid "Language Switch"
@@ -10755,7 +10677,6 @@ msgid "Numerical Input"
 msgstr "Entrada numérica"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:416
-#, fuzzy
 msgid "List with comment"
 msgstr "Lista com comentário"
 
@@ -10792,56 +10713,46 @@ msgid "List (Dropdown)"
 msgstr "Lista de Selecção ('Dropdown')"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:466
-#, fuzzy
 msgid "Array (Numbers)"
-msgstr "Grelha (Etiquetas Flexíveis) (Números)"
+msgstr "Matriz (Números)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:471
-#, fuzzy
 msgid "Array (Texts)"
-msgstr "Grelha (Etiquetas Flexíveis)"
+msgstr "Matriz (Textos)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2271
-#, fuzzy
 msgid "Date submitted"
 msgstr "Data de submissão"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2287
-#, fuzzy
 msgid "Last page"
-msgstr "Sobrenome"
+msgstr "Última página"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2326
-#, fuzzy
 msgid "Date last action"
 msgstr "Data da última acção"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2338
-#, fuzzy
 msgid "Date started"
 msgstr "Data de início"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2354
-#, fuzzy
 msgid "IP address"
 msgstr "Endereço IP"
 
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1833
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:2107
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2365
-#, fuzzy
 msgid "Referrer URL"
 msgstr "URL de referência"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2538
-#, fuzzy
 msgid "Scale 1"
-msgstr "Escala"
+msgstr "Escala 1"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2552
-#, fuzzy
 msgid "Scale 2"
-msgstr "Escala"
+msgstr "Escala 2"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2580
 #, php-format
@@ -10849,7 +10760,6 @@ msgid "Rank %s"
 msgstr "Classificação %s"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:2646
-#, fuzzy
 msgid "Other comment"
 msgstr "Outro comentário"
 
@@ -11326,7 +11236,9 @@ msgstr "Etiqueta para a opção 'Outro:'"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:3825
 msgid "Insert a page break before this question in printable view by setting this to Yes."
-msgstr "Inserir uma quebra de página antes desta pergunta no modo de vista de impressão definindo isto para Sim."
+msgstr ""
+"Inserir uma quebra de página antes desta pergunta no modo de vista de "
+"impressão definindo isto para Sim."
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:3826
 msgid "Insert page break in printable view"
@@ -11362,9 +11274,8 @@ msgid "Set the number of slots available to rank the available answers. Note: Th
 msgstr "Marque o número de pontos acessiveis para classificar as respostas existentes. Nota: Estas configurações não podem ser alteradas depois do inquérito ser activado."
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:3866
-#, fuzzy
 msgid "Ranking slots"
-msgstr "Hierarquizar"
+msgstr "Posições"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:3870
 #: /var/lib/limesurvey-svn/subversion1x/common.php:3881
@@ -11526,31 +11437,29 @@ msgstr "Desactivar o botão Seguinte até que o tempo limite expire"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4009
 msgid "Time limit disable next"
-msgstr "O tempo limite desactiva o Seguinte"
+msgstr "O tempo limite desactiva o botão Seguinte"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4018
-#, fuzzy
 msgid "Disable the prev button until the time limit expires"
-msgstr "Desactivar o botão Seguinte até que o tempo limite expire"
+msgstr "Desactivar o botão Anterior até que o tempo limite expire"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4019
-#, fuzzy
 msgid "Time limit disable prev"
-msgstr "O tempo limite desactiva o Seguinte"
+msgstr "O tempo limite desactiva o botão Anterior"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4026
 msgid "The text message that displays in the countdown timer during the countdown"
 msgstr "A mensagem que aparece no contador de contagem decrescente durante a contagem"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4027
-#, fuzzy
 msgid "Time limit countdown message"
-msgstr "Mensagem de aviso do tempo limite"
+msgstr "Mensagem do contador do tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4034
-#, fuzzy
 msgid "CSS Style for the message that displays in the countdown timer during the countdown"
-msgstr "Estilo CSS para o contador do tempo limite"
+msgstr ""
+"Estilo CSS para a mensagem que exibe o temporizador durante a contagem "
+"regressiva"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4035
 msgid "Time limit timer CSS style"
@@ -11561,9 +11470,8 @@ msgid "Display the 'time limit expiry message' for this many seconds before perf
 msgstr "Mostra a  'mensagem de tempo expirado 'estes segundos antes de efectuar a acção 'tempo limite atingido' omissão  1 segundo se deixado em branco)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4043
-#, fuzzy
 msgid "Time limit expiry message display time"
-msgstr "Atraso da mensagem de expiração do tempo limite"
+msgstr "Tempo de apresentação da mensagem de expiração do tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4050
 msgid "The message to display when the time limit has expired (a default message will display if this setting is left blank)"
@@ -11574,9 +11482,8 @@ msgid "Time limit expiry message"
 msgstr "Mensagem de expiração de tempo"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4058
-#, fuzzy
 msgid "CSS style for the 'time limit expiry message'"
-msgstr "Estilo CSS para a mensagem do tempo limite"
+msgstr "Estilo CSS para a 'Mensagem de expiração de tempo'"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4059
 msgid "Time limit message CSS style"
@@ -11587,74 +11494,69 @@ msgid "Display a 'time limit warning' when there are this many seconds remaining
 msgstr "Mostra um  'aviso de tempo limite' quando falterem estes segundos no contador (o aviso não será mostrado se deixar em branco))"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4067
-#, fuzzy
 msgid "1st Time limit warning message timer"
-msgstr "Contador da mensagem de aviso do tempo limite"
+msgstr "1º temporizador da mensagem de aviso do tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4074
 msgid "The 'time limit warning' will stay visible for this many seconds (will not turn off if this setting is left blank)"
 msgstr "O  'aviso de tempo limite' ficará visivel estes segundos (não se desligará se deixar em branco)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4075
-#, fuzzy
 msgid "1st Time limit warning message display time"
-msgstr "Tempo de apresentação da mensagem de aviso do tempo limite"
+msgstr ""
+"Tempo de apresentação do 1º temporizador da mensagem de aviso do tempo "
+"limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4082
 msgid "The message to display as a 'time limit warning' (a default warning will display if this is left blank)"
 msgstr "Mensagem a mostrar como 'aviso de tempo limite' (aparecerá um aviso pré-definido se deixar em branco)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4083
-#, fuzzy
 msgid "1st Time limit warning message"
-msgstr "Mensagem de aviso do tempo limite"
+msgstr "Mensagem do 1º aviso de tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4090
-#, fuzzy
 msgid "CSS style used when the 'time limit warning' message is displayed"
-msgstr "Estilo CSS para a mensagem do tempo limite"
+msgstr ""
+"Estilo CSS utilizado quando é exibida a mensagem de 'aviso de tempo limite'"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4091
-#, fuzzy
 msgid "1st Time limit warning CSS style"
-msgstr "Estilo CSS da mensagem de aviso do limite de tempo"
+msgstr "Estilo CSS da 1ª mensagem de aviso de limite de tempo"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4098
 msgid "Display the 2nd 'time limit warning' when there are this many seconds remaining in the countdown (warning will not display if left blank)"
 msgstr "Mostra o segundo  'aviso de tempo limite' quando faltarem estes segundos (o aviso não aparecerá se deixar em branco)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4099
-#, fuzzy
 msgid "2nd Time limit warning message timer"
-msgstr "Contador da mensagem de aviso do tempo limite"
+msgstr "2º temporizador da mensagem de aviso do tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4106
 msgid "The 2nd 'time limit warning' will stay visible for this many seconds (will not turn off if this setting is left blank)"
 msgstr "O segundo  'aviso de tempo limite' ficará visivel estes segundos (não se desliga se deixar em branco)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4107
-#, fuzzy
 msgid "2nd Time limit display time"
-msgstr "Tempo de apresentação da mensagem de aviso do tempo limite"
+msgstr "Tempo de apresentação da 2ª mensagem de aviso de tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4114
 msgid "The 2nd message to display as a 'time limit warning' (a default warning will display if this is left blank)"
 msgstr "A segunda  mensagem a mostrar como 'aviso de tempo limite' (aparecerá um aviso pré-definido se deixar em branco)"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4115
-#, fuzzy
 msgid "2nd Time limit warning message"
-msgstr "Mensagem de aviso do tempo limite"
+msgstr "Mensagem do 2º aviso de tempo limite"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4122
-#, fuzzy
 msgid "CSS style used when the 2nd 'time limit warning' message is displayed"
-msgstr "Estilo CSS para a mensagem do tempo limite"
+msgstr ""
+"Estilo CSS utilizado quando é exibida a 2ª mensagem de 'aviso de tempo "
+"limite'"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4123
-#, fuzzy
 msgid "2nd Time Limit Warning CSS Style"
-msgstr "Estilo CSS da mensagem de aviso do limite de tempo"
+msgstr "Estilo CSS da 2ª mensagem de aviso de limite de tempo"
 
 #: /var/lib/limesurvey-svn/subversion1x/common.php:4290
 msgid "Version"
@@ -11735,43 +11637,48 @@ msgid "Generating summaries ..."
 msgstr "A gerar sumários..."
 
 #: /var/lib/limesurvey-svn/subversion1x/optout.php:47
-#, fuzzy
 msgid "This survey does not seem to exist."
-msgstr "Este inquérito ainda não está activo."
+msgstr "Este inquérito não parece existir."
 
 #: /var/lib/limesurvey-svn/subversion1x/optout.php:56
-#, fuzzy
 msgid "You are not a participant in this survey."
-msgstr "Não lhe é permitido activar este inquérito!"
+msgstr "Você não é um participante deste inquérito."
 
 #: /var/lib/limesurvey-svn/subversion1x/optout.php:62
-#, fuzzy
 msgid "You have been successfully removed from this survey."
-msgstr "Não foram definidas quotas para este inquérito"
+msgstr "Você foi removido com sucesso deste inquérito."
 
 #: /var/lib/limesurvey-svn/subversion1x/optout.php:66
-#, fuzzy
 msgid "You have been already removed from this survey."
-msgstr "Você já completou este inquérito."
+msgstr "Você já tinha sido removido deste inquérito."
 
 #~ msgid "All records"
 #~ msgstr "Todos os registos"
+
 #~ msgid "Incomplete records only"
 #~ msgstr "Apenas registos incompletos"
+
 #~ msgid "OR between"
 #~ msgstr "OU entre"
+
 #~ msgid "Select CSV File:"
 #~ msgstr "Seleccionar ficheiro CSV:"
+
 #~ msgid "1. scale"
 #~ msgstr "1. escala"
+
 #~ msgid "2. scale"
 #~ msgstr "2. escala"
+
 #~ msgid "Data View Control"
 #~ msgstr "Controle de dados"
+
 #~ msgid "Completed Records Only"
 #~ msgstr "Apenas registos completos"
+
 #~ msgid "All Records"
 #~ msgstr "Todos os registos"
+
 #~ msgid "Incomplete Records Only"
 #~ msgstr "Apenas registos incompletos"
 
@@ -11782,90 +11689,125 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "Não pode importar uma pergunta que não suporte o actual idioma base do "
 #~ "inquérito"
+
 #~ msgid "Label Sets"
 #~ msgstr "Conjunto de etiquetas"
+
 #~ msgid "Survey ID"
 #~ msgstr "ID do inquérito"
+
 #~ msgid "Full Responses"
 #~ msgstr "Respostas completas"
+
 #~ msgid "Partial Responses"
 #~ msgstr "Respostas parciais"
+
 #~ msgid "Total Responses"
 #~ msgstr "Total de respostas"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:73
 #~ msgid "Closed-access"
 #~ msgstr "Acesso restrito"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:77
 #~ msgid "Open-access"
 #~ msgstr "Acesso livre"
+
 #~ msgid "You need to choose a label set for this question!"
 #~ msgstr "Precisa de seleccionar um conjunto de etiquetas para esta pergunta!"
+
 #~ msgid "Edit/Add Label Sets"
 #~ msgstr "Editar/Adicionar conjuntos de etiquetas"
+
 #~ msgid "Second Label Set"
 #~ msgstr "Conjuntos de Etiquetas Secundário"
+
 #~ msgid "You need to choose a second label set for this question!"
 #~ msgstr ""
 #~ "Precisa de seleccionar um conjunto de etiquetas secundário para esta "
 #~ "pergunta!"
+
 #~ msgid "Edit/Add second Label Sets"
 #~ msgstr "Editar/Adicionar segundo conjunto de etiquetas"
+
 #~ msgid "Move answer option up"
 #~ msgstr "Mover opção da resposta para cima"
+
 #~ msgid "Move answer option down"
 #~ msgstr "Mover opção da resposta para baixo"
+
 #~ msgid "Select CSV/SQL File:"
 #~ msgstr "Seleccione ficheiro CSV/SQL:"
+
 #~ msgid "Question could not be deleted"
 #~ msgstr "Não foi possível apagar a pergunta"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:649
 #~ msgid ""
 #~ "Error adding answer: You can't use the same answer code more than once."
 #~ msgstr ""
 #~ "Erro ao adicionar resposta: Não pode utilizar o mesmo código de resposta "
 #~ "mais de uma vez."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:580
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:588
 #~ msgid "Failed to insert answer"
 #~ msgstr "Inserção de resposta falhou"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:592
 #~ msgid "Invalid or empty answer code supplied"
 #~ msgstr "Código de resposta fornecido inválido ou vazio"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:707
 #~ msgid "Failed to make answer not default"
 #~ msgstr "Tornar resposta como não sendo por omissão falhou"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:721
 #~ msgid "Failed to make answer default"
 #~ msgstr "Tornar resposta por omissão falhou"
+
 #~ msgid "No LID has been provided. Cannot dump label set."
 #~ msgstr ""
 #~ "Não foi indicado o LID. Não é possível exportar o conjunto de etiquetas."
+
 #~ msgid "Return to Labels Admin"
 #~ msgstr "Voltar para a administração de etiquetas"
+
 #~ msgid "Label set:"
 #~ msgstr "Conjunto de etiquetas:"
+
 #~ msgid "Second Label Set:"
 #~ msgstr "Conjunto de etiquetas secundárias:"
+
 #~ msgid "Copy Answers?"
 #~ msgstr "Copiar respostas?"
+
 #~ msgid "Copy Attributes?"
 #~ msgstr "Copiar atributos?"
+
 #~ msgid "Select CSV File"
 #~ msgstr "Seleccione ficheiro CSV"
+
 #~ msgid "Save Settings"
 #~ msgstr "Gravar configurações"
+
 #~ msgid "(Sent by email)"
 #~ msgstr "(Enviado por email)"
+
 #~ msgid "No SID (Survey) has been provided. Cannot import group."
 #~ msgstr ""
 #~ "Não foi indicado um SID (inquérito). Não foi possível importar o grupo."
+
 #~ msgid "Reading file..."
 #~ msgstr "A ler ficheiro..."
+
 #~ msgid "This file is not a LimeSurvey group file. Import failed."
 #~ msgstr "Este ficheiro não é de um grupo LimeSurvey. A importação falhou."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importgroup.php:566
 #~ msgid "Import partially successful."
 #~ msgstr "Importação parcialmente bem sucedida."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importgroup.php:567
 #~ msgid ""
 #~ "The following languages in this group were not imported since the survey "
@@ -11873,16 +11815,22 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "Os seguintes idiomas neste grupo não foram importados, porque o inquérito "
 #~ "não contém estes idiomas: "
+
 #~ msgid "Group Import Summary"
 #~ msgstr "Resumo da importação do grupo"
+
 #~ msgid "Groups:"
 #~ msgstr "Grupos:"
+
 #~ msgid "Question Attributes: "
 #~ msgstr "Atributos da pergunta: "
+
 #~ msgid "Import of group is completed."
 #~ msgstr "Importação do grupo concluída."
+
 #~ msgid "Go to group"
 #~ msgstr "Ir para o grupo"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importsurvey.php:742
 #~ msgid ""
 #~ "Question \"%s - %s\" was NOT imported because the question type is "
@@ -11890,6 +11838,7 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "A pergunta \"%s - %s\" NÃO foi importada porque o tipo da pergunta é "
 #~ "desconhecido."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importsurvey.php:748
 #~ msgid ""
 #~ "Question \"%s - %s\" was imported but the type was set to '%s' because it "
@@ -11897,10 +11846,13 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "A pergunta \"%s - %s\" foi importada, mas o tipo foi alterado para '%s' "
 #~ "porque é o mais semelhante."
+
 #~ msgid "Condition for %d skipped (%d does not exist)"
 #~ msgstr "A condição para %d foi ignorada (%d não existe)"
+
 #~ msgid "No QID has been provided. Cannot dump question."
 #~ msgstr "Não foi indicado um QID. Não é possível exportar a pergunta."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:143
 #~ msgid ""
 #~ "The labelset used in this question does not exists or is missing a "
@@ -11908,11 +11860,14 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "O conjunto de etiquetas utilizado nesta pergunta não existe ou não está "
 #~ "traduzido."
+
 #~ msgid "Add or remove answers to Multiple Answer questions"
 #~ msgstr "Adicionar ou remover respostas a perguntas de Resposta Múltipla"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:242
 #~ msgid "Edit (change) your group names"
 #~ msgstr "Editar (alterar) os nomes dos grupos"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/activate.php:242
 #~ msgid ""
 #~ "Add, Remove or Edit pre-defined question answers (except for Multi-answer "
@@ -11920,14 +11875,17 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "Adicionar, remover ou editar as respostas a perguntas pré-definidas "
 #~ "(excepto para perguntas de resposta múltipla)"
+
 #~ msgid "Add new label set"
 #~ msgstr "Adicionar novo conjunto de etiquetas"
+
 #~ msgid ""
 #~ "You cannot change codes, add or delete entries in this label set because "
 #~ "it is being used by an active survey."
 #~ msgstr ""
 #~ "Não pode mudar os códigos, adicionar ou apagar entradas neste conjunto de "
 #~ "etiquetas porque estão a ser utilizadas por um inquérito activo."
+
 #~ msgid ""
 #~ "Some surveys currently use this label set. Modifying the codes, adding or "
 #~ "deleting entries to this label set may produce undesired results in other "
@@ -11936,16 +11894,20 @@ msgstr "Você já completou este inquérito."
 #~ "Alguns inquéritos estão a utilizar este conjunto de etiquetas. Modificar "
 #~ "os códigos, adicionar ou apagar entradas neste conjunto de etiquetas "
 #~ "poderá produzir resultados indesejados."
+
 #~ msgid ""
 #~ "Couldn't Delete Label Set - There are questions that rely on this. You "
 #~ "must delete these questions first."
 #~ msgstr ""
 #~ "Não foi possível apagar o conjunto de etiquetas - Existem perguntas que "
 #~ "dependem delas. Deve apagar estas perguntas primeiro."
+
 #~ msgid "Insert of Label Set failed"
 #~ msgstr "Falha na inserção de conjunto de etiquetas"
+
 #~ msgid "Clear token invites"
 #~ msgstr "Limpar códigos de convites"
+
 #~ msgid ""
 #~ "There were no eligible emails to send. This will be because none "
 #~ "satisfied the criteria of - having an email address, not having been sent "
@@ -11955,16 +11917,22 @@ msgstr "Você já completou este inquérito."
 #~ "Não houve emails ilegíveis para enviar. Isto deve-se ao facto de nenhum "
 #~ "satisfazer os critérios de - ter um endereço de email, ainda não ter sido "
 #~ "enviado um convite, tendo já completado o inquérito e possuindo um código."
+
 #~ msgid "Stop at Token ID:"
 #~ msgstr "Terminar no código ID:"
+
 #~ msgid "Delete token"
 #~ msgstr "Apagar código"
+
 #~ msgid "Save attribute descriptions"
 #~ msgstr "Gravar descrições dos atributos"
+
 #~ msgid "Added New Token"
 #~ msgstr "Novo Código Adicionado"
+
 #~ msgid "Other text"
 #~ msgstr "Outro texto"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/qanda.php:2585
 # D:\xampp\xampp\htdocs\phpsurveyor/qanda.php:2692
 #~ msgid ""
@@ -11973,168 +11941,236 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "Erro: o conjunto de etiquetas utilizado nesta pergunta não está "
 #~ "disponível neste idioma e/ou não existe."
+
 #~ msgid "Create or Import New Survey"
 #~ msgstr "Criar ou importar novo inquérito"
+
 #~ msgid "Array (Flexible Labels) by Column"
 #~ msgstr "Grelha (Etiquetas Flexíveis) por Coluna"
+
 #~ msgid "List (Flexible Labels) (Dropdown)"
 #~ msgstr "Lista de Selecção (Etiquetas Flexíveis) (´Dropdown´)"
+
 #~ msgid "List (Flexible Labels) (Radio)"
 #~ msgstr "Lista (Etiquetas Flexíveis) (Rádio)"
+
 #~ msgid "Array (Multi Flexible) (Text)"
 #~ msgstr "Grelha (Etiquetas Flexíveis) (Texto)"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/classes/core/surveytranslator.php:140
 #~ msgid "Preset"
 #~ msgstr "Definição prévia"
+
 #~ msgid "Message to display when time limit has expired"
 #~ msgstr "Mensagem a mostrar quando expira o tempo limite"
+
 #~ msgid "How long to display the time limit expiry message (in seconds)"
 #~ msgstr ""
 #~ "Durante quanto tempo mostrar a mensagem de expiração de tempo (em "
 #~ "segundos)"
+
 #~ msgid ""
 #~ "Time until time limit expiry when time limit warning message is displayed "
 #~ "(in seconds)"
 #~ msgstr ""
 #~ "Tempo até ao termo do tempo limite quando a mensagem de aviso do tempo "
 #~ "limite é exibida (em segundos)"
+
 #~ msgid "How long the time limit warning message will display (in seconds)"
 #~ msgstr ""
 #~ "Durante quanto tempo será exibida a mensagem de aviso do tempo limite (em "
 #~ "segundos)"
+
 #~ msgid "Message to display warning that time limit is about to expire"
 #~ msgstr ""
 #~ "Mensagem para apresentar o aviso de que o tempo limite está prestes a "
 #~ "expirar "
+
 #~ msgid "Field summary for"
 #~ msgstr "Campo de sumário para"
+
 #~ msgid "Non completed"
 #~ msgstr "Não completo"
+
 #~ msgid "Import Group"
 #~ msgstr "Importar grupo"
+
 #~ msgid "You need to add groups"
 #~ msgstr "Tem de adicionar grupos"
+
 #~ msgid "(This field is mandatory.)"
 #~ msgstr "(Este campo é obrigatório.)"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:94
 #~ msgid "Logging in..."
 #~ msgstr "A iniciar sessão..."
+
 #~ msgid "Welcome {NAME}"
 #~ msgstr "Bem-vindo(a) {NAME}"
+
 #~ msgid "Survey Submitted"
 #~ msgstr "Inquérito submetido"
+
 #~ msgid "Condition"
 #~ msgstr "Condição"
+
 #~ msgid "Export result to a SPSS/PASW command file"
 #~ msgstr "Exportar resultado para um ficheiro de comandos SPSS/PASW"
+
 #~ msgid ""
 #~ "Excludes all other options if a certain answer is selected - just enter "
 #~ "the answer code."
 #~ msgstr ""
 #~ "Exclui todas as outras opções se uma determinada resposta é seleccionada "
 #~ "- basta digitar o código de resposta."
+
 #~ msgid "Survey Saved"
 #~ msgstr "Inquérito gravado"
+
 #~ msgid ""
 #~ "You've selected the \"other\" answer for question \"%s\". Please also "
 #~ "fill in the accompanying \"other comment\" field."
 #~ msgstr ""
 #~ "Você seleccionou a \"outra\" resposta para a pergunta \"%s\". Por favor, "
 #~ "preencha também o campo \"outro comentário\"."
+
 #~ msgid "Don't consider NON completed responses"
 #~ msgstr "Não considerar respostas incompletas"
+
 #~ msgid "Show start.."
 #~ msgstr "Mostrar início..."
+
 #~ msgid "to question {QUESTION}, you answered {ANSWER}"
 #~ msgstr "para a pergunta {QUESTION}, a sua resposta foi {ANSWER}"
+
 #~ msgid "Delete this user group"
 #~ msgstr "Apagar este grupo do utilizador"
+
 #~ msgid "You can update manually or use the %s"
 #~ msgstr "Pode actualizar manualmente ou utilizar o %s"
+
 #~ msgid "Deactivated surveys"
 #~ msgstr "Inquéritos desactivados"
+
 #~ msgid "You need to add answers to this question"
 #~ msgstr "Precisa de adicionar respostas a esta pergunta"
+
 #~ msgid "Edit Answers"
 #~ msgstr "Editar respostas"
+
 #~ msgid "New Answer"
 #~ msgstr "Nova resposta"
+
 #~ msgid "Add new Answer"
 #~ msgstr "Adicionar uma resposta nova"
+
 #~ msgid "answers:"
 #~ msgstr "respostas:"
+
 #~ msgid "Predefined answers for this question"
 #~ msgstr "Respostas pré-definidas para esta pergunta"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:65
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:194
 #~ msgid "Your data:"
 #~ msgstr "Os seus dados:"
+
 #~ msgid "Show System Summary"
 #~ msgstr "Mostrar Resumo do Sistema "
+
 #~ msgid ""
 #~ "It appears as if some tables or fields are missing from your database."
 #~ msgstr ""
 #~ "Aparentemente faltam algumas tabelas ou campos na sua base de dados."
+
 #~ msgid "Check Database Fields"
 #~ msgstr "Verifique Campos da Base de Dados"
+
 #~ msgid "Return to Survey Administration"
 #~ msgstr "Voltar à Administração do inquérito"
+
 #~ msgid "Export results to a SPSS command file"
 #~ msgstr "Exportar resultado para um ficheiro de comandos SPSS"
+
 #~ msgid "Filter an array's answers from a Multiple Options Question"
 #~ msgstr "Filtrar uma matriz de respostas de perguntas de Resposta Múltipla"
+
 #~ msgid "Number of columns to display"
 #~ msgstr "Número de colunas a mostrar"
+
 #~ msgid "Step value for array (multi-flexible) question type"
 #~ msgstr ""
 #~ "Valor de intervalo para o tipo de pergunta de Grelha (Etiquetas Flexíveis)"
+
 #~ msgid "\"Other\" caption"
 #~ msgstr "Etiqueta \"Outro\""
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:164
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:322
 #~ msgid "Date is not valid!"
 #~ msgstr "A data não é valida!"
+
 #~ msgid "Please complete all parts of the date"
 #~ msgstr "Favor completar todos os campos da data"
+
 #~ msgid "Format: YYYY-MM-DD"
 #~ msgstr "Formato: AAAA-MM-DD"
+
 #~ msgid "(eg: 2003-12-25 for Christmas day)"
 #~ msgstr "(p.ex: 2005-12-25 para Dia de Natal)"
+
 #~ msgid "Please choose one of the following"
 #~ msgstr "Escolha uma das seguintes opções"
+
 #~ msgid "Click on an item in the list on the left, starting with your"
 #~ msgstr "Clique num item da lista da esquerda, começando pelo"
+
 #~ msgid "%d responses for this survey"
 #~ msgstr "%d respostas a este inquérito"
+
 #~ msgid "%d full responses"
 #~ msgstr "%d respostas completas"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/browse.php:654
 #~ msgid "%d responses not completely filled out"
 #~ msgstr "%d respostas não estão totalmente preenchidas"
+
 #~ msgid "Always display this condition"
 #~ msgstr "Mostrar sempre esta condição"
+
 #~ msgid "Advanced"
 #~ msgstr "Avançado"
+
 #~ msgid "Save All"
 #~ msgstr "Guardar Tudo"
+
 #~ msgid "Export responses"
 #~ msgstr "Exportar respostas"
+
 #~ msgid "Columns"
 #~ msgstr "Colunas"
+
 #~ msgid "Include"
 #~ msgstr "Incluir"
+
 #~ msgid "from"
 #~ msgstr "de"
+
 #~ msgid "Attribute 2"
 #~ msgstr "Atributo_2"
+
 #~ msgid "Export SPSS syntax file"
 #~ msgstr "Exportar ficheiro de sintaxe SPSS"
+
 #~ msgid "Export SPSS data file"
 #~ msgstr "Exportar ficheiro de dados SPSS"
+
 #~ msgid "Attribute_1 from token"
 #~ msgstr "Atributo_1 do código 'Token'"
+
 #~ msgid "Attribute_2 from token"
 #~ msgstr "Atributo_2 do código 'Token'"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/access_denied.php:108
 #, fuzzy
 #~ msgid "Total score for this assessment rule"
@@ -12143,51 +12179,69 @@ msgstr "Você já completou este inquérito."
 # D:\xampp\xampp\htdocs\phpsurveyor/common.php:1659
 #~ msgid "Answer Privacy"
 #~ msgstr "Privacidade de resposta"
+
 #~ msgid "Anonymous"
 #~ msgstr "Anónimo"
+
 #~ msgid "Not Anonymous"
 #~ msgstr "Não Anónimo"
+
 #~ msgid "This survey is active but expired"
 #~ msgstr "Este inquérito está activo mas expirou"
+
 #~ msgid "LimeSurvey System Summary"
 #~ msgstr "Resumo do Sistema do LimeSurvey"
+
 #~ msgid "Current Language"
 #~ msgstr "Idioma Actual"
+
 #~ msgid "Preferred HTML editor mode"
 #~ msgstr "Mode de editor HTML preferido"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:881
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1041
 #~ msgid "disabled"
 #~ msgstr "desactivado"
+
 #~ msgid "Activate/Edit Tokens for this Survey"
 #~ msgstr "Activar/Editar Códigos para este inquérito"
+
 #~ msgid ""
 #~ "Adding/editing tokens is not possible because this survey is not "
 #~ "activated."
 #~ msgstr ""
 #~ "Não é possivel acrescentar ou editar códigos Token porque o inquérito não "
 #~ "se encontra activo."
+
 #~ msgid "Edit Current Group"
 #~ msgstr "Modificar grupo selecionado"
+
 #~ msgid "Delete Current Group"
 #~ msgstr "Eliminar grupo selecionado"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:881
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1041
 #~ msgid "Disabled"
 #~ msgstr "Desactivado"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1035
 #~ msgid "Copy question is not possible in an Active survey"
 #~ msgstr "Não é possível copiar a pergunta num inquérito Activo"
+
 #~ msgid "Timed start?"
 #~ msgstr "Inicio programado?"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:1884
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/html.php:2125
 #~ msgid "Expires?"
 #~ msgstr "Expira?"
+
 #~ msgid "Use Cookies?"
 #~ msgstr "Utilizar cookies?"
+
 #~ msgid "URL Description:"
 #~ msgstr "Descrição do URL:"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importlabel.php:212
 #~ msgid ""
 #~ "There was a duplicate labelset, so this set was not imported. The "
@@ -12195,85 +12249,117 @@ msgstr "Você já completou este inquérito."
 #~ msgstr ""
 #~ "Há uma etiqueta em duplicado e por isso este conjunto não pôde ser "
 #~ "importado. Será utilizado o duplicado. "
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/importoldresponses.php:58
 #~ msgid ""
 #~ "Import responses from an old (deactivated) survey table into an active "
 #~ "survey"
 #~ msgstr ""
 #~ "Importar respostas de um antigo (desactivado)  para um novo inquérito. "
+
 #~ msgid "Fix Order"
 #~ msgstr "Ordem de correcção"
+
 #~ msgid "Fix Sort"
 #~ msgstr "Corrigir Ordem"
+
 #~ msgid "if you answered"
 #~ msgstr "Se respondeu"
+
 #~ msgid "if you have NOT answered"
 #~ msgstr "Se NÃO respondeu"
+
 #~ msgid "Only answer this question %s"
 #~ msgstr "Apenas responda a esta pergunta %s"
+
 #~ msgid "Group:"
 #~ msgstr "Grupo:"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/statistics.php:857
 #~ msgid "Getting result count ..."
 #~ msgstr "A obter a contagem de resultados..."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/templates.php:529
 #~ msgid "This template can be modified"
 #~ msgstr "Este modelo pode ser modificado"
+
 #~ msgid "This template cannot be modified"
 #~ msgstr "Este modelo não pode ser modificado"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/templates.php:549
 #~ msgid "Make a copy of this template"
 #~ msgstr "Fazer uma cópia deste modelo"
+
 #~ msgid "File Control:"
 #~ msgstr "Controle de Ficheiro:"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/templates.php:587
 #~ msgid "Now editing:"
 #~ msgstr "Em edição:"
+
 #~ msgid "%s %% complete"
 #~ msgstr "%s %% completo"
+
 #~ msgid "Email Invitation"
 #~ msgstr "Enviar e-mail (E-mail)"
+
 #~ msgid "Email Reminder"
 #~ msgstr "Reenviar e-mail (E-mail)"
+
 #~ msgid "Add or Edit Token Entry"
 #~ msgstr "Adiccionar ou Editar Código Token"
+
 #~ msgid "Update Token"
 #~ msgstr "Actualizar Código"
+
 #~ msgid "Add Token"
 #~ msgstr "Adicionar Código"
+
 #~ msgid "Updated Token"
 #~ msgstr "Código Actualizado"
+
 #~ msgid "Importing CSV File"
 #~ msgstr "Importando Archivo CSV"
+
 #~ msgid "Creating Token Entries"
 #~ msgstr "Criando Entradas de Códigos"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/admin.php:102
 #~ msgid "Username and/or email address already exists."
 #~ msgstr "Já existe o nome de utilizador e/ou o endereço e-mail."
+
 #~ msgid "Modifying User"
 #~ msgstr "Modificando o Usuário"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:397
 #~ msgid "Update user rights successful."
 #~ msgstr "Actualização de direitos de utilizador bem sucedida."
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:692
 #~ msgid "Filter incomplete answers"
 #~ msgstr "Filtrar respostas incompletas"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/browse.php:572
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/exportresults.php:160
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/statistics.php:655
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/vvexport.php:73
 #~ msgid "Enable"
 #~ msgstr "Permitir"
+
 #~ msgid "Export Responses"
 #~ msgstr "Exportar respostas"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/vvimport.php:69
 #~ msgid "Ignore the new record."
 #~ msgstr "Ignorar o novo registo. "
+
 #~ msgid "Add New Label Set"
 #~ msgstr "Adicionar Novo Conjunto de Etiquetas"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/database.php:692
 #~ msgid "Filter incomplete answers:"
 #~ msgstr "Filtrar respostas incompletas:"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/browse.php:572
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/exportresults.php:160
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/statistics.php:655
@@ -12281,17 +12367,20 @@ msgstr "Você já completou este inquérito."
 #, fuzzy
 #~ msgid "Enabled"
 #~ msgstr "Permitir"
+
 #~ msgid ""
 #~ "Don't consider NON completed responses (only works when Filter incomplete "
 #~ "answers is Disable)"
 #~ msgstr ""
 #~ "Não considerar respostas NÃO completas (só funciona quando 'Filtrar "
 #~ "respostas incompletas' está desactivado)"
+
 #~ msgid ""
 #~ "Sorry, importing questions is limited to the same version. Import failed."
 #~ msgstr ""
 #~ "Desculpe, mas o função de importar perguntas só pode ser usada em versões "
 #~ "iguais. Importação falhada."
+
 #~ msgid "Edit Current Survey"
 #~ msgstr "Editar o inquérito Corrente"
 
@@ -12301,6 +12390,7 @@ msgstr "Você já completou este inquérito."
 #, fuzzy
 #~ msgid "Disabled - Change Group Order"
 #~ msgstr "Modifique a Ordem dos Grupos"
+
 #~ msgid "Participiants may print answers?"
 #~ msgstr "Participantes podem imprimir as respostas?"
 
@@ -12313,16 +12403,18 @@ msgstr "Você já completou este inquérito."
 #~ "Se criou alguma avaliação nesta página, para o actual inquérito, a "
 #~ "avaliação será feita no final do inquérito, depois de submeter as suas "
 #~ "respostas. "
+
 #~ msgid ""
 #~ "Answer could not be added. You must insert a code in the mandatory field "
 #~ "(%s)"
 #~ msgstr ""
 #~ "Não foi possível adicionar a resposta. Deve inserir um código no campo "
 #~ "obrigatório (%s)"
+
 #~ msgid "Record ID"
 #~ msgstr "ID de registo"
+
 # D:\xampp\xampp\htdocs\phpsurveyor/admin/usercontrol.php:193
 #, fuzzy
 #~ msgid "You were signed in on the site %s"
 #~ msgstr "Esteve conectado ao site"
-

@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/mint_idea
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea
 END
 load.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/5432/source/limesurvey/templates/mint_idea/load.pstpl
+/svnroot/limesurvey/!svn/ver/9449/source/limesurvey/templates/mint_idea/load.pstpl
 END
 chart.jpg
 K 25
@@ -19,7 +19,7 @@ clearall.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/5431/source/limesurvey/templates/mint_idea/clearall.pstpl
+/svnroot/limesurvey/!svn/ver/9449/source/limesurvey/templates/mint_idea/clearall.pstpl
 END
 print_img_checkbox.png
 K 25
@@ -31,19 +31,19 @@ print_question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/6522/source/limesurvey/templates/mint_idea/print_question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/print_question.pstpl
 END
 register.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/5432/source/limesurvey/templates/mint_idea/register.pstpl
+/svnroot/limesurvey/!svn/ver/9449/source/limesurvey/templates/mint_idea/register.pstpl
 END
 assessment.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/5431/source/limesurvey/templates/mint_idea/assessment.pstpl
+/svnroot/limesurvey/!svn/ver/9449/source/limesurvey/templates/mint_idea/assessment.pstpl
 END
 template.js
 K 25
@@ -61,19 +61,19 @@ surveylist.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/6836/source/limesurvey/templates/mint_idea/surveylist.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/surveylist.pstpl
 END
 navigator.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/templates/mint_idea/navigator.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/navigator.pstpl
 END
 welcome.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/5432/source/limesurvey/templates/mint_idea/welcome.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/welcome.pstpl
 END
 favicon.ico
 K 25
@@ -85,7 +85,7 @@ save.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/5432/source/limesurvey/templates/mint_idea/save.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/save.pstpl
 END
 groupdescription.pstpl
 K 25
@@ -97,7 +97,7 @@ template.css
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/mint_idea/template.css
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/template.css
 END
 preview.png
 K 25
@@ -109,7 +109,7 @@ question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/7766/source/limesurvey/templates/mint_idea/question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/question.pstpl
 END
 print_survey.pstpl
 K 25
@@ -133,7 +133,7 @@ privacy.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/5432/source/limesurvey/templates/mint_idea/privacy.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/privacy.pstpl
 END
 ie_fix_6.css
 K 25
@@ -163,7 +163,7 @@ startpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/7925/source/limesurvey/templates/mint_idea/startpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/startpage.pstpl
 END
 Logo_LimeSurvey_transparent_25x25.png
 K 25
@@ -193,7 +193,7 @@ endpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/mint_idea/endpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/mint_idea/endpage.pstpl
 END
 bg.jpg
 K 25

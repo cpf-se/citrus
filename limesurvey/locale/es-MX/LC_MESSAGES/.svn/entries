@@ -1,15 +1,15 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/es-MX/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2010-07-10T14:02:12.585442Z
-8922
-gandalfar
+2010-10-27T00:41:16.967326Z
+9344
+c_schmitz
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2011-02-09T14:45:06.831322Z
-0cac7e8a986986a4989830ac71f2471c
-2010-07-10T14:02:12.585442Z
-8922
-gandalfar
+2011-02-09T14:53:43.320662Z
+4902efbb5b421e838cc71f16bd7d447b
+2010-10-27T00:41:16.967326Z
+9344
+c_schmitz
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-146219
+159176
 
 es-MX.po
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2011-02-09T14:45:06.831322Z
-5653060399a9f4cc6aad551ecb6601d9
-2010-07-10T14:02:12.585442Z
-8922
-gandalfar
+2011-02-09T14:53:43.370664Z
+ea78a6c7713d5ed0e53df2d163d4a4d9
+2010-10-27T00:41:16.967326Z
+9344
+c_schmitz
 
 
 
@@ -92,5 +92,5 @@ gandalfar
 
 
 
-349003
+452073
 

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/bluengrey
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey
 END
 chart.jpg
 K 25
@@ -13,13 +13,13 @@ clearall.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/bluengrey/clearall.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/clearall.pstpl
 END
 load.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/6833/source/limesurvey/templates/bluengrey/load.pstpl
+/svnroot/limesurvey/!svn/ver/9227/source/limesurvey/templates/bluengrey/load.pstpl
 END
 print_img_checkbox.png
 K 25
@@ -31,19 +31,19 @@ print_question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/6522/source/limesurvey/templates/bluengrey/print_question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/print_question.pstpl
 END
 register.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/bluengrey/register.pstpl
+/svnroot/limesurvey/!svn/ver/9227/source/limesurvey/templates/bluengrey/register.pstpl
 END
 assessment.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/6835/source/limesurvey/templates/bluengrey/assessment.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/assessment.pstpl
 END
 template.js
 K 25
@@ -61,19 +61,19 @@ surveylist.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8323/source/limesurvey/templates/bluengrey/surveylist.pstpl
+/svnroot/limesurvey/!svn/ver/9260/source/limesurvey/templates/bluengrey/surveylist.pstpl
 END
 navigator.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/6833/source/limesurvey/templates/bluengrey/navigator.pstpl
+/svnroot/limesurvey/!svn/ver/9227/source/limesurvey/templates/bluengrey/navigator.pstpl
 END
 welcome.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/6833/source/limesurvey/templates/bluengrey/welcome.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/welcome.pstpl
 END
 favicon.ico
 K 25
@@ -85,19 +85,19 @@ save.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/6833/source/limesurvey/templates/bluengrey/save.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/save.pstpl
 END
 groupdescription.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/6835/source/limesurvey/templates/bluengrey/groupdescription.pstpl
+/svnroot/limesurvey/!svn/ver/9227/source/limesurvey/templates/bluengrey/groupdescription.pstpl
 END
 template.css
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/bluengrey/template.css
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/template.css
 END
 preview.png
 K 25
@@ -109,7 +109,7 @@ question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/bluengrey/question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/question.pstpl
 END
 gradient_bg.gif
 K 25
@@ -127,7 +127,7 @@ completed.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/bluengrey/completed.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/completed.pstpl
 END
 privacy.pstpl
 K 25
@@ -135,17 +135,17 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/limesurvey/!svn/ver/6833/source/limesurvey/templates/bluengrey/privacy.pstpl
 END
-ie_fix_6.css
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/bluengrey/ie_fix_6.css
-END
 slider-handle.gif
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svnroot/limesurvey/!svn/ver/6833/source/limesurvey/templates/bluengrey/slider-handle.gif
+END
+ie_fix_6.css
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/bluengrey/ie_fix_6.css
 END
 ie_fix_7.css
 K 25
@@ -169,13 +169,13 @@ startpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8446/source/limesurvey/templates/bluengrey/startpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/startpage.pstpl
 END
 survey.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/bluengrey/survey.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/survey.pstpl
 END
 printanswers.pstpl
 K 25
@@ -193,7 +193,7 @@ endpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/bluengrey/endpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/bluengrey/endpage.pstpl
 END
 limesurvey_logo.png
 K 25
@@ -211,7 +211,7 @@ startgroup.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/bluengrey/startgroup.pstpl
+/svnroot/limesurvey/!svn/ver/9227/source/limesurvey/templates/bluengrey/startgroup.pstpl
 END
 print_template.css
 K 25

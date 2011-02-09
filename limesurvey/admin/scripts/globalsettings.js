@@ -1,8 +1,11 @@
-// $Id: globalsettings.js 8633 2010-04-25 12:57:33Z c_schmitz $
+// $Id: globalsettings.js 9648 2011-01-07 13:06:39Z c_schmitz $
 
 $(document).ready(function(){
     $("#emailmethod").change(Emailchange);
     Emailchange();
+
+   $("#bounceaccounttype").change(Emailchanges);
+   Emailchanges();
 });
 
 function Emailchange(ui,evt)
@@ -17,3 +20,15 @@ function Emailchange(ui,evt)
   $("#emailsmtpdebug").attr('disabled',smtp_enabled);
   
 }
+function Emailchanges(ui,evt)
+{
+  bounce_disabled=($("#bounceaccounttype").val()=='off');
+  if (bounce_disabled==true) {bounce_disabled='disabled';}
+  else {bounce_disabled='';}
+  $("#bounceaccounthost").attr('disabled',bounce_disabled);
+  $("#bounceaccountuser").attr('disabled',bounce_disabled);
+  $("#bounceaccountpass").attr('disabled',bounce_disabled);
+  $("#bounceencryption").attr('disabled',bounce_disabled);
+  $("#bounceaccountmailbox").attr('disabled',bounce_disabled);
+}
+

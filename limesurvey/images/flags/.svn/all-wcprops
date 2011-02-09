@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/limesurvey/!svn/ver/9011/source/limesurvey/images/flags
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/flags
 END
 he.png
 K 25
@@ -26,6 +26,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/flags/hi.png
+END
+pa.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/flags/pa.png
 END
 bs.png
 K 25
@@ -99,6 +105,12 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/vi.png
 END
+nl-informal.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/flags/nl-informal.png
+END
 lt.png
 K 25
 svn:wc:ra_dav:version-url
@@ -117,17 +129,17 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/flags/lv.png
 END
-pt.png
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/pt.png
-END
 ca.png
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/ca.png
+END
+pt.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/pt.png
 END
 pt-BR.png
 K 25
@@ -153,23 +165,29 @@ svn:wc:ra_dav:version-url
 V 74
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/es-MX.png
 END
+it-formal.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/flags/it-formal.png
+END
 id.png
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/id.png
 END
-de-informal.png
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/de-informal.png
-END
 ie.png
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/9011/source/limesurvey/images/flags/ie.png
+END
+de-informal.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/limesurvey/!svn/ver/5205/source/limesurvey/images/flags/de-informal.png
 END
 el.png
 K 25
@@ -308,6 +326,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/7484/source/limesurvey/images/flags/fa.png
+END
+be.png
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/images/flags/be.png
 END
 index.html
 K 25

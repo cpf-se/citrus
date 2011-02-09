@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/limesurvey/!svn/ver/8667/source/limesurvey/docs/demosurveys
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/docs/demosurveys
 END
 Language_Question_Test.csv
 K 25
@@ -20,4 +20,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 86
 /svnroot/limesurvey/!svn/ver/8162/source/limesurvey/docs/demosurveys/sample_survey.csv
+END
+Randomization_Group_Test.lss
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/docs/demosurveys/Randomization_Group_Test.lss
+END
+limesurvey_sample_survey_english.lss
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/docs/demosurveys/limesurvey_sample_survey_english.lss
 END

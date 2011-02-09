@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts
 END
 dejavuserifb.z
 K 25
@@ -13,7 +13,7 @@ dejavusanscondensedi.php
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedi.php
 END
 dejavuserif.ctg.z
 K 25
@@ -25,7 +25,7 @@ freesans.php
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesans.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freesans.php
 END
 freeserifbi.z
 K 25
@@ -37,13 +37,13 @@ uni2cid_ak12.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_ak12.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_ak12.php
 END
 freemonob.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemonob.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freemonob.php
 END
 dejavuserifcondensedb.z
 K 25
@@ -55,7 +55,7 @@ times.php
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/times.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/times.php
 END
 dejavuserif.z
 K 25
@@ -67,7 +67,7 @@ timesbi.php
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/timesbi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/timesbi.php
 END
 dejavusansi.z
 K 25
@@ -79,19 +79,19 @@ dejavuserifcondensedi.php
 K 25
 svn:wc:ra_dav:version-url
 V 103
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedi.php
 END
 dejavuserifcondensedbi.php
 K 25
 svn:wc:ra_dav:version-url
 V 104
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedbi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedbi.php
 END
 dejavusansb.php
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansb.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansb.php
 END
 freesansb.ctg.z
 K 25
@@ -111,23 +111,23 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freeserifb.ctg.z
 END
-zapfdingbats.php
-K 25
-svn:wc:ra_dav:version-url
-V 94
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/zapfdingbats.php
-END
 dejavusansbi.ctg.z
 K 25
 svn:wc:ra_dav:version-url
 V 96
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansbi.ctg.z
 END
+zapfdingbats.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/zapfdingbats.php
+END
 helveticai.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/helveticai.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/helveticai.php
 END
 dejavuserifi.ctg.z
 K 25
@@ -145,7 +145,7 @@ dejavusanscondensed.php
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensed.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensed.php
 END
 dejavuserifcondensed.ctg.z
 K 25
@@ -157,13 +157,7 @@ timesi.php
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/timesi.php
-END
-dejavusansmonob.ctg.z
-K 25
-svn:wc:ra_dav:version-url
-V 99
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonob.ctg.z
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/timesi.php
 END
 freemono.z
 K 25
@@ -171,17 +165,11 @@ svn:wc:ra_dav:version-url
 V 88
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemono.z
 END
-dejavusans.php
+dejavusansmonob.ctg.z
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusans.php
-END
-dejavusansb.ctg.z
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansb.ctg.z
+V 99
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonob.ctg.z
 END
 dejavuserifcondensedbi.ctg.z
 K 25
@@ -189,11 +177,23 @@ svn:wc:ra_dav:version-url
 V 106
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedbi.ctg.z
 END
+dejavusansb.ctg.z
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansb.ctg.z
+END
+dejavusans.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusans.php
+END
 arialunicid0.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/arialunicid0.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/arialunicid0.php
 END
 freemonoi.z
 K 25
@@ -211,25 +211,25 @@ freesansb.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansb.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freesansb.php
 END
 freemono.php
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemono.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freemono.php
 END
 freeserifb.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freeserifb.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freeserifb.php
 END
 uni2cid_aj16.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_aj16.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_aj16.php
 END
 dejavusansmono.z
 K 25
@@ -247,7 +247,7 @@ dejavuserifi.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifi.php
 END
 dejavuserifbi.ctg.z
 K 25
@@ -259,7 +259,7 @@ freesansbi.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansbi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freesansbi.php
 END
 almohanad.ctg.z
 K 25
@@ -277,7 +277,7 @@ hysmyeongjostdmedium.php
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/hysmyeongjostdmedium.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/hysmyeongjostdmedium.php
 END
 dejavuserifcondensedbi.z
 K 25
@@ -307,19 +307,19 @@ dejavusansmonoi.php
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonoi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonoi.php
 END
 dejavuserif.php
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserif.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserif.php
 END
 kozgopromedium.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/kozgopromedium.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/kozgopromedium.php
 END
 freesansi.ctg.z
 K 25
@@ -331,7 +331,7 @@ helveticabi.php
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/helveticabi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/helveticabi.php
 END
 freesansbi.ctg.z
 K 25
@@ -349,13 +349,13 @@ almohanad.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/almohanad.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/almohanad.php
 END
 dejavusanscondensedb.php
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedb.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedb.php
 END
 dejavuserifcondensedb.ctg.z
 K 25
@@ -375,29 +375,29 @@ svn:wc:ra_dav:version-url
 V 89
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemonob.z
 END
+dejavusanscondensedbi.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedbi.php
+END
 freesansi.z
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansi.z
 END
-dejavusanscondensedbi.php
+freesansbi.z
 K 25
 svn:wc:ra_dav:version-url
-V 103
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedbi.php
+V 90
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansbi.z
 END
 dejavusansmonoi.ctg.z
 K 25
 svn:wc:ra_dav:version-url
 V 99
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonoi.ctg.z
-END
-freesansbi.z
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansbi.z
 END
 freeserifi.z
 K 25
@@ -409,7 +409,19 @@ uni2cid_ac15.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_ac15.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_ac15.php
+END
+uni2cid_ag15.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_ag15.php
+END
+freeserif.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freeserif.php
 END
 dejavusansi.ctg.z
 K 25
@@ -417,23 +429,11 @@ svn:wc:ra_dav:version-url
 V 95
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansi.ctg.z
 END
-freeserif.php
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freeserif.php
-END
-uni2cid_ag15.php
-K 25
-svn:wc:ra_dav:version-url
-V 94
-/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/uni2cid_ag15.php
-END
 freemonoi.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemonoi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freemonoi.php
 END
 dejavusanscondensed.ctg.z
 K 25
@@ -445,7 +445,7 @@ freemonobi.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemonobi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freemonobi.php
 END
 dejavusansmonoi.z
 K 25
@@ -459,17 +459,17 @@ svn:wc:ra_dav:version-url
 V 91
 /svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/ZarBold.ctg.z
 END
-dejavuserifcondensedb.php
-K 25
-svn:wc:ra_dav:version-url
-V 103
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedb.php
-END
 msungstdlight.php
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/msungstdlight.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/msungstdlight.php
+END
+dejavuserifcondensedb.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedb.php
 END
 dejavusanscondensedi.ctg.z
 K 25
@@ -487,19 +487,19 @@ helvetica.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/helvetica.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/helvetica.php
 END
 helveticab.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/helveticab.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/helveticab.php
 END
 dejavusansmonobi.php
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonobi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonobi.php
 END
 freemono.ctg.z
 K 25
@@ -511,7 +511,13 @@ dejavusansi.php
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansi.php
+END
+chinese.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/chinese.php
 END
 ZarBold.z
 K 25
@@ -525,11 +531,11 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedi.z
 END
-dejavusanscondensedbi.z
+timesb.php
 K 25
 svn:wc:ra_dav:version-url
-V 101
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedbi.z
+V 88
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/timesb.php
 END
 freemonobi.ctg.z
 K 25
@@ -537,17 +543,11 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemonobi.ctg.z
 END
-timesb.php
+dejavusanscondensedbi.z
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/timesb.php
-END
-dejavusansmono.ctg.z
-K 25
-svn:wc:ra_dav:version-url
-V 98
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmono.ctg.z
+V 101
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedbi.z
 END
 freesansb.z
 K 25
@@ -555,11 +555,17 @@ svn:wc:ra_dav:version-url
 V 89
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansb.z
 END
+dejavusansmono.ctg.z
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmono.ctg.z
+END
 zarbold.php
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/zarbold.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/zarbold.php
 END
 freeserifb.z
 K 25
@@ -595,13 +601,13 @@ dejavuserifb.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifb.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifb.php
 END
 kozminproregular.php
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/kozminproregular.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/kozminproregular.php
 END
 dejavuserifcondensed.z
 K 25
@@ -613,13 +619,13 @@ dejavusansbi.php
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansbi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansbi.php
 END
 freesansi.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freesansi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freesansi.php
 END
 dejavusansmonob.z
 K 25
@@ -631,13 +637,13 @@ freeserifi.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freeserifi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freeserifi.php
 END
-README.TXT
+freeserifbi.php
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/README.TXT
+V 93
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/freeserifbi.php
 END
 dejavuserifcondensedi.z
 K 25
@@ -645,29 +651,29 @@ svn:wc:ra_dav:version-url
 V 101
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensedi.z
 END
-freeserifbi.php
+README.TXT
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freeserifbi.php
+V 88
+/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/fonts/README.TXT
 END
 dejavuserifcondensed.php
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensed.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifcondensed.php
 END
 dejavusansmono.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmono.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmono.php
 END
 dejavusansmonob.php
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonob.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavusansmonob.php
 END
 dejavusans.ctg.z
 K 25
@@ -675,23 +681,23 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusans.ctg.z
 END
-unifont.z
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/unifont.z
-END
 dejavuserifbi.z
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifbi.z
 END
+unifont.z
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/unifont.z
+END
 symbol.php
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/symbol.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/symbol.php
 END
 almohanad.z
 K 25
@@ -705,23 +711,17 @@ svn:wc:ra_dav:version-url
 V 96
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifb.ctg.z
 END
-courier.php
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/courier.php
-END
 freeserif.ctg.z
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freeserif.ctg.z
 END
-dejavusanscondensedb.z
+courier.php
 K 25
 svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedb.z
+V 89
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/courier.php
 END
 freemonob.ctg.z
 K 25
@@ -729,23 +729,29 @@ svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/freemonob.ctg.z
 END
+dejavusanscondensedb.z
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavusanscondensedb.z
+END
 stsongstdlight.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/stsongstdlight.php
-END
-dejavuserifbi.php
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifbi.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/stsongstdlight.php
 END
 unifont.php
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf/fonts/unifont.php
+END
+dejavuserifbi.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/tcpdf/fonts/dejavuserifbi.php
 END
 freeserifbi.ctg.z
 K 25

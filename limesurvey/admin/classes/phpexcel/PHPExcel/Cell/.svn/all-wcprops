@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell
+END
+IValueBinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell/IValueBinder.php
+END
+DataType.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell/DataType.php
+END
+DataValidation.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell/DataValidation.php
+END
+DefaultValueBinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell/DefaultValueBinder.php
+END
+Hyperlink.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell/Hyperlink.php
+END
+AdvancedValueBinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/Cell/AdvancedValueBinder.php
+END

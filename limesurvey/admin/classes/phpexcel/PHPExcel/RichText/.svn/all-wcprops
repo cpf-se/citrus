@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/RichText
+END
+TextElement.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/RichText/TextElement.php
+END
+Run.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/RichText/Run.php
+END
+ITextElement.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/classes/phpexcel/PHPExcel/RichText/ITextElement.php
+END

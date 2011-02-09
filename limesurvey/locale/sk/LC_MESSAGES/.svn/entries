@@ -1,14 +1,14 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/sk/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2009-11-30T01:50:38.521693Z
-8009
+2010-11-24T11:19:54.133648Z
+9525
 c_schmitz
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2011-02-09T14:45:10.131446Z
-0e39abad94eac678e2736de17a849667
-2009-11-30T01:50:38.521693Z
-8009
+2011-02-09T14:53:46.990800Z
+204bf835f8bfcc8286a45dfcf1e046d1
+2010-11-24T11:19:54.133648Z
+9525
 c_schmitz
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-156970
+150712
 
 index.html
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2011-02-09T14:45:10.131446Z
-a6fc2bc344f99de505f68e0d7099b384
-2009-11-30T01:50:38.521693Z
-8009
+2011-02-09T14:53:46.990800Z
+4e65a2dac156c6dafa33826d7840dfe2
+2010-11-24T11:19:54.133648Z
+9525
 c_schmitz
 
 
@@ -126,5 +126,5 @@ c_schmitz
 
 
 
-359065
+485035
 

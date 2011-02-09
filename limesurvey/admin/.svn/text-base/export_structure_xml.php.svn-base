@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: export_structure_csv.php 8592 2010-04-14 12:23:25Z machaven $
+ * $Id: export_structure_xml.php 9607 2010-12-08 22:59:51Z azammitdcarf $
  */
 
 
@@ -59,7 +59,7 @@ if (!$surveyid)
 
 function getXMLStructure($xmlwriter, $exclude=array())
 {
-    global $dbprefix, $surveyid;
+    global $dbprefix, $surveyid, $connect;
 
     $sdump = "";
 
@@ -92,7 +92,7 @@ function getXMLStructure($xmlwriter, $exclude=array())
 
     //Default values
     $query = "SELECT {$dbprefix}defaultvalues.*
-          FROM {$dbprefix}defaultvalues JOIN {$dbprefix}questions ON {$dbprefix}questions.qid = {$dbprefix}defaultvalues.qid AND {$dbprefix}questions.sid=$surveyid"; 
+          FROM {$dbprefix}defaultvalues JOIN {$dbprefix}questions ON {$dbprefix}questions.qid = {$dbprefix}defaultvalues.qid AND {$dbprefix}questions.sid=$surveyid AND {$dbprefix}questions.language={$dbprefix}defaultvalues.language "; 
     
     BuildXMLFromQuery($xmlwriter,$query);
     
@@ -116,10 +116,21 @@ function getXMLStructure($xmlwriter, $exclude=array())
            WHERE sid=$surveyid and parent_qid>0
            ORDER BY qid";
     BuildXMLFromQuery($xmlwriter,$qquery,'subquestions');
-    
+
     //Question attributes
-    $query = "SELECT {$dbprefix}question_attributes.qaid, {$dbprefix}question_attributes.qid, {$dbprefix}question_attributes.attribute,  {$dbprefix}question_attributes.value
-          FROM {$dbprefix}question_attributes JOIN {$dbprefix}questions ON {$dbprefix}questions.qid = {$dbprefix}question_attributes.qid AND {$dbprefix}questions.sid=$surveyid";
+    $sBaseLanguage=GetBaseLanguageFromSurveyID($surveyid);
+    if ($connect->databaseType == 'odbc_mssql' || $connect->databaseType == 'odbtp' || $connect->databaseType == 'mssql_n' || $connect->databaseType =='mssqlnative')
+    {
+        $query="SELECT qa.qid, qa.attribute, cast(qa.value as varchar(4000)) as value 
+          FROM {$dbprefix}question_attributes qa JOIN {$dbprefix}questions  q ON q.qid = qa.qid AND q.sid={$surveyid} 
+          where q.language='{$sBaseLanguage}' group by qa.qid, qa.attribute,  cast(qa.value as varchar(4000))";
+    }
+    else {
+        $query="SELECT qa.qid, qa.attribute, qa.value
+          FROM {$dbprefix}question_attributes qa JOIN {$dbprefix}questions  q ON q.qid = qa.qid AND q.sid={$surveyid} 
+          where q.language='{$sBaseLanguage}' group by qa.qid, qa.attribute, qa.value";
+    }
+    
     BuildXMLFromQuery($xmlwriter,$query,'question_attributes');
 
     if ((!isset($exclude) && $exclude['quotas'] !== true) || empty($exclude))
@@ -186,12 +197,12 @@ function getXMLData($exclude = array())
 if (!isset($copyfunction))
 {
     $fn = "limesurvey_survey_$surveyid.lss";      
-    header("Content-Type: text/html/force-download");
+    header("Content-Type: text/xml");
     header("Content-Disposition: attachment; filename=$fn");
     header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");    // Date in the past
     header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
     header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    header("Pragma: cache");                          // HTTP/1.0
+    header("Pragma: public");                          // HTTP/1.0
     echo getXMLData();
     exit;
 }

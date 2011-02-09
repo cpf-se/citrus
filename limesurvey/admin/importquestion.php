@@ -10,14 +10,14 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: importquestion.php 8776 2010-06-02 13:45:10Z c_schmitz $
+ * $Id: importquestion.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 //Ensure script is not run directly, avoid path disclosure
 include_once("login_check.php");
 
-$importquestion = "<div class='header'>".$clang->gT("Import Question")."</div>\n";
-$importquestion .= "<div class='messagebox'>\n";
+$importquestion = "<div class='header ui-widget-header'>".$clang->gT("Import Question")."</div>\n";
+$importquestion .= "<div class='messagebox ui-corner-all'>\n";
 
 $sFullFilepath = $tempdir . DIRECTORY_SEPARATOR . $_FILES['the_file']['name'];
 $aPathInfo = pathinfo($sFullFilepath);
@@ -139,11 +139,13 @@ function CSVImportQuestion($sFullFilepath, $newsid, $newgid)
     else    // unknown file - show error message
     {
         $results['fatalerror'] = $clang->gT("This file is not a LimeSurvey question file. Import failed.");
+        return  $results;
     }
     
     if  ((int)$importversion<112)
     {
         $results['fatalerror'] = $clang->gT("This file is too old. Only files from LimeSurvey version 1.50 (DBVersion 112) and newer are supported.");
+        return  $results;
     }
 
     for ($i=0; $i<9; $i++) //skipping the first lines that are not needed
@@ -783,6 +785,9 @@ function XMLImportQuestion($sFullFilepath, $newsid, $newgid)
     }
 
     // Import subquestions --------------------------------------------------------------
+    if (isset($xml->subquestions))
+    {
+        
     foreach ($xml->subquestions->rows->row as $row)
     {
         $insertdata=array(); 
@@ -838,6 +843,7 @@ function XMLImportQuestion($sFullFilepath, $newsid, $newgid)
             $results['answers']++;
         }            
     }
+    }
 
     // Import questionattributes --------------------------------------------------------------
     if(isset($xml->question_attributes))
@@ -876,7 +882,7 @@ function XMLImportQuestion($sFullFilepath, $newsid, $newgid)
                 $insertdata[(string)$key]=(string)$value;
             }
             $insertdata['qid']=$aQIDReplacements[(int)$insertdata['qid']]; // remap the qid
-            $insertdata['sqid']=$aQIDReplacements[(int)$insertdata['sqid']]; // remap the subqeustion id
+            $insertdata['sqid']=$aSQIDReplacements[(int)$insertdata['sqid']]; // remap the subquestion id
 
             // now translate any links
             $query=$connect->GetInsertSQL($tablename,$insertdata); 

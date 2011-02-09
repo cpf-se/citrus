@@ -1,7 +1,7 @@
 10
 
 dir
-9046
+9648
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/scripts/edit_area/images
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -94,40 +94,6 @@ has-props
 
 43
 
-go_to_line.gif
-file
-
-
-
-
-2011-02-09T13:09:48.127397Z
-05aa7fa3c6c720595bb3ead7366bbe07
-2009-05-23T22:42:05.117721Z
-6914
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1053
-
 smooth_selection.gif
 file
 
@@ -161,6 +127,40 @@ has-props
 
 
 174
+
+go_to_line.gif
+file
+
+
+
+
+2011-02-09T13:09:48.127397Z
+05aa7fa3c6c720595bb3ead7366bbe07
+2009-05-23T22:42:05.117721Z
+6914
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1053
 
 load.gif
 file
@@ -230,40 +230,6 @@ has-props
 
 147
 
-help.gif
-file
-
-
-
-
-2011-02-09T13:09:48.187399Z
-4cd4a5d2cdcd74c8aeced17813afd6ea
-2009-05-23T22:42:05.117721Z
-6914
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-295
-
 newdocument.gif
 file
 
@@ -298,14 +264,14 @@ has-props
 
 170
 
-statusbar_resize.gif
+help.gif
 file
 
 
 
 
-2011-02-09T13:09:48.757420Z
-1b952cd23844b834e0a307db3c803626
+2011-02-09T13:09:48.187399Z
+4cd4a5d2cdcd74c8aeced17813afd6ea
 2009-05-23T22:42:05.117721Z
 6914
 c_schmitz
@@ -330,7 +296,7 @@ has-props
 
 
 
-79
+295
 
 redo.gif
 file
@@ -366,6 +332,40 @@ has-props
 
 169
 
+statusbar_resize.gif
+file
+
+
+
+
+2011-02-09T13:09:48.757420Z
+1b952cd23844b834e0a307db3c803626
+2009-05-23T22:42:05.117721Z
+6914
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+79
+
 save.gif
 file
 
@@ -400,40 +400,6 @@ has-props
 
 285
 
-autocompletion.gif
-file
-
-
-
-
-2011-02-09T13:09:48.757420Z
-a49a7f9395b32bcf6aa8e143e17c03ff
-2009-05-23T22:42:05.117721Z
-6914
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-359
-
 fullscreen.gif
 file
 
@@ -467,6 +433,40 @@ has-props
 
 
 198
+
+autocompletion.gif
+file
+
+
+
+
+2011-02-09T13:09:48.757420Z
+a49a7f9395b32bcf6aa8e143e17c03ff
+2009-05-23T22:42:05.117721Z
+6914
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+359
 
 word_wrap.gif
 file

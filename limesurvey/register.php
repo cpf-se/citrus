@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: register.php 8982 2010-07-26 17:44:22Z c_schmitz $
+ * $Id: register.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -131,8 +131,6 @@ $fieldsarray["{SURVEYDESCRIPTION}"]=$thissurvey['description'];
 $fieldsarray["{FIRSTNAME}"]=$postfirstname;
 $fieldsarray["{LASTNAME}"]=$postlastname;
 $fieldsarray["{EXPIRY}"]=$thissurvey["expiry"];
-$fieldsarray["{EXPIRY-DMY}"]=date("d-m-Y",strtotime($thissurvey["expiry"]));
-$fieldsarray["{EXPIRY-MDY}"]=date("m-d-Y",strtotime($thissurvey["expiry"]));
 
 $message=$thissurvey['email_register'];
 $subject=$thissurvey['email_register_subj'];

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/limesurvey/!svn/ver/8771/source/limesurvey/classes/phpmailer
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/phpmailer
 END
 LICENSE
 K 25
@@ -19,7 +19,7 @@ class.phpmailer.php
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/phpmailer/class.phpmailer.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/phpmailer/class.phpmailer.php
 END
 class.smtp.php
 K 25

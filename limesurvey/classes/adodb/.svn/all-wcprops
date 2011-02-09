@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/limesurvey/!svn/ver/8947/source/limesurvey/classes/adodb
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/adodb
 END
 adodb-php4.inc.php
 K 25
@@ -9,17 +9,17 @@ svn:wc:ra_dav:version-url
 V 84
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-php4.inc.php
 END
-toexport.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/toexport.inc.php
-END
 adodb-datadict.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-datadict.inc.php
+END
+toexport.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/toexport.inc.php
 END
 adodb-active-recordx.inc.php
 K 25
@@ -27,17 +27,17 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-active-recordx.inc.php
 END
-adodb-xmlschema.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-xmlschema.inc.php
-END
 adodb-exceptions.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-exceptions.inc.php
+END
+adodb-xmlschema.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-xmlschema.inc.php
 END
 adodb-csvlib.inc.php
 K 25
@@ -63,17 +63,11 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/limesurvey/!svn/ver/2897/source/limesurvey/classes/adodb/xmlschema.dtd
 END
-adodb-errorhandler.inc.php
+adodb-pear.inc.php
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-errorhandler.inc.php
-END
-server.php
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/server.php
+V 84
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-pear.inc.php
 END
 adodb-active-record.inc.php
 K 25
@@ -81,11 +75,17 @@ svn:wc:ra_dav:version-url
 V 93
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-active-record.inc.php
 END
-adodb-pear.inc.php
+server.php
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-pear.inc.php
+V 76
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/server.php
+END
+adodb-errorhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb-errorhandler.inc.php
 END
 xmlschema03.dtd
 K 25
@@ -145,7 +145,7 @@ adodb.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/adodb.inc.php
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/adodb/adodb.inc.php
 END
 pivottable.inc.php
 K 25

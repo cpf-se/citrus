@@ -1,8 +1,9 @@
-// $Id: surveysettings.js 8640 2010-04-26 22:31:12Z c_schmitz $
+// $Id: surveysettings.js 9648 2011-01-07 13:06:39Z c_schmitz $
 
 $(document).ready(function(){
     $("#template").change(templatechange);
     $("#template").keyup(templatechange);
+    $("#copysurveyform").submit(copysurvey);
 });
 
 function templatechange()
@@ -16,6 +17,24 @@ function templatechange()
     {
     $("#preview").attr('src',templaterooturl+'/'+this.value+'/preview.png');
     } 
+}
+
+function copysurvey()
+{
+    sMessage='';
+    if ($('#copysurveylist').val()=='')
+    {
+        sMessage = sMessage+sSelectASurveyMessage;
+    }
+    if ($('#copysurveyname').val()=='')
+    {
+        sMessage = sMessage+'\n\r'+sSelectASurveyName;
+    }
+    if (sMessage!='')
+    {
+       alert(sMessage); 
+       return false; 
+    }
 }
 
 function in_array (needle, haystack, argStrict) {

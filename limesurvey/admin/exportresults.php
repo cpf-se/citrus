@@ -10,15 +10,14 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: exportresults.php 9002 2010-07-30 15:55:27Z c_schmitz $
+ * $Id: exportresults.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 
 //Ensure script is not run directly, avoid path disclosure
 include_once("login_check.php");
 
-
-if (!isset($imagefiles)) {$imagefiles="./images";}
+if (!isset($imageurl)) {$imageurl="./images";}
 if (!isset($surveyid)) {$surveyid=returnglobal('sid');}
 if (!isset($exportstyle)) {$exportstyle=returnglobal('exportstyle');}
 if (!isset($answers)) {$answers=returnglobal('answers');}
@@ -27,17 +26,12 @@ if (!isset($convertyto1)) {$convertyto1=returnglobal('convertyto1');}
 if (!isset($convertnto2)) {$convertnto2=returnglobal('convertnto2');}
 if (!isset($convertspacetous)) {$convertspacetous=returnglobal('convertspacetous');}
 
-$sumquery5 = "SELECT b.* FROM {$dbprefix}surveys AS a INNER JOIN {$dbprefix}surveys_rights AS b ON a.sid = b.sid WHERE a.sid=$surveyid AND b.uid = ".$_SESSION['loginID']; //Getting rights for this survey and user
-$sumresult5 = db_execute_assoc($sumquery5);
-$sumrows5 = $sumresult5->FetchRow();
-
-if ($sumrows5['export'] != "1" && $_SESSION['USER_RIGHT_SUPERADMIN'] != 1)
+if (!bHasSurveyPermission($surveyid, 'responses','export'))
 {
     exit;
 }
 
-include_once("login_check.php");
-include_once(dirname(__FILE__)."/classes/pear/Spreadsheet/Excel/Writer.php");
+include_once(dirname(__FILE__)."/classes/phpexcel/PHPExcel.php");
 include_once(dirname(__FILE__)."/classes/tcpdf/extensiontcpdf.php");
 
 $surveybaselang=GetBaseLanguageFromSurveyID($surveyid);
@@ -56,8 +50,8 @@ if (!$exportstyle)
 
 
     $afieldcount = count($excesscols);
-    $exportoutput .= browsemenubar($clang->gT("Export Results"));
-    $exportoutput .= "<div class='header'>".$clang->gT("Export results").'</div>'
+    $exportoutput .= browsemenubar($clang->gT("Export results"));
+    $exportoutput .= "<div class='header ui-widget-header'>".$clang->gT("Export results").'</div>'
     ."<div class='wrap2columns'>\n"
     ."<form id='resultexport' action='$scriptname?action=exportresults' method='post'><div class='left'>\n";
 
@@ -185,18 +179,18 @@ if (!$exportstyle)
         .stripcslashes(returnglobal('id'))
         ."\" />\n";
     }
-    
+
     $exportoutput .= $clang->gT("Choose Columns").":\n";
 
     if ($afieldcount > 255)
     {
-        $exportoutput .= "\t<img src='$imagefiles/help.gif' alt='".$clang->gT("Help")."' onclick='javascript:alert(\""
+        $exportoutput .= "\t<img src='$imageurl/help.gif' alt='".$clang->gT("Help")."' onclick='javascript:alert(\""
         .$clang->gT("Your survey contains more than 255 columns of responses. Spreadsheet applications such as Excel are limited to loading no more than 255. Select the columns you wish to export in the list below.","js")
         ."\")' />";
     }
     else
     {
-        $exportoutput .= "\t<img src='$imagefiles/help.gif' alt='".$clang->gT("Help")."' onclick='javascript:alert(\""
+        $exportoutput .= "\t<img src='$imageurl/help.gif' alt='".$clang->gT("Help")."' onclick='javascript:alert(\""
         .$clang->gT("Choose the columns you wish to export.","js")
         ."\")' />";
     }
@@ -221,32 +215,32 @@ if (!$exportstyle)
     }
     $exportoutput .= "\t</select>\n";
     $exportoutput .= "<br />&nbsp;</fieldset>\n";
-    //OPTIONAL EXTRAS (FROM TOKENS TABLE)
+        //OPTIONAL EXTRAS (FROM TOKENS TABLE)
     // Find out if survey results are anonymous
-    if ($thissurvey['private'] == "N" && tableExists("tokens_$surveyid"))
-    {
-        $exportoutput .= "<fieldset><legend>".$clang->gT("Token Control")."</legend>\n"
-        .$clang->gT("Choose Token Fields").":"
-        ."<img src='$imagefiles/help.gif' alt='".$clang->gT("Help")."' align='right' onclick='javascript:alert(\""
-        .$clang->gT("Your survey can export associated token data with each response. Select any additional fields you would like to export.","js")
-        ."\")' /><ul><li>\n"
-        ."<input type='checkbox' class='checkboxbtn' name='first_name' id='first_name' />"
-        ."<label for='first_name'>".$clang->gT("First Name")."</label></li>\n"
-        ."<li><input type='checkbox' class='checkboxbtn' name='last_name' id='last_name' />"
-        ."<label for='last_name'>".$clang->gT("Last Name")."</label></li>\n"
-        ."<li><input type='checkbox' class='checkboxbtn' name='email_address' id='email_address' />"
-        ."<label for='email_address'>".$clang->gT("Email")."</label></li>\n"
-        ."<li><input type='checkbox' class='checkboxbtn' name='token' id='token' />"
-        ."<label for='token'>".$clang->gT("Token")."</label></li>\n";
-
-        $attrfieldnames=GetTokenFieldsAndNames($surveyid,true);
-        foreach ($attrfieldnames as $attr_name=>$attr_desc)
+    if ($thissurvey['anonymized'] == "N" && tableExists("tokens_$surveyid"))
         {
-            $exportoutput .= "<li><input type='checkbox' class='checkboxbtn' name='$attr_name' id='$attr_name'>"
-            ."<label for='$attr_name'>".$attr_desc."</label></li>\n";
+            $exportoutput .= "<fieldset><legend>".$clang->gT("Token control")."</legend>\n"
+            .$clang->gT("Choose Token Fields").":"
+            ."<img src='$imageurl/help.gif' alt='".$clang->gT("Help")."' align='right' onclick='javascript:alert(\""
+            .$clang->gT("Your survey can export associated token data with each response. Select any additional fields you would like to export.","js")
+            ."\")' /><ul><li>\n"
+            ."<input type='checkbox' class='checkboxbtn' name='first_name' id='first_name' />"
+            ."<label for='first_name'>".$clang->gT("First name")."</label></li>\n"
+            ."<li><input type='checkbox' class='checkboxbtn' name='last_name' id='last_name' />"
+            ."<label for='last_name'>".$clang->gT("Last name")."</label></li>\n"
+            ."<li><input type='checkbox' class='checkboxbtn' name='email_address' id='email_address' />"
+            ."<label for='email_address'>".$clang->gT("Email")."</label></li>\n"
+            ."<li><input type='checkbox' class='checkboxbtn' name='token' id='token' />"
+            ."<label for='token'>".$clang->gT("Token")."</label></li>\n";
+
+            $attrfieldnames=GetTokenFieldsAndNames($surveyid,true);
+            foreach ($attrfieldnames as $attr_name=>$attr_desc)
+            {
+                $exportoutput .= "<li><input type='checkbox' class='checkboxbtn' name='$attr_name' id='$attr_name'>"
+                ."<label for='$attr_name'>".$attr_desc."</label></li>\n";
+            }
+            $exportoutput .= "</ul></fieldset>\n";
         }
-        $exportoutput .= "</ul></fieldset>\n";
-    }
     $exportoutput .= "</div>\n"
     ."\t<div style='clear:both;'><p><input type='submit' value='".$clang->gT("Export data")."' /></div></form></div>\n";
     return;
@@ -261,37 +255,33 @@ if (!$exportstyle)
 // ======================================================================
 
 $tokenTableExists=tableExists('tokens_'.$surveyid);
+$aTokenFieldNames=array();
 
 if ($tokenTableExists)
 {
+    $aTokenFieldNames=GetTokenFieldsAndNames($surveyid);
     $attributeFieldAndNames=GetTokenFieldsAndNames($surveyid,true);
     $attributeFields=array_keys($attributeFieldAndNames);
 }
 
-switch ( $_POST["type"] ) {     // this is a step to register_globals = false ;c)
+switch ( $_POST["type"] ) {    
     case "doc":
         header("Content-Disposition: attachment; filename=results-survey".$surveyid.".doc");
         header("Content-type: application/vnd.ms-word");
         $separator="\t";
         break;
     case "xls":
-
-        $workbook = new Spreadsheet_Excel_Writer();
-        $workbook->setVersion(8);
-        // Inform the module that our data will arrive as UTF-8.
-        // Set the temporary directory to avoid PHP error messages due to open_basedir restrictions and calls to tempnam("", ...)
-        if (!empty($tempdir)) {
-            $workbook->setTempDir($tempdir);
-        }
-        $workbook->send('results-survey'.$surveyid.'.xls');
+        header("Content-Disposition: attachment; filename=results-survey".$surveyid.".xls");
+        header("Content-type: application/vnd.ms-excel");
+        $workbook = new PHPExcel();
         // Creating the first worksheet
 
         $query="SELECT * FROM {$dbprefix}surveys_languagesettings WHERE surveyls_survey_id=".$surveyid;
         $result=db_execute_assoc($query) or safe_die("Couldn't get privacy data<br />$query<br />".$connect->ErrorMsg());
         $row = $result->FetchRow();
 
-        $sheet =& $workbook->addWorksheet(utf8_decode($row['surveyls_title']));
-        $sheet->setInputEncoding('utf-8');
+        $sheet = $workbook->getActiveSheet();
+        $sheet->setTitle(substr($row['surveyls_title'],0,31));
         $separator="~|";
         break;
     case "csv":
@@ -344,6 +334,7 @@ if (isset($_POST['colselect']))
     $selectfields="";
     foreach($_POST['colselect'] as $cs)
     {
+        if (!isset($fieldmap[$cs]) && !isset($aTokenFieldNames[$cs]) && $cs != 'completed') continue; // skip invalid field names to prevent SQL injection
         if ($tokenTableExists && $cs == 'token')
         {
             // We shouldnt include the token field when we are joining with the token field    
@@ -378,7 +369,7 @@ if (isset($_POST['email_address']) && $_POST['email_address']=="on")
     $dquery .= ", {$dbprefix}tokens_$surveyid.email";
 }
 
-if ($tokenTableExists && $thissurvey['private']=='N')
+if ($tokenTableExists && $thissurvey['anonymized']=='N')
 {
     if (isset($_POST['token']) && $_POST['token']=="on")
     {
@@ -395,7 +386,7 @@ if ($tokenTableExists && $thissurvey['private']=='N')
 }
 $dquery .= " FROM $surveytable";
 
-if ($tokenTableExists && $thissurvey['private']=='N')
+if ($tokenTableExists && $thissurvey['anonymized']=='N')
 {
     $dquery .= " LEFT OUTER JOIN {$dbprefix}tokens_$surveyid"
     . " ON $surveytable.token = {$dbprefix}tokens_$surveyid.token";
@@ -422,18 +413,18 @@ for ($i=0; $i<$fieldcount; $i++)
 
     if ($fieldinfo == "lastname")
     {
-        if ($type == "csv") {$firstline .= "\"".$elang->gT("Last Name")."\"$separator";}
-        else {$firstline .= $elang->gT("Last Name")."$separator";}
+        if ($type == "csv") {$firstline .= "\"".$elang->gT("Last name")."\"$separator";}
+        else {$firstline .= $elang->gT("Last name")."$separator";}
     }
     elseif ($fieldinfo == "firstname")
     {
-        if ($type == "csv") {$firstline .= "\"".$elang->gT("First Name")."\"$separator";}
-        else {$firstline .= $elang->gT("First Name")."$separator";}
+        if ($type == "csv") {$firstline .= "\"".$elang->gT("First name")."\"$separator";}
+        else {$firstline .= $elang->gT("First name")."$separator";}
     }
     elseif ($fieldinfo == "email")
     {
-        if ($type == "csv") {$firstline .= "\"".$elang->gT("Email Address")."\"$separator";}
-        else {$firstline .= $elang->gT("Email Address")."$separator";}
+        if ($type == "csv") {$firstline .= "\"".$elang->gT("Email address")."\"$separator";}
+        else {$firstline .= $elang->gT("Email address")."$separator";}
     }
     elseif ($fieldinfo == "token")
     {
@@ -467,13 +458,13 @@ for ($i=0; $i<$fieldcount; $i++)
     }
     elseif ($fieldinfo == "ipaddr")
     {
-        if ($type == "csv") {$firstline .= "\"".$elang->gT("IP-Address")."\"$separator";}
-        else {$firstline .= $elang->gT("IP-Address")."$separator";}
+        if ($type == "csv") {$firstline .= "\"".$elang->gT("IP address")."\"$separator";}
+        else {$firstline .= $elang->gT("IP address")."$separator";}
     }
     elseif ($fieldinfo == "refurl")
     {
-        if ($type == "csv") {$firstline .= "\"".$elang->gT("Referring URL")."\"$separator";}
-        else {$firstline .= $elang->gT("Referring URL")."$separator";}
+        if ($type == "csv") {$firstline .= "\"".$elang->gT("Referrer URL")."\"$separator";}
+        else {$firstline .= $elang->gT("Referrer URL")."$separator";}
     }
     elseif ($fieldinfo == "lastpage")
     {
@@ -553,14 +544,11 @@ for ($i=0; $i<$fieldcount; $i++)
                         }
                         else
                         {
-                            $lq = "SELECT * FROM {$dbprefix}answers WHERE qid=$fqid AND code = '$faid' AND language = '$explang'";
-                            $lr = db_execute_assoc($lq);
-                            while ($lrow = $lr->FetchRow())
-                            {
-                                $fquest .= " [".strip_tags_full($lrow['answer'])."]";
+                            $sQuery = "SELECT question FROM {$dbprefix}questions WHERE parent_qid=$fqid AND title = '$faid' AND language = '$explang' and scale_id=0";
+                            $sSubquestion = $connect->getOne($sQuery);
+                            $fquest .= " [".strip_tags_full($sSubquestion)."]";
                             }
                         }
-                    }
                     break;
                 case "P": //Multiple option with comment
                     if (mb_substr($faid, -7, 7) == "comment")
@@ -579,14 +567,11 @@ for ($i=0; $i<$fieldcount; $i++)
                         }
                         else
                         {
-                            $lq = "SELECT * FROM {$dbprefix}answers WHERE qid=$fqid AND code = '$faid' AND language = '$explang'";
-                            $lr = db_execute_assoc($lq);
-                            while ($lrow = $lr->FetchRow())
-                            {
-                                $fquest .= " [".strip_tags_full($lrow['answer'])."]";
+                            $sQuery = "SELECT question FROM {$dbprefix}questions WHERE parent_qid=$fqid AND title = '$faid' AND language = '$explang' and scale_id=0";
+                            $sSubquestion = $connect->getOne($sQuery);
+                            $fquest .= " [".strip_tags_full($sSubquestion)."]";
                             }
                         }
-                    }
                     if (isset($comment) && $comment == true) {$fquest .= " - comment"; $comment=false;}
                     break;
                 case "A":
@@ -615,41 +600,33 @@ for ($i=0; $i<$fieldcount; $i++)
                 case ";":
                     list($faid, $fcode) = explode("_", $faid);
                     if ($answers == "short") {
-                        $fquest .= " [$faid] [$fcode]";
+                        $fquest .= " [$fcode] [$faid]";
                     } else {
                         
-                        $fquery = "SELECT sq.*, q.other"
-                            ." FROM ".db_table_name('questions')." sq, ".db_table_name('questions')." q"
-                            ." WHERE sq.sid=$surveyid AND sq.parent_qid=q.qid "
-                            . "AND q.language='".GetBaseLanguageFromSurveyID($surveyid)."'"
+                        $fquery = "SELECT sq.question"
+                            ." FROM ".db_table_name('questions')." sq"
+                            ." WHERE sq.sid=$surveyid "
                             ." AND sq.language='".GetBaseLanguageFromSurveyID($surveyid)."'"
-                            ." AND q.qid={$fqid}
-                               AND sq.scale_id=0
-                               ORDER BY sq.question_order";
+                            ." AND sq.language='".GetBaseLanguageFromSurveyID($surveyid)."'
+                               AND sq.parent_qid={$fqid} and sq.title=".db_quoteall($faid)."
+                               AND sq.scale_id=0";
             
-                            $y_axis_db = db_execute_assoc($fquery);
+                            $sSubquestionY = $connect->GetOne($fquery);
             
                             // Get the X-Axis   
-                            $aquery = "SELECT sq.*
+                            $aquery = "SELECT sq.question
                                 FROM ".db_table_name('questions')." q, ".db_table_name('questions')." sq 
                                 WHERE q.sid=$surveyid 
                                 AND sq.parent_qid=q.qid
                                 AND q.language='".GetBaseLanguageFromSurveyID($surveyid)."'
                                 AND sq.language='".GetBaseLanguageFromSurveyID($surveyid)."'
-                                AND q.qid={$fqid}
-                                AND sq.scale_id=1
-                                ORDER BY sq.question_order";
+                                AND q.parent_qid={$faid} and q.title=".db_quoteall($fcode)."
+                                AND sq.scale_id=1";
               
-                            $x_axis_db=db_execute_assoc($aquery) or safe_die ("Couldn't get answers to Array questions<br />$aquery<br />".$connect->ErrorMsg());
+                            $sSubquestionX = $connect->GetOne($aquery);
 
-                           while ($arows = $y_axis_db->FetchRow())
-                           {
-                                while ($xrows = $x_axis_db->FetchRow())
-                                {
-                                $fquest .= " [".strip_tags_full($arows['question'])."] [".strip_tags_full($xrows['question'])."]";
-                                }
-                        } 
-                    }
+                            $fquest .= " [".strip_tags_full($sSubquestionY)."] [".strip_tags_full($sSubquestionX)."]";
+                            }
                     break;
                 case "1": // multi scale Headline
                     $iAnswerScale = substr($fieldinfo,-1)+1;
@@ -701,7 +678,7 @@ if ($type == "xls")
     $fli=0;
     foreach ($flarray as $fl)
     {
-        $sheet->write(0,$fli,$fl);
+        $sheet->setCellValueByColumnAndRow($fli,1,$fl);
         $fli++;
     }
     //print_r($fieldmap);
@@ -719,7 +696,7 @@ $limit_interval = sanitize_int($_POST['export_to']) - sanitize_int($_POST['expor
 $attributefieldAndNames=array();
 
 //Now dump the data
-if ($tokenTableExists && $thissurvey['private']=='N')
+if ($tokenTableExists && $thissurvey['anonymized']=='N')
 {
     $dquery = "SELECT $selectfields";
     if (isset($_POST['first_name']) && $_POST['first_name']=="on")
@@ -798,14 +775,13 @@ if ($answers == "short") //Nice and easy. Just dump the data straight
         {
             $convertyto=returnglobal('convertyto');
             foreach($drow as $key=>$dr) {
+                if (isset($fieldmap[$key]))
+                {
                 $fielddata=$fieldmap[$key];
-                if(isset($fielddata['type']) &&
-                ($fielddata['type'] == "M" ||
-                $fielddata['type'] == "P" ||
-                $fielddata['type'] == "Y")
-                )
+                    if (isset($fielddata['type']) && ($fielddata['type'] == "M" || $fielddata['type'] == "P" || $fielddata['type'] == "Y"))
                 {
                     if($dr == "Y") {$dr = $convertyto;}
+                }
                 }
                 $line[$key]=$dr;
             }
@@ -816,14 +792,13 @@ if ($answers == "short") //Nice and easy. Just dump the data straight
         {
             $convertnto=returnglobal('convertnto');
             foreach($drow as $key=>$dr) {
+                if (isset($fieldmap[$key]))
+                {
                 $fielddata=$fieldmap[$key];
-                if(isset($fielddata['type']) &&
-                ($fielddata['type'] == "M" ||
-                $fielddata['type'] == "P" ||
-                $fielddata['type'] == "Y")
-                )
+                    if (isset($fielddata['type']) && ($fielddata['type'] == "M" || $fielddata['type'] == "P" || $fielddata['type'] == "Y"))
                 {
                     if($dr == "N") {$dr = $convertnto;}
+                }
                 }
                 $line[$key]=$dr;
             }
@@ -845,7 +820,7 @@ if ($answers == "short") //Nice and easy. Just dump the data straight
                 {
                     $rowfield = "\"".$rowfield."\"";
                 }
-                $sheet->write($rowcounter,$colcounter,$rowfield);
+                $sheet->setCellValueByColumnAndRow($colcounter,$rowcounter+1,$rowfield);
                 $colcounter++;
             }
         }
@@ -924,19 +899,19 @@ elseif ($answers == "long")        //chose complete answers
                             $ftitle=$elang->gT("Date Started").":";
                             break;
                         case "ipaddr":
-                            $ftitle=$elang->gT("IP Address").":";
+                            $ftitle=$elang->gT("IP address").":";
                             break;
                         case "completed":
                             $ftitle=$elang->gT("Completed").":";
                             break;
                         case "refurl":
-                            $ftitle=$elang->gT("Referring URL").":";
+                            $ftitle=$elang->gT("Referrer URL").":";
                             break;
                         case "firstname":
-                            $ftitle=$elang->gT("First Name").":";
+                            $ftitle=$elang->gT("First name").":";
                             break;
                         case "lastname":
-                            $ftitle=$elang->gT("Last Name").":";
+                            $ftitle=$elang->gT("Last name").":";
                             break;
                         case "email":
                             $ftitle=$elang->gT("Email").":";
@@ -968,7 +943,7 @@ elseif ($answers == "long")        //chose complete answers
             }
             if ($fqid == 0)
             {
-                $ftype = "-";  //   This is set if it not a normal answer field, but something like tokenID, First Name etc
+                $ftype = "-";  //   This is set if it not a normal answer field, but something like tokenID, First name etc
             }
             if ($type == "csv") {$exportoutput .= "\"";}
             if ($type == "doc") {$exportoutput .= "\n$ftitle\n\t";}
@@ -1230,7 +1205,7 @@ elseif ($answers == "long")        //chose complete answers
                     else if ($type == "pdf")
                     {$pdf->intopdf(trim(strip_tags($drow[$i])));}
                     else if ($type == "doc")
-                    {$pdf->intopdf(trim(strip_tags($drow[$i])));}
+                    {$exportoutput .= trim(strip_tags($drow[$i]));}
                     else
                     {$exportoutput .= str_replace("\r\n", " ", $drow[$i]);}
                 }
@@ -1240,7 +1215,7 @@ elseif ($answers == "long")        //chose complete answers
             $ftype = "";
         }
         $exportoutput=mb_substr($exportoutput,0,-(strlen($separator)));
-        IF ($type=='xls')
+        if ($type=='xls')
         {
             $rowarray=explode($separator, $exportoutput);
             $fli=0;
@@ -1251,7 +1226,7 @@ elseif ($answers == "long")        //chose complete answers
                 {
                     $row = "\"".$row."\"";
                 }
-                $sheet->write($rowcounter,$fli,$row);
+                $sheet->setCellValueByColumnAndRow($fli,$rowcounter+1,$row);
                 $fli++;
             }
             $exportoutput='';
@@ -1261,7 +1236,11 @@ elseif ($answers == "long")        //chose complete answers
 }
 if ($type=='xls')
 {
-    $workbook->close();
+    $objWriter = new PHPExcel_Writer_Excel5($workbook);
+    $sFileName=$tempdir.DIRECTORY_SEPARATOR.'xls_'.randomkey(40);
+    $objWriter->save($sFileName);    
+    readfile($sFileName);
+    unlink($sFileName);
 }
 else if($type=='pdf')
 {
@@ -1283,5 +1262,3 @@ function strip_tags_full($string) {
     }
     return strip_tags($string);
 }
-
-?>

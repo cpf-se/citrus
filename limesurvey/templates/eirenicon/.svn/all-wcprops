@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/eirenicon
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon
 END
 chart.jpg
 K 25
@@ -13,13 +13,13 @@ clearall.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/clearall.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/clearall.pstpl
 END
 load.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/load.pstpl
+/svnroot/limesurvey/!svn/ver/9304/source/limesurvey/templates/eirenicon/load.pstpl
 END
 print_img_checkbox.png
 K 25
@@ -31,19 +31,19 @@ print_question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/limesurvey/!svn/ver/6522/source/limesurvey/templates/eirenicon/print_question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/print_question.pstpl
 END
 register.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/register.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/register.pstpl
 END
 assessment.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/assessment.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/assessment.pstpl
 END
 template.js
 K 25
@@ -61,19 +61,19 @@ surveylist.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/surveylist.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/surveylist.pstpl
 END
 navigator.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/eirenicon/navigator.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/navigator.pstpl
 END
 welcome.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/welcome.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/welcome.pstpl
 END
 favicon.ico
 K 25
@@ -85,19 +85,19 @@ save.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/save.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/save.pstpl
 END
 groupdescription.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/groupdescription.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/groupdescription.pstpl
 END
 template.css
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svnroot/limesurvey/!svn/ver/9041/source/limesurvey/templates/eirenicon/template.css
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/template.css
 END
 preview.png
 K 25
@@ -109,7 +109,7 @@ question.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/8603/source/limesurvey/templates/eirenicon/question.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/question.pstpl
 END
 print_survey.pstpl
 K 25
@@ -121,13 +121,13 @@ completed.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/completed.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/completed.pstpl
 END
 privacy.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/6424/source/limesurvey/templates/eirenicon/privacy.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/privacy.pstpl
 END
 ie_fix_6.css
 K 25
@@ -151,19 +151,19 @@ endgroup.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/eirenicon/endgroup.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/endgroup.pstpl
 END
 startpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8446/source/limesurvey/templates/eirenicon/startpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/startpage.pstpl
 END
 survey.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/survey.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/survey.pstpl
 END
 printanswers.pstpl
 K 25
@@ -181,7 +181,7 @@ endpage.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/5926/source/limesurvey/templates/eirenicon/endpage.pstpl
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/templates/eirenicon/endpage.pstpl
 END
 limesurvey_logo.png
 K 25
@@ -199,7 +199,7 @@ startgroup.pstpl
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svnroot/limesurvey/!svn/ver/6422/source/limesurvey/templates/eirenicon/startgroup.pstpl
+/svnroot/limesurvey/!svn/ver/9261/source/limesurvey/templates/eirenicon/startgroup.pstpl
 END
 readme.txt
 K 25

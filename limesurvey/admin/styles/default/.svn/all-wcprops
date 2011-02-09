@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/8754/source/limesurvey/admin/styles/default
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default
 END
 adminstyle-rtl.css
 K 25
@@ -15,11 +15,17 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/limesurvey/!svn/ver/6606/source/limesurvey/admin/styles/default/limesurvey.pal
 END
+superfish.css
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/superfish.css
+END
 adminstyle.css
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/8754/source/limesurvey/admin/styles/default/adminstyle.css
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/adminstyle.css
 END
 loading.gif
 K 25

@@ -10,14 +10,14 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: lsrc.client.php 8930 2010-07-13 06:58:37Z c_schmitz $
+ * $Id: lsrc.client.php 9648 2011-01-07 13:06:39Z c_schmitz $
  *
  */
 class lsrcClient {
 
     //Configuration...
     /**change this to the installation path, where you want to try the functions.*/
-    public $limeUrl = 'http://localhost/limesurvey';
+    public $limeUrl = 'http://localhost/limesource/limesurvey_dev';
 
     /** this have to be an admin account for full functionality*/
     public $user = 'admin';
@@ -126,7 +126,7 @@ class lsrcClient {
     public function getServerFunctions()
     {
         $return = "<b>Client object public functions:</b> <font style='font-size:x-small'>(As given in the wsdl file. Functions could be disabled or else on the serverside. There is no guarantee the public functions really have these Params nor that the public functions exist on the serverside.)</font><br/>";
-        if (fopen($this->path2wsdl,"r"))
+        if (!(!fopen($this->path2wsdl,"r")))
         {
             $funcs = $this->soapClient->__getFunctions();
 

@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: printablesurvey.php 9026 2010-08-04 14:53:35Z c_schmitz $
+ * $Id: printablesurvey.php 9648 2011-01-07 13:06:39Z c_schmitz $
  */
 
 //Ensure script is not run directly, avoid path disclosure
@@ -49,12 +49,13 @@ if (isset($_GET['lang']))
 // Setting the selected language for printout
 $clang = new limesurvey_lang($surveyprintlang);
 
-$desquery = "SELECT * FROM ".db_table_name('surveys')." inner join ".db_table_name('surveys_languagesettings')." on (surveyls_survey_id=sid) WHERE sid=$surveyid and surveyls_language=".$connect->qstr($surveyprintlang); //Getting data for this survey
+$desquery = "SELECT * FROM ".db_table_name('surveys')." inner join ".db_table_name('surveys_languagesettings')." on (surveyls_survey_id=sid) WHERE sid={$surveyid} and surveyls_language=".$connect->qstr($surveyprintlang); //Getting data for this survey
 
-$desresult = db_execute_assoc($desquery);
-while ($desrow = $desresult->FetchRow())
+$desrow = $connect->GetRow($desquery);
+if ($desrow==false || count($desrow)==0)
 {
-
+    safe_die('Invalid survey ID');
+}
     //echo '<pre>'.print_r($desrow,true).'</pre>';
     $template = $desrow['template'];
     $welcome = $desrow['surveyls_welcometext'];
@@ -67,38 +68,13 @@ while ($desrow = $desresult->FetchRow())
     $surveystartdate = $desrow['startdate'];
     $surveyfaxto = $desrow['faxto'];
     $dateformattype = $desrow['surveyls_dateformat'];
-}
+
 if(isset($_POST['printableexport'])){$pdf->titleintopdf($surveyname,$surveydesc);}
 
-switch($dateformattype)
-{
-    case 1: $dformat = 'd.m.Y'; // dd.mm.yyyy
-    break;
-    case 2: $dformat = 'd-m-Y'; // dd-mm-yyyy
-    break;
-    case 5: $dformat = 'd/m/Y'; // dd/mm/yyyy
-    break;
-    case 3: $dformat = 'Y.m.d'; // yyyy.mm.dd
-    break;
-    case 7: $dformat = 'Y/m/d'; // yyyy/mm/dd
-    break;
-    case 6: $dbformat = 'Y-m-d'; // yyyy-mm-dd
-    break;
-    case 4: $dformat = 'j.n.Y'; // d.m.yyyy
-    break;
-    case 8: $dformat = 'j/n/y'; // d/m/yyyy
-    break;
-    case 12: $dbformat = 'j-n-Y'; // d-m-yyyy
-    break;
-    case 9: $dformat = 'm-d-Y'; // mm-dd-yyyy
-    break;
-    case 10: $dbformat = 'm.d.Y'; // mm.dd.yyyy
-    break;
-    case 11: $dbformat = 'm/d/Y'; // mm/dd/yyyy
-    break;
-    default: $dformat = 'Y-m-d'; // yyyy-mm-dd
-    break;
-};
+
+$dformat=getDateFormatData($dateformattype);
+$dformat=$dformat['phpdate'];
+
 $expirytimestamp = strtotime($surveyexpirydate);
 $expirytimeofday_h = date('H',$expirytimestamp);
 $expirytimeofday_m = date('i',$expirytimestamp);
@@ -576,14 +552,22 @@ while ($degrow = $degresult->FetchRow())
                             case "L":
                             case "!":
                             case "O":
-                            case "M":
-                            case "P":
                             case "R":
                                 $ansquery="SELECT answer FROM ".db_table_name("answers")." WHERE qid='{$conrow['cqid']}' AND code='{$conrow['value']}' AND language='{$surveyprintlang}'";
                                 $ansresult=db_execute_assoc($ansquery);
                                 while ($ansrow=$ansresult->FetchRow())
                                 {
                                     $conditions[]=$ansrow['answer'];
+                                }
+                                $conditions = array_unique($conditions);
+                                break;
+                            case "M":
+                            case "P":
+                                $ansquery="SELECT question FROM ".db_table_name("questions")." WHERE parent_qid='{$conrow['cqid']}' AND title='{$conrow['value']}' AND language='{$surveyprintlang}'";
+                                $ansresult=db_execute_assoc($ansquery);
+                                while ($ansrow=$ansresult->FetchRow())
+                                {
+                                    $conditions[]=$ansrow['question'];
                                 }
                                 $conditions = array_unique($conditions);
                                 break;
@@ -625,25 +609,31 @@ while ($degrow = $degresult->FetchRow())
                                 break;
 
                             case "1": // dual: (Label 1), (Label 2)
-                                $labelIndex=preg_match("/^[^#]+#([01]{1})$/",$conrow['cfieldname']);
+                                $labelIndex=substr($conrow['cfieldname'],-1);
                                 $thiscquestion=$fieldmap[$conrow['cfieldname']];
                                 $ansquery="SELECT question FROM ".db_table_name("questions")." WHERE parent_qid='{$conrow['cqid']}' AND title='{$thiscquestion['aid']}' AND language='{$surveyprintlang}'";
                                 //$ansquery="SELECT question FROM ".db_table_name("questions")." WHERE qid='{$conrow['cqid']}' AND language='{$surveyprintlang}'";
                                 $ansresult=db_execute_assoc($ansquery);
-
+                                $cqidattributes = getQuestionAttributes($conrow['cqid'], $conrow['type']);
                                 if ($labelIndex == 0)
                                 {
-                                    while ($ansrow=$ansresult->FetchRow())
-                                    {
-                                        $answer_section=" (".$ansrow['question']." ".sprint($clang->gT("Label %s"),'1').")";
+                                    if (trim($cqidattributes['dualscale_headerA']) != '') {
+                                        $header = $clang->gT($cqidattributes['dualscale_headerA']);
+                                    } else {
+                                        $header = '1';
                                     }
                                 }
                                 elseif ($labelIndex == 1)
                                 {
-                                    while ($ansrow=$ansresult->FetchRow())
-                                    {
-                                        $answer_section=" (".$ansrow['question']." ".sprint($clang->gT("Label %s"),'2').")";
+                                    if (trim($cqidattributes['dualscale_headerB']) != '') {
+                                        $header = $clang->gT($cqidattributes['dualscale_headerB']);
+                                    } else {
+                                        $header = '2';
                                     }
+                                }
+                                while ($ansrow=$ansresult->FetchRow())
+                                {
+                                    $answer_section=" (".$ansrow['question']." ".sprintf($clang->gT("Label %s"),$header).")";
                                 }
                                 break;
                             case ":":
@@ -714,6 +704,7 @@ while ($degrow = $degresult->FetchRow())
             ,'QUESTION_TYPE_HELP' => ''		// instructions on how to complete the question
             ,'QUESTION_MAN_MESSAGE' => ''		// (not sure if this is used) mandatory error
             ,'QUESTION_VALID_MESSAGE' => ''		// (not sure if this is used) validation error
+            ,'QUESTION_FILE_VALID_MESSAGE' => ''// (not sure if this is used) file validation error
             ,'QUESTIONHELP' => ''			// content of the question help field.
             ,'ANSWER' => ''				// contains formatted HTML answer
             );
@@ -870,7 +861,6 @@ while ($degrow = $degresult->FetchRow())
                     }
                     if ($deqrow['other'] == 'Y')
                     {
-                        $qidattributes = getQuestionAttributes($deqrow['qid'],$deqrow['type']);
                         if(trim($qidattributes["other_replace_text"])=='')
                         {$qidattributes["other_replace_text"]="Other";}
                         //					$printablesurveyoutput .="\t".$wrapper['item-start']."\t\t".input_type_image('radio' , $clang->gT("Other"))."\n\t\t\t".$clang->gT("Other")."\n\t\t\t<input type='text' size='30' readonly='readonly' />\n".$wrapper['item-end'];
@@ -922,7 +912,7 @@ while ($degrow = $degresult->FetchRow())
                     break;
 
                     // ==================================================================
-                case "M":  //MULTIPLE OPTIONS (Quite tricky really!)
+                case "M":  //Multiple choice (Quite tricky really!)
 
                     if (trim($qidattributes['display_columns'])!='')
                     {
@@ -988,8 +978,8 @@ while ($degrow = $degresult->FetchRow())
                     //				}
                     break;
 
-                    // ==================================================================
-                case "P":  //MULTIPLE OPTIONS WITH COMMENTS
+                     // ==================================================================
+                case "P":  //Multiple choice with comments
                     if (trim($qidattributes['max_answers'])=='') {
                         $question['QUESTION_TYPE_HELP'] = $clang->gT("Please choose all that apply and provide a comment:");
                         if(isset($_POST['printableexport'])){$pdf->intopdf($clang->gT("Please choose all that apply and provide a comment:"),"U");}
@@ -1063,7 +1053,7 @@ while ($degrow = $degresult->FetchRow())
                     while ($mearow = $mearesult->FetchRow())
                     {
                         $longest_string = longest_string($mearow['question'] , $longest_string );
-                        if ($qidattributes['slider_layout']==1)
+                        if (isset($qidattributes['slider_layout']) && $qidattributes['slider_layout']==1)
                         {
                           $mearow['question']=explode(':',$mearow['question']);
                           $mearow['question']=$mearow['question'][0];  
@@ -1708,6 +1698,9 @@ while ($degrow = $degresult->FetchRow())
                     $question['ANSWER'] .= "\t</tbody>\n</table>\n";
 
                     if(isset($_POST['printableexport'])){$pdf->tableintopdf($pdfoutput);}
+                    break;
+                case "|":   // File Upload
+                    $question['QUESTION_TYPE_HELP'] .= "Kindly attach the aforementioned documents along with the survey";
                     break;
                     // === END SWITCH ===================================================
             }
