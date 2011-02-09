@@ -3,7 +3,10 @@ prefix	= limesurvey
 wwwgrp	= www-data
 
 .PHONY: all
-all: permissions
+all: configuration permissions
+
+.PHONY: configuration
+configuration: $(prefix)/config.php
 
 .PHONY: permissions
 permissions:
@@ -16,4 +19,7 @@ permissions:
 .PHONY: bootstrap
 bootstrap: bootstrap.sql
 	mysql -u root -p < $<
+
+$(prefix)/config.php: $(HOME)/citrus_config.php
+	cp $< $@
 
