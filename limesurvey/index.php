@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: index.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: index.php 9668 2011-01-10 09:01:14Z mennodekker $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -3406,7 +3406,9 @@ function GetReferringUrl()
         echo "<center><font color='red' size='2'>".$clang->gT("This survey is currently not active. You will not be able to save your responses.")."</font></center>\n";
     }
     echo "\n<input type='hidden' name='sid' value='$surveyid' id='sid' />\n";
-    echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
+    if (isset($token) && !empty($token)) {
+        echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
+    }
     echo "\n<input type='hidden' name='lastgroupname' value='_WELCOME_SCREEN_' id='lastgroupname' />\n"; //This is to ensure consistency with mandatory checks, and new group test
     echo "\n</form>\n";
     echo templatereplace(file_get_contents("$thistpl/endpage.pstpl"));

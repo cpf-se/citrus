@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core
+/svnroot/limesurvey/!svn/ver/9662/source/limesurvey/classes/core
 END
 ArGlyphs.class.php
 K 25
@@ -37,5 +37,5 @@ surveytranslator.php
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/classes/core/surveytranslator.php
+/svnroot/limesurvey/!svn/ver/9662/source/limesurvey/classes/core/surveytranslator.php
 END

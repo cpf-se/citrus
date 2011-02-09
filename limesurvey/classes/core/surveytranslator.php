@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: surveytranslator.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: surveytranslator.php 9662 2011-01-08 14:46:19Z c_schmitz $
  */
 
 
@@ -551,6 +551,13 @@ function getLanguageData($orderbynative=false) {
     $supportedLanguages['th']['radixpoint'] = 0;
 
 
+    //Urdu
+    $supportedLanguages['ur']['description'] = $clang->gT('Urdu');
+    $supportedLanguages['ur']['nativedescription'] = '&#1575;&#1585;&#1583;&#1608;';
+    $supportedLanguages['ur']['rtl'] = true;
+    $supportedLanguages['ur']['dateformat'] = 2;
+    $supportedLanguages['ur']['radixpoint'] = 0;    
+    
     // Vietnamese
     $supportedLanguages['vi']['description'] = $clang->gT('Vietnamese');
     $supportedLanguages['vi']['nativedescription'] = 'Ti&#7871;ng Vi&#7879;t';

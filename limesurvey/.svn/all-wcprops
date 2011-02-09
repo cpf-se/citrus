@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey
+/svnroot/limesurvey/!svn/ver/9672/source/limesurvey
 END
 optout.php
 K 25
@@ -13,7 +13,7 @@ group.php
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/group.php
+/svnroot/limesurvey/!svn/ver/9668/source/limesurvey/group.php
 END
 survey.php
 K 25
@@ -49,19 +49,19 @@ config.php
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/config.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/config.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/limesurvey/!svn/ver/9668/source/limesurvey/index.php
 END
 question.php
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/question.php
-END
-index.php
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/index.php
 END
 COPYRIGHT.php
 K 25
@@ -91,7 +91,7 @@ common_functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/common_functions.php
+/svnroot/limesurvey/!svn/ver/9668/source/limesurvey/common_functions.php
 END
 verification.php
 K 25
@@ -121,19 +121,19 @@ register.php
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/register.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/register.php
 END
 upload.php
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/upload.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/upload.php
 END
 version.php
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/version.php
+/svnroot/limesurvey/!svn/ver/9672/source/limesurvey/version.php
 END
 htaccess.txt
 K 25
@@ -151,7 +151,7 @@ common.php
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/common.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/common.php
 END
 statistics_user.php
 K 25

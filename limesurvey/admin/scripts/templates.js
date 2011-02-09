@@ -1,8 +1,8 @@
-// $Id: templates.js 7699 2009-09-30 22:28:50Z c_schmitz $
+// $Id: templates.js 9671 2011-01-11 13:14:28Z shnoulle $
 // based on TTabs from http://interface.eyecon.ro/
 
 $(document).ready(function(){
-    if($("#changes").length > 0) {
+    if(($("body.full #changes").length > 0) || ($("body.simple #changes").length > 0)) {
         editAreaLoader.init({
             language: adminlanguage,
             id : "changes"        // textarea id

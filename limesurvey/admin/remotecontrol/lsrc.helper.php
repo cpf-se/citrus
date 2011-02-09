@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: lsrc.helper.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: lsrc.helper.php 9656 2011-01-07 20:48:39Z c_schmitz $
  *
  */
 /**
@@ -2336,7 +2336,7 @@ class LsrcHelper {
 
                 while($checkCnt>0)
                 {
-                    $value = randomkey(10); //change randomkey value for different tokenlength (up to 36 chars max.)
+                    $value = sRandomChars(10); //change sRandomChars value for different tokenlength (up to 36 chars max.)
                     $cQuery= "select token from ".$dbprefix."tokens_".$iVid." where token = '".$value."'; ";
                     $result = db_execute_assoc($cQuery);
                     $checkCnt = $result->RecordCount();

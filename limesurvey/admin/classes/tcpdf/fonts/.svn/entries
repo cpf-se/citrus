@@ -1,7 +1,7 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/classes/tcpdf/fonts
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -477,40 +477,6 @@ c_schmitz
 
 29985
 
-dejavusansb.php
-file
-
-
-
-
-2011-02-09T14:53:59.641273Z
-08ad6ce76707846b76c9f43453780df6
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-50084
-
 dejavuserifcondensedbi.php
 file
 
@@ -544,6 +510,40 @@ c_schmitz
 
 
 28741
+
+dejavusansb.php
+file
+
+
+
+
+2011-02-09T14:53:59.641273Z
+08ad6ce76707846b76c9f43453780df6
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+50084
 
 freesansb.ctg.z
 file
@@ -647,40 +647,6 @@ has-props
 
 5162
 
-dejavusansbi.ctg.z
-file
-
-
-
-
-2011-02-09T13:10:06.458082Z
-b0b04e0df49ca9d3d08a50e0973e4577
-2010-07-04T23:33:54.422993Z
-8894
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8547
-
 zapfdingbats.php
 file
 
@@ -714,6 +680,40 @@ c_schmitz
 
 
 2257
+
+dejavusansbi.ctg.z
+file
+
+
+
+
+2011-02-09T13:10:06.458082Z
+b0b04e0df49ca9d3d08a50e0973e4577
+2010-07-04T23:33:54.422993Z
+8894
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8547
 
 helveticai.php
 file
@@ -919,40 +919,6 @@ c_schmitz
 
 2334
 
-dejavusansmonob.ctg.z
-file
-
-
-
-
-2011-02-09T13:10:06.498083Z
-710b8f4a3f940029848ad4c06788a4c3
-2010-07-04T23:33:54.422993Z
-8894
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5814
-
 freemono.z
 file
 
@@ -986,6 +952,40 @@ c_schmitz
 
 
 146378
+
+dejavusansmonob.ctg.z
+file
+
+
+
+
+2011-02-09T13:10:06.498083Z
+710b8f4a3f940029848ad4c06788a4c3
+2010-07-04T23:33:54.422993Z
+8894
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5814
 
 dejavusans.php
 file
@@ -2143,40 +2143,6 @@ has-props
 
 85241
 
-freesansi.z
-file
-
-
-
-
-2011-02-09T13:10:06.838096Z
-53bae1e50c3e175dc8d7635605f798a5
-2010-07-04T23:33:54.422993Z
-8894
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-224360
-
 dejavusanscondensedbi.php
 file
 
@@ -2211,14 +2177,14 @@ c_schmitz
 
 44885
 
-freesansbi.z
+freesansi.z
 file
 
 
 
 
-2011-02-09T13:10:06.858097Z
-5c5c2f588ae48dca8638f86a8442f6b8
+2011-02-09T13:10:06.838096Z
+53bae1e50c3e175dc8d7635605f798a5
 2010-07-04T23:33:54.422993Z
 8894
 c_schmitz
@@ -2243,7 +2209,7 @@ has-props
 
 
 
-144094
+224360
 
 dejavusansmonoi.ctg.z
 file
@@ -2278,6 +2244,40 @@ has-props
 
 
 4929
+
+freesansbi.z
+file
+
+
+
+
+2011-02-09T13:10:06.858097Z
+5c5c2f588ae48dca8638f86a8442f6b8
+2010-07-04T23:33:54.422993Z
+8894
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+144094
 
 freeserifi.z
 file
@@ -2347,17 +2347,18 @@ c_schmitz
 
 319982
 
-uni2cid_ag15.php
+dejavusansi.ctg.z
 file
 
 
 
 
-2011-02-09T14:54:00.101291Z
-67bbf6b4afd80f3e760f726345279012
-2011-01-07T13:06:39.856760Z
-9648
+2011-02-09T13:10:07.328115Z
+9759014b6fb77fbd99baf9d1f1bb1b74
+2010-07-04T23:33:54.422993Z
+8894
 c_schmitz
+has-props
 
 
 
@@ -2378,8 +2379,7 @@ c_schmitz
 
 
 
-
-411232
+8794
 
 freeserif.php
 file
@@ -2415,18 +2415,17 @@ c_schmitz
 
 48954
 
-dejavusansi.ctg.z
+uni2cid_ag15.php
 file
 
 
 
 
-2011-02-09T13:10:07.328115Z
-9759014b6fb77fbd99baf9d1f1bb1b74
-2010-07-04T23:33:54.422993Z
-8894
+2011-02-09T14:54:00.101291Z
+67bbf6b4afd80f3e760f726345279012
+2011-01-07T13:06:39.856760Z
+9648
 c_schmitz
-has-props
 
 
 
@@ -2447,7 +2446,8 @@ has-props
 
 
 
-8794
+
+411232
 
 freemonoi.php
 file
@@ -2619,40 +2619,6 @@ has-props
 
 1107
 
-msungstdlight.php
-file
-
-
-
-
-2011-02-09T14:54:00.291298Z
-c940b153fb6c5b3498efa181881b5b6c
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1550
-
 dejavuserifcondensedb.php
 file
 
@@ -2686,6 +2652,40 @@ c_schmitz
 
 
 28679
+
+msungstdlight.php
+file
+
+
+
+
+2011-02-09T14:54:00.291298Z
+c940b153fb6c5b3498efa181881b5b6c
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1550
 
 dejavusanscondensedi.ctg.z
 file
@@ -3027,17 +3027,18 @@ has-props
 
 271731
 
-timesb.php
+dejavusanscondensedbi.z
 file
 
 
 
 
-2011-02-09T14:54:00.371301Z
-50de5cf4800cfffed9124e94b4f2a239
-2011-01-07T13:06:39.856760Z
-9648
+2011-02-09T13:10:07.868135Z
+597f2677e0ff39cae272941d4372a164
+2010-07-04T23:33:54.422993Z
+8894
 c_schmitz
+has-props
 
 
 
@@ -3058,8 +3059,7 @@ c_schmitz
 
 
 
-
-2341
+275613
 
 freemonobi.ctg.z
 file
@@ -3095,18 +3095,17 @@ has-props
 
 2749
 
-dejavusanscondensedbi.z
+timesb.php
 file
 
 
 
 
-2011-02-09T13:10:07.868135Z
-597f2677e0ff39cae272941d4372a164
-2010-07-04T23:33:54.422993Z
-8894
+2011-02-09T14:54:00.371301Z
+50de5cf4800cfffed9124e94b4f2a239
+2011-01-07T13:06:39.856760Z
+9648
 c_schmitz
-has-props
 
 
 
@@ -3127,41 +3126,8 @@ has-props
 
 
 
-275613
-
-freesansb.z
-file
 
-
-
-
-2011-02-09T13:10:07.968138Z
-af84460268805a896b591e25030153ef
-2010-07-04T23:33:54.422993Z
-8894
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-149951
+2341
 
 dejavusansmono.ctg.z
 file
@@ -3196,6 +3162,40 @@ has-props
 
 
 6039
+
+freesansb.z
+file
+
+
+
+
+2011-02-09T13:10:07.968138Z
+af84460268805a896b591e25030153ef
+2010-07-04T23:33:54.422993Z
+8894
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+149951
 
 zarbold.php
 file
@@ -3537,6 +3537,9 @@ c_schmitz
 
 45096
 
+freefont-20090104
+dir
+
 freesansi.php
 file
 
@@ -3570,9 +3573,6 @@ c_schmitz
 
 
 21839
-
-freefont-20090104
-dir
 
 dejavusansmonob.z
 file
@@ -3642,16 +3642,16 @@ c_schmitz
 
 23653
 
-freeserifbi.php
+README.TXT
 file
 
 
 
 
-2011-02-09T14:54:00.451304Z
-755d42fa9174af6a7c6a00b541ffe905
-2011-01-07T13:06:39.856760Z
-9648
+2011-02-09T13:10:08.228148Z
+ff43feeaa5bf43ad5fda4d04337f202c
+2009-09-30T20:34:36.127029Z
+7698
 c_schmitz
 
 
@@ -3674,7 +3674,7 @@ c_schmitz
 
 
 
-21862
+178
 
 dejavuserifcondensedi.z
 file
@@ -3710,16 +3710,16 @@ has-props
 
 168063
 
-README.TXT
+freeserifbi.php
 file
 
 
 
 
-2011-02-09T13:10:08.228148Z
-ff43feeaa5bf43ad5fda4d04337f202c
-2009-09-30T20:34:36.127029Z
-7698
+2011-02-09T14:54:00.451304Z
+755d42fa9174af6a7c6a00b541ffe905
+2011-01-07T13:06:39.856760Z
+9648
 c_schmitz
 
 
@@ -3742,7 +3742,7 @@ c_schmitz
 
 
 
-178
+21862
 
 dejavuserifcondensed.php
 file
@@ -3880,40 +3880,6 @@ has-props
 
 9768
 
-dejavuserifbi.z
-file
-
-
-
-
-2011-02-09T13:10:08.658164Z
-5e650280fb7dceaa8a3c5ab96c540298
-2010-07-04T23:33:54.422993Z
-8894
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-165164
-
 unifont.z
 file
 
@@ -3947,6 +3913,40 @@ has-props
 
 
 3089778
+
+dejavuserifbi.z
+file
+
+
+
+
+2011-02-09T13:10:08.658164Z
+5e650280fb7dceaa8a3c5ab96c540298
+2010-07-04T23:33:54.422993Z
+8894
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+165164
 
 symbol.php
 file
@@ -4050,40 +4050,6 @@ has-props
 
 5558
 
-freeserif.ctg.z
-file
-
-
-
-
-2011-02-09T13:10:08.658164Z
-909a2e85f49fdc735ba5ce4ca0c5ea45
-2010-07-04T23:33:54.422993Z
-8894
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9573
-
 courier.php
 file
 
@@ -4118,14 +4084,14 @@ c_schmitz
 
 2333
 
-freemonob.ctg.z
+freeserif.ctg.z
 file
 
 
 
 
 2011-02-09T13:10:08.658164Z
-61c91e280487ca2d029fb3f6ac3b1693
+909a2e85f49fdc735ba5ce4ca0c5ea45
 2010-07-04T23:33:54.422993Z
 8894
 c_schmitz
@@ -4150,7 +4116,10 @@ has-props
 
 
 
-3715
+9573
+
+utils
+dir
 
 dejavusanscondensedb.z
 file
@@ -4186,8 +4155,39 @@ has-props
 
 283491
 
-utils
-dir
+freemonob.ctg.z
+file
+
+
+
+
+2011-02-09T13:10:08.658164Z
+61c91e280487ca2d029fb3f6ac3b1693
+2010-07-04T23:33:54.422993Z
+8894
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3715
 
 stsongstdlight.php
 file

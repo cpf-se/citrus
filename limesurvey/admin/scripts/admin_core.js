@@ -1,4 +1,4 @@
-//$Id: admin_core.js 9648 2011-01-07 13:06:39Z c_schmitz $    
+//$Id: admin_core.js 9671 2011-01-11 13:14:28Z shnoulle $    
 
 $(document).ready(function(){
     setupAllTabs();
@@ -237,14 +237,13 @@ $(document).ready(function(){
        });
     });
 
-    if ($("#question_type").length > 0){
+    if ($("body.full #question_type").length > 0){
         $("#question_type").msDropDown();
 
         $("#question_type").change(function(event){
-          
            var selected_value = qDescToCode[''+$("#question_type_child .selected").text()];
            OtherSelection(selected_value);
-});
+	});
 
         $.getScript('../scripts/jquery/jquery-qtip.js', function() {
             $("#question_type_child a").each(function(index,element){
@@ -273,7 +272,7 @@ $(document).ready(function(){
             });
         });
 
-        }
+    }
     
     
     

@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: database.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: database.php 9657 2011-01-07 20:53:00Z c_schmitz $
  */
 //Last security audit on 2009-10-11
 
@@ -1278,7 +1278,7 @@ elseif ($action == "insertsurvey" && $_SESSION['USER_RIGHT_CREATE_SURVEY'])
         // Get random ids until one is found that is not used
         do
         {
-            $surveyid = getRandomID();
+            $surveyid = sRandomChars(5,'123456789');
             $isquery = "SELECT sid FROM ".db_table_name('surveys')." WHERE sid=$surveyid";
             $isresult = db_execute_assoc($isquery); // Checked
         }

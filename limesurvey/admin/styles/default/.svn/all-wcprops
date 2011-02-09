@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default
+/svnroot/limesurvey/!svn/ver/9666/source/limesurvey/admin/styles/default
 END
 adminstyle-rtl.css
 K 25
@@ -25,7 +25,7 @@ adminstyle.css
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/styles/default/adminstyle.css
+/svnroot/limesurvey/!svn/ver/9666/source/limesurvey/admin/styles/default/adminstyle.css
 END
 loading.gif
 K 25

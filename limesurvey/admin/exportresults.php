@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: exportresults.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: exportresults.php 9656 2011-01-07 20:48:39Z c_schmitz $
  */
 
 
@@ -1237,7 +1237,7 @@ elseif ($answers == "long")        //chose complete answers
 if ($type=='xls')
 {
     $objWriter = new PHPExcel_Writer_Excel5($workbook);
-    $sFileName=$tempdir.DIRECTORY_SEPARATOR.'xls_'.randomkey(40);
+    $sFileName=$tempdir.DIRECTORY_SEPARATOR.'xls_'.sRandomChars(40);
     $objWriter->save($sFileName);    
     readfile($sFileName);
     unlink($sFileName);

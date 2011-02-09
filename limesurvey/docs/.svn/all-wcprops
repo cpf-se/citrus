@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/docs
+/svnroot/limesurvey/!svn/ver/9672/source/limesurvey/docs
 END
 license.txt
 K 25
@@ -19,7 +19,7 @@ release_notes.txt
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/docs/release_notes.txt
+/svnroot/limesurvey/!svn/ver/9672/source/limesurvey/docs/release_notes.txt
 END
 .htaccess
 K 25

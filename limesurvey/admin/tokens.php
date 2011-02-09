@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: tokens.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: tokens.php 9666 2011-01-09 13:18:29Z lemeur $
  */
 
 
@@ -1373,14 +1373,14 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
     $tokenoutput .= PrepareEditorScript();
     $tokenoutput .= "\t<div class='header ui-widget-header'>"
     .$clang->gT("Send email invitations")."</div>\n"
-    ."\t<div><br/>\n";
+    ."\t<div><br/>\n"; // Wrapping Div
     if (!isset($_POST['ok']) || !$_POST['ok'])
     {
         if ($thissurvey['active']!='Y')
         {
             $tokenoutput .="<div class='messagebox ui-corner-all'><div class='warningheader'>".$clang->gT('Warning!')."</div>".$clang->gT("This survey is not yet activated and so your participants won't be able to fill out the survey.")."</div>";
         }
-		$tokenoutput .= "\n<div id='tabs'>\n"
+		$tokenoutput .= "\n<div id='tabs'>\n" // Tabs Div
 		. "<ul>\n";
 		$surveylangs = GetAdditionalLanguagesFromSurveyID($surveyid);
 		$baselang = GetBaseLanguageFromSurveyID($surveyid);
@@ -1397,7 +1397,7 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
 		$tokenoutput .= "</a></li>\n";
 		}
 		$tokenoutput .= "</ul>\n";
-		$tokenoutput .= "<form id='sendinvitation' class='form30' method='post' action='$scriptname?action=tokens&amp;sid=$surveyid'>";
+		$tokenoutput .= "<form id='sendinvitation' class='form30' method='post' action='$scriptname?action=tokens&amp;sid=$surveyid'>"; // Form
 
             
         foreach ($surveylangs as $language)
@@ -1428,7 +1428,7 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
             $subject=Replacefields($thissurvey['email_invite_subj'], $fieldsarray);
             $textarea=Replacefields($thissurvey['email_invite'], $fieldsarray);
             if ($ishtml!==true){$textarea=str_replace(array('<x>','</x>'),array(''),$textarea);}
-            $tokenoutput .= '<div id="'.$language.'">'."\n";
+            $tokenoutput .= '<div id="'.$language.'">'."\n"; // Language Tab Div
 			
             $tokenoutput .= "\t<ul>\n"
             ."<li><label for='from_$language'>".$clang->gT("From").":</label>\n"
@@ -1439,14 +1439,14 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
 
             ."<li><label for='message_$language'>".$clang->gT("Message").":</label>\n"
             ."<textarea name='message_$language' id='message_$language' rows='20' cols='80'>\n"
-            .$textarea
+            .htmlspecialchars($textarea)
             ."</textarea>\n"
             . getEditor("email-inv","message_$language","[".$clang->gT("Invitation email:", "js")."](".$language.")",$surveyid,'','',$action)
             ."</li>\n"
-            ."\t</ul></div>\n";
+            ."\t</ul></div>\n"; // End Language Tab Div
 			
         }
-        $tokenoutput .= "</div>";
+        //$tokenoutput .= "</div>"; // TIBO: commenting this unexpected end div
         /*
          if (isset($tokenid))
          {
@@ -1655,7 +1655,8 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
             ."<li>".$clang->gT("having a token")."</li></ul>";
         }
     }
-    $tokenoutput .= "</div>\n</div>\n";
+    //$tokenoutput .= "</div>\n</div>\n";
+    $tokenoutput .= "</div>\n"; // TIBO only close on div, cause dialog-modal will cklose wrapper
 }
 
 if ($subaction == "remind" && bHasSurveyPermission($surveyid, 'tokens','update'))
@@ -1708,7 +1709,7 @@ if ($subaction == "remind" && bHasSurveyPermission($surveyid, 'tokens','update')
             ."<label for='message_$language'>".$clang->gT("Message").":</label>\n"
             ."<textarea name='message_$language' id='message_$language' rows='20' cols='80' >\n";
 
-            $tokenoutput .= $textarea;
+            $tokenoutput .= htmlspecialchars($textarea);
 
             $tokenoutput .= "</textarea>\n"
             . getEditor("email-rem","message_$language","[".$clang->gT("Reminder Email:", "js")."](".$language.")",$surveyid,'','',$action)
@@ -2043,7 +2044,7 @@ if ($subaction == "tokenify" && bHasSurveyPermission($surveyid, 'tokens', 'updat
             $isvalidtoken = false;
             while ($isvalidtoken == false)
             {
-                $newtoken = randomkey($tokenlength);
+                $newtoken = sRandomChars($tokenlength);
                 if (!isset($existingtokens[$newtoken])) {
                     $isvalidtoken = true;
                     $existingtokens[$newtoken]=null;
@@ -2599,7 +2600,7 @@ if ($subaction == "insertdummys" && (bHasSurveyPermission($surveyid, 'tokens','c
         $isvalidtoken = false;
         while ($isvalidtoken == false)
         {
-            $newtoken = randomkey($tokenlength);
+            $newtoken = sRandomChars($tokenlength);
             if (!isset($existingtokens[$newtoken])) {
                 $isvalidtoken = true;
                 $existingtokens[$newtoken]=null;

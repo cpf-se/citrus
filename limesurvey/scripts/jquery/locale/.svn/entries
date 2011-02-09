@@ -1,7 +1,7 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/scripts/jquery/locale
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -60,40 +60,6 @@ c_schmitz
 
 892
 
-jquery.ui.datepicker-bs.js
-file
-
-
-
-
-2011-02-09T14:53:26.050016Z
-8363b4e78fbf4a98066850ecdb425b9f
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-850
-
 jquery.ui.datepicker-fo.js
 file
 
@@ -127,6 +93,40 @@ c_schmitz
 
 
 921
+
+jquery.ui.datepicker-bs.js
+file
+
+
+
+
+2011-02-09T14:53:26.050016Z
+8363b4e78fbf4a98066850ecdb425b9f
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+850
 
 jquery.ui.datepicker-cs.js
 file
@@ -196,40 +196,6 @@ c_schmitz
 
 925
 
-jquery.ui.keypad-es.js
-file
-
-
-
-
-2011-02-09T14:53:26.560035Z
-f196f751161a4c4f06f6a0bc086a9f69
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-765
-
 jquery.ui.datepicker-ko.js
 file
 
@@ -263,6 +229,40 @@ c_schmitz
 
 
 972
+
+jquery.ui.keypad-es.js
+file
+
+
+
+
+2011-02-09T14:53:26.560035Z
+f196f751161a4c4f06f6a0bc086a9f69
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+765
 
 jquery.ui.datepicker-is.js
 file
@@ -366,40 +366,6 @@ c_schmitz
 
 906
 
-jquery.ui.datepicker-uk.js
-file
-
-
-
-
-2011-02-09T14:53:26.570035Z
-9ae7e7766bd364c9be12f08797245501
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1122
-
 jquery.ui.datepicker-ms.js
 file
 
@@ -433,6 +399,40 @@ c_schmitz
 
 
 890
+
+jquery.ui.datepicker-uk.js
+file
+
+
+
+
+2011-02-09T14:53:26.570035Z
+9ae7e7766bd364c9be12f08797245501
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1122
 
 jquery.ui.datepicker-ro.js
 file
@@ -1080,40 +1080,6 @@ c_schmitz
 
 1027
 
-jquery.ui.datepicker-sv.js
-file
-
-
-
-
-2011-02-09T14:53:26.840045Z
-0b013df9bb8eb826de92e96cbe2b562e
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-937
-
 jquery.ui.datepicker-de.js
 file
 
@@ -1148,14 +1114,14 @@ c_schmitz
 
 884
 
-jquery.ui.keypad-de.js
+jquery.ui.datepicker-sv.js
 file
 
 
 
 
-2011-02-09T14:53:26.960050Z
-53657b28af24e9b8a3a680134815f1aa
+2011-02-09T14:53:26.840045Z
+0b013df9bb8eb826de92e96cbe2b562e
 2011-01-07T13:06:39.856760Z
 9648
 c_schmitz
@@ -1180,7 +1146,7 @@ c_schmitz
 
 
 
-1474
+937
 
 jquery.ui.datepicker-ja.js
 file
@@ -1215,6 +1181,40 @@ c_schmitz
 
 
 904
+
+jquery.ui.keypad-de.js
+file
+
+
+
+
+2011-02-09T14:53:26.960050Z
+53657b28af24e9b8a3a680134815f1aa
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1474
 
 jquery.ui.datepicker-he.js
 file
@@ -1794,40 +1794,6 @@ c_schmitz
 
 952
 
-jquery.ui.datepicker-zh-TW.js
-file
-
-
-
-
-2011-02-09T14:53:27.630075Z
-8a9255b0c0f276f6adb27aa3d3356121
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-944
-
 jquery.ui.datepicker-nl.js
 file
 
@@ -1862,14 +1828,14 @@ c_schmitz
 
 924
 
-jquery.ui.keypad-nl.js
+jquery.ui.datepicker-zh-TW.js
 file
 
 
 
 
-2011-02-09T14:53:27.750079Z
-bf9de112e2b99a073a8987250e084d43
+2011-02-09T14:53:27.630075Z
+8a9255b0c0f276f6adb27aa3d3356121
 2011-01-07T13:06:39.856760Z
 9648
 c_schmitz
@@ -1894,7 +1860,41 @@ c_schmitz
 
 
 
-812
+944
+
+jquery.ui.datepicker-pl.js
+file
+
+
+
+
+2011-02-09T14:53:27.690077Z
+fbe2154c00284293ced0089a44f6a03f
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+917
 
 jquery.ui.datepicker-th.js
 file
@@ -1930,14 +1930,14 @@ c_schmitz
 
 1278
 
-jquery.ui.datepicker-pl.js
+jquery.ui.keypad-nl.js
 file
 
 
 
 
-2011-02-09T14:53:27.690077Z
-fbe2154c00284293ced0089a44f6a03f
+2011-02-09T14:53:27.750079Z
+bf9de112e2b99a073a8987250e084d43
 2011-01-07T13:06:39.856760Z
 9648
 c_schmitz
@@ -1962,7 +1962,7 @@ c_schmitz
 
 
 
-917
+812
 
 jquery.ui.datepicker-it.js
 file
@@ -2032,40 +2032,6 @@ c_schmitz
 
 989
 
-jquery.ui.datepicker-zh-CN.js
-file
-
-
-
-
-2011-02-09T14:53:27.960087Z
-26ec0e4199eee7d2e458e65bee26fd62
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-947
-
 jquery.ui.datepicker-lt.js
 file
 
@@ -2099,6 +2065,40 @@ c_schmitz
 
 
 960
+
+jquery.ui.datepicker-zh-CN.js
+file
+
+
+
+
+2011-02-09T14:53:27.960087Z
+26ec0e4199eee7d2e458e65bee26fd62
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+947
 
 jquery.ui.datepicker-pt.js
 file

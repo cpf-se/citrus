@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: group.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: group.php 9668 2011-01-10 09:01:14Z mennodekker $
  */
 
 //Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -361,7 +361,9 @@ if (!isset($_SESSION['step']) || !$_SESSION['step'])
         exit;
     }
     echo "\n<input type='hidden' name='sid' value='$surveyid' id='sid' />\n";
-    echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
+    if (isset($token) && !empty($token))                    {
+        echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
+    }
     echo "\n</form>\n";
     echo templatereplace(file_get_contents("$thistpl/endpage.pstpl"));
     doFooter();
@@ -1394,7 +1396,9 @@ if (!$previewgrp){
     echo "<input type='hidden' name='thisstep' value='{$_SESSION['step']}' id='thisstep' />\n";
     echo "<input type='hidden' name='sid' value='$surveyid' id='sid' />\n";
     echo "<input type='hidden' name='start_time' value='".time()."' id='start_time' />\n";
-    echo "<input type='hidden' name='token' value='$token' id='token' />\n";
+    if (isset($token) && !empty($token)) {
+        echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
+    }
     echo "</form>\n";
 
     echo templatereplace(file_get_contents("$thistpl/endpage.pstpl"));

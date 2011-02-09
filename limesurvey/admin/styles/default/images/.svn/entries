@@ -1,7 +1,7 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/styles/default/images
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -162,40 +162,6 @@ has-props
 
 4322
 
-ui-bg_glass_65_ffffff_1x400.png
-file
-
-
-
-
-2011-02-09T13:08:56.115453Z
-4144d44784d021fd84c78e21f12d5399
-2009-08-18T16:44:54.881758Z
-7484
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-99
-
 next-horizontal.png
 file
 
@@ -229,6 +195,40 @@ has-props
 
 
 4375
+
+ui-bg_glass_65_ffffff_1x400.png
+file
+
+
+
+
+2011-02-09T13:08:56.115453Z
+4144d44784d021fd84c78e21f12d5399
+2009-08-18T16:44:54.881758Z
+7484
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+99
 
 ui-bg_flat_75_F8F8FF_40x100.png
 file
@@ -264,40 +264,6 @@ has-props
 
 87
 
-ajax-loader.gif
-file
-
-
-
-
-2011-02-09T13:08:56.245458Z
-438aa831d3ab5750899ab4d1852aea10
-2009-09-30T22:28:50.591376Z
-7699
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2608
-
 ui-icons_cd0a0a_256x240.png
 file
 
@@ -331,6 +297,40 @@ has-props
 
 
 4215
+
+ajax-loader.gif
+file
+
+
+
+
+2011-02-09T13:08:56.245458Z
+438aa831d3ab5750899ab4d1852aea10
+2009-09-30T22:28:50.591376Z
+7699
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2608
 
 ui-bg_flat_0_aaaaaa_40x100.png
 file
@@ -434,40 +434,6 @@ has-props
 
 123
 
-ui-icons_2e83ff_256x240.png
-file
-
-
-
-
-2011-02-09T13:08:56.355462Z
-ad2be4dece908f7ef81b1e983f38b71d
-2009-08-18T16:44:54.881758Z
-7484
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4215
-
 arrows.png
 file
 
@@ -501,6 +467,40 @@ has-props
 
 
 316
+
+ui-icons_2e83ff_256x240.png
+file
+
+
+
+
+2011-02-09T13:08:56.355462Z
+ad2be4dece908f7ef81b1e983f38b71d
+2009-08-18T16:44:54.881758Z
+7484
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4215
 
 ui-bg_highlight-soft_75_F8F8FF_1x100.png
 file

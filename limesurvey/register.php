@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: register.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: register.php 9656 2011-01-07 20:48:39Z c_schmitz $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -99,7 +99,7 @@ if (($result->RecordCount()) > 0)
 $mayinsert = false;
 while ($mayinsert != true)
 {
-    $newtoken = randomkey(15);
+    $newtoken = sRandomChars(15);
     $ntquery = "SELECT * FROM {$dbprefix}tokens_$surveyid WHERE token='$newtoken'";
     $ntresult = $connect->Execute($ntquery); //Checked
     if (!$ntresult->RecordCount()) {$mayinsert = true;}

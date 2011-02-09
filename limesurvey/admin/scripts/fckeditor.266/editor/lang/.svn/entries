@@ -1,7 +1,7 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/scripts/fckeditor.266/editor/lang
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -502,14 +502,14 @@ lemeur
 
 20991
 
-ms.js
+zh-cn.js
 file
 
 
 
 
 2011-02-09T13:09:13.686109Z
-70bd51f98f3c0d2eae5d2428b1b46dbc
+ca2851a4fe33d41f0238bc215ded3789
 2010-03-02T21:49:09.907931Z
 8451
 lemeur
@@ -534,41 +534,7 @@ lemeur
 
 
 
-19492
-
-en-uk.js
-file
-
-
-
-
-2011-02-09T13:09:13.686109Z
-245e0e39f83aab47109179952050f136
-2010-03-02T21:49:09.907931Z
-8451
-lemeur
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18151
+17809
 
 uk.js
 file
@@ -604,14 +570,14 @@ lemeur
 
 25884
 
-zh-cn.js
+en-uk.js
 file
 
 
 
 
 2011-02-09T13:09:13.686109Z
-ca2851a4fe33d41f0238bc215ded3789
+245e0e39f83aab47109179952050f136
 2010-03-02T21:49:09.907931Z
 8451
 lemeur
@@ -636,7 +602,41 @@ lemeur
 
 
 
-17809
+18151
+
+ms.js
+file
+
+
+
+
+2011-02-09T13:09:13.686109Z
+70bd51f98f3c0d2eae5d2428b1b46dbc
+2010-03-02T21:49:09.907931Z
+8451
+lemeur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19492
 
 ro.js
 file
@@ -706,40 +706,6 @@ lemeur
 
 19954
 
-af.js
-file
-
-
-
-
-2011-02-09T13:09:13.686109Z
-33f48678d1a9a11ef249fe34599425bf
-2010-03-02T21:49:09.907931Z
-8451
-lemeur
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18960
-
 ru.js
 file
 
@@ -773,6 +739,40 @@ lemeur
 
 
 25932
+
+af.js
+file
+
+
+
+
+2011-02-09T13:09:13.686109Z
+33f48678d1a9a11ef249fe34599425bf
+2010-03-02T21:49:09.907931Z
+8451
+lemeur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18960
 
 fr-ca.js
 file
@@ -808,40 +808,6 @@ lemeur
 
 19830
 
-bn.js
-file
-
-
-
-
-2011-02-09T13:09:13.686109Z
-29a6c128b31d60e2329e4a3ca51e38da
-2010-03-02T21:49:09.907931Z
-8451
-lemeur
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-28250
-
 nb.js
 file
 
@@ -875,6 +841,40 @@ lemeur
 
 
 18369
+
+bn.js
+file
+
+
+
+
+2011-02-09T13:09:13.686109Z
+29a6c128b31d60e2329e4a3ca51e38da
+2010-03-02T21:49:09.907931Z
+8451
+lemeur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28250
 
 el.js
 file
@@ -910,14 +910,14 @@ lemeur
 
 26011
 
-gl.js
+en.js
 file
 
 
 
 
 2011-02-09T13:09:13.686109Z
-48ef0d060ec4fa9dd7006b0be39392c3
+a42a2428e7e614b93f4ce977ca957a04
 2010-03-02T21:49:09.907931Z
 8451
 lemeur
@@ -942,7 +942,7 @@ lemeur
 
 
 
-20000
+18036
 
 ar.js
 file
@@ -978,14 +978,14 @@ lemeur
 
 22763
 
-en.js
+gl.js
 file
 
 
 
 
 2011-02-09T13:09:13.686109Z
-a42a2428e7e614b93f4ce977ca957a04
+48ef0d060ec4fa9dd7006b0be39392c3
 2010-03-02T21:49:09.907931Z
 8451
 lemeur
@@ -1010,7 +1010,7 @@ lemeur
 
 
 
-18036
+20000
 
 _translationstatus.txt
 file

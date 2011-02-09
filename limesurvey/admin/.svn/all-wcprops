@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin
-END
-surveylist.php
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/surveylist.php
+/svnroot/limesurvey/!svn/ver/9671/source/limesurvey/admin
 END
 quota.php
 K 25
@@ -15,35 +9,35 @@ svn:wc:ra_dav:version-url
 V 67
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/quota.php
 END
+surveylist.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/surveylist.php
+END
 statistics.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/statistics.php
 END
-login_check_cas.php
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/login_check_cas.php
-END
 dataentry.php
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/dataentry.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/admin/dataentry.php
+END
+login_check_cas.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/admin/login_check_cas.php
 END
 html_functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/html_functions.php
-END
-surveytable_functions.php
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/surveytable_functions.php
+/svnroot/limesurvey/!svn/ver/9660/source/limesurvey/admin/html_functions.php
 END
 translate.php
 K 25
@@ -51,11 +45,23 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/translate.php
 END
+surveytable_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/surveytable_functions.php
+END
 statistics_function.php
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/statistics_function.php
+/svnroot/limesurvey/!svn/ver/9658/source/limesurvey/admin/statistics_function.php
+END
+database.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/limesurvey/!svn/ver/9657/source/limesurvey/admin/database.php
 END
 html.php
 K 25
@@ -63,23 +69,17 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/html.php
 END
-database.php
+editsurveytextelements.php
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/database.php
+V 84
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/editsurveytextelements.php
 END
 dumplabel.php
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/8942/source/limesurvey/admin/dumplabel.php
-END
-editsurveytextelements.php
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/editsurveytextelements.php
 END
 bounceprocessing.php
 K 25
@@ -115,7 +115,7 @@ admin_functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/admin_functions.php
+/svnroot/limesurvey/!svn/ver/9671/source/limesurvey/admin/admin_functions.php
 END
 userrighthandling.php
 K 25
@@ -177,6 +177,12 @@ svn:wc:ra_dav:version-url
 V 83
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/questiongrouphandling.php
 END
+export_resources_zip.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/export_resources_zip.php
+END
 dumpquestion.php
 K 25
 svn:wc:ra_dav:version-url
@@ -188,12 +194,6 @@ K 25
 svn:wc:ra_dav:version-url
 V 70
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/vvexport.php
-END
-export_resources_zip.php
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/export_resources_zip.php
 END
 templates.php
 K 25
@@ -249,23 +249,17 @@ svn:wc:ra_dav:version-url
 V 77
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/printablesurvey.php
 END
-browse.php
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/browse.php
-END
 results.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/results.php
 END
-importquestion.php
+browse.php
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/importquestion.php
+V 68
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/browse.php
 END
 saved.php
 K 25
@@ -273,11 +267,17 @@ svn:wc:ra_dav:version-url
 V 67
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/saved.php
 END
+importquestion.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/importquestion.php
+END
 exportresults.php
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/exportresults.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/admin/exportresults.php
 END
 favicon.ico
 K 25
@@ -307,7 +307,7 @@ usercontrol.php
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/usercontrol.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/admin/usercontrol.php
 END
 fck_LimeReplacementFields.php
 K 25
@@ -327,17 +327,17 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/dumpgroup.php
 END
-sessioncontrol.php
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/sessioncontrol.php
-END
 editsurveysettings.php
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/editsurveysettings.php
+END
+sessioncontrol.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/sessioncontrol.php
 END
 import_resources_zip.php
 K 25
@@ -345,17 +345,17 @@ svn:wc:ra_dav:version-url
 V 82
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/import_resources_zip.php
 END
-listcolumn.php
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/listcolumn.php
-END
 quexmlsurvey.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/quexmlsurvey.php
+END
+listcolumn.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/listcolumn.php
 END
 export_data_r.php
 K 25
@@ -369,29 +369,29 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/export_structure_quexml.php
 END
+import_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/admin/import_functions.php
+END
 export_data_functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 83
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/export_data_functions.php
 END
-import_functions.php
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/import_functions.php
-END
 tokens.php
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/tokens.php
+/svnroot/limesurvey/!svn/ver/9666/source/limesurvey/admin/tokens.php
 END
 login_check.php
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/login_check.php
+/svnroot/limesurvey/!svn/ver/9656/source/limesurvey/admin/login_check.php
 END
 assessments.php
 K 25
@@ -439,7 +439,7 @@ htmleditor-functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/htmleditor-functions.php
+/svnroot/limesurvey/!svn/ver/9666/source/limesurvey/admin/htmleditor-functions.php
 END
 editansweroptions.php
 K 25

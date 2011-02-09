@@ -1,7 +1,7 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/templates/limespired
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -638,14 +638,14 @@ c_schmitz
 
 21978
 
-preview.png
+header-l.png
 file
 
 
 
 
 2011-02-09T13:11:20.850863Z
-b2034ba0e275c25b2e955f1f07ea82b3
+37dde83690cba63095abfe1088147716
 2009-08-18T16:44:54.881758Z
 7484
 c_schmitz
@@ -670,7 +670,7 @@ has-props
 
 
 
-21645
+1636
 
 logo.gif
 file
@@ -706,14 +706,14 @@ has-props
 
 7166
 
-header-l.png
+preview.png
 file
 
 
 
 
 2011-02-09T13:11:20.850863Z
-37dde83690cba63095abfe1088147716
+b2034ba0e275c25b2e955f1f07ea82b3
 2009-08-18T16:44:54.881758Z
 7484
 c_schmitz
@@ -738,7 +738,7 @@ has-props
 
 
 
-1636
+21645
 
 box_left.gif
 file
@@ -842,40 +842,6 @@ c_schmitz
 
 586
 
-header-r.png
-file
-
-
-
-
-2011-02-09T13:11:20.850863Z
-26cd41a6732b60a6730c31d20bd20bab
-2009-08-18T16:44:54.881758Z
-7484
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4580
-
 print_survey.pstpl
 file
 
@@ -909,6 +875,40 @@ tpartner
 
 
 769
+
+header-r.png
+file
+
+
+
+
+2011-02-09T13:11:20.850863Z
+26cd41a6732b60a6730c31d20bd20bab
+2009-08-18T16:44:54.881758Z
+7484
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4580
 
 completed.pstpl
 file
@@ -978,40 +978,6 @@ c_schmitz
 
 52
 
-ie_fix_6.css
-file
-
-
-
-
-2011-02-09T13:11:20.970867Z
-669087e236d1e677d7a9080e1411728b
-2010-04-16T19:30:31.601596Z
-8603
-tpartner
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2279
-
 slider-handle.gif
 file
 
@@ -1045,6 +1011,40 @@ has-props
 
 
 933
+
+ie_fix_6.css
+file
+
+
+
+
+2011-02-09T13:11:20.970867Z
+669087e236d1e677d7a9080e1411728b
+2010-04-16T19:30:31.601596Z
+8603
+tpartner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2279
 
 ie_fix_7.css
 file

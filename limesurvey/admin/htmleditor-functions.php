@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: htmleditor-functions.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: htmleditor-functions.php 9666 2011-01-09 13:18:29Z lemeur $
  */
 
 //include_once("login_check.php");
@@ -369,6 +369,7 @@ function getInlineEditor($fieldtype,$fieldname,$fieldtext, $surveyID=null,$gID=n
      $fieldtype == 'email-admin-resp'||
      $fieldtype == 'email-rem' )
     { // do nothing
+        $htmlcode.= "$oFCKeditorVarName.ReplaceTextarea() ;\n";
     }
     else
     {

@@ -1,15 +1,15 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
+2011-01-10T14:42:50.088207Z
+9669
+kadejo
 
 
 
@@ -47,6 +47,9 @@ dir
 be
 dir
 
+ur
+dir
+
 bg
 dir
 
@@ -68,10 +71,10 @@ dir
 nb
 dir
 
-hi
+pa
 dir
 
-pa
+hi
 dir
 
 bs
@@ -83,34 +86,34 @@ dir
 zh-Hans
 dir
 
-hr
+zh-Hant-HK
 dir
 
 nl
 dir
 
-zh-Hant-HK
+hr
 dir
 
 _template
 dir
 
-nn
+th
 dir
 
 pl
 dir
 
-th
+nn
 dir
 
 hu
 dir
 
-nl-informal
+vi
 dir
 
-vi
+nl-informal
 dir
 
 lt

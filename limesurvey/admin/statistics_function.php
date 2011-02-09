@@ -3231,6 +3231,7 @@ function generate_statistics($surveyid, $allfields, $q2show='all', $usegraph=0, 
             unset($grawdata);
             unset($label);
             unset($lbl);
+            unset($lblrtl);
             unset($lblout);
             unset($justcode);
             unset ($alist);
@@ -3253,7 +3254,7 @@ function generate_statistics($surveyid, $allfields, $q2show='all', $usegraph=0, 
             }
             else
             {
-                $sFileName=$tempdir.DIRECTORY_SEPARATOR.'xls_'.randomkey(40);
+                $sFileName=$tempdir.DIRECTORY_SEPARATOR.'xls_'.sRandomChars(40);
             }    
             $objWriter->save($sFileName); 
             if($pdfOutput!='F')

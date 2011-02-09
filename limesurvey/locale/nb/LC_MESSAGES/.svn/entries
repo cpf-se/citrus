@@ -1,14 +1,14 @@
 10
 
 dir
-9648
+9672
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/locale/nb/LC_MESSAGES
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
 
 
-2010-10-22T19:58:43.602086Z
-9309
+2011-01-08T20:37:53.678662Z
+9665
 gandalfar
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2011-02-09T14:53:36.820419Z
-c32043497827a8c20c3b190142f5349d
-2010-10-22T19:58:43.602086Z
-9309
+2011-02-09T15:02:03.699392Z
+c4f24336d6548ccdad668cb58938b33b
+2011-01-08T20:37:53.678662Z
+9665
 gandalfar
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-199247
+225206
 
 index.html
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2011-02-09T14:53:36.820419Z
-9d4a954bc6aa7695c34eb60983fdc873
-2010-10-22T19:58:43.602086Z
-9309
+2011-02-09T15:02:03.699392Z
+ba19eaa1f40dbf628a6b77470ce337d7
+2011-01-08T20:37:53.678662Z
+9665
 gandalfar
 
 
@@ -126,5 +126,5 @@ gandalfar
 
 
 
-498528
+561248
 

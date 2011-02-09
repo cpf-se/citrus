@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts
+/svnroot/limesurvey/!svn/ver/9671/source/limesurvey/admin/scripts
 END
 subquestions.js
 K 25
@@ -81,17 +81,17 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/pngfix.js
 END
+templates.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/limesurvey/!svn/ver/9671/source/limesurvey/admin/scripts/templates.js
+END
 printablesurvey.js
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /svnroot/limesurvey/!svn/ver/8633/source/limesurvey/admin/scripts/printablesurvey.js
-END
-templates.js
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/limesurvey/!svn/ver/7699/source/limesurvey/admin/scripts/templates.js
 END
 translation.js
 K 25
@@ -103,7 +103,7 @@ admin_core.js
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/admin/scripts/admin_core.js
+/svnroot/limesurvey/!svn/ver/9671/source/limesurvey/admin/scripts/admin_core.js
 END
 browse.js
 K 25

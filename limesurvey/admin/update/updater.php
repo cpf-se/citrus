@@ -12,7 +12,7 @@
  *
  * $Id: updater.php 8987 2010-07-27 12:59:34Z c_schmitz $
  */
-$updaterversion=explode(' ','$Rev: 9648 $');  // this is updated by subversion so don't change this string
+$updaterversion=explode(' ','$Rev: 9656 $');  // this is updated by subversion so don't change this string
 $updaterversion=$updaterversion[1];
 
 if (isset($_REQUEST['update'])) die();
@@ -626,12 +626,12 @@ function UpdateStep4()
 function CheckForDBUpgrades()
 {
     global $connect, $databasetype, $dbprefix, $dbversionnumber, $clang;
-    $adminoutput='';
     $currentDBVersion=GetGlobalSetting('DBVersion');
     if (intval($dbversionnumber)>intval($currentDBVersion))
     {
         if(isset($_GET['continue']) && $_GET['continue']==1) 
         {
+            echo getAdminHeader()."<div style='width:90%; padding:1% 10%;background-color:#eee;'>";
             $upgradedbtype=$databasetype;
             if ($upgradedbtype=='mssql_n' || $upgradedbtype=='odbc_mssql' || $upgradedbtype=='odbtp') $upgradedbtype='mssql';
             if ($upgradedbtype=='mssqlnative') $upgradedbtype = 'mssqlnative';
@@ -641,13 +641,12 @@ function CheckForDBUpgrades()
             $tables = $connect->MetaTables();
             db_upgrade_all(intval($currentDBVersion));
             db_upgrade(intval($currentDBVersion));
-            $adminoutput="<br />".sprintf($clang->gT("Database has been successfully upgraded to version %s"),$dbversionnumber);
+            echo "<br />".sprintf($clang->gT("Database has been successfully upgraded to version %s"),$dbversionnumber);
         }
         else {
             return ShowDBUpgradeNotice();
         }
     }
-    return $adminoutput;
 }
 
 function ShowDBUpgradeNotice() {
