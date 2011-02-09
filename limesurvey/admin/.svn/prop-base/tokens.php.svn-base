@@ -1,0 +1,16 @@
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 2
+Id
+K 13
+svn:mergeinfo
+V 219
+/source/limesurvey18/admin/tokens.php:5403-5746
+/source/limesurvey181/admin/tokens.php:6511-6604
+/source/limesurvey_dev/admin/tokens.php:6619-6852,7133-7690,8219-8529
+/source/limesurvey_dev_cs/admin/tokens.php:8258-8311
+END

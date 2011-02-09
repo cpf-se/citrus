@@ -1,0 +1,18 @@
+<table width="100%" align="center" cellspacing="0">
+	<tr>
+		<td align="center" bgcolor="#EEF6FF">
+			<h2>{SURVEYNAME}</h2><br />
+			<span style='font-size:10px;' >{SURVEYDESCRIPTION}</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="graph" bgcolor="#d2e0f2">
+			{PERCENTCOMPLETE}
+		</td>
+	</tr>
+	<tr>
+    <td  align="center">
+      {LANGUAGECHANGER}
+    </td>
+  </tr>
+</table>

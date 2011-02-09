@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/limesurvey/!svn/ver/9046/source/limesurvey
+END
+optout.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/limesurvey/!svn/ver/8873/source/limesurvey/optout.php
+END
+group.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/limesurvey/!svn/ver/9019/source/limesurvey/group.php
+END
+survey.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/limesurvey/!svn/ver/9019/source/limesurvey/survey.php
+END
+save.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/limesurvey/!svn/ver/8903/source/limesurvey/save.php
+END
+printanswers.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/limesurvey/!svn/ver/8968/source/limesurvey/printanswers.php
+END
+robots.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/limesurvey/!svn/ver/3569/source/limesurvey/robots.txt
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/limesurvey/!svn/ver/8963/source/limesurvey/config.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/limesurvey/!svn/ver/8951/source/limesurvey/index.php
+END
+question.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/limesurvey/!svn/ver/8909/source/limesurvey/question.php
+END
+COPYRIGHT.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/COPYRIGHT.php
+END
+config-defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/8987/source/limesurvey/config-defaults.php
+END
+load.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/limesurvey/!svn/ver/8933/source/limesurvey/load.php
+END
+LICENSE.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/LICENSE.php
+END
+verification.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/limesurvey/!svn/ver/8639/source/limesurvey/verification.php
+END
+config-ldap.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/config-ldap.php
+END
+qanda.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/limesurvey/!svn/ver/9045/source/limesurvey/qanda.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/limesurvey/!svn/ver/8982/source/limesurvey/register.php
+END
+version.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/limesurvey/!svn/ver/9046/source/limesurvey/version.php
+END
+htaccess.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/limesurvey/!svn/ver/5763/source/limesurvey/htaccess.txt
+END
+ldap-functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/ldap-functions.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/limesurvey/!svn/ver/9044/source/limesurvey/common.php
+END
+statistics_user.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/8999/source/limesurvey/statistics_user.php
+END

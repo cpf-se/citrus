@@ -1,0 +1,7 @@
+K 13
+svn:mergeinfo
+V 210
+/source/limesurvey181/admin/statistics_function.php:6511-6604
+/source/limesurvey_dev/admin/statistics_function.php:6619-6852,7133-7233,8219-8529
+/source/limesurvey_dev_cs/admin/statistics_function.php:8258-8311
+END

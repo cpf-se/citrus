@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/phpCAS/CAS/PGTStorage
+END
+pgt-main.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/phpCAS/CAS/PGTStorage/pgt-main.php
+END
+pgt-db.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/phpCAS/CAS/PGTStorage/pgt-db.php
+END
+pgt-file.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/phpCAS/CAS/PGTStorage/pgt-file.php
+END

@@ -1,0 +1,12 @@
+K 13
+svn:mergeinfo
+V 534
+/source/limesurvey/admin/export_structure_quexml.php:2897-3699
+/source/limesurvey18/admin/export_structure_quexml.php:5403-5746
+/source/limesurvey181/admin/export_structure_quexml.php:6511-6604
+/source/limesurvey_dev/admin/export_structure_quexml.php:6619-6852,7133-7690,8219-8529
+/source/limesurvey_dev_cs/admin/export_structure_quexml.php:8258-8311
+/source/phpsurveyor/admin/export_structure_quexml.php:1653-2896
+/trunk/phpsurveyor/admin/export_structure_quexml.php:1648-1652
+/trunk/unstable/admin/export_structure_quexml.php:3-1647
+END

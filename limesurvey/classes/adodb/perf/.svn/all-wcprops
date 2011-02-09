@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf
+END
+perf-db2.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-db2.inc.php
+END
+perf-informix.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-informix.inc.php
+END
+perf-mssql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-mssql.inc.php
+END
+perf-oci8.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-oci8.inc.php
+END
+perf-mysql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-mysql.inc.php
+END
+perf-mssqlnative.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-mssqlnative.inc.php
+END
+perf-postgres.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/classes/adodb/perf/perf-postgres.inc.php
+END

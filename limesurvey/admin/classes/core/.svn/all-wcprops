@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/core
+END
+class.progressbar.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/core/class.progressbar.php
+END
+domxml-php4-to-php5.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/core/domxml-php4-to-php5.php
+END
+settingsstorage.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/core/settingsstorage.php
+END
+sha256.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/core/sha256.php
+END

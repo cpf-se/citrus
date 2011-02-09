@@ -1,0 +1,7 @@
+<br />
+<div style="text-align: center;">
+<strong style="color: #f00;">{REGISTERERROR}</strong>
+<p><strong>{REGISTERMESSAGE1}</strong></p>
+<p>{REGISTERMESSAGE2}</p>
+{REGISTERFORM}<br />
+</div>

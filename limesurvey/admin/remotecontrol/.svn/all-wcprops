@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/8985/source/limesurvey/admin/remotecontrol
+END
+lsrc.client.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8930/source/limesurvey/admin/remotecontrol/lsrc.client.php
+END
+lsrc.testclient.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/remotecontrol/lsrc.testclient.php
+END
+lsrc.helper.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8930/source/limesurvey/admin/remotecontrol/lsrc.helper.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/limesurvey/!svn/ver/6533/source/limesurvey/admin/remotecontrol/index.html
+END
+lsrc_orig.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/limesurvey/!svn/ver/8386/source/limesurvey/admin/remotecontrol/lsrc_orig.wsdl
+END
+lsrc.config.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/remotecontrol/lsrc.config.php
+END
+lsrc.server.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8985/source/limesurvey/admin/remotecontrol/lsrc.server.php
+END

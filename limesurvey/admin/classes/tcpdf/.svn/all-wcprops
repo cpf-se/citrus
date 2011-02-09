@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/limesurvey/!svn/ver/8894/source/limesurvey/admin/classes/tcpdf
+END
+tcpdf.pem
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/tcpdf.pem
+END
+extensiontcpdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/extensiontcpdf.php
+END
+tcpdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/tcpdf.php
+END
+2dbarcodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/2dbarcodes.php
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/LICENSE.TXT
+END
+unicode_data.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/unicode_data.php
+END
+CHANGELOG.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/CHANGELOG.TXT
+END
+mypdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/mypdf.php
+END
+barcodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/barcodes.php
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/limesurvey/!svn/ver/7698/source/limesurvey/admin/classes/tcpdf/README.TXT
+END
+htmlcolors.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/limesurvey/!svn/ver/8540/source/limesurvey/admin/classes/tcpdf/htmlcolors.php
+END

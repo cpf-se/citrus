@@ -1,0 +1,11 @@
+<table id='loadtable' width="100%" align="center" cellspacing="0" bgcolor="#FFFFFF">
+	<tr>
+		<td align="center" bgcolor="#eef6ff">
+<h3>{LOADHEADING}</h3></td></tr>
+<tr><td align="center"><br /><font color="red">{LOADERROR}</font>
+{LOADMESSAGE}<br />
+{LOADFORM}<br />
+{RETURNTOSURVEY}<br />
+</td>
+</tr>
+</table>

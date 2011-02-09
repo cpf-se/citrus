@@ -1,0 +1,7 @@
+<div style="text-align: center;">
+<span style="color: #f00;">{LOADERROR}</span><br />
+<strong style="font-size: 120%;">{LOADHEADING}</strong><br /><br />
+{LOADMESSAGE}<br />
+{LOADFORM}<br />
+{RETURNTOSURVEY}
+</div>

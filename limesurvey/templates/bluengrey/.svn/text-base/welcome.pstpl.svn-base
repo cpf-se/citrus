@@ -1,0 +1,11 @@
+{CHECKJAVASCRIPT}
+<div id="welcome">
+   <font style="font-family: Verdana; font-size: 14px;">
+   <b>{SURVEYNAME}</b>
+   </font><br />
+ {SURVEYDESCRIPTION}
+</div>
+<div id="welcometext">
+			<p>{WELCOME}</p>
+			<span style='font-color:#333; font-size:0.8em;'>{THEREAREXQUESTIONS}</span>
+</div>

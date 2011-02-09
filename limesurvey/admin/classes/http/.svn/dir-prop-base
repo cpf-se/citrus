@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 202
+httpclient.gif
+test_cookies.php
+test_http.php
+test_http_cookies.php
+test_http_image_request.php
+test_http_post.php
+test_http_soap.php
+yahoo_export_address_book.php
+yahoo_group_invite.php
+yahoo_user.php
+
+END

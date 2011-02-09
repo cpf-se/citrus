@@ -1,0 +1,17 @@
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 2
+Id
+K 13
+svn:mergeinfo
+V 277
+/source/limesurvey18/admin/statistics.php:5403-5746
+/source/limesurvey181/admin/statistics.php:6511-6604
+/source/limesurvey_dev/admin/statistics.php:6619-6852,7133-7690,8219-8529
+/source/limesurvey_dev_cs/admin/statistics.php:8258-8311
+/trunk/unstable/admin/statistics.php:3-31
+END

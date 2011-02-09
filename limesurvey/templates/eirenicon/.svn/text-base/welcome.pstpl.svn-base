@@ -1,0 +1,15 @@
+<table align="center" width="100%" cellpadding="25" cellspacing="0" border="1" style="border-collapse: collapse;border-color:#111111">
+{CHECKJAVASCRIPT}
+	<tr>
+		<td align="center" bgcolor="#042455">
+			<span style="font-size: 110%; color: #E5E5E5; font-weight: bold;">{SURVEYNAME}</span><br />
+			<span style="font-size: 90%; color: #ccc;">{SURVEYDESCRIPTION}</span>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size: 90%; text-align: center; background-color: #E5E5E5;">
+			<p>{WELCOME}<p>
+			<em>{THEREAREXQUESTIONS}</em>
+		</td>
+	</tr>
+</table>
