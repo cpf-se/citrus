@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svnroot/limesurvey/!svn/ver/9672/source/limesurvey
+/svnroot/limesurvey/!svn/ver/9715/source/limesurvey
 END
 optout.php
 K 25
@@ -25,7 +25,7 @@ save.php
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/save.php
+/svnroot/limesurvey/!svn/ver/9685/source/limesurvey/save.php
 END
 printanswers.php
 K 25
@@ -51,17 +51,17 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/limesurvey/!svn/ver/9656/source/limesurvey/config.php
 END
-index.php
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svnroot/limesurvey/!svn/ver/9668/source/limesurvey/index.php
-END
 question.php
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/question.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/limesurvey/!svn/ver/9704/source/limesurvey/index.php
 END
 COPYRIGHT.php
 K 25
@@ -91,7 +91,7 @@ common_functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/limesurvey/!svn/ver/9668/source/limesurvey/common_functions.php
+/svnroot/limesurvey/!svn/ver/9712/source/limesurvey/common_functions.php
 END
 verification.php
 K 25
@@ -115,7 +115,7 @@ qanda.php
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/qanda.php
+/svnroot/limesurvey/!svn/ver/9702/source/limesurvey/qanda.php
 END
 register.php
 K 25
@@ -133,7 +133,7 @@ version.php
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/limesurvey/!svn/ver/9672/source/limesurvey/version.php
+/svnroot/limesurvey/!svn/ver/9715/source/limesurvey/version.php
 END
 htaccess.txt
 K 25

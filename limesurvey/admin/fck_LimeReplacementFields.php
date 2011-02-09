@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: fck_LimeReplacementFields.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: fck_LimeReplacementFields.php 9694 2011-01-16 08:09:45Z lemeur $
  */
 
 include_once("login_check.php");
@@ -143,6 +143,7 @@ switch ($fieldtype)
         // but not email-reg for the moment
         $replFields[]=array('EMAIL',$clang->gT("Email from the token"));
         $replFields[]=array('TOKEN',$clang->gT("Token code for this participant"));
+        $replFields[]=array('OPTOUTURL',$clang->gT("URL for a respondent to opt-out this survey"));
     case 'email-reg':
         $replFields[]=array('FIRSTNAME',$clang->gT("First name from token"));
         $replFields[]=array('LASTNAME',$clang->gT("Lastname from token"));
@@ -212,7 +213,7 @@ switch ($fieldtype)
 }
 if ($isInstertansEnabled===true)
 {
-    if (empty($surveyid)) {die("No SID provided.");}
+    if (empty($surveyid)) {safe_die("No SID provided.");}
 
     //2: Get all other questions that occur before this question that are pre-determined answer types
     $fieldmap = createFieldMap($surveyid, 'full');
@@ -237,7 +238,7 @@ if ($isInstertansEnabled===true)
             case 'editgroup':
             case 'editgroup_desc':
             case 'translategroup':
-                if (empty($gid)) {die("No GID provided.");}
+                if (empty($gid)) {safe_die("No GID provided.");}
 
                 if ($field['gid'] == $gid)
                 {
@@ -246,7 +247,7 @@ if ($isInstertansEnabled===true)
                 break;
 
             case 'addquestion':
-                if (empty($gid)) {die("No GID provided.");}
+                if (empty($gid)) {safe_die("No GID provided.");}
 
                 if ( !is_null($prevquestion) &&
                 $prevquestion['gid'] == $gid &&
@@ -261,8 +262,8 @@ if ($isInstertansEnabled===true)
             case 'editquestion':
             case 'translatequestion':
             case 'translateanswer':
-                if (empty($gid)) {die("No GID provided.");}
-                if (empty($qid)) {die("No QID provided.");}
+                if (empty($gid)) {safe_die("No GID provided.");}
+                if (empty($qid)) {safe_die("No QID provided.");}
 
                 if ($field['gid'] == $gid &&
                 $field['qid'] == $qid)
@@ -270,12 +271,12 @@ if ($isInstertansEnabled===true)
                     $AddQuestion=False;
                 }
                 break;
-            case 'tokens':
+            case 'emailtemplates':
                 // this is the case for email-conf
                 $AddQuestion=True;
                 break;
             default:
-                die("No Action provided.");
+                safe_die("No Action provided.");
                 break;
         }
         if ( $AddQuestion===True)

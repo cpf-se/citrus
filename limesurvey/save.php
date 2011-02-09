@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: save.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: save.php 9685 2011-01-14 19:10:29Z c_schmitz $
 
  //Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
 
@@ -190,7 +190,7 @@ if (isset($postedfieldnames) || (isset($move) && $move == "movesubmit") )
     if ($thissurvey['savetimings']=="Y" && $thissurvey['active'] == "Y")
     {
 		set_answer_time();
-}
+    }
 }
 
 // CREATE SAVED CONTROL RECORD USING SAVE FORM INFORMATION
@@ -807,7 +807,7 @@ function set_answer_time()
     {
         $setField = $_POST['lastanswer'];
     }
-	$passedTime = time() - $_POST['start_time'];
+	$passedTime = round(microtime(true) - $_POST['start_time'],2);
 
 	if(!isset($setField))
 		$setField = $_POST['lastgroup'];

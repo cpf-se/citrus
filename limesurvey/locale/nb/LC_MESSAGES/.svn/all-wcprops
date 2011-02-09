@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/limesurvey/!svn/ver/9665/source/limesurvey/locale/nb/LC_MESSAGES
+/svnroot/limesurvey/!svn/ver/9690/source/limesurvey/locale/nb/LC_MESSAGES
 END
 nb.mo
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/9665/source/limesurvey/locale/nb/LC_MESSAGES/nb.mo
+/svnroot/limesurvey/!svn/ver/9690/source/limesurvey/locale/nb/LC_MESSAGES/nb.mo
 END
 index.html
 K 25
@@ -19,5 +19,5 @@ nb.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/limesurvey/!svn/ver/9665/source/limesurvey/locale/nb/LC_MESSAGES/nb.po
+/svnroot/limesurvey/!svn/ver/9690/source/limesurvey/locale/nb/LC_MESSAGES/nb.po
 END

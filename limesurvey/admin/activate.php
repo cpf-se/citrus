@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: activate.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: activate.php 9704 2011-01-19 13:17:19Z mennodekker $
  */
 
 
@@ -30,7 +30,7 @@ if (!isset($_POST['ok']) || !$_POST['ok'])
 
     // Check consistency for groups and questions
     $failedgroupcheck = checkGroup($postsid);
-    $failedcheck = checkQestions($postsid, $surveyid, $qtypes);
+    $failedcheck = checkQuestions($postsid, $surveyid, $qtypes);
 
     //IF ANY OF THE CHECKS FAILED, PRESENT THIS SCREEN
     if ((isset($failedcheck) && $failedcheck) || (isset($failedgroupcheck) && $failedgroupcheck))

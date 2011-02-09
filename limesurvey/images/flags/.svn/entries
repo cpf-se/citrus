@@ -1,7 +1,7 @@
 10
 
 dir
-9672
+9715
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/images/flags
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -570,40 +570,6 @@ has-props
 
 346
 
-nl-informal.png
-file
-
-
-
-
-2011-02-09T14:53:52.270997Z
-132685fac5385dd52eeb7628e28a84ea
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-363
-
 vi.png
 file
 
@@ -637,6 +603,40 @@ has-props
 
 
 377
+
+nl-informal.png
+file
+
+
+
+
+2011-02-09T14:53:52.270997Z
+132685fac5385dd52eeb7628e28a84ea
+2011-01-07T13:06:39.856760Z
+9648
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+363
 
 lt.png
 file
@@ -740,40 +740,6 @@ has-props
 
 392
 
-pt.png
-file
-
-
-
-
-2011-02-09T13:08:29.964475Z
-68d4c2bfe91cfb7b8dfd8e0999b2c4ea
-2008-07-01T22:01:49.426679Z
-5205
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-460
-
 ca.png
 file
 
@@ -807,6 +773,40 @@ has-props
 
 
 390
+
+pt.png
+file
+
+
+
+
+2011-02-09T13:08:29.964475Z
+68d4c2bfe91cfb7b8dfd8e0999b2c4ea
+2008-07-01T22:01:49.426679Z
+5205
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+460
 
 pt-BR.png
 file
@@ -1012,40 +1012,6 @@ has-props
 
 578
 
-de-informal.png
-file
-
-
-
-
-2011-02-09T13:08:31.434530Z
-7e866e1785c0424964ff892ffc923c1e
-2008-07-01T22:01:49.426679Z
-5205
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-417
-
 ie.png
 file
 
@@ -1079,6 +1045,40 @@ has-props
 
 
 481
+
+de-informal.png
+file
+
+
+
+
+2011-02-09T13:08:31.434530Z
+7e866e1785c0424964ff892ffc923c1e
+2008-07-01T22:01:49.426679Z
+5205
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+417
 
 el.png
 file

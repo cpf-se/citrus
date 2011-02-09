@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: qanda.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: qanda.php 9702 2011-01-18 22:15:11Z mennodekker $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -3145,8 +3145,9 @@ function do_multiplechoice($ia)
             ++$colcounter;
         }
     }
-
-    $answer .= "<script type='text/javascript'>autoArray = ".json_encode($autoArray).";</script>";
+    if ($exclude_all_others_auto!=''){
+        $answer .= "<script type='text/javascript'>autoArray = ".json_encode($autoArray).";</script>";
+    }
     if ($other == 'Y')
     {
         $myfname = $ia[1].'other';

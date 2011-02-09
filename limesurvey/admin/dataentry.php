@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: dataentry.php 9656 2011-01-07 20:48:39Z c_schmitz $
+ * $Id: dataentry.php 9688 2011-01-14 19:57:56Z c_schmitz $
  */
 
 /*
@@ -1451,10 +1451,6 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
 
     elseif ($subaction == "delete"  && bHasSurveyPermission($surveyid,'responses','delete'))
     {
-        if (!bHasSurveyPermission($surveyid,'delete_survey'))
-        {
-            safe_die('You are not allowed to delete a response.');
-        }        
         $dataentryoutput .= "<div class='header ui-widget-header'>".$clang->gT("Data entry")."</div>\n";
         $dataentryoutput .= "<div class='messagebox ui-corner-all'>\n";
 

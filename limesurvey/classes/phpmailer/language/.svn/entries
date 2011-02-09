@@ -1,7 +1,7 @@
 10
 
 dir
-9672
+9715
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/classes/phpmailer/language
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -25,40 +25,6 @@ mennodekker
 
 
 c9fb2505-2411-0410-9117-9d48b60cffec
-
-phpmailer.lang-ch.php
-file
-
-
-
-
-2011-02-09T13:10:44.269495Z
-03b6c4e408847e378554201c930b75f8
-2010-03-31T11:37:19.090060Z
-8540
-texens
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1456
 
 phpmailer.lang-ja.php
 file
@@ -94,14 +60,14 @@ mennodekker
 
 1734
 
-phpmailer.lang-dk.php
+phpmailer.lang-ch.php
 file
 
 
 
 
 2011-02-09T13:10:44.269495Z
-619e5aa03556bf5d2fcb69e3a7b927e0
+03b6c4e408847e378554201c930b75f8
 2010-03-31T11:37:19.090060Z
 8540
 texens
@@ -126,7 +92,7 @@ texens
 
 
 
-1580
+1456
 
 phpmailer.lang-fi.php
 file
@@ -162,6 +128,40 @@ texens
 
 1697
 
+phpmailer.lang-dk.php
+file
+
+
+
+
+2011-02-09T13:10:44.269495Z
+619e5aa03556bf5d2fcb69e3a7b927e0
+2010-03-31T11:37:19.090060Z
+8540
+texens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1580
+
 phpmailer.lang-zh_cn.php
 file
 
@@ -196,40 +196,6 @@ texens
 
 1403
 
-phpmailer.lang-ar.php
-file
-
-
-
-
-2011-02-09T13:10:44.329498Z
-a8643159de5eaf8efe328595dd39ef12
-2010-03-31T11:37:19.090060Z
-8540
-texens
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1808
-
 phpmailer.lang-en.php
 file
 
@@ -263,6 +229,40 @@ c_schmitz
 
 
 1196
+
+phpmailer.lang-ar.php
+file
+
+
+
+
+2011-02-09T13:10:44.329498Z
+a8643159de5eaf8efe328595dd39ef12
+2010-03-31T11:37:19.090060Z
+8540
+texens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1808
 
 phpmailer.lang-br.php
 file
@@ -332,14 +332,14 @@ mennodekker
 
 1688
 
-phpmailer.lang-se.php
+phpmailer.lang-fr.php
 file
 
 
 
 
 2011-02-09T13:10:44.389500Z
-6357a34916f64767e83e5bb0a9e25692
+f70e46e1fbae3b0b5abb256af36cb4c2
 2010-03-31T11:37:19.090060Z
 8540
 texens
@@ -364,7 +364,7 @@ texens
 
 
 
-1560
+1627
 
 phpmailer.lang-es.php
 file
@@ -400,14 +400,14 @@ texens
 
 1623
 
-phpmailer.lang-fr.php
+phpmailer.lang-se.php
 file
 
 
 
 
 2011-02-09T13:10:44.389500Z
-f70e46e1fbae3b0b5abb256af36cb4c2
+6357a34916f64767e83e5bb0a9e25692
 2010-03-31T11:37:19.090060Z
 8540
 texens
@@ -432,7 +432,7 @@ texens
 
 
 
-1627
+1560
 
 phpmailer.lang-et.php
 file

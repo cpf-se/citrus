@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale
+/svnroot/limesurvey/!svn/ver/9687/source/limesurvey/scripts/jquery/locale
 END
 jquery.ui.datepicker-eo.js
 K 25
@@ -9,17 +9,17 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-eo.js
 END
-jquery.ui.datepicker-bs.js
-K 25
-svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-bs.js
-END
 jquery.ui.datepicker-fo.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-fo.js
+END
+jquery.ui.datepicker-bs.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-bs.js
 END
 jquery.ui.datepicker-cs.js
 K 25
@@ -33,17 +33,17 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-es.js
 END
-jquery.ui.keypad-es.js
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.keypad-es.js
-END
 jquery.ui.datepicker-ko.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-ko.js
+END
+jquery.ui.keypad-es.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.keypad-es.js
 END
 jquery.ui.datepicker-is.js
 K 25
@@ -51,29 +51,23 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-is.js
 END
-jquery.ui.datepicker-no.js
-K 25
-svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-no.js
-END
 jquery.ui.datepicker-sk.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-sk.js
 END
-jquery.ui.datepicker-uk.js
-K 25
-svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-uk.js
-END
 jquery.ui.datepicker-ms.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-ms.js
+END
+jquery.ui.datepicker-uk.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-uk.js
 END
 jquery.ui.datepicker-ro.js
 K 25
@@ -98,6 +92,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 103
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-fr-CH.js
+END
+jquery.ui.datepicker-nb.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9687/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-nb.js
 END
 jquery.ui.datepicker-ar.js
 K 25
@@ -134,6 +134,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-az.js
+END
+jquery.ui.datepicker-nn.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9687/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-nn.js
 END
 jquery.ui.datepicker-nl-informal.js
 K 25
@@ -189,29 +195,29 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-fa.js
 END
-jquery.ui.datepicker-sv.js
-K 25
-svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-sv.js
-END
 jquery.ui.datepicker-de.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-de.js
 END
-jquery.ui.keypad-de.js
+jquery.ui.datepicker-sv.js
 K 25
 svn:wc:ra_dav:version-url
-V 96
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.keypad-de.js
+V 100
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-sv.js
 END
 jquery.ui.datepicker-ja.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-ja.js
+END
+jquery.ui.keypad-de.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.keypad-de.js
 END
 jquery.ui.datepicker-he.js
 K 25
@@ -315,23 +321,23 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-et.js
 END
-jquery.ui.datepicker-zh-TW.js
-K 25
-svn:wc:ra_dav:version-url
-V 103
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-zh-TW.js
-END
 jquery.ui.datepicker-nl.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-nl.js
 END
-jquery.ui.keypad-nl.js
+jquery.ui.datepicker-zh-TW.js
 K 25
 svn:wc:ra_dav:version-url
-V 96
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.keypad-nl.js
+V 103
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-zh-TW.js
+END
+jquery.ui.datepicker-pl.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-pl.js
 END
 jquery.ui.datepicker-th.js
 K 25
@@ -339,11 +345,11 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-th.js
 END
-jquery.ui.datepicker-pl.js
+jquery.ui.keypad-nl.js
 K 25
 svn:wc:ra_dav:version-url
-V 100
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-pl.js
+V 96
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.keypad-nl.js
 END
 jquery.ui.datepicker-it.js
 K 25
@@ -357,17 +363,17 @@ svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-sl.js
 END
-jquery.ui.datepicker-zh-CN.js
-K 25
-svn:wc:ra_dav:version-url
-V 103
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-zh-CN.js
-END
 jquery.ui.datepicker-lt.js
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-lt.js
+END
+jquery.ui.datepicker-zh-CN.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/locale/jquery.ui.datepicker-zh-CN.js
 END
 jquery.ui.datepicker-pt.js
 K 25

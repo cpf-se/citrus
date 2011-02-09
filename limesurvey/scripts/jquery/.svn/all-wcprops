@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery
-END
-jquery.dd.js
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/jquery.dd.js
+/svnroot/limesurvey/!svn/ver/9687/source/limesurvey/scripts/jquery
 END
 hoverIntent.js
 K 25
@@ -15,17 +9,11 @@ svn:wc:ra_dav:version-url
 V 81
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/hoverIntent.js
 END
-jquery.coookie.js
+jquery.dd.js
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svnroot/limesurvey/!svn/ver/9292/source/limesurvey/scripts/jquery/jquery.coookie.js
-END
-jquery.blockUI.js
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/scripts/jquery/jquery.blockUI.js
+V 79
+/svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/jquery.dd.js
 END
 lime-slider.js
 K 25
@@ -33,23 +21,35 @@ svn:wc:ra_dav:version-url
 V 81
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/lime-slider.js
 END
+jquery.blockUI.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/scripts/jquery/jquery.blockUI.js
+END
+jquery.coookie.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/limesurvey/!svn/ver/9292/source/limesurvey/scripts/jquery/jquery.coookie.js
+END
 jquery-ui-i18n.js
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/jquery-ui-i18n.js
 END
-jquery.checkgroup.js
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/scripts/jquery/jquery.checkgroup.js
-END
 superfish.js
 K 25
 svn:wc:ra_dav:version-url
 V 79
 /svnroot/limesurvey/!svn/ver/9648/source/limesurvey/scripts/jquery/superfish.js
+END
+jquery.checkgroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/limesurvey/!svn/ver/8530/source/limesurvey/scripts/jquery/jquery.checkgroup.js
 END
 jquery.json.min.js
 K 25

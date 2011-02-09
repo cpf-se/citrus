@@ -1,4 +1,4 @@
-// $Id: surveysettings.js 9648 2011-01-07 13:06:39Z c_schmitz $
+// $Id: surveysettings.js 9714 2011-01-25 17:52:16Z shnoulle $
 
 $(document).ready(function(){
     $("#template").change(templatechange);
@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 function templatechange()
 {
-    standardtemplates=['basic','bluengrey','business_grey','clear_logo','default','eirenicon','limespired','mint_idea','sherpa','vallendar'];
+    standardtemplates=['basic','bluengrey','business_grey','citronade','clear_logo','default','eirenicon','limespired','mint_idea','sherpa','vallendar'];
     if (in_array(this.value,standardtemplates))
     {
         $("#preview").attr('src',standardtemplaterooturl+'/'+this.value+'/preview.png');

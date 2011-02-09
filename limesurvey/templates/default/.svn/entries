@@ -1,7 +1,7 @@
 10
 
 dir
-9672
+9715
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/templates/default
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -740,40 +740,6 @@ c_schmitz
 
 181
 
-ie_fix_6.css
-file
-
-
-
-
-2011-02-09T13:11:02.470176Z
-b3c62643200d0e021b09f038758d6234
-2010-04-16T19:30:31.601596Z
-8603
-tpartner
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2291
-
 slider-handle.gif
 file
 
@@ -807,6 +773,40 @@ has-props
 
 
 933
+
+ie_fix_6.css
+file
+
+
+
+
+2011-02-09T13:11:02.470176Z
+b3c62643200d0e021b09f038758d6234
+2010-04-16T19:30:31.601596Z
+8603
+tpartner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2291
 
 ie_fix_7.css
 file
@@ -876,40 +876,6 @@ tpartner
 
 177
 
-poweredby.png
-file
-
-
-
-
-2011-02-09T13:11:02.470176Z
-4ced19b3dce311b6407279505afcb001
-2009-08-18T16:44:54.881758Z
-7484
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3872
-
 gradient2.gif
 file
 
@@ -943,6 +909,40 @@ has-props
 
 
 3535
+
+poweredby.png
+file
+
+
+
+
+2011-02-09T13:11:02.470176Z
+4ced19b3dce311b6407279505afcb001
+2009-08-18T16:44:54.881758Z
+7484
+c_schmitz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3872
 
 endgroup.pstpl
 file

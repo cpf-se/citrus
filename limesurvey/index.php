@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: index.php 9668 2011-01-10 09:01:14Z mennodekker $
+ * $Id: index.php 9704 2011-01-19 13:17:19Z mennodekker $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -2765,7 +2765,7 @@ function buildsurveysession()
     $_SESSION['fieldmap']=$fieldmap;
     foreach ($fieldmap as $field)
     {
-        if ($field['qid']!='')
+        if (isset($field['qid']) && $field['qid']!='')
         {
             $_SESSION['fieldnamesInfo'][$field['fieldname']]=$field['sid'].'X'.$field['gid'].'X'.$field['qid'];
             $_SESSION['insertarray'][]=$field['fieldname'];

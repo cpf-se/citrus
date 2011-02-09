@@ -1,7 +1,7 @@
 10
 
 dir
-9672
+9715
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/templates/clear_logo
 https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
 
@@ -808,40 +808,6 @@ tpartner
 
 2062
 
-ie_fix_8.css
-file
-
-
-
-
-2011-02-09T13:11:05.180277Z
-ae26e6745d27d69921e88787a92dd5ee
-2010-06-22T18:12:27.812239Z
-8863
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-90
-
 Logo-LimeSurvey.jpg
 file
 
@@ -875,6 +841,40 @@ has-props
 
 
 2793
+
+ie_fix_8.css
+file
+
+
+
+
+2011-02-09T13:11:05.180277Z
+ae26e6745d27d69921e88787a92dd5ee
+2010-06-22T18:12:27.812239Z
+8863
+c_schmitz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+90
 
 endgroup.pstpl
 file
