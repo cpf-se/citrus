@@ -1765,7 +1765,7 @@
    <row>
     <qid><![CDATA[47]]></qid>
     <code><![CDATA[a135]]></code>
-    <answer><![CDATA[Gift / sambo]]></answer>
+    <answer><![CDATA[Gift&nbsp;/&nbsp;sambo]]></answer>
     <assessment_value><![CDATA[0]]></assessment_value>
     <sortorder><![CDATA[1]]></sortorder>
     <language><![CDATA[sv]]></language>
@@ -1792,7 +1792,7 @@
    <row>
     <qid><![CDATA[47]]></qid>
     <code><![CDATA[a138]]></code>
-    <answer><![CDATA[Änka / änkling]]></answer>
+    <answer><![CDATA[Änka&nbsp;/&nbsp;änkling]]></answer>
     <assessment_value><![CDATA[1]]></assessment_value>
     <sortorder><![CDATA[4]]></sortorder>
     <language><![CDATA[sv]]></language>
@@ -1801,7 +1801,7 @@
    <row>
     <qid><![CDATA[50]]></qid>
     <code><![CDATA[a148]]></code>
-    <answer><![CDATA[Egen villa / radhus]]></answer>
+    <answer><![CDATA[Egen villa&nbsp;/&nbsp;radhus]]></answer>
     <assessment_value><![CDATA[0]]></assessment_value>
     <sortorder><![CDATA[1]]></sortorder>
     <language><![CDATA[sv]]></language>
@@ -1810,7 +1810,7 @@
    <row>
     <qid><![CDATA[50]]></qid>
     <code><![CDATA[a149]]></code>
-    <answer><![CDATA[Bostadsrätt / andelsrätt]]></answer>
+    <answer><![CDATA[Bostadsrätt&nbsp;/&nbsp;andelsrätt]]></answer>
     <assessment_value><![CDATA[1]]></assessment_value>
     <sortorder><![CDATA[2]]></sortorder>
     <language><![CDATA[sv]]></language>
@@ -1828,7 +1828,7 @@
    <row>
     <qid><![CDATA[50]]></qid>
     <code><![CDATA[a151]]></code>
-    <answer><![CDATA[Inneboende, studentlägenhet / -rum]]></answer>
+    <answer><![CDATA[Inneboende, studentlägenhet&nbsp;/&nbsp;-rum]]></answer>
     <assessment_value><![CDATA[1]]></assessment_value>
     <sortorder><![CDATA[4]]></sortorder>
     <language><![CDATA[sv]]></language>
@@ -6607,7 +6607,7 @@ Under de <strong>senaste sju dagarna</strong>, hur mycket tid har Du tillbringat
     <gid><![CDATA[18]]></gid>
     <type><![CDATA[T]]></type>
     <title><![CDATA[a140]]></title>
-    <question><![CDATA[Föräldrar / syskon]]></question>
+    <question><![CDATA[Föräldrar&nbsp;/&nbsp;syskon]]></question>
     <preg><![CDATA[]]></preg>
     <help><![CDATA[]]></help>
     <other><![CDATA[N]]></other>
@@ -6624,7 +6624,7 @@ Under de <strong>senaste sju dagarna</strong>, hur mycket tid har Du tillbringat
     <gid><![CDATA[18]]></gid>
     <type><![CDATA[T]]></type>
     <title><![CDATA[a141]]></title>
-    <question><![CDATA[Make / make / sambo / partner]]></question>
+    <question><![CDATA[Make&nbsp;/&nbsp;maka&nbsp;/&nbsp;sambo&nbsp;/&nbsp;partner]]></question>
     <preg><![CDATA[]]></preg>
     <help><![CDATA[]]></help>
     <other><![CDATA[N]]></other>
@@ -6646,7 +6646,7 @@ Under de <strong>senaste sju dagarna</strong>, hur mycket tid har Du tillbringat
     <help><![CDATA[]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[]]></mandatory>
-    <question_order><![CDATA[4]]></question_order>
+    <question_order><![CDATA[3]]></question_order>
     <language><![CDATA[sv]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -6663,7 +6663,7 @@ Under de <strong>senaste sju dagarna</strong>, hur mycket tid har Du tillbringat
     <help><![CDATA[]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[]]></mandatory>
-    <question_order><![CDATA[7]]></question_order>
+    <question_order><![CDATA[4]]></question_order>
     <language><![CDATA[sv]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
