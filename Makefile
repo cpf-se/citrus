@@ -20,6 +20,9 @@ permissions:
 bootstrap: bootstrap.sql
 	mysql -u root -p < $<
 
-$(prefix)/config.php: $(HOME)/citrus_config.php
+$(prefix)/config.php: $(HOME)/CITRUS_FILES/citrus_config.php
+	cp $< $@
+
+boostrap.sql: $(HOME)/CITRUS_FILES/bootstrap.sql
 	cp $< $@
 
