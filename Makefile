@@ -23,6 +23,6 @@ bootstrap: bootstrap.sql
 $(prefix)/config.php: $(HOME)/CITRUS_FILES/citrus_config.php
 	cp $< $@
 
-boostrap.sql: $(HOME)/CITRUS_FILES/bootstrap.sql
+bootstrap.sql: $(HOME)/CITRUS_FILES/bootstrap.sql
 	cp $< $@
 
