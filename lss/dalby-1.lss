@@ -3423,22 +3423,22 @@
   </fields>
   <rows>
    <row>
-    <cid><![CDATA[1]]></cid>
-    <qid><![CDATA[62]]></qid>
+    <cid><![CDATA[44]]></cid>
+    <qid><![CDATA[13]]></qid>
     <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q147]]></cfieldname>
+    <cqid><![CDATA[7]]></cqid>
+    <cfieldname><![CDATA[1X3X7q21]]></cfieldname>
     <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
+    <value><![CDATA[a22]]></value>
    </row>
    <row>
-    <cid><![CDATA[2]]></cid>
-    <qid><![CDATA[61]]></qid>
+    <cid><![CDATA[45]]></cid>
+    <qid><![CDATA[13]]></qid>
     <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q146]]></cfieldname>
+    <cqid><![CDATA[7]]></cqid>
+    <cfieldname><![CDATA[1X3X7q21]]></cfieldname>
     <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
+    <value><![CDATA[a23]]></value>
    </row>
    <row>
     <cid><![CDATA[3]]></cid>
@@ -3450,6 +3450,168 @@
     <value><![CDATA[a57]]></value>
    </row>
    <row>
+    <cid><![CDATA[15]]></cid>
+    <qid><![CDATA[22]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[21]]></cqid>
+    <cfieldname><![CDATA[1X12X21]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a72]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[38]]></cid>
+    <qid><![CDATA[24]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[23]]></cqid>
+    <cfieldname><![CDATA[1X12X23]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a80]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[41]]></cid>
+    <qid><![CDATA[26]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[0]]></cqid>
+    <cfieldname><![CDATA[{TOKEN:ATTRIBUTE_1}]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[F]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[42]]></cid>
+    <qid><![CDATA[27]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[0]]></cqid>
+    <cfieldname><![CDATA[{TOKEN:ATTRIBUTE_1}]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[M]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[23]]></cid>
+    <qid><![CDATA[48]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[77]]></cqid>
+    <cfieldname><![CDATA[1X18X77]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a57]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[18]]></cid>
+    <qid><![CDATA[49]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[48]]></cqid>
+    <cfieldname><![CDATA[+1X18X48a143]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[27]]></cid>
+    <qid><![CDATA[54]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[53]]></cqid>
+    <cfieldname><![CDATA[1X20X53]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a57]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[29]]></cid>
+    <qid><![CDATA[55]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[53]]></cqid>
+    <cfieldname><![CDATA[1X20X53]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a57]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[26]]></cid>
+    <qid><![CDATA[56]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[53]]></cqid>
+    <cfieldname><![CDATA[1X20X53]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a57]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[2]]></cid>
+    <qid><![CDATA[61]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q146]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[1]]></cid>
+    <qid><![CDATA[62]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q147]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[25]]></cid>
+    <qid><![CDATA[63]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q148]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[17]]></cid>
+    <qid><![CDATA[64]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q149]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[12]]></cid>
+    <qid><![CDATA[65]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q151]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[16]]></cid>
+    <qid><![CDATA[66]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q152]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[37]]></cid>
+    <qid><![CDATA[67]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q153]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[20]]></cid>
+    <qid><![CDATA[68]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q154]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[35]]></cid>
+    <qid><![CDATA[69]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[60]]></cqid>
+    <cfieldname><![CDATA[+1X20X60q150]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[Y]]></value>
+   </row>
+   <row>
     <cid><![CDATA[4]]></cid>
     <qid><![CDATA[71]]></qid>
     <scenario><![CDATA[1]]></scenario>
@@ -3457,15 +3619,6 @@
     <cfieldname><![CDATA[1X22X70]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[a194]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[5]]></cid>
-    <qid><![CDATA[73]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[72]]></cqid>
-    <cfieldname><![CDATA[1X22X72]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a193]]></value>
    </row>
    <row>
     <cid><![CDATA[6]]></cid>
@@ -3477,6 +3630,60 @@
     <value><![CDATA[a193]]></value>
    </row>
    <row>
+    <cid><![CDATA[22]]></cid>
+    <qid><![CDATA[71]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[70]]></cqid>
+    <cfieldname><![CDATA[1X22X70]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a191]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[24]]></cid>
+    <qid><![CDATA[71]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[70]]></cqid>
+    <cfieldname><![CDATA[1X22X70]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a190]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[36]]></cid>
+    <qid><![CDATA[71]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[70]]></cqid>
+    <cfieldname><![CDATA[1X22X70]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a192]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[39]]></cid>
+    <qid><![CDATA[71]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[70]]></cqid>
+    <cfieldname><![CDATA[1X22X70]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a195]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[40]]></cid>
+    <qid><![CDATA[71]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[70]]></cqid>
+    <cfieldname><![CDATA[1X22X70]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a189]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[5]]></cid>
+    <qid><![CDATA[73]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[72]]></cqid>
+    <cfieldname><![CDATA[1X22X72]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a193]]></value>
+   </row>
+   <row>
     <cid><![CDATA[7]]></cid>
     <qid><![CDATA[73]]></qid>
     <scenario><![CDATA[1]]></scenario>
@@ -3484,6 +3691,51 @@
     <cfieldname><![CDATA[1X22X72]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[a195]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[13]]></cid>
+    <qid><![CDATA[73]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[72]]></cqid>
+    <cfieldname><![CDATA[1X22X72]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a192]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[14]]></cid>
+    <qid><![CDATA[73]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[72]]></cqid>
+    <cfieldname><![CDATA[1X22X72]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a190]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[21]]></cid>
+    <qid><![CDATA[73]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[72]]></cqid>
+    <cfieldname><![CDATA[1X22X72]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a189]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[28]]></cid>
+    <qid><![CDATA[73]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[72]]></cqid>
+    <cfieldname><![CDATA[1X22X72]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a194]]></value>
+   </row>
+   <row>
+    <cid><![CDATA[30]]></cid>
+    <qid><![CDATA[73]]></qid>
+    <scenario><![CDATA[1]]></scenario>
+    <cqid><![CDATA[72]]></cqid>
+    <cfieldname><![CDATA[1X22X72]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[a191]]></value>
    </row>
    <row>
     <cid><![CDATA[8]]></cid>
@@ -3522,69 +3774,6 @@
     <value><![CDATA[a190]]></value>
    </row>
    <row>
-    <cid><![CDATA[12]]></cid>
-    <qid><![CDATA[65]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q151]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[13]]></cid>
-    <qid><![CDATA[73]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[72]]></cqid>
-    <cfieldname><![CDATA[1X22X72]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a192]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[14]]></cid>
-    <qid><![CDATA[73]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[72]]></cqid>
-    <cfieldname><![CDATA[1X22X72]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a190]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[15]]></cid>
-    <qid><![CDATA[22]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[21]]></cqid>
-    <cfieldname><![CDATA[1X12X21]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a72]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[16]]></cid>
-    <qid><![CDATA[66]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q152]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[17]]></cid>
-    <qid><![CDATA[64]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q149]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[18]]></cid>
-    <qid><![CDATA[49]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[48]]></cqid>
-    <cfieldname><![CDATA[+1X18X48a143]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
     <cid><![CDATA[19]]></cid>
     <qid><![CDATA[75]]></qid>
     <scenario><![CDATA[1]]></scenario>
@@ -3592,105 +3781,6 @@
     <cfieldname><![CDATA[1X22X74]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[a193]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[20]]></cid>
-    <qid><![CDATA[68]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q154]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[21]]></cid>
-    <qid><![CDATA[73]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[72]]></cqid>
-    <cfieldname><![CDATA[1X22X72]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a189]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[22]]></cid>
-    <qid><![CDATA[71]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[70]]></cqid>
-    <cfieldname><![CDATA[1X22X70]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a191]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[23]]></cid>
-    <qid><![CDATA[48]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[77]]></cqid>
-    <cfieldname><![CDATA[1X18X77]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a57]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[24]]></cid>
-    <qid><![CDATA[71]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[70]]></cqid>
-    <cfieldname><![CDATA[1X22X70]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a190]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[25]]></cid>
-    <qid><![CDATA[63]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q148]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[26]]></cid>
-    <qid><![CDATA[56]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[53]]></cqid>
-    <cfieldname><![CDATA[1X20X53]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a57]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[27]]></cid>
-    <qid><![CDATA[54]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[53]]></cqid>
-    <cfieldname><![CDATA[1X20X53]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a57]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[28]]></cid>
-    <qid><![CDATA[73]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[72]]></cqid>
-    <cfieldname><![CDATA[1X22X72]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a194]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[29]]></cid>
-    <qid><![CDATA[55]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[53]]></cqid>
-    <cfieldname><![CDATA[1X20X53]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a57]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[30]]></cid>
-    <qid><![CDATA[73]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[72]]></cqid>
-    <cfieldname><![CDATA[1X22X72]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a191]]></value>
    </row>
    <row>
     <cid><![CDATA[31]]></cid>
@@ -3709,96 +3799,6 @@
     <cfieldname><![CDATA[1X22X74]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[a189]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[33]]></cid>
-    <qid><![CDATA[13]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[7]]></cqid>
-    <cfieldname><![CDATA[1X3X7]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a22]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[34]]></cid>
-    <qid><![CDATA[13]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[7]]></cqid>
-    <cfieldname><![CDATA[1X3X7]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a23]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[35]]></cid>
-    <qid><![CDATA[69]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q150]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[36]]></cid>
-    <qid><![CDATA[71]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[70]]></cqid>
-    <cfieldname><![CDATA[1X22X70]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a192]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[37]]></cid>
-    <qid><![CDATA[67]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[60]]></cqid>
-    <cfieldname><![CDATA[+1X20X60q153]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[Y]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[38]]></cid>
-    <qid><![CDATA[24]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[23]]></cqid>
-    <cfieldname><![CDATA[1X12X23]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a80]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[39]]></cid>
-    <qid><![CDATA[71]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[70]]></cqid>
-    <cfieldname><![CDATA[1X22X70]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a195]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[40]]></cid>
-    <qid><![CDATA[71]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[70]]></cqid>
-    <cfieldname><![CDATA[1X22X70]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[a189]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[41]]></cid>
-    <qid><![CDATA[26]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[0]]></cqid>
-    <cfieldname><![CDATA[{TOKEN:ATTRIBUTE_1}]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[F]]></value>
-   </row>
-   <row>
-    <cid><![CDATA[42]]></cid>
-    <qid><![CDATA[27]]></qid>
-    <scenario><![CDATA[1]]></scenario>
-    <cqid><![CDATA[0]]></cqid>
-    <cfieldname><![CDATA[{TOKEN:ATTRIBUTE_1}]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[M]]></value>
    </row>
   </rows>
  </conditions>
