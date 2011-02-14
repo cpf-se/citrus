@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: register.php 9656 2011-01-07 20:48:39Z c_schmitz $
+ * $Id: register.php 9716 2011-01-25 21:58:12Z lemeur $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -149,8 +149,8 @@ else
     $fieldsarray["{SURVEYURL}"]="$publicurl/index.php?lang=".$baselang."&sid=$surveyid&token=$newtoken";
 }
 
-$message=Replacefields($message, $fieldsarray);
-$subject=Replacefields($subject, $fieldsarray);
+$message=ReplaceFields($message, $fieldsarray);
+$subject=ReplaceFields($subject, $fieldsarray);
 
 $html=""; //Set variable
 
@@ -164,7 +164,7 @@ if (SendEmailMessage($message, $subject, returnglobal('register_email'), $from, 
     ."SET sent='$today' WHERE tid=$tid";
     $result=$connect->Execute($query) or safe_die ("$query<br />".$connect->ErrorMsg());     //Checked
     $html="<center>".$clang->gT("Thank you for registering to participate in this survey.")."<br /><br />\n".$clang->gT("An email has been sent to the address you provided with access details for this survey. Please follow the link in that email to proceed.")."<br /><br />\n".$clang->gT("Survey Administrator")." {ADMINNAME} ({ADMINEMAIL})";
-    $html=Replacefields($html, $fieldsarray);
+    $html=ReplaceFields($html, $fieldsarray);
     $html .= "<br /><br /></center>\n";
 }
 else

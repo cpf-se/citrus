@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: importsurvey.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: importsurvey.php 9751 2011-02-08 22:53:14Z lemeur $
  */
 
 //Ensure script is not run directly, avoid path disclosure
@@ -35,7 +35,7 @@ if (isset($sExtension) && strtolower($sExtension)=='csv')
 }
 elseif (isset($sExtension) && strtolower($sExtension)=='lss')
 {
-    $aImportResults=XMLImportSurvey($sFullFilepath,null,null,(isset($_POST['translinksfields'])));
+    $aImportResults=XMLImportSurvey($sFullFilepath,null,null, null,(isset($_POST['translinksfields'])));
 } elseif (isset($copyfunction))
 {
     $aImportResults=XMLImportSurvey('',$copysurveydata,$sNewSurveyName);

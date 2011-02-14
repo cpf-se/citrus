@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: templates.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: templates.php 9783 2011-02-12 09:45:21Z texens $
  */
 
 
@@ -505,6 +505,7 @@ switch($screenname) {
 		         ,'mandatory' => ''
 		         ,'man_message' => ''
 		         ,'valid_message' => ''
+		         ,'file_valid_message' => ''
 		         ,'essentials' => 'id="question1"'
 		         ,'class' => 'list-radio'
 		         ,'man_class' => ''
@@ -524,6 +525,7 @@ switch($screenname) {
 		 ,'mandatory' => $clang->gT('*')
 		 ,'man_message' => ''
 		 ,'valid_message' => ''
+		 ,'file_valid_message' => ''
 		 ,'essentials' => 'id="question2"'
 		 ,'class' => 'text-long'
 		 ,'man_class' => 'mandatory'

@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: surveytranslator.php 9662 2011-01-08 14:46:19Z c_schmitz $
+ * $Id: surveytranslator.php 9719 2011-01-26 21:44:40Z c_schmitz $
  */
 
 
@@ -65,9 +65,10 @@ function getDateFormatData($format=0)
 
 function getRadixPointData($format=-1)
 {
+    global $clang;      
     $aRadixFormats = array (
-            0=>array('seperator'=> '.', 'desc'=> 'Dot (.)'),
-            1=>array('seperator'=> ',', 'desc'=> 'Comma (,)')
+            0=>array('seperator'=> '.', 'desc'=> $clang->gT('Dot (.)')),
+            1=>array('seperator'=> ',', 'desc'=> $clang->gT('Comma (,)'))
      );
 
     if ($format >= 0)

@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: printanswers.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: printanswers.php 9758 2011-02-10 07:53:42Z shnoulle $
  *
  */
 
@@ -200,7 +200,7 @@ foreach ($aFullResponseTable as $sFieldname=>$fname)
         
 	    if(isset($_POST['printableexport']))
 	    {
-		    $pdf->intopdf(FlattenText($fname['group_name'],true));
+		    $pdf->intopdf(FlattenText($fname[0],true));
 		    $pdf->ln(2);
         }
         else
@@ -265,7 +265,7 @@ if(isset($_POST['printableexport']))
     }
     else
     {
-			$pdf->Output($clang->gT($surveyname)."-".$surveyid.".pdf","DD");
+			$pdf->Output($clang->gT($surveyname)."-".$surveyid.".pdf","D");
     }
 }
 

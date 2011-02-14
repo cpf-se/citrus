@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: group.php 9668 2011-01-10 09:01:14Z mennodekker $
+ * $Id: group.php 9755 2011-02-09 19:33:46Z mennodekker $
  */
 
 //Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -24,12 +24,24 @@ if (isset($_REQUEST['newtest']))
 $show_empty_group = false;
 if (!isset($homedir) || isset($_REQUEST['$homedir'])) {die("Cannot run this script directly");}
 
-if ($previewgrp){
+if ($previewgrp)
+{
 	$_SESSION['prevstep'] = 1;
 	$_SESSION['maxstep'] = 0;
 }
-else{
-    if (!isset($_SESSION['step'])) {$_SESSION['step']=0;}
+else
+{
+    //RUN THIS IF THIS IS THE FIRST TIME , OR THE FIRST PAGE ########################################
+    if (!isset($_SESSION['step']) || !$_SESSION['step'])
+    {
+        $totalquestions = buildsurveysession();
+        $_SESSION['step'] = 0;
+        if(isset($thissurvey['showwelcome']) && $thissurvey['showwelcome'] == 'N') {
+            //If explicitply set, hide the welcome screen
+            $_SESSION['step'] = 1;
+        } 
+    }
+    
     if (!isset($_SESSION['totalsteps'])) {$_SESSION['totalsteps']=0;}
     if (!isset($_SESSION['maxstep'])) {$_SESSION['maxstep']=0;}
     if (!isset($gl)) {$gl=array('null');}
@@ -50,13 +62,17 @@ else{
         $move = (int)$move;
         if ($move > 0 && (($move <= $_SESSION['step']) || (isset($_SESSION['maxstep']) && $move <= $_SESSION['maxstep'])))
             $_SESSION['step'] = $move;
-        }
+    }
 
     // We do not keep the participant session anymore when the same browser is used to answer a second time a survey (let's think of a library PC for instance).
     // Previously we used to keep the session and redirect the user to the
     // submit page.
     //if (isset($_SESSION['finished'])) {$move='movesubmit'; }
 
+    if ($_SESSION['step'] == 0) {
+        display_first_page();
+        exit;
+    }
 
 
     //CHECK IF ALL MANDATORY QUESTIONS HAVE BEEN ANSWERED ############################################
@@ -76,7 +92,7 @@ else{
     //CHECK IF ALL CONDITIONAL MANDATORY QUESTIONS THAT APPLY HAVE BEEN ANSWERED
     $notanswered=addtoarray_single(checkmandatorys($move,$backok),checkconditionalmandatorys($move,$backok));
 
-    //CHECK PREGS
+    //CHECK INPUT
     $notvalidated=checkpregs($move,$backok);
 
     // CHECK UPLOADED FILES
@@ -84,15 +100,15 @@ else{
 
     //SEE IF THIS GROUP SHOULD DISPLAY
     $show_empty_group = false;
-    
+
     if ($_SESSION['step']==0)
 		$show_empty_group = true;
-		
+
     if (isset($move) && $_SESSION['step'] != 0 && $move != "movesubmit")
     {
         while(isset($_SESSION['grouplist'][$_SESSION['step']-1]) && checkgroupfordisplay($_SESSION['grouplist'][$_SESSION['step']-1][0]) === false)
         {
-            if ($_SESSION['prevstep'] <= $_SESSION['step'])
+            if ($_SESSION['prevstep'] > $_SESSION['step'])
             {
                 $_SESSION['step']=$_SESSION['step']-1;
             }
@@ -107,7 +123,7 @@ else{
                 // or create an empty page giving the user the explicit option to submit.
                 if (isset($show_empty_group_if_the_last_group_is_hidden) && $show_empty_group_if_the_last_group_is_hidden == true)
                 {
-                	
+
                     $show_empty_group = true;
                     break;
                 } else
@@ -123,7 +139,7 @@ else{
     //SUBMIT ###############################################################################
     if ((isset($move) && $move == "movesubmit")  && (!isset($notanswered) || !$notanswered) && (!isset($notvalidated) || !$notvalidated ) && (!isset($filenotvalidated) || !$filenotvalidated))
     {
-    setcookie ("limesurvey_timers", "", time() - 3600);// remove the timers cookies
+        setcookie ("limesurvey_timers", "", time() - 3600);// remove the timers cookies
         if ($thissurvey['refurl'] == "Y")
         {
             if (!in_array("refurl", $_SESSION['insertarray'])) //Only add this if it doesn't already exist
@@ -156,13 +172,7 @@ else{
                 echo templatereplace(file_get_contents("$thistpl/assessment.pstpl"));
             }
 
-       // fetch all filenames from $_SESSIONS['files'] and delete them all
-        // from the /tmp/upload/ directory
-        /*echo "<pre>";print_r($_SESSION);echo "</pre>";
-        for($i = 1; isset($_SESSION['files'][$i]); $i++)
-        {
-            unlink('tmp/upload/'.$_SESSION['files'][$i]['filename']);
-=======            // fetch all filenames from $_SESSIONS['files'] and delete them all
+            // fetch all filenames from $_SESSIONS['files'] and delete them all
             // from the /upload/tmp/ directory
             /*echo "<pre>";print_r($_SESSION);echo "</pre>";
             for($i = 1; isset($_SESSION['files'][$i]); $i++)
@@ -179,7 +189,7 @@ else{
                 // in other cases the session is cleared at submit time
                 $completed .= "<a href='{$publicurl}/index.php?sid=$surveyid&amp;move=clearall'>".$clang->gT("Clear Responses")."</a><br /><br />\n";
             }
-}
+        }
         else //THE FOLLOWING DEALS WITH SUBMITTING ANSWERS AND COMPLETING AN ACTIVE SURVEY
         {
             if ($thissurvey['usecookie'] == "Y" && $tokensexist != 1) //don't use cookies if tokens are being used
@@ -319,11 +329,13 @@ if ($surveyexists <1)
 
 //GET GROUP DETAILS
 
-if ($previewgrp){
+if ($previewgrp)
+{
 	setcookie("limesurvey_timers", "0");
     $_SESSION['step'] = $_REQUEST['gid']+1;
 
-    foreach($_SESSION['grouplist'] as $index=>$group){
+    foreach($_SESSION['grouplist'] as $index=>$group)
+    {
         if ($group[0]==$_REQUEST['gid']){
             $grouparrayno = $index;
             break;
@@ -334,40 +346,21 @@ if ($previewgrp){
     $groupname=$_SESSION['grouplist'][$grouparrayno][1];
     $groupdescription=$_SESSION['grouplist'][$grouparrayno][2];
 }
-else{
-    if (($show_empty_group)||!isset($_SESSION['grouplist'])) {
+else
+{
+    if (($show_empty_group)||!isset($_SESSION['grouplist']))
+    {
         $gid=-1; // Make sure the gid is unused. This will assure that the foreach (fieldarray as ia) has no effect.
         $groupname=$clang->gT("Submit your answers");
         $groupdescription=$clang->gT("There are no more questions. Please press the <Submit> button to finish this survey.");
-    } else
+    }
+    else
     {
         $grouparrayno=$_SESSION['step']-1;
         $gid=$_SESSION['grouplist'][$grouparrayno][0];
         $groupname=$_SESSION['grouplist'][$grouparrayno][1];
         $groupdescription=$_SESSION['grouplist'][$grouparrayno][2];
     }
-}
-
-
-//RUN THIS IF THIS IS THE FIRST TIME , OR THE FIRST PAGE ########################################
-if (!isset($_SESSION['step']) || !$_SESSION['step'])
-{
-    $totalquestions = buildsurveysession();
-    if(isset($thissurvey['showwelcome']) && $thissurvey['showwelcome'] == 'N') {
-        //If explicitply set, hide the welcome screen
-        $_SESSION['step'] = 1;
-    } else {
-        display_first_page();
-        exit;
-    }
-    echo "\n<input type='hidden' name='sid' value='$surveyid' id='sid' />\n";
-    if (isset($token) && !empty($token))                    {
-        echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
-    }
-    echo "\n</form>\n";
-    echo templatereplace(file_get_contents("$thistpl/endpage.pstpl"));
-    doFooter();
-    exit;
 }
 
 //Setup an inverted fieldnamesInfo for quick lookup of field answers.
@@ -409,7 +402,7 @@ foreach ($_SESSION['fieldarray'] as $key=>$ia)
         if(IsSet($hideQuestion[$ia[0]]) && $hideQuestion[$ia[0]]==true){
         	continue;
         }
-    	
+
         $qidattributes=getQuestionAttributes($ia[0]);
         if ($qidattributes===false || $qidattributes['hidden']==1) {
             // Should we really skip the question here, maybe the result won't be stored if we do that
@@ -561,7 +554,7 @@ print <<<END
 
 	function checkconditions(value, name, type)
 	{
-    
+
 END;
 
 // If there are conditions or arrray_filter questions then include the appropriate Javascript
@@ -731,8 +724,8 @@ END;
                         }
                     }
                 }
-                 
-                 
+
+
             }
             else
             { // Can't evaluate ==> False
@@ -1011,16 +1004,16 @@ if ((isset($array_filterqs) && is_array($array_filterqs)) ||
         $qfbase = $surveyid."X".$gid."X".$attralist['fid'];
         if ($attralist['type'] == "M" || $attralist['type'] == "P")
         {
-            $tqquery = "SELECT type FROM {$dbprefix}questions WHERE qid='".$attralist['qid']."';"; 
-            $tqresult = db_execute_assoc($tqquery); //Checked   
+            $tqquery = "SELECT type FROM {$dbprefix}questions WHERE qid='".$attralist['qid']."';";
+            $tqresult = db_execute_assoc($tqquery); //Checked
             $OrigQuestion = $tqresult->FetchRow();
-            
+
             if($OrigQuestion['type'] == "L" || $OrigQuestion['type'] == "O")
             {
-                $qquery = "SELECT {$dbprefix}answers.code as title, {$dbprefix}questions.type, {$dbprefix}questions.other FROM {$dbprefix}answers, {$dbprefix}questions WHERE {$dbprefix}answers.qid={$dbprefix}questions.qid AND {$dbprefix}answers.qid='".$attralist['qid']."' AND {$dbprefix}answers.language='".$_SESSION['s_lang']."' order by code;"; 
+                $qquery = "SELECT {$dbprefix}answers.code as title, {$dbprefix}questions.type, {$dbprefix}questions.other FROM {$dbprefix}answers, {$dbprefix}questions WHERE {$dbprefix}answers.qid={$dbprefix}questions.qid AND {$dbprefix}answers.qid='".$attralist['qid']."' AND {$dbprefix}answers.language='".$_SESSION['s_lang']."' order by code;";
             } else {
                 $qquery = "SELECT title, type, other FROM {$dbprefix}questions WHERE (parent_qid='".$attralist['qid']."' OR qid='".$attralist['qid']."') AND parent_qid!=0 AND language='".$_SESSION['s_lang']."' and scale_id=0 order by title;";
-            } 
+            }
             $qresult = db_execute_assoc($qquery); //Checked
             $other=null;
             while ($fansrows = $qresult->FetchRow())
@@ -1094,16 +1087,16 @@ if ((isset($array_filterqs) && is_array($array_filterqs)) ||
         $qfbase = $surveyid."X".$gid."X".$attralist['fid'];
         if ($attralist['type'] == "M" || $attralist['type'] == "P")
         {
-            $tqquery = "SELECT type FROM {$dbprefix}questions WHERE qid='".$attralist['qid']."';"; 
-            $tqresult = db_execute_assoc($tqquery); //Checked   
+            $tqquery = "SELECT type FROM {$dbprefix}questions WHERE qid='".$attralist['qid']."';";
+            $tqresult = db_execute_assoc($tqquery); //Checked
             $OrigQuestion = $tqresult->FetchRow();
-            
+
             if($OrigQuestion['type'] == "L" || $OrigQuestion['type'] == "O")
             {
-                $qquery = "SELECT {$dbprefix}answers.code as title, {$dbprefix}questions.type, {$dbprefix}questions.other FROM {$dbprefix}answers, {$dbprefix}questions WHERE {$dbprefix}answers.qid={$dbprefix}questions.qid AND {$dbprefix}answers.qid='".$attralist['qid']."' AND {$dbprefix}answers.language='".$_SESSION['s_lang']."' order by code;"; 
+                $qquery = "SELECT {$dbprefix}answers.code as title, {$dbprefix}questions.type, {$dbprefix}questions.other FROM {$dbprefix}answers, {$dbprefix}questions WHERE {$dbprefix}answers.qid={$dbprefix}questions.qid AND {$dbprefix}answers.qid='".$attralist['qid']."' AND {$dbprefix}answers.language='".$_SESSION['s_lang']."' order by code;";
             } else {
                 $qquery = "SELECT title, type, other FROM {$dbprefix}questions WHERE (parent_qid='".$attralist['qid']."' OR qid='".$attralist['qid']."') AND parent_qid!=0 AND language='".$_SESSION['s_lang']."' and scale_id=0 order by title;";
-            } 
+            }
             $qresult = db_execute_assoc($qquery); //Checked
             $other=null;
             while ($fansrows = $qresult->FetchRow())
@@ -1226,7 +1219,7 @@ if (isset($qanda) && is_array($qanda))
     {
 		$lastgrouparray = explode("X",$qa[7]);
 		$lastgroup = $lastgrouparray[0]."X".$lastgrouparray[1]; // id of the last group, derived from question id
-		
+
         $q_class = question_class($qa[8]); // render question class (see common.php)
 
         if ($qa[9] == 'Y')
@@ -1255,6 +1248,7 @@ if (isset($qanda) && is_array($qanda))
         $question['class'] = $q_class;
         $question['man_class'] = $man_class;
         $question['code']=$qa[5];
+        $question['sgq']=$qa[7];
         //===================================================================
         $answer=$qa[1];
         $help=$qa[2];
@@ -1280,7 +1274,7 @@ if (isset($qanda) && is_array($qanda))
         };
     }
 	echo "<input type='hidden' name='lastgroup' value='$lastgroup' id='lastgroup' />\n"; // for counting the time spent on each group
-    
+
 
 }
 echo "\n\n<!-- END THE GROUP -->\n";
@@ -1319,7 +1313,7 @@ if (!$previewgrp){
                 if($ia[5] != $g[0])
                     continue;
 
-                $qidattributes=getQuestionAttributes($ia[0]);
+                $qidattributes=getQuestionAttributes($ia[0], $ia[4]);
                 if($qidattributes['hidden']==1 || !checkquestionfordisplay($ia[0]))
                     continue;
 
@@ -1407,4 +1401,4 @@ if (!$previewgrp){
 }
 doFooter();
 
-// Closing PHP tag intentionally left out - yes, it is okay       
+// Closing PHP tag intentionally left out - yes, it is okay
