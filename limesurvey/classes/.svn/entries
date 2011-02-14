@@ -1,52 +1,0 @@
-10
-
-dir
-9715
-https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/classes
-https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
-
-
-
-2011-01-08T14:46:19.017230Z
-9662
-c_schmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-c9fb2505-2411-0410-9117-9d48b60cffec
-
-pchart
-dir
-
-phpmailer
-dir
-
-datetimeconverter
-dir
-
-inputfilter
-dir
-
-core
-dir
-
-adodb
-dir
-
-php-gettext
-dir
-
-dTexts
-dir
-
