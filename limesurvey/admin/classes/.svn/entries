@@ -1,58 +1,0 @@
-10
-
-dir
-9715
-https://limesurvey.svn.sourceforge.net/svnroot/limesurvey/source/limesurvey/admin/classes
-https://limesurvey.svn.sourceforge.net/svnroot/limesurvey
-
-
-
-2011-01-07T13:06:39.856760Z
-9648
-c_schmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-c9fb2505-2411-0410-9117-9d48b60cffec
-
-http
-dir
-
-tcpdf
-dir
-
-pclzip
-dir
-
-gtranslate
-dir
-
-core
-dir
-
-phpexcel
-dir
-
-json
-dir
-
-phpzip
-dir
-
-quexml
-dir
-
-phpCAS
-dir
-
