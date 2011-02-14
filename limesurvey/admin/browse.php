@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: browse.php 9711 2011-01-22 17:55:57Z shnoulle $
+ * $Id: browse.php 9784 2011-02-12 09:53:11Z texens $
 */
 
 include_once("login_check.php");  //Login Check dies also if the script is started directly
@@ -254,8 +254,12 @@ if ($subaction == "id")
     {
         $browseoutput .=  "<img align='left' hspace='0' border='0' src='$imageurl/delete_disabled.png' alt='".$clang->gT("You don't have permission to delete this entry.")."'/>";
     }
+
+    if (bHasFileUploadQuestion($surveyid))
+    {
         $browseoutput .= "<a href='#' title='".$clang->gTview("Download files for this entry")."' onclick=\" ".get2post($scriptname.'?action=browse&amp;subaction=all&amp;downloadfile='.$id.'&amp;sid='.$surveyid)."\" >"
                 ."<img align='left' hspace='0' border='0' src='$imageurl/download.png' alt='".$clang->gT("Download files for this entry")."' /></a>\n";
+    }
     
     //Export this response
     $browseoutput .= "<a href='$scriptname?action=exportresults&amp;sid=$surveyid&amp;id=$id'" .
@@ -366,20 +370,22 @@ elseif ($subaction == "all")
             if ($field['type'] == "|" && strpos($field['fieldname'], "_filecount") == 0)
                 $fuqtquestions[] = $field['fieldname'];
         }
-
-        // find all responses (filenames) to the fuqt questions
-        $query="SELECT " . implode(", ", $fuqtquestions) . " FROM $surveytable where id={$_POST['deleteanswer']}";
-        $responses = db_execute_assoc($query) or safe_die("Could not fetch responses<br />$query<br />".$connect->ErrorMsg());
-
-        while($json = $responses->FetchRow())
+        if (count($fuqtquestions)>0)
         {
-            foreach ($fuqtquestions as $fieldname)
+            // find all responses (filenames) to the fuqt questions
+            $query="SELECT " . implode(", ", $fuqtquestions) . " FROM $surveytable where id={$_POST['deleteanswer']}";
+            $responses = db_execute_assoc($query) or safe_die("Could not fetch responses<br />$query<br />".$connect->ErrorMsg());
+
+            while($json = $responses->FetchRow())
             {
-                $phparray = json_decode($json[$fieldname]);
-                foreach($phparray as $metadata)
+                foreach ($fuqtquestions as $fieldname)
                 {
-                    $path = dirname(getcwd())."/upload/surveys/".$surveyid."/files/";
-                    unlink($path.$metadata->filename); // delete the file
+                    $phparray = json_decode($json[$fieldname]);
+                    foreach($phparray as $metadata)
+                    {
+                        $path = dirname(getcwd())."/upload/surveys/".$surveyid."/files/";
+                        unlink($path.$metadata->filename); // delete the file
+                    }
                 }
             }
         }
@@ -510,7 +516,7 @@ elseif ($subaction == "all")
                 $query .= ", $question ";
             $count++;
         }
-        $query .= " FROM $surveytable WHERE id={$_POST['downloadfile']}";
+        $query .= " FROM $surveytable WHERE id={".mysql_real_escape_string($_POST['downloadfile'])."}";
         $filearray = db_execute_assoc($query) or safe_die("Could not download response<br />$query<br />".$connect->ErrorMsg());
         while ($metadata = $filearray->FetchRow())
         {
@@ -590,7 +596,6 @@ elseif ($subaction == "all")
                     ob_clean();
                     flush();
                     readfile($file);
-                    unlink($file);
                     exit;
                 }
                 break;
@@ -723,7 +728,8 @@ elseif ($subaction == "all")
     }
     
     //LETS COUNT THE DATA
-    $dtquery = "SELECT count(*) FROM $sql_from $sql_where";
+    //$dtquery = "SELECT count(*) FROM $sql_from $sql_where";
+    $dtquery = "SELECT count(*) FROM $sql_from";
     if ($sql_where!="")
     {
         $dtquery .=" WHERE $sql_where";
@@ -1002,14 +1008,14 @@ elseif ($surveyinfo['savetimings']=="Y" && $subaction == "time"){
     foreach ($fields as $fielddetails)
     {
         // headers for answer id and time data
-		if ($fielddetails['type']=='id')
-			$fnames[]=array($fielddetails['fieldname'],$fielddetails['question']);
+        if ($fielddetails['type']=='id')
+            $fnames[]=array($fielddetails['fieldname'],$fielddetails['question']);
         if ($fielddetails['type']=='interview_time')
-			$fnames[]=array($fielddetails['fieldname'],"Interview time");
+            $fnames[]=array($fielddetails['fieldname'],$clang->gT('Total time'));
         if ($fielddetails['type']=='page_time')
-			$fnames[]=array($fielddetails['fieldname'],"Page ".$fielddetails['gid']." time");
-		if ($fielddetails['type']=='answer_time')
-			$fnames[]=array($fielddetails['fieldname'],"Question ".$fielddetails['qid']." time");
+            $fnames[]=array($fielddetails['fieldname'],$clang->gT('Group').": ".$fielddetails['group_name']);
+        if ($fielddetails['type']=='answer_time')
+            $fnames[]=array($fielddetails['fieldname'],$clang->gT('Question').": ".$fielddetails['title']);
     }
     $fncount = count($fnames);
 
@@ -1019,7 +1025,7 @@ elseif ($surveyinfo['savetimings']=="Y" && $subaction == "time"){
     else {$tableheader .= "<table class='browsetable'>\n";}
     $tableheader .= "\t<thead><tr valign='top'>\n"
             . "<th><input type='checkbox' id='selectall'></th>\n"
-            . "<th>Actions</th>\n";
+            . "<th>".$clang->gT('Actions')."</th>\n";
     foreach ($fnames as $fn)
     {
         if (!isset($currentgroup))  {$currentgroup = $fn[1]; $gbc = "oddrow";}

@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: survey.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: survey.php 9755 2011-02-09 19:33:46Z mennodekker $
  */
 
 //Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -965,6 +965,7 @@ foreach ($_SESSION['grouplist'] as $gl)
                 $question['class'] = $q_class;
                 $question['man_class'] = $man_class;
                 $question['code'] = $qa[5];
+                $question['sgq']=$qa[7];
                 //===================================================================
                 $answer=$qa[1];
                 $help=$qa[2];

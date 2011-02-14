@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: index.php 9704 2011-01-19 13:17:19Z mennodekker $
+ * $Id: index.php 9779 2011-02-12 08:50:39Z lemeur $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -2001,7 +2001,7 @@ function submittokens($quotaexit=false)
             $numberformatdatat = getRadixPointData($thissurvey['surveyls_numberformat']);
             $fieldsarray["{EXPIRY}"]=convertDateTimeFormat($thissurvey["expiry"],'Y-m-d H:i:s',$dateformatdatat['phpdate']);
 
-            $subject=Replacefields($subject, $fieldsarray);
+            $subject=ReplaceFields($subject, $fieldsarray, true);
 
             if ($thissurvey['anonymized'] == "N")
             {
@@ -2023,7 +2023,7 @@ function submittokens($quotaexit=false)
             if (trim(strip_tags($thissurvey['email_confirm'])) != "")
             {
                 $message=$thissurvey['email_confirm'];
-                $message=Replacefields($message, $fieldsarray);
+                $message=ReplaceFields($message, $fieldsarray, true);
 
                 if ($thissurvey['anonymized'] == "N")
                 {
@@ -2082,6 +2082,8 @@ function SendSubmitNotifications()
         $aReplacementVars['RELOADURL']='';    
     }
 
+    $aReplacementVars['ADMINNAME'] = $thissurvey['adminname'];
+    $aReplacementVars['ADMINEMAIL'] = $thissurvey['adminemail'];    
     $aReplacementVars['VIEWRESPONSEURL']="{$homeurl}/admin.php?action=browse&sid={$surveyid}&subaction=id&id={$_SESSION['srid']}";
     $aReplacementVars['EDITRESPONSEURL']="{$homeurl}/admin.php?action=dataentry&sid={$surveyid}&subaction=edit&surveytable=survey_{$surveyid}&id=".$_SESSION['srid'];
     $aReplacementVars['STATISTICSURL']="{$homeurl}/admin.php?action=statistics&sid={$surveyid}";
@@ -2259,7 +2261,7 @@ function submitfailed($errormsg='')
 */
 function buildsurveysession()
 {
-    global $thissurvey, $secerror, $clienttoken;
+    global $thissurvey, $secerror, $clienttoken, $databasetype;
     global $tokensexist, $thistpl;
     global $surveyid, $dbprefix, $connect;
     global $register_errormsg, $clang;
@@ -2272,16 +2274,16 @@ function buildsurveysession()
     }
 
     $totalBoilerplatequestions = 0;
-
+    $loadsecurity = returnglobal('loadsecurity');
     // NO TOKEN REQUIRED BUT CAPTCHA ENABLED FOR SURVEY ACCESS
     if ($tokensexist == 0 &&
     captcha_enabled('surveyaccessscreen',$thissurvey['usecaptcha']))
     {
 
         // IF CAPTCHA ANSWER IS NOT CORRECT OR NOT SET
-        if (!isset($_GET['loadsecurity']) ||
+        if (!isset($loadsecurity) ||
         !isset($_SESSION['secanswer']) ||
-        $_GET['loadsecurity'] != $_SESSION['secanswer'])
+        $loadsecurity != $_SESSION['secanswer'])
         {
             sendcacheheaders();
             doHeader();
@@ -2291,7 +2293,7 @@ function buildsurveysession()
             //echo makedropdownlist();
             echo templatereplace(file_get_contents("$thistpl/survey.pstpl"));
 
-            if (isset($_GET['loadsecurity']))
+            if (isset($loadsecurity))
             { // was a bad answer
                 echo "<font color='#FF0000'>".$clang->gT("The answer to the security question is incorrect.")."</font><br />";
             }
@@ -2454,17 +2456,24 @@ function buildsurveysession()
     {
 
         // IF CAPTCHA ANSWER IS CORRECT
-        if (isset($_GET['loadsecurity']) &&
+        if (isset($loadsecurity) &&
         isset($_SESSION['secanswer']) &&
-        $_GET['loadsecurity'] == $_SESSION['secanswer'])
+        $loadsecurity == $_SESSION['secanswer'])
         {
             //check if tokens actually haven't been already used
             $areTokensUsed = usedTokens(db_quote(trim(strip_tags(returnglobal('token')))));
             //check if token actually does exist
-            $tkquery = "SELECT COUNT(*) FROM ".db_table_name('tokens_'.$surveyid)." WHERE token='".db_quote(trim(sanitize_xss_string(strip_tags(returnglobal('token')))))."' AND (completed = 'N' or completed='')";
+            if ($thissurvey['alloweditaftercompletion'] == 'Y' )
+            {
+                $tkquery = "SELECT COUNT(*) FROM ".db_table_name('tokens_'.$surveyid)." WHERE token='".db_quote(trim(sanitize_xss_string(strip_tags(returnglobal('token')))))."'";
+            }
+            else
+            {
+                $tkquery = "SELECT COUNT(*) FROM ".db_table_name('tokens_'.$surveyid)." WHERE token='".db_quote(trim(sanitize_xss_string(strip_tags(returnglobal('token')))))."' AND (completed = 'N' or completed='')";
+            }
             $tkresult = db_execute_num($tkquery);     //Checked
             list($tkexist) = $tkresult->FetchRow();
-            if (!$tkexist || $areTokensUsed)
+            if (!$tkexist || ($areTokensUsed && $thissurvey['alloweditaftercompletion'] != 'Y') )
             {
                 sendcacheheaders();
                 doHeader();
@@ -2504,7 +2513,7 @@ function buildsurveysession()
             { // only show CAPTCHA
 
                 echo '<div id="wrapper"><p id="tokenmessage">';
-                if (isset($_GET['loadsecurity']))
+                if (isset($loadsecurity))
                 { // was a bad answer
                     echo "<span class='error'>".$clang->gT("The answer to the security question is incorrect.")."</span><br />";
                 }
@@ -2529,7 +2538,7 @@ function buildsurveysession()
 						        <input type='hidden' name='loadpass' value='".htmlspecialchars($_GET['loadpass'])."' id='loadpass' />";
                     }
 
-                    echo '<label for="token">'.$clang->gT("Token")."</label><input class='text' type='text' id=token name='token'></li>";
+                    echo '<label for="token">'.$clang->gT("Token")."</label><input class='text' type='text' id='token' name='token'></li>";
                 }
                 else
                 {
@@ -2547,7 +2556,7 @@ function buildsurveysession()
                               <input type='hidden' name='loadname' value='".htmlspecialchars($_GET['loadname'])."' id='loadname' />
                               <input type='hidden' name='loadpass' value='".htmlspecialchars($_GET['loadpass'])."' id='loadpass' />";
                     }
-                    echo '<label for="token">'.$clang->gT("Token:")."</label><span id=token>$gettoken</span>"
+                    echo '<label for="token">'.$clang->gT("Token:")."</label><span id='token'>$gettoken</span>"
                     ."<input type='hidden' name='token' value='$gettoken'></li>";
                 }
 
@@ -2695,7 +2704,14 @@ function buildsurveysession()
     
     // Find all defined randomization groups through question attribute values
     $randomGroups=array();
-    $rgquery = "SELECT attr.qid,value FROM ".db_table_name('question_attributes')." as attr right join ".db_table_name('questions')." as quests on attr.qid=quests.qid WHERE attribute='random_group' and value <> '' and sid=$surveyid GROUP BY attr.qid";
+    if ($databasetype=='odbc_mssql' || $databasetype=='odbtp' || $databasetype=='mssql_n' || $databasetype=='mssqlnative')
+    {
+        $rgquery = "SELECT attr.qid, CAST(value as varchar(255)) FROM ".db_table_name('question_attributes')." as attr right join ".db_table_name('questions')." as quests on attr.qid=quests.qid WHERE attribute='random_group' and CAST(value as varchar(255)) <> '' and sid=$surveyid GROUP BY attr.qid, CAST(value as varchar(255))";
+    }
+    else
+    {
+        $rgquery = "SELECT attr.qid, value FROM ".db_table_name('question_attributes')." as attr right join ".db_table_name('questions')." as quests on attr.qid=quests.qid WHERE attribute='random_group' and value <> '' and sid=$surveyid GROUP BY attr.qid, value";
+    }
     $rgresult = db_execute_assoc($rgquery);
     while($rgrow = $rgresult->FetchRow())
     {
@@ -2884,8 +2900,14 @@ function surveymover()
     if (isset($_SESSION['step']) && $thissurvey['format'] != "A" && ($thissurvey['allowprev'] != "N" || $thissurvey['allowjumps'] == "Y") &&
 	($_SESSION['step'] > 0 || (!$_SESSION['step'] && $presentinggroupdescription && $thissurvey['showwelcome'] == 'Y')))
     {
-        $surveymover .= "<input class='submit' accesskey='p' type='button' onclick=\"javascript:document.limesurvey.move.value = 'moveprev'; submit_and_disable();\" value=' &lt;&lt; "
-        . $clang->gT("Previous")." ' name='move2' id='moveprevbtn' $disabled />\n";
+        //To prevent too much complication in the if statement above I put it here...
+        if ($thissurvey['showwelcome'] == 'N' && $_SESSION['step'] == 1) {
+           //first step and we do not want to go back to the welcome screen since we don't show that...
+           //so skip the prev button
+        } else {
+            $surveymover .= "<input class='submit' accesskey='p' type='button' onclick=\"javascript:document.limesurvey.move.value = 'moveprev'; submit_and_disable();\" value=' &lt;&lt; "
+            . $clang->gT("Previous")." ' name='move2' id='moveprevbtn' $disabled />\n";
+        }
     }
     if (isset($_SESSION['step']) && $_SESSION['step'] && (!$_SESSION['totalsteps'] || ($_SESSION['step'] < $_SESSION['totalsteps'])))
     {
@@ -3410,6 +3432,10 @@ function GetReferringUrl()
         echo "\n<input type='hidden' name='token' value='$token' id='token' />\n";
     }
     echo "\n<input type='hidden' name='lastgroupname' value='_WELCOME_SCREEN_' id='lastgroupname' />\n"; //This is to ensure consistency with mandatory checks, and new group test
+    $loadsecurity = returnglobal('loadsecurity');
+    if (isset($loadsecurity)) {
+        echo "\n<input type='hidden' name='loadsecurity' value='$loadsecurity' id='loadsecurity' />\n";
+    }
     echo "\n</form>\n";
     echo templatereplace(file_get_contents("$thistpl/endpage.pstpl"));
     doFooter();

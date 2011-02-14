@@ -488,10 +488,16 @@ th.admincell {
     padding-left:42px; 
 }
 
+.btnaddanswer, 
+.btndelanswer,
 .header_statistics img {
     cursor:pointer;   
-    
 }
+
+img.handle {
+    cursor:move;   
+}
+
 
 .header_small {
     margin-top:2px;
@@ -553,6 +559,11 @@ a.optoutemail {
     color: orange;
 }
 
+/* Browse response css */
+#resulttableform{ /* get head allway */
+	width:100%;
+	overflow:auto;
+}
 .browsetable {
     border: 1px solid;  
     border-color: #D2E0F2 #8195BA #8195BA #D2E0F2;
@@ -561,6 +572,16 @@ a.optoutemail {
 
 .browsetable tr:hover { 
     background-color: #C5D0F2;
+}
+.browsetable td span.content{
+	display:block;
+    height:3em;
+    overflow:hidden;
+}
+.browsetable th strong.content{
+	display:block;
+    height:4em;
+    overflow:hidden;
 }
 
 .quotalist,

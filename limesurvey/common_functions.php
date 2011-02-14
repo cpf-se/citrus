@@ -849,20 +849,18 @@ function getQuestionSum($surveyid, $groupid)
 
 
 /**
- * getMaxgrouporder($surveyid) queries the database for the maximum sortorder of a group.
+ * getMaxgrouporder($surveyid) queries the database for the maximum sortorder of a group and returns the next higher one.
  *
  * @param mixed $surveyid
  * @global string $surveyid
  */
 function getMaxgrouporder($surveyid)
 {
-    global $surveyid ;
+    global $surveyid, $connect ;
     $s_lang = GetBaseLanguageFromSurveyID($surveyid);
     $max_sql = "SELECT max( group_order ) AS max FROM ".db_table_name('groups')." WHERE sid =$surveyid AND language='{$s_lang}'" ;
-    $max_result =db_execute_assoc($max_sql) ; //Checked
-    $maxrow = $max_result->FetchRow() ;
-    $current_max = $maxrow['max'];
-    if($current_max=="")
+    $current_max = $connect->GetOne($max_sql) ;
+    if(is_null($current_max))
     {
         return "0" ;
     }
@@ -1689,7 +1687,8 @@ function returnglobal($stringname)
         $stringname == "lid" || $stringname == "ugid"||
         $stringname == "thisstep" || $stringname == "scenario" ||
         $stringname == "cqid" || $stringname == "cid" ||
-        $stringname == "qaid" || $stringname == "scid")
+        $stringname == "qaid" || $stringname == "scid" ||
+        $stringname == "loadsecurity")
         {
             return sanitize_int($urlParam);
         }
@@ -2711,14 +2710,14 @@ function createTimingsFieldMap($surveyid, $style='full', $force_refresh=false, $
             $fieldname="{$field['sid']}X{$field['gid']}time";
             if (!isset($fieldmap[$fieldname]))
             {
-                $fieldmap[$fieldname]=array("fieldname"=>$fieldname, 'type'=>"page_time", 'sid'=>$surveyid, "gid"=>$field['gid'], "qid"=>'', 'question'=>'');
+                $fieldmap[$fieldname]=array("fieldname"=>$fieldname, 'type'=>"page_time", 'sid'=>$surveyid, "gid"=>$field['gid'], "group_name"=>$field['group_name'], "qid"=>'', 'title'=>'', 'question'=>'');
             }
 
             // field for time spent on answering a question            
             $fieldname="{$field['sid']}X{$field['gid']}X{$field['qid']}time";
             if (!isset($fieldmap[$fieldname]))
             {
-                $fieldmap[$fieldname]=array("fieldname"=>$fieldname, 'type'=>"answer_time", 'sid'=>$surveyid, "gid"=>$field['gid'], "qid"=>$field['qid'],'question'=>$field['question']);
+                $fieldmap[$fieldname]=array("fieldname"=>$fieldname, 'type'=>"answer_time", 'sid'=>$surveyid, "gid"=>$field['gid'], "group_name"=>$field['group_name'], "qid"=>$field['qid'], "title"=>$field['title'], "question"=>$field['question']); 
             }
         }
     }
@@ -2901,6 +2900,7 @@ function templatereplace($line, $replacements=array())
             if (strpos($line, "{QUESTION_VALID_MESSAGE}") !== false) $line=str_replace("{QUESTION_VALID_MESSAGE}", $question['valid_message'], $line);
             if (strpos($line, "{QUESTION_FILE_VALID_MESSAGE}") !== false) $line=str_replace("{QUESTION_FILE_VALID_MESSAGE}", $question['file_valid_message'], $line);
         }
+        if (strpos($line, "{SGQ}") !== false) $line=str_replace("{SGQ}", $question['sgq'], $line);
     }
     else
     {
@@ -3160,7 +3160,7 @@ function templatereplace($line, $replacements=array())
     if (strpos($line, "{CLOSEWINDOW}") !== false) $line=str_replace("{CLOSEWINDOW}", "<a href='javascript:%20self.close()'>".$clang->gT("Close this window")."</a>", $line);
     if (strpos($line, "{SAVEERROR}") !== false) $line=str_replace("{SAVEERROR}", $errormsg, $line);
     if (strpos($line, "{SAVEHEADING}") !== false) $line=str_replace("{SAVEHEADING}", $clang->gT("Save Your Unfinished Survey"), $line);
-    if (strpos($line, "{SAVEMESSAGE}") !== false) $line=str_replace("{SAVEMESSAGE}", $clang->gT("Enter a name and password for this survey and click save below.")."<br />\n".$clang->gT("Your survey will be saved using that name and password, and can be completed later by logging in with the same name and password.")."<br /><br />\n".$clang->gT("If you give an email address, an email containing the details will be sent to you."), $line);
+    if (strpos($line, "{SAVEMESSAGE}") !== false) $line=str_replace("{SAVEMESSAGE}", $clang->gT("Enter a name and password for this survey and click save below.")."<br />\n".$clang->gT("Your survey will be saved using that name and password, and can be completed later by logging in with the same name and password.")."<br /><br />\n".$clang->gT("If you give an email address, an email containing the details will be sent to you.")."<br /><br />\n".$clang->gT("After having clicked the save button you can either close this browser window or continue filling out the survey."), $line);
     if (strpos($line, "{SAVEALERT}") !== false) 
     {
         if (isset($thissurvey['anonymized']) && $thissurvey['anonymized'] =='Y')
@@ -3696,7 +3696,6 @@ function questionAttributes($returnByName=false)
     "help"=>$clang->gT("Enter the code of a Multiple choice question to exclude the matching answer options in this question."),
     "caption"=>$clang->gT('Array filter exclusion'));
 
-    
     $qattributes["assessment_value"]=array(
     "types"=>"MP",
     'category'=>$clang->gT('Logic'),
@@ -4808,12 +4807,17 @@ function doFooter()
 
 // This function replaces field names in a text with the related values
 // (e.g. for email and template functions)
-function ReplaceFields ($text,$fieldsarray)
+function ReplaceFields ($text,$fieldsarray, $bReplaceInsertans=false)
 {
 
     foreach ( $fieldsarray as $key => $value )
     {
         $text=str_replace($key, $value, $text);
+    }
+
+    if ($bReplaceInsertans)
+    {
+        $text = insertansReplace($text);
     }
     return $text;
 }
@@ -8177,13 +8181,30 @@ function aArrayInvert($aArr)
  */
 function bCheckQuestionForAnswer($q, $aFieldnamesInfoInv)
 {
-    $bAnsw = false;
-    foreach($aFieldnamesInfoInv[$q] as $sField)
+    if(@$_SESSION['fieldmap'][$aFieldnamesInfoInv[$q][0]]['type'] != 'M')
     {
-        if(!empty($_SESSION[$sField]))
+        // all answers required
+        $bAnsw = true;
+        foreach($aFieldnamesInfoInv[$q] as $sField)
         {
-            $bAnsw = true;
-            break;
+            if(!isset($_SESSION[$sField]) || trim($_SESSION[$sField])=='')
+            {
+                $bAnsw = false;
+                break;
+            }
+        }
+    }
+    else
+    {
+        // multiple choice, just one answer is required
+        $bAnsw = false;
+        foreach($aFieldnamesInfoInv[$q] as $sField)
+        {
+            if(isset($_SESSION[$sField]) && trim($_SESSION[$sField])!='')
+            {
+                $bAnsw = true;
+                break;
+            }
         }
     }
     return $bAnsw;

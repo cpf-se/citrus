@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: config-defaults.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: config-defaults.php 9735 2011-01-31 11:10:24Z maziminke $
  */
 
 // CAUTION
@@ -352,6 +352,21 @@ $showaggregateddata = 1;
  * overwrite these on a LimSurvey upgrade. Only set this to 0 if you know what you are doing.
  */
 $standard_templates_readonly =  true;
+
+
+/**
+ * When this settings is true/1 (default = false/0) then the printable survey option will show a reference
+ * to the "lime_survey_12345" table which stores the survey answers. 
+ * It will show a code like "12345X22X333name":
+ * 12345 = surveyID
+ * 22 = groupID
+ * 333 = questionID
+ * name = answer code (only shown for certain question types
+ * 
+ * This code will be shown in front of each question and in front of each answer option at the printable survey.
+ * It can be used as a data analysis code book for querying data from the main response table.
+ */
+$showsgqacode =  false;
 
 
 

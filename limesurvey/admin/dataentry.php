@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: dataentry.php 9688 2011-01-14 19:57:56Z c_schmitz $
+ * $Id: dataentry.php 9775 2011-02-11 19:56:53Z tpartner $
  */
 
 /*
@@ -613,8 +613,12 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
                         }
                         break;
                     case "D": //DATE
-                        $datetimeobj = new Date_Time_Converter($idrow[$fname['fieldname']] , "Y-m-d H:i:s");
-                        $thisdate=$datetimeobj->convert($dateformatdetails['phpdate']);
+                        $thisdate='';
+                        if ($idrow[$fname['fieldname']]!='')
+                        {
+                            $datetimeobj = new Date_Time_Converter($idrow[$fname['fieldname']] , "Y-m-d H:i:s");
+                            $thisdate=$datetimeobj->convert($dateformatdetails['phpdate']);
+                        }
                         $dataentryoutput .= "\t<input type='text' class='popupdate' size='12' name='{$fname['fieldname']}' value='{$thisdate}' />\n";
                         break;
                     case "G": //GENDER drop-down list
@@ -739,8 +743,9 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
                         break;
                     case "R": //RANKING TYPE QUESTION
                         $thisqid=$fname['qid'];
-                        $myfname=substr($fname['fieldname'], 0, -1);
-                        while (isset($fname['type']) && $fname['type'] == "R")
+                        $currentvalues=array();
+                        $myfname=$fname['sid'].'X'.$fname['gid'].'X'.$fname['qid'];
+                        while (isset($fname['type']) && $fname['type'] == "R" && $fname['qid']==$thisqid)
                         {
                             //Let's get all the existing values into an array
                             if ($idrow[$fname['fieldname']])
@@ -2167,7 +2172,7 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
                                 }
                                 $dataentryoutput .= "\t<input type='checkbox' class='checkboxbtn' name='$fieldname{$mearow['title']}' id='answer$fieldname{$mearow['title']}' value='Y'";
                                 //if ($mearow['default_value'] == "Y") {$dataentryoutput .= " checked";}
-                                $dataentryoutput .= " /><label for='$fieldname{$mearow['title']}'>{$mearow['question']}</label><br />\n";
+                                $dataentryoutput .= " /><label for='answer$fieldname{$mearow['title']}'>{$mearow['question']}</label><br />\n";
                                 $upto++;
                             }
                             if ($deqrow['other'] == "Y")

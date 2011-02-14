@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: preview.php 9158 2010-09-28 12:51:26Z c_schmitz $
+ * $Id: preview.php 9755 2011-02-09 19:33:46Z mennodekker $
  */
 
 
@@ -86,6 +86,7 @@ $question = $answers[0][0];
 $question['code']=$answers[0][5];
 $question['class'] = question_class($qrows['type']);
 $question['essentials'] = 'id="question'.$qrows['qid'].'"';
+$question['sgq']=$ia[1];
 if ($qrows['mandatory'] == 'Y')
 {
     $question['man_class'] = ' mandatory';

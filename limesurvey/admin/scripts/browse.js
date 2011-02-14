@@ -9,7 +9,7 @@
 * other free or open source software licenses.
 * See COPYRIGHT.php for copyright notices and details.
 * 
-* $Id: browse.js 9648 2011-01-07 13:06:39Z c_schmitz $
+* $Id: browse.js 9746 2011-02-06 18:04:26Z shnoulle $
 */
 
 $(document).ready(function(){
@@ -90,6 +90,21 @@ $(document).ready(function(){
                when: {
                    event:'unfocus'
                }}
-});
-        
+    });
+    
+    // Fix the heigh of the cell
+    $('.browsetable td').each(function(){
+    	if ($(this).text().length> 30){
+    		$(this).html("<span class=\"content\" title=\""+$(this).text()+"\">"+$(this).html()+"</span>");
+    	}
+    });
+    $('.browsetable th strong').each(function(){
+    	if ($(this).text().length> 30){
+    		$(this).addClass("content");
+    		$(this).attr("title",$(this).text());
+    	}
+   });
+   
+   $('.browsetable td span.content').qtip();
+   $('.browsetable th strong.content').qtip();
 });
