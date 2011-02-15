@@ -292,6 +292,10 @@ table.question tr.array1:hover,table.question tr.array2:hover {
 .welcome-text {
 }
 
+.welcome-text h1 {
+	line-height: 30px;
+}
+
 .survey-list-table {
 	width: 100%;
 	margin: 0 auto;
