@@ -20,15 +20,15 @@
              </table>
 		</td>
 	</tr>
-      <tr>
+      <!--tr>
 		<td class="survey-contact">
              {SURVEYCONTACT}
             </td>
-      </tr>
+      </tr-->
       <tr>
 		<td class="language-changer">
              <p>{LANGUAGECHANGER}</p>
-			<a href="http://www.limesurvey.org" target="_blank"><img src="{TEMPLATEURL}limesurvey_logo.png" border="0" title="LimeSurvey" /></a>
+			<a href="http://www.cpf.se/" target="_blank"><img src="{TEMPLATEURL}logo_head_dalby.png" border="0" title="CPF" /></a>
             </td>
       </tr>
 </table>
