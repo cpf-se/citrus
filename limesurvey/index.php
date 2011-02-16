@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: index.php 9779 2011-02-12 08:50:39Z lemeur $
+ * $Id: index.php 9790 2011-02-15 17:35:19Z shnoulle $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -2982,7 +2982,7 @@ function doAssessment($surveyid, $returndataonly=false)
             $groups=array();
             foreach($fieldmap as $field)
             {
-                if (in_array($field['type'],array('1','F','H','W','Z','L','!','M','O','P')))
+                if (in_array($field['type'],array('1','F','H','W','Z','L','!','M','O','P',":")))
                 {
                     $fieldmap[$field['fieldname']]['assessment_value']=0;
                     if (isset($_SESSION[$field['fieldname']]))
