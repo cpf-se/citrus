@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: conditionshandling.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: conditionshandling.php 9795 2011-02-15 22:34:10Z lemeur $
  */
 
 //
@@ -1221,8 +1221,8 @@ $subaction=='copyconditionsform' || $subaction=='copyconditions')
             }
             if ($subaction == "copyconditionsform" || $subaction == "copyconditions")
             {
-                $initialCheckbox = "<td><input type='checkbox' id='scenarioCbx{$scenarionr['scenario']}'/>\n"
-                ."<script type='text/javascript'>$('#scenarioCbx{$scenarionr['scenario']}').checkgroup({groupName:'aConditionFromScenario{$scenarionr['scenario']}'});</script>"
+                $initialCheckbox = "<td><input type='checkbox' id='scenarioCbx{$scenarionr['scenario']}' checked='checked'/>\n"
+                ."<script type='text/javascript'>$(document).ready(function () { $('#scenarioCbx{$scenarionr['scenario']}').checkgroup({groupName:'aConditionFromScenario{$scenarionr['scenario']}'}); });</script>"
                 ."</td><td>&nbsp;</td>\n";
             }
             else
@@ -1368,7 +1368,7 @@ $subaction=='copyconditionsform' || $subaction=='copyconditions')
                     {
                         $conditionsoutput_main_content .= "<td>&nbsp;&nbsp;</td>"
                         . "<td valign='middle' align='right'>\n"
-                        . "\t<input type='checkbox' name='aConditionFromScenario{$scenarionr['scenario']}' id='cbox{$rows['cid']}' value='{$rows['cid']} '/>\n"
+                        . "\t<input type='checkbox' name='aConditionFromScenario{$scenarionr['scenario']}' id='cbox{$rows['cid']}' value='{$rows['cid']}' checked='checked'/>\n"
                         . "</td>\n";
                     }
                     $conditionsoutput_main_content .= ""
@@ -1617,11 +1617,16 @@ if ($subaction == "copyconditionsform" || $subaction == "copyconditions")
 
     if (isset($conditionsList) && is_array($conditionsList))
     {
+        //TIBO
+        $js_admin_includes[]= $rooturl.'/scripts/jquery/jquery.multiselect.min.js';
+        $css_admin_includes[] = '../scripts/jquery/css/jquery.multiselect.css';
+
+        $conditionsoutput_main_content .= "<script type='text/javascript'>$(document).ready(function () { $('#copytomultiselect').multiselect( {autoOpen: true, height: 200 } ); });</script>";
 
         $conditionsoutput_main_content .= "\t<div class='condition-tbl-row'>\n"
         ."\t<div class='condition-tbl-left'>".$clang->gT("Copy the selected conditions to").":</div>\n"
         ."\t<div class='condition-tbl-right'>\n"
-        ."\t\t<select name='copyconditionsto[]' multiple style='font-family:verdana; font-size:10; width:600px' size='10'>\n";
+        ."\t\t<select name='copyconditionsto[]'id='copytomultiselect'  multiple style='font-family:verdana; font-size:10; width:600px' size='10'>\n";
         if (isset($pquestions) && count($pquestions) != 0)
         {
             foreach ($pquestions as $pq)
