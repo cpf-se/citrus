@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: htmleditor-popup.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: htmleditor-popup.php 9818 2011-02-23 16:18:14Z lemeur $
  */
 
 //Ensure script is not run directly, avoid path disclosure
@@ -100,7 +100,7 @@ else {
 	<!--
 	function closeme()
 	{
-		window.onbeforeunload = new Function('return true;');
+		window.onbeforeunload = new Function('var a = 1;');
 		self.close();
 	}
 
@@ -158,8 +158,18 @@ else {
 
 
 	$output .=	"
+                editedtext = fix_FCKeditor_text(editedtext);
 		window.opener.document.getElementsByName('".$fieldname."')[0].value = editedtext;
 	}
+
+        function fix_FCKeditor_text(text)
+        {
+            var thestring = new String(text);
+            thestring.replace('<br type=\"_moz\" />','');
+            var myre = new RegExp('^([\s]+|<br />|&nbsp;)$');
+            thestring = thestring.replace(myre, '');
+            return thestring;
+        }
 
 	function close_editor()
 	{

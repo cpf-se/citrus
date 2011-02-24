@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: conditionshandling.php 9795 2011-02-15 22:34:10Z lemeur $
+ * $Id: conditionshandling.php 9809 2011-02-16 20:31:55Z lemeur $
  */
 
 //
@@ -1621,9 +1621,9 @@ if ($subaction == "copyconditionsform" || $subaction == "copyconditions")
         $js_admin_includes[]= $rooturl.'/scripts/jquery/jquery.multiselect.min.js';
         $css_admin_includes[] = '../scripts/jquery/css/jquery.multiselect.css';
 
-        $conditionsoutput_main_content .= "<script type='text/javascript'>$(document).ready(function () { $('#copytomultiselect').multiselect( {autoOpen: true, height: 200 } ); });</script>";
+        $conditionsoutput_main_content .= "<script type='text/javascript'>$(document).ready(function () { $('#copytomultiselect').multiselect( {autoOpen: true, noneSelectedText: '".$clang->gT("No questions selected")."', checkAllText: '".$clang->gT("Check all")."', uncheckAllText: '".$clang->gT("Uncheck all")."', selectedText: '# ".$clang->gT("selected")."', beforeclose: function(){return false;},height: 200 } ); });</script>";
 
-        $conditionsoutput_main_content .= "\t<div class='condition-tbl-row'>\n"
+        $conditionsoutput_main_content .= "\t<div class='conditioncopy-tbl-row'>\n"
         ."\t<div class='condition-tbl-left'>".$clang->gT("Copy the selected conditions to").":</div>\n"
         ."\t<div class='condition-tbl-right'>\n"
         ."\t\t<select name='copyconditionsto[]'id='copytomultiselect'  multiple style='font-family:verdana; font-size:10; width:600px' size='10'>\n";
