@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: browse.php 9784 2011-02-12 09:53:11Z texens $
+ * $Id: browse.php 9803 2011-02-16 09:00:36Z shnoulle $
 */
 
 include_once("login_check.php");  //Login Check dies also if the script is started directly
@@ -370,7 +370,7 @@ elseif ($subaction == "all")
             if ($field['type'] == "|" && strpos($field['fieldname'], "_filecount") == 0)
                 $fuqtquestions[] = $field['fieldname'];
         }
-        if (count($fuqtquestions)>0)
+        if (!empty($fuqtquestions))
         {
             // find all responses (filenames) to the fuqt questions
             $query="SELECT " . implode(", ", $fuqtquestions) . " FROM $surveytable where id={$_POST['deleteanswer']}";

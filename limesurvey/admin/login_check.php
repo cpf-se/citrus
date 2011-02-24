@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: login_check.php 9656 2011-01-07 20:48:39Z c_schmitz $
+ * $Id: login_check.php 9810 2011-02-22 22:14:02Z lemeur $
  */
 
 
@@ -322,8 +322,11 @@ if(!isset($_SESSION['loginID']) && $action != "forgotpass" && ($action != "logou
             $loginsummary .= "<p>".sprintf($clang->gT("You have exceeded you maximum login attempts. Please wait %d minutes before trying again"),($timeOutTime/60))."<br /></p>";
         }
 
-        $loginsummary .= "<p><a href='$scriptname?action=forgotpassword'>".$clang->gT("Forgot Your Password?")."</a><br />&nbsp;\n
-						</form><br /></p>";
+        if ($display_user_password_in_email === true)
+        {
+            $loginsummary .= "<p><a href='$scriptname?action=forgotpassword'>".$clang->gT("Forgot Your Password?")."</a><br />&nbsp;\n";
+        }
+        $loginsummary .= "                                                </form><br /></p>";
         $loginsummary .= "                                                <script type='text/javascript'>\n";
         $loginsummary .= "                                                  document.getElementById('user').focus();\n";
         $loginsummary .= "                                                </script>\n";

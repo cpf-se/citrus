@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: group.php 9755 2011-02-09 19:33:46Z mennodekker $
+ * $Id: group.php 9822 2011-02-23 22:38:40Z jcleeland $
  */
 
 //Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -998,9 +998,10 @@ if ((isset($array_filterqs) && is_array($array_filterqs)) ||
     $array_filter_exclude_types=$qattributes['array_filter_exclude']['types'];
     unset($qattributes);
     if (!isset($appendj)) {$appendj="";}
+
     foreach ($array_filterqs as $attralist)
     {
-        $qbase = $surveyid."X".$gid."X".$attralist['qid'];
+		$qbase = $surveyid."X".$gid."X".$attralist['qid'];
         $qfbase = $surveyid."X".$gid."X".$attralist['fid'];
         if ($attralist['type'] == "M" || $attralist['type'] == "P")
         {
@@ -1016,10 +1017,11 @@ if ((isset($array_filterqs) && is_array($array_filterqs)) ||
             }
             $qresult = db_execute_assoc($qquery); //Checked
             $other=null;
+
             while ($fansrows = $qresult->FetchRow())
             {
-                if($fansrows['other']== "Y") $other="Y";
-                if(strpos($array_filter_types, $fansrows['type']) === false) {} else
+			    if($fansrows['other']== "Y") $other="Y";
+				if(strpos($array_filter_types, $OrigQuestion['type']) === false) {} else
                 {
                     $fquestans = "java".$qfbase.$fansrows['title'];
                     $tbody = "javatbd".$qbase.$fansrows['title'];
@@ -1102,7 +1104,7 @@ if ((isset($array_filterqs) && is_array($array_filterqs)) ||
             while ($fansrows = $qresult->FetchRow())
             {
                 if($fansrows['other']== "Y") $other="Y";
-                if(strpos($array_filter_exclude_types, $fansrows['type']) === false) {} else
+                if(strpos($array_filter_exclude_types, $OrigQuestion['type']) === false) {} else
                 {
                     $fquestans = "java".$qfbase.$fansrows['title'];
                     $tbody = "javatbd".$qbase.$fansrows['title'];
@@ -1135,6 +1137,7 @@ if ((isset($array_filterqs) && is_array($array_filterqs)) ||
                     $appendj .= "\t\tdocument.getElementById('$tbody').style.display='none';\n";
 					$appendj .= "\t\tdocument.getElementById('$dtbody').value = 'off';\n"; //Note - do not use jquery format here (ie: "$('#$dtbody').val('off')" - the hash in dual scale breaks the javascript
 					if($OrigQuestion['type'] == "1") {
+                        //for a dual scale array question type we have to massage the system
 						$appendj .= "\t\tdocument.getElementById('$dtbody2').value = 'off';\n"; //Note - do not use jquery format here (ie: "$('#$dtbody').val('off')" - the hash in dual scale breaks the javascript
 					}
                     // This line resets the text fields in the hidden row

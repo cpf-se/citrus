@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: config-defaults.php 9735 2011-01-31 11:10:24Z maziminke $
+ * $Id: config-defaults.php 9810 2011-02-22 22:14:02Z lemeur $
  */
 
 // CAUTION
@@ -194,6 +194,16 @@ $surveyPreview_require_Auth = true;
 // an external application.
 // This setting has to be turned on to enable the usage of one time passwords (default = off).
 $use_one_time_passwords = false;
+
+
+// $display_user_password_in_html
+// Option to tell LS to display the automatically generated user password in the html GUI or not
+$display_user_password_in_html = false;
+
+
+// $display_user_password_in_email
+// Option to tell LS to display the automatically generated user password in the welcome email or not
+$display_user_password_in_email = true;
 
 
 // $useWebserverAuth

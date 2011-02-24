@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: html.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: html.php 9816 2011-02-23 15:36:03Z shnoulle $
  */
 
 //Security Checked: POST, GET, SESSION, DB, REQUEST, returnglobal
@@ -1884,14 +1884,18 @@ elseif ($action == "surveyrights")
     $addsummary .= "<div class='messagebox ui-corner-all'>\n";
 
     if(isset($postuserid)){
-        $query = "SELECT sid, owner_id FROM ".db_table_name('surveys')." WHERE sid = {$surveyid} ";
+        $query = "SELECT sid, owner_id FROM ".db_table_name('surveys')." WHERE sid = {$surveyid}";
         if ($_SESSION['USER_RIGHT_SUPERADMIN'] != 1)
         {
-            $query.=" AND owner_id != ".$postuserid." AND owner_id = ".$_SESSION['loginID'];
+            $query.=" AND owner_id != {$postuserid} AND owner_id = ".$_SESSION['loginID'];
         }
     }
     else{
-        $sQuery = "SELECT owner_id FROM ".db_table_name('surveys')." WHERE sid = {$surveyid} AND owner_id = ".$_SESSION['loginID'];
+        $sQuery = "SELECT owner_id FROM ".db_table_name('surveys')." WHERE sid = {$surveyid}";
+        if ($_SESSION['USER_RIGHT_SUPERADMIN'] != 1)
+        {
+            $query.=" AND owner_id = ".$_SESSION['loginID'];
+        }
         $iOwnerID=$connect->GetOne($sQuery);
     }
     
