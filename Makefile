@@ -10,11 +10,11 @@ configuration: $(prefix)/config.php
 
 .PHONY: permissions
 permissions:
-	sudo chgrp -LR $(wwwgrp) $(prefix)
-	find -L $(prefix) -type d -print0 | xargs -0r chmod 750
-	find -L $(prefix) -type f -print0 | xargs -0r chmod 640
-	find -L $(prefix) -type d \( -name tmp -o -name templates -o -name upload \) -exec find -L '{}' -type f -print0 \; | xargs -0r chmod 660
-	find -L $(prefix) -type d \( -name tmp -o -name templates -o -name upload \) -exec find -L '{}' -type d -print0 \; | xargs -0r chmod 770
+	sudo chgrp -LRc $(wwwgrp) $(prefix) | wc -l | sed 's,^\([0-9]\+\)$$,(\1 change(s)),'
+	find -L $(prefix) -type d -print0 | xargs -0r chmod -c 750 | wc -l | sed 's,^\([0-9]\+\)$$,(\1 change(s)),'
+	find -L $(prefix) -type f -print0 | xargs -0r chmod -c 640 | wc -l | sed 's,^\([0-9]\+\)$$,(\1 change(s)),'
+	find -L $(prefix) -type d \( -name tmp -o -name templates -o -name upload \) -exec find -L '{}' -type f -print0 \; | xargs -0r chmod -c 660 | wc -l | sed 's,^\([0-9]\+\)$$,(\1 change(s)),'
+	find -L $(prefix) -type d \( -name tmp -o -name templates -o -name upload \) -exec find -L '{}' -type d -print0 \; | xargs -0r chmod -c 770 | wc -l | sed 's,^\([0-9]\+\)$$,(\1 change(s)),'
 
 .PHONY: bootstrap
 bootstrap: bootstrap.sql
