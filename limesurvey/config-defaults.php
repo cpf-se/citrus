@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: config-defaults.php 9810 2011-02-22 22:14:02Z lemeur $
+ * $Id: config-defaults.php 9854 2011-03-08 11:49:00Z c_schmitz $
  */
 
 // CAUTION
@@ -530,7 +530,7 @@ $googleMapsAPIKey = '';
 
 //DO NOT EVER CHANGE THE FOLLOWING 5 LINES ---------------
 require_once(dirname(__FILE__).'/config.php');
-if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on')
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']!='' && $_SERVER['HTTPS']!='off')
 {
        $rooturl=str_replace('http://', 'https://', $rooturl);
 }  

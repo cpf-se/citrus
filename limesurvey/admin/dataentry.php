@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: dataentry.php 9798 2011-02-15 23:03:17Z shnoulle $
+ * $Id: dataentry.php 9843 2011-03-02 17:21:33Z shnoulle $
  */
 
 /*
@@ -1528,10 +1528,7 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
             ."<td valign='top' width='1%'></td>\n"
             ."<td valign='top' align='right' width='30%'><font color='red'>*</font><strong>".$blang->gT("Token").":</strong></td>\n"
             ."<td valign='top'  align='left' style='padding-left: 20px'>\n"
-            ."\t<input type='text' id='token' name='token'";
-            // if group tokens are active, the group token will activate the submit button instead
-   
-            $dataentryoutput .= "/>\n"
+            ."\t<input type='text' id='token' name='token' onkeyup='activateSubmit(this);' />\n"
             ."</td>\n"
             ."\t</tr>\n";
 

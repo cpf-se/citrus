@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: userrighthandling.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: userrighthandling.php 9856 2011-03-08 12:01:18Z c_schmitz $
  */
 //Security Checked: POST/GET/DB/SESSION
 //Ensure script is not run directly, avoid path disclosure
@@ -298,7 +298,7 @@ if ($action == "setuserrights")
                     $usersummary .= "<th align='center'>".$clang->gT("Delete User")."</th>\n";
                 }
                 if($parent['manage_template']) {
-                    $usersummary .= "<th align='center'>".$clang->gT("Manage Template")."</th>\n";
+                    $usersummary .= "<th align='center'>".$clang->gT("Use all/manage templates")."</th>\n";
                 }
                 if($parent['manage_label']) {
                     $usersummary .= "<th align='center'>".$clang->gT("Manage Labels")."</th>\n";

@@ -10,14 +10,14 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: integritycheck.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: integritycheck.php 9845 2011-03-03 17:24:28Z shnoulle $
  */
 
 
 include_once("login_check.php");
 if($_SESSION['USER_RIGHT_CONFIGURATOR'] == 1)
 {
-    // THIS FILE CHECKS THE CONSISTENCY OF THE DATABASE, IT LOOKS FOR
+    // THIS FILE CHECKS THE CONSISTENCY OF THE DATABASE, IT "LOOKS FOR
     // STRAY QUESTIONS, ANSWERS, CONDITIONS OR GROUPS AND DELETES THEM
     $ok=returnglobal('ok');
 
@@ -419,7 +419,7 @@ if($_SESSION['USER_RIGHT_CONFIGURATOR'] == 1)
         $sids=array();
         foreach($tables as $table)
         {
-            list($one, $two, $three, $sid, $date)=explode("_", $table);
+            list($oldtxt, $surveytxt, $sid, $date)=explode("_", substr($table,strlen($dbprefix)));
             $oldsids[]=$sid;
             $fulloldsids[$sid][]=$table;
         }
@@ -441,22 +441,21 @@ if($_SESSION['USER_RIGHT_CONFIGURATOR'] == 1)
             } else {
                 foreach($fulloldsids[$oldsid] as $tablename)
                 {
-                    list($one, $two, $three, $four, $five)=explode("_", $tablename);
-                    $five=substr($tablename,-14);
-                    $year=substr($five, 0,4);
-                    $month=substr($five, 4,2);
-                    $day=substr($five, 6, 2);
-                    $hour=substr($five, 8, 2);
-                    $minute=substr($five, 10, 2);
+                    list($oldtxt, $surveytxt, $sid, $datetime)=explode("_", substr($tablename,strlen($dbprefix)));
+                    $year=substr($datetime, 0,4);
+                    $month=substr($datetime, 4,2);
+                    $day=substr($datetime, 6, 2);
+                    $hour=substr($datetime, 8, 2);
+                    $minute=substr($datetime, 10, 2);
                     $date=date("D, d M Y  h:i a", mktime($hour, $minute, 0, $month, $day, $year));
                     $jq="SELECT * FROM ".$tablename;
                     $jqresult=$connect->execute($jq) or safe_die($query." failed");
                     $jqcount=$jqresult->RecordCount();
                     if($jqcount == 0) {
-                        $oldsoptionaldelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s"), $four, $date);
+                        $oldsoptionaldelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s"), $sid, $date);
                         //				     $oldsoptionaldelete[]=$tablename."| SID ".$four. " ". $clang->gT("saved at")." $date";
                     } else {
-                        $oldsmultidelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s containing %d record(s)"), $four, $date, $jqcount);
+                        $oldsmultidelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s containing %d record(s)"), $sid, $date, $jqcount);
                         //				     $oldsmultidelete[]=$tablename."| SID ".$four." ". $clang->gT("saved at")." $date ".sprintf($clang->gT("containing %d record(s)"), $jqcount);
                     }
                 }
@@ -486,7 +485,7 @@ if($_SESSION['USER_RIGHT_CONFIGURATOR'] == 1)
 
         foreach($tables as $table)
         {
-            list($one, $two, $sid, $date)=explode("_", substr($table,strlen($dbprefix)));
+            list($oldtxt, $surveytxt, $sid, $date)=explode("_", substr($table,strlen($dbprefix)));
             $oldtsids[]=$sid;
             $fulloldtsids[$sid][]=$table;
         }
@@ -508,12 +507,12 @@ if($_SESSION['USER_RIGHT_CONFIGURATOR'] == 1)
             } else {
                 foreach($fulloldtsids[$oldtsid] as $tablename)
                 {
-                    list($one, $two, $three, $four, $five)=explode("_", $tablename);
-                    $year=substr($five, 0,4);
-                    $month=substr($five, 4,2);
-                    $day=substr($five, 6, 2);
-                    $hour=substr($five, 8, 2);
-                    $minute=substr($five, 10, 2);
+                    list($oldtxt, $tokenstxt, $sid, $datetime)=explode("_", substr($tablename,strlen($dbprefix)));
+                    $year=substr($datetime, 0,4);
+                    $month=substr($datetime, 4,2);
+                    $day=substr($datetime, 6, 2);
+                    $hour=substr($datetime, 8, 2);
+                    $minute=substr($datetime, 10, 2);
                     $date=date("D, d M Y  h:i a", mktime($hour, $minute, 0, $month, $day, $year));
                     $jq="SELECT * FROM ".$tablename;
 
@@ -521,9 +520,9 @@ if($_SESSION['USER_RIGHT_CONFIGURATOR'] == 1)
                     $jqcount=$jqresult->RecordCount();
                     if($jqcount == 0) {
                         //				     $oldtoptionaldelete[]=$tablename."| SID ".$four. " ". $clang->gT("saved at")." $date";
-                        $oldtoptionaldelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s"), $four, $date);
+                        $oldtoptionaldelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s"), $sid, $date);
                     } else {
-                        $oldtmultidelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s containing %d record(s)"), $four, $date, $jqcount);
+                        $oldtmultidelete[]=$tablename."| ".sprintf($clang->gT("Survey ID %d saved at %s containing %d record(s)"), $sid, $date, $jqcount);
                         //				     $oldtmultidelete[]=$tablename."| SID ".$four." ". $clang->gT("saved at")." $date ".sprintf($clang->gT("containing %d record(s)"), $jqcount);
                     }
                 }

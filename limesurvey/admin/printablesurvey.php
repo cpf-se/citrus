@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: printablesurvey.php 9749 2011-02-08 13:21:05Z maziminke $
+ * $Id: printablesurvey.php 9824 2011-02-24 11:02:23Z maziminke $
  */
 
 //Ensure script is not run directly, avoid path disclosure
@@ -129,6 +129,15 @@ if(isset($usepdfexport) && $usepdfexport == 1 && !in_array($surveyprintlang,$not
 
 $headelements = getPrintableHeader();
 
+//if $showsgqacode is enabled at config.php show table name for reference
+if(isset($showsgqacode) && $showsgqacode == true)
+{
+	$surveyname =  $surveyname."<br />[".$clang->gT('Database')." ".$clang->gT('table').": $surveytable]";
+}
+else
+{
+	$surveyname = "";
+}
 $survey_output = array(
 			 'SITENAME' => $sitename
 ,'SURVEYNAME' => $surveyname
