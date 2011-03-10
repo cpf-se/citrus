@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: index.php 9790 2011-02-15 17:35:19Z shnoulle $
+ * $Id: index.php 9864 2011-03-08 17:23:35Z lemeur $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -845,7 +845,8 @@ if (isset($move) || isset($_POST['saveprompt']))
     require_once("save.php");
     
     // RELOAD THE ANSWERS INCASE SOMEONE ELSE CHANGED THEM
-    if ($thissurvey['active'] == "Y" && $thissurvey['allowsave'] == "Y")
+    if ($thissurvey['active'] == "Y" && 
+            ( $thissurvey['allowsave'] == "Y" || $thissurvey['tokenanswerspersistence'] == "Y") )
     {
         loadanswers();
     }
@@ -2905,24 +2906,24 @@ function surveymover()
            //first step and we do not want to go back to the welcome screen since we don't show that...
            //so skip the prev button
         } else {
-            $surveymover .= "<input class='submit' accesskey='p' type='button' onclick=\"javascript:document.limesurvey.move.value = 'moveprev'; submit_and_disable();\" value=' &lt;&lt; "
+            $surveymover .= "<input class='submit' accesskey='p' type='button' onclick=\"javascript:document.limesurvey.move.value = 'moveprev'; $('#limesurvey').submit(); disable_navigator();\" value=' &lt;&lt; "
             . $clang->gT("Previous")." ' name='move2' id='moveprevbtn' $disabled />\n";
         }
     }
     if (isset($_SESSION['step']) && $_SESSION['step'] && (!$_SESSION['totalsteps'] || ($_SESSION['step'] < $_SESSION['totalsteps'])))
     {
-        $surveymover .=  "\t<input class='submit' type='submit' accesskey='n' onclick=\"javascript:document.limesurvey.move.value = 'movenext'; submit_and_disable();\" value=' "
+        $surveymover .=  "\t<input class='submit' type='submit' accesskey='n' onclick=\"javascript:document.limesurvey.move.value = 'movenext'; disable_navigator();\" value=' "
         . $clang->gT("Next")." &gt;&gt; ' name='move2' id='movenextbtn' $disabled />\n";
     }
     // here, in some lace, is where I must modify to turn the next button conditionable
     if (!isset($_SESSION['step']) || !$_SESSION['step'])
     {
-        $surveymover .=  "\t<input class='submit' type='submit' accesskey='n' onclick=\"javascript:document.limesurvey.move.value = 'movenext'; submit_and_disable();\" value=' "
+        $surveymover .=  "\t<input class='submit' type='submit' accesskey='n' onclick=\"javascript:document.limesurvey.move.value = 'movenext'; disable_navigator();\" value=' "
         . $clang->gT("Next")." &gt;&gt; ' name='move2' id='movenextbtn' $disabled />\n";
     }
     if (isset($_SESSION['step']) && $_SESSION['step'] && ($_SESSION['step'] == $_SESSION['totalsteps']) && $presentinggroupdescription == "yes")
     {
-        $surveymover .=  "\t<input class='submit' type='submit' onclick=\"javascript:document.limesurvey.move.value = 'movenext'; submit_and_disable();\" value=' "
+        $surveymover .=  "\t<input class='submit' type='submit' onclick=\"javascript:document.limesurvey.move.value = 'movenext'; disable_navigator();\" value=' "
         . $clang->gT("Next")." &gt;&gt; ' name='move2' id=\"movenextbtn\" $disabled />\n";
     }
     if (($_SESSION['step'] && ($_SESSION['step'] == $_SESSION['totalsteps']) && !$presentinggroupdescription) || $thissurvey['format'] == 'A')

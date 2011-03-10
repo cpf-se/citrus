@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: tokens.php 9666 2011-01-09 13:18:29Z lemeur $
+ * $Id: tokens.php 9849 2011-03-07 17:11:48Z lemeur $
  */
 
 
@@ -2625,7 +2625,7 @@ if ($subaction == "import" && bHasSurveyPermission($surveyid, 'tokens','import')
     $tokenoutput .= "<div class='messagebox ui-corner-all'>\n"
     ."<div class='header ui-widget-header'>".$clang->gT("CSV input format")."</div>\n"
     ."<p>".$clang->gT("File should be a standard CSV (comma delimited) file with optional double quotes around values (default for OpenOffice and Excel). The first line must contain the field names. The fields can be in any order.").'</p><span style="font-weight:bold;">'.$clang->gT("Mandatory fields:")."</span> firstname,lastname,email<br />"
-    .'<span style="font-weight:bold;">'.$clang->gT('Optional fields:')."</span> emailstatus, token, language, validfrom, validuntil, attribute_1, attribute_2, attribute_3, ... ."
+    .'<span style="font-weight:bold;">'.$clang->gT('Optional fields:')."</span> emailstatus, token, language, validfrom, validuntil, attribute_1, attribute_2, attribute_3, usesleft, ... ."
     ."</div>\n";
 }
 
@@ -2691,7 +2691,7 @@ if ($subaction == "upload" && bHasSurveyPermission($surveyid, 'tokens','import')
             {
                 // Pick apart the first line
                 $buffer=removeBOM($buffer);
-                $allowedfieldnames=array('firstname','lastname','email','emailstatus','token','language', 'validfrom', 'validuntil');
+                $allowedfieldnames=array('firstname','lastname','email','emailstatus','token','language', 'validfrom', 'validuntil', 'usesleft');
                 $allowedfieldnames=array_merge($attrfieldnames,$allowedfieldnames);
                 
                 switch ($separator) {

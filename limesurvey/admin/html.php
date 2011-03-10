@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: html.php 9816 2011-02-23 15:36:03Z shnoulle $
+ * $Id: html.php 9830 2011-02-26 18:02:11Z shnoulle $
  */
 
 //Security Checked: POST, GET, SESSION, DB, REQUEST, returnglobal
@@ -1280,23 +1280,20 @@ if (isset($surveyid) && $surveyid && $gid && $qid)  // Show the question toolbar
         if ($qct == 0 && $qtypes[$qrrow['type']]['answerscales'] >0)
         {
             $questionsummary .= "<tr ><td></td><td align='left'>"
-            . "<font face='verdana' size='1' color='red'>"
+            . "<span class='statusentryhighlight'>"
             . $clang->gT("Warning").": <a href='{$scriptname}?sid={$surveyid}&amp;gid={$gid}&amp;qid={$qid}&amp;action=editansweroptions'>". $clang->gT("You need to add answer options to this question")." "
             . "<img src='$imageurl/answers_20.png' title='"
-            . $clang->gT("Edit answer options for this question")."' name='EditThisQuestionAnswers'/></font></td></tr>\n";
+            . $clang->gT("Edit answer options for this question")."' name='EditThisQuestionAnswers'/></span></td></tr>\n";
         }
 
-
         // EDIT SUBQUESTIONS FOR THIS QUESTION BUTTON
-
         if($sqct == 0 && $qtypes[$qrrow['type']]['subquestions'] >0)
         {
            $questionsummary .= "<tr ><td></td><td align='left'>"
-            . "<font face='verdana' size='1' color='red'>"
-            . $clang->gT("Warning").": ". $clang->gT("You need to add subquestions to this question")." "
-            . "<input align='top' type='image' src='$imageurl/answers_20.png' title='"
-            . $clang->gT("Edit subquestions for this question")."' name='EditThisQuestionAnswers'"
-            . "onclick=\"window.open('".$scriptname."?sid=$surveyid&amp;gid=$gid&amp;qid=$qid&amp;action=editsubquestions', '_top')\" /></font></td></tr>\n";
+            . "<span class='statusentryhighlight'>"
+            . $clang->gT("Warning").": <a href='{$scriptname}?sid={$surveyid}&amp;gid={$gid}&amp;qid={$qid}&amp;action=editsubquestions'>". $clang->gT("You need to add subquestions to this question")." "
+            . "<img src='$imageurl/subquestions_20.png' title='"
+            . $clang->gT("Edit subquestions for this question")."' name='EditThisQuestionAnswers' /></span></td></tr>\n";
         }
 
         if ($qrrow['type'] == "M" or $qrrow['type'] == "P")

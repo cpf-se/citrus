@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: qanda.php 9823 2011-02-24 00:15:55Z jcleeland $
+ * $Id: qanda.php 9841 2011-03-02 10:21:29Z jcleeland $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -1311,7 +1311,9 @@ function return_timer_script($qidattributes, $ia, $disable=null) {
 					case 2: //Just move on, no warning
 						if(document.getElementById('movenextbtn') !== null) {
 						    if(document.getElementById('movenextbtn').disabled==true) document.getElementById('movenextbtn').disabled=false;
-						    if(document.getElementById('moveprevbtn').disabled==true && '$disable_prev' > 0) document.getElementById('moveprevbtn').disabled=false;
+						}
+						if(document.getElementById('moveprevbtn') !== null) {
+							if(document.getElementById('moveprevbtn').disabled==true && '$disable_prev' > 0) document.getElementById('moveprevbtn').disabled=false;
 						}
 						freezeFrame(disable);
 						subcookiejar.crumble('limesurvey_timers', timersessionname);
@@ -1325,6 +1327,8 @@ function return_timer_script($qidattributes, $ia, $disable=null) {
 						document.getElementById(expireddisplay).style.display='';
 						if(document.getElementById('movenextbtn') !== null) {
 						    if(document.getElementById('movenextbtn').disabled==true) document.getElementById('movenextbtn').disabled=false;
+						}
+						if(document.getElementById('moveprevbtn') !== null) {
 						    if(document.getElementById('moveprevbtn').disabled==true && '$disable_prev' > 0) document.getElementById('moveprevbtn').disabled=false;
 						}
 						freezeFrame(disable);
@@ -1334,6 +1338,8 @@ function return_timer_script($qidattributes, $ia, $disable=null) {
 						document.getElementById(expireddisplay).style.display='';
 						if(document.getElementById('movenextbtn') !== null) {
 						    if(document.getElementById('movenextbtn').disabled==true) document.getElementById('movenextbtn').disabled=false;
+						}
+						if(document.getElementById('moveprevbtn') !== null) {
 						    if(document.getElementById('moveprevbtn').disabled==true && '$disable_prev' > 0) document.getElementById('moveprevbtn').disabled=false;
 						}
 						freezeFrame(disable);
@@ -3926,7 +3932,7 @@ function do_multipleshorttext($ia)
                 . "<label for=\"answer$myfname\">{$ansrow['question']}</label>\n"
                 . "\t<span>\n".$prefix."\n".'
 				<textarea class="textarea '.$kpclass.'" name="'.$myfname.'" id="answer'.$myfname.'" 
-				rows="'.$drows.'" cols="'.$tiwidth.'" onkeyup="textLimit(\'answer'.$ia[1].'\', '.$maxsize.'); '.$checkconditionFunction.'(this.value, this.name, this.type);" '.$numbersonly.'>';
+				rows="'.$drows.'" cols="'.$tiwidth.'" onkeyup="textLimit(\'answer'.$myfname.'\', '.$maxsize.'); '.$checkconditionFunction.'(this.value, this.name, this.type);" '.$numbersonly.'>';
 
                 if($label_width < strlen(trim(strip_tags($ansrow['question']))))
                 {
