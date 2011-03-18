@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: admin.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: admin.php 9886 2011-03-11 14:45:56Z c_schmitz $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -466,7 +466,7 @@ if(isset($_SESSION['loginID']))
     }
     elseif ($action == 'exportresults')
     {
-        if(bHasSurveyPermission($surveyid,'exportresponses','read'))    {include('exportresults.php');}
+        if(bHasSurveyPermission($surveyid,'responses','export'))    {include('exportresults.php');}
         else { include('access_denied.php');}
     }
     elseif ($action == 'statistics')
@@ -481,7 +481,7 @@ if(isset($_SESSION['loginID']))
     }
     elseif ($action == 'exportspss')
     {
-        if(bHasSurveyPermission($surveyid,'exportresponses','read'))
+        if(bHasSurveyPermission($surveyid,'responses','export'))
         {
             include('export_data_spss.php');
         }
@@ -503,12 +503,12 @@ if(isset($_SESSION['loginID']))
     }
     elseif ($action == 'exportr')
     {
-        if(bHasSurveyPermission($surveyid,'exportresponses','read'))    {include('export_data_r.php');}
+        if(bHasSurveyPermission($surveyid,'responses','export'))    {include('export_data_r.php');}
         else { include('access_denied.php');}
     }
     elseif ($action == 'vvexport')
     {
-        if(bHasSurveyPermission($surveyid,'exportresponses','read'))    {include('vvexport.php');}
+        if(bHasSurveyPermission($surveyid,'responses','export'))    {include('vvexport.php');}
         else { include('access_denied.php');}
     }
     elseif ($action == 'vvimport')
