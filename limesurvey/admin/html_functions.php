@@ -88,7 +88,7 @@ function browsemenubar($title='')
     }
     $browsemenubar .= "<img src='$imageurl/seperator.gif' alt='' />\n";
 
-    if (bHasSurveyPermission($surveyid,'exportresponses','read'))         
+    if (bHasSurveyPermission($surveyid,'responses','export'))         
     {
         // Export to application
         $browsemenubar .= "<a href='$scriptname?action=exportresults&amp;sid=$surveyid' title=\"".$clang->gTview("Export results to application")."\" >"
@@ -109,7 +109,7 @@ function browsemenubar($title='')
     if (bHasSurveyPermission($surveyid,'responses','create'))  
     {
         $browsemenubar .= "<a href='$scriptname?action=importoldresponses&amp;sid=$surveyid' title=\"".$clang->gTview("Import responses from a deactivated survey table")."\" >"
-        . "<img name='ImportOldResponses' src='$imageurl/importold.png' alt='".$clang->gT("Import answers from a deactivated survey table")."' /></a>\n";
+        . "<img name='ImportOldResponses' src='$imageurl/importold.png' alt='".$clang->gT("Import responses from a deactivated survey table")."' /></a>\n";
     }       
 
     $browsemenubar .= "<img src='$imageurl/seperator.gif' alt='' />\n";

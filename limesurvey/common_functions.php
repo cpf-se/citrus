@@ -1667,10 +1667,17 @@ function fixmovedquestionConditions($qid,$oldgid,$newgid) //Function rewrites th
         }
     }
 }
+
+
+/**
+* This function returns GET/POST/REQUEST vars, for some vars like SID and others they are also sanitized
+* 
+* @param mixed $stringname
+*/
 function returnglobal($stringname)
 {
     global $useWebserverAuth;
-    if (isset($useWebserverAuth) && $useWebserverAuth === true)
+    if ((isset($useWebserverAuth) && $useWebserverAuth === true) || $stringname=='sid') // don't read SID from a Cookie
     {
         if (isset($_GET[$stringname])) $urlParam = $_GET[$stringname];
         if (isset($_POST[$stringname])) $urlParam = $_POST[$stringname];
@@ -8227,6 +8234,18 @@ function vIncludeKeypad()
         $js_header_includes[] = '/scripts/jquery/locale/jquery.ui.keypad-'.$clang->langcode.'.js';
     }
     $css_header_includes[] = '/scripts/jquery/css/jquery.keypad.alt.css';
+}
+
+/**
+* Strips the DB prefix from a string - does not verify just strips the according number of characters
+* 
+* @param mixed $sTableName
+* @return string
+*/
+function sStripDBPrefix($sTableName)
+{
+    global $dbprefix;
+    return substr($sTableName,strlen($dbprefix));
 }
 
 // Closing PHP tag intentionally omitted - yes, it is okay
