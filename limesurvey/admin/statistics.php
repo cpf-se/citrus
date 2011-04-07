@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: statistics.php 9889 2011-03-16 00:14:03Z tpartner $
+ * $Id: statistics.php 9907 2011-03-23 22:10:55Z c_schmitz $
  *
  */
 
@@ -1621,9 +1621,11 @@ if (isset($summary) && $summary)
             break;
         case 'pdf':
             generate_statistics($surveyid,$summary,$summary,$usegraph,$outputType,'I',$statlang);
+            exit;
             break;
         case 'xls':
             generate_statistics($surveyid,$summary,$summary,$usegraph,$outputType,'DD',$statlang);
+            exit;
             break;
         default:
 

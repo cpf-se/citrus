@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: dataentry.php 9843 2011-03-02 17:21:33Z shnoulle $
+ * $Id: dataentry.php 9949 2011-04-03 16:47:49Z shnoulle $
  */
 
 /*
@@ -130,15 +130,15 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
 
         if (tableExists('tokens_'.$thissurvey['sid']) && (!isset($_POST['token']) || !$_POST['token']))
         {// First Check if the survey uses tokens and if a token has been provided
-            $errormsg="<strong><font color='red'>".$clang->gT("Error").":</font> ".$clang->gT("This is a closed-access survey, so you must supply a valid token.  Please contact the administrator for assistance.")."</strong>\n";
+            $errormsg="<div class='warningheader'>".$clang->gT("Error")."</div> <p>".$clang->gT("This is a closed-access survey, so you must supply a valid token.  Please contact the administrator for assistance.")."</p>\n";
         }
         elseif (tableExists('tokens_'.$thissurvey['sid']) && $lastanswfortoken == 'UnknownToken')
         {
-            $errormsg="<div class='warningheader'>".$clang->gT("Error")."</div> ".$clang->gT("The token you have provided is not valid or has already been used.")."<p>\n";
+            $errormsg="<div class='warningheader'>".$clang->gT("Error")."</div> <p>".$clang->gT("The token you have provided is not valid or has already been used.")."</p>\n";
         }
         elseif (tableExists('tokens_'.$thissurvey['sid']) && $lastanswfortoken != '')
         {
-            $errormsg="<strong><font color='red'>".$clang->gT("Error").":</font> ".$clang->gT("There is already a recorded answer for this token")."</strong>\n";
+            $errormsg="<div class='warningheader'>".$clang->gT("Error")."</div> <p>".$clang->gT("There is already a recorded answer for this token")."</p>\n";
             if ($lastanswfortoken != 'PrivacyProtected')
             {
                 $errormsg .= "<br /><br />".$clang->gT("Follow the following link to update it").":\n"
@@ -334,12 +334,12 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
 						$utquery .= "SET usesleft=usesleft-1\n";
 					}
                 }
-                $utquery .= "WHERE token=".db_quoteall($_POST['token']);
+                $utquery .= "WHERE token=".db_quoteall($_POST['token'],true);
                 $utresult = $connect->Execute($utquery) or safe_die ("Couldn't update tokens table!<br />\n$utquery<br />\n".$connect->ErrorMsg());
                 
                 // save submitdate into survey table
                 $srid = $connect->Insert_ID();
-                $sdquery = "UPDATE {$dbprefix}survey_$surveyid SET submitdate='{$submitdate}' WHERE id={$srid}\n";
+                $sdquery = "UPDATE {$dbprefix}survey_$surveyid SET submitdate=".db_quoteall($submitdate,true)." WHERE id={$srid}\n";
                 $sdresult = $connect->Execute($sdquery) or safe_die ("Couldn't set submitdate response in survey table!<br />\n$sdquery<br />\n".$connect->ErrorMsg());
             }
             if (isset($_POST['save']) && $_POST['save'] == "on")
@@ -589,6 +589,7 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
                         if(!empty($idrow['submitdate'])) { $dataentryoutput .= " selected='selected'"; }
                         $dataentryoutput .= ">".$clang->gT("Yes")."</option>\n";
                         $dataentryoutput .= "                </select>\n";
+                        break;
                     case "X": //Boilerplate question
                         $dataentryoutput .= "";
                         break;
@@ -1394,6 +1395,7 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
         foreach ($fieldmap as $irow)
         {
             $fieldname=$irow['fieldname'];
+            if ($fieldname=='id') continue;
             if (isset($_POST[$fieldname]))
             {
                 $thisvalue=$_POST[$fieldname];
@@ -1426,7 +1428,7 @@ if (bHasSurveyPermission($surveyid, 'responses','read') || bHasSurveyPermission(
             {
                 $updateqr .= db_quote_id($fieldname)." = NULL, \n";
             }
-            elseif (($irow['type'] == 'submitdate'))
+            elseif ($irow['type'] == 'submitdate')
             {
                 if (isset($_POST['completed']) && ($_POST['completed']== "N"))
                 {

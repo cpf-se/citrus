@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: html.php 9830 2011-02-26 18:02:11Z shnoulle $
+ * $Id: html.php 9931 2011-03-29 17:45:50Z c_schmitz $
  */
 
 //Security Checked: POST, GET, SESSION, DB, REQUEST, returnglobal
@@ -1622,7 +1622,7 @@ if($action == "exportstructure")
 // This is the action to export the structure of a group
 if($action == "exportstructureGroup")
 {
-    if($export4lsrc === true && bHasSurveyPermission($surveyid,'export'))
+    if($export4lsrc === true && bHasSurveyPermission($surveyid,'survey','export'))
     {
         $exportstructure = "<form id='exportstructureGroup' name='exportstructureGroup' action='$scriptname' method='post'>\n"
         ."<div class='header ui-widget-header'>".$clang->gT("Export group structure")."\n</div>\n"
@@ -1669,7 +1669,7 @@ if($action == "exportstructureGroup")
 // This is the action to export the structure of a question
 if($action == "exportstructureQuestion")
 {
-    if($export4lsrc === true && bHasSurveyPermission($surveyid,'export'))
+    if($export4lsrc === true && bHasSurveyPermission($surveyid,'survey','export'))
     {
         $exportstructure = "<form id='exportstructureQuestion' name='exportstructureQuestion' action='$scriptname' method='post'>\n"
         ."<div class='header ui-widget-header'>".$clang->gT("Export question structure")."\n</div>\n"
@@ -1722,9 +1722,9 @@ if($action == "surveysecurity")
         $js_admin_includes[]='../scripts/jquery/jquery.tablesorter.min.js';
         $js_admin_includes[]='scripts/surveysecurity.js';
 
-        $query2 = "SELECT p.*, u.users_name, u.full_name FROM ".db_table_name('survey_permissions')." AS p INNER JOIN ".db_table_name('users')."  AS u ON p.uid = u.uid 
+        $query2 = "SELECT p.sid, p.uid, u.users_name, u.full_name FROM ".db_table_name('survey_permissions')." AS p INNER JOIN ".db_table_name('users')."  AS u ON p.uid = u.uid 
                    WHERE p.sid = {$surveyid} AND u.uid != ".$_SESSION['loginID'] ." 
-                   group by uid, users_name, full_name 
+                    GROUP BY p.sid, p.uid, u.users_name, u.full_name
                    ORDER BY u.users_name";
         $result2 = db_execute_assoc($query2); //Checked
 

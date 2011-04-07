@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: index.php 9864 2011-03-08 17:23:35Z lemeur $
+ * $Id: index.php 9929 2011-03-29 16:46:27Z c_schmitz $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -943,12 +943,16 @@ function loadanswers()
                 $_SESSION['step']=$value;
                 $thisstep=$value-1;
             }
+            /* 
+               Commented this part out because otherwise startlanguage would overwrite any other language during a running survey.
+               We will need a new field named 'endlanguage' to save the current language (for example for returning participants)
+               /the language the survey was completed in.
             elseif ($column =='startlanguage')
             {
                 $clang = SetSurveyLanguage( $surveyid, $value);
                 UpdateSessionGroupList($value);  // to refresh the language strings in the group list session variable
                 UpdateFieldArray();        // to refresh question titles and question text
-            }
+            }*/ 
             elseif ($column == "scid")
             {
                 $_SESSION['scid']=$value;
@@ -2214,6 +2218,7 @@ function SendSubmitNotifications()
 
 function submitfailed($errormsg='')
 {
+    global $debug;
     global $thissurvey, $clang;
     global $thistpl, $subquery, $surveyid, $connect;
 
@@ -3174,29 +3179,48 @@ function check_quota($checkaction,$surveyid)
                 $fields_list = array(); // Keep a list of fields for easy reference
                 $y=0;
                 // We need to make the conditions for the select statement here
-                // I'm supporting more than one field for a question/answer, not sure if this is necessary.
                 unset($querycond);
+                // fill the array of value and query for each fieldnames
+                $fields_value_array = array();
+                $fields_query_array = array();
                 foreach($quota['members'] as $member)
                 {
-                    $fields_query = array();
-                    $select_query = " (";
                     foreach($member['fieldnames'] as $fieldname)
                     {
-                        $fields_list[] = $fieldname;
-                        $fields_query[] = db_quote_id($fieldname)." = '{$member['value']}'";
-                        // Check which quota fields and codes match in session, for later use.
-                        // Incase of multiple fields for an answer - only needs to match once.
-                        if (isset($_SESSION[$fieldname]) && $_SESSION[$fieldname] == $member['value'])
+
+                        if (!in_array($fieldname,$fields_list))
                         {
+                            $fields_list[] = $fieldname;
+                            $fields_value_array[$fieldname] = array();
+                            $fields_query_array[$fieldname] = array();
+                        }
+                        $fields_value_array[$fieldname][]=$member['value'];
+                        $fields_query_array[$fieldname][]= db_quote_id($fieldname)." = '{$member['value']}'";
+                    }
+
+                }
+                // fill the $querycond array with each fields_query grouped by fieldname
+                foreach($fields_list as $fieldname)
+                {
+                    $select_query = " ( ".implode(' OR ',$fields_query_array[$fieldname]).' )';
+                    $querycond[] = $select_query;
+                }
+                // Test if the fieldname is in the array of value in the session
+                foreach($quota['members'] as $member)
+                {
+                    foreach($member['fieldnames'] as $fieldname)
+                    {
+                	if (isset($_SESSION[$fieldname]))
+                        {
+                        if (in_array($_SESSION[$fieldname],$fields_value_array[$fieldname])){
                             $quota_info[$x]['members'][$y]['insession'] = "true";
+                            }
                         }
                     }
-                    $select_query.= implode(' OR ',$fields_query).' )';
-                    $querycond[] = $select_query;
-                    unset($fields_query);
-                    $y++;
+                   $y++;
                 }
-
+                unset($fields_query_array);unset($fields_value_array);
+                
                 // Lets only continue if any of the quota fields is in the posted page
                 $matched_fields = false;
                 if (isset($_POST['fieldnames']))

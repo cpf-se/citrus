@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: templates.php 9788 2011-02-15 17:06:54Z shnoulle $
+ * $Id: templates.php 9935 2011-03-30 18:09:30Z c_schmitz $
  */
 
 
@@ -272,7 +272,7 @@ if ($action == "templaterename" && isset($newname) && isset($copydir))
     $olddirname=$usertemplaterootdir."/".$copydir;
     if(isStandardTemplate($newname))
     {
-        echo "<script type=\"text/javascript\">\n<!--\nalert(\"".sprintf($clang->gT("Template could not be renamed to `%s`.","js"), $newname)." ".$clang->gT("This name is reserved for standard template.","js")."\");\n//-->\n</script>";
+        echo "<script type=\"text/javascript\">\n<!--\nalert(\"".sprintf($clang->gT("Template could not be renamed to `%s`.","js"), $newname)." ".$clang->gT("This name is reserved for a standard template.","js")."\");\n//-->\n</script>";
     }
     elseif (rename($olddirname, $newdirname)==false)
     {

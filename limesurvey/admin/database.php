@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: database.php 9705 2011-01-20 15:50:59Z shnoulle $
+ * $Id: database.php 9965 2011-04-05 11:50:47Z c_schmitz $
  */
 //Last security audit on 2009-10-11
 
@@ -467,7 +467,6 @@ if(isset($surveyid))
         }
 
         // These are the questions types that have no validation - so zap it accordingly
-
         if ($_POST['type']== "!" || $_POST['type']== "L" || $_POST['type']== "M" || $_POST['type']== "P" ||
         $_POST['type']== "F" || $_POST['type']== "H" || $_POST['type']== ":" || $_POST['type']== ";" ||
         $_POST['type']== "X" || $_POST['type']== "")
@@ -475,6 +474,11 @@ if(isset($surveyid))
             $_POST['preg']='';
         }
 
+        // These are the questions types that have no mandatory property - so zap it accordingly
+        if ($_POST['type']== "X" || $_POST['type']== "|")
+        {
+            $_POST['mandatory']='N';
+        }
 
 
         if ($oldtype != $_POST['type'])
@@ -728,6 +732,7 @@ if(isset($surveyid))
                         $oldqid=$qr1['qid'];
                         unset($qr1['qid']);
                     }
+                    $qr1['gid']=$postgid;
                     $sInsertSQL = $connect->GetInsertSQL($tablename,$qr1);
                     $ir1 = $connect->Execute($sInsertSQL);   // Checked
                     if (isset($qr1['qid']))
@@ -1371,7 +1376,7 @@ elseif ($action == "insertsurvey" && $_SESSION['USER_RIGHT_CREATE_SURVEY'])
                             'printanswers'=>$_POST['printanswers'],
         //                            'usetokens'=>$_POST['usetokens'],
                             'datecreated'=>date("Y-m-d"),
-                            'public'=>$_POST['public'],
+                            'listpublic'=>$_POST['public'],
                             'htmlemail'=>$_POST['htmlemail'],
                             'tokenanswerspersistence'=>$_POST['tokenanswerspersistence'],
                             'alloweditaftercompletion'=>$_POST['alloweditaftercompletion'],
@@ -1484,13 +1489,13 @@ function Updatedefaultvalues($qid,$sqid,$scale_id,$specialtype,$language,$defaul
    else
    {
        $exists=$connect->GetOne("SELECT qid FROM ".db_table_name('defaultvalues')." WHERE sqid=$sqid AND qid=$qid AND specialtype=$specialtype'' AND scale_id={$scale_id} AND language='{$language}'");
-       if (is_null($exists))
+       if ($exists===false)
        {
            $connect->execute('INSERT INTO '.db_table_name('defaultvalues')." (defaultvalue,qid,scale_id,language,specialtype,sqid) VALUES (".db_quoteall($defaultvalue,$ispost).",{$qid},{$scale_id},'{$language}','{$specialtype}',{$sqid})");        
        }
        else
        {
-           $connect->execute('Update '.db_table_name('defaultvalues')." set defaultvalue=".db_quoteall($defaultvalue,$ispost)."  WHERE sqid=$sqid AND qid=$qid AND specialtype='' AND scale_id={$scale_id} AND language='{$language}'");        
+           $connect->execute('UPDATE '.db_table_name('defaultvalues')." set defaultvalue=".db_quoteall($defaultvalue,$ispost)."  WHERE sqid={$sqid} AND qid={$qid} AND specialtype='{$specialtype}' AND scale_id={$scale_id} AND language='{$language}'");        
        }
    }
 }

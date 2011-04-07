@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: vvimport.php 9648 2011-01-07 13:06:39Z c_schmitz $
+ * $Id: vvimport.php 9919 2011-03-29 09:28:58Z c_schmitz $
  */
 
 include_once("login_check.php");
@@ -239,7 +239,7 @@ else
             // and then our escaping).
             $fieldvalues=array_map('db_quote',$fieldvalues);
 
-            $fielddata=array_combine($fieldnames,$fieldvalues);
+            $fielddata=($fieldnames===array() && $fieldvalues===array() ? array() : array_combine($fieldnames, $fieldvalues));
 
             foreach ($datefields as $datefield)
             {

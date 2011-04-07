@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: register.php 9716 2011-01-25 21:58:12Z lemeur $
+ * $Id: register.php 9891 2011-03-20 07:04:43Z lemeur $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -142,11 +142,13 @@ if (getEmailFormat($surveyid) == 'html')
 {
     $useHtmlEmail = true;
     $fieldsarray["{SURVEYURL}"]="<a href='$publicurl/index.php?lang=".$baselang."&sid=$surveyid&token=$newtoken'>".htmlspecialchars("$publicurl/index.php?lang=".$baselang."&sid=$surveyid&token=$newtoken")."</a>";
+    $fieldsarray["{OPTOUTURL}"]="<a href='$publicurl/optout.php?lang=".$baselang."&sid=$surveyid&token=$newtoken'>".htmlspecialchars("$publicurl/optout.php?lang=".$baselang."&sid=$surveyid&token=$newtoken")."</a>";
 }
 else
 {
     $useHtmlEmail = false;
     $fieldsarray["{SURVEYURL}"]="$publicurl/index.php?lang=".$baselang."&sid=$surveyid&token=$newtoken";
+    $fieldsarray["{OPTOUTURL}"]="$publicurl/optout.phplang=".$baselang."&sid=$surveyid&token=$newtoken";
 }
 
 $message=ReplaceFields($message, $fieldsarray);
