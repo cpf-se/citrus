@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: usercontrol.php 9810 2011-02-22 22:14:02Z lemeur $
+ * $Id: usercontrol.php 9935 2011-03-30 18:09:30Z c_schmitz $
  */
 
 // Security Checked: POST, GET, SESSION, REQUEST, returnglobal, DB
@@ -441,7 +441,7 @@ elseif ($action == "adduser" && $_SESSION['USER_RIGHT_CREATE_USER'])
                 }
                 else
                 {
-                    $body .= $clang->gT("Password") . ": " . $clang->gT("Please ask your password to your LimeSurvey administrator") . "<br />\n";
+                    $body .= $clang->gT("Password") . ": " . $clang->gT("Please ask your LimeSurvey administrator for your password.") . "<br />\n";
                 }
             }
 

@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: config-defaults.php 9854 2011-03-08 11:49:00Z c_schmitz $
+ * $Id: config-defaults.php 9971 2011-04-06 11:59:01Z shnoulle $
  */
 
 // CAUTION
@@ -39,7 +39,7 @@ $databaseuser       =   'root';        // The name of a user with rights to crea
 $databasepass       =   '';            // Password of db user
 $dbprefix           =   'lime_';       // A global prefix that can be added to all LimeSurvey tables. Use this if you are sharing
 // a database with other applications. Suggested prefix is 'lime_'
-$databasetabletype  =   'myISAM';	   // Storage engine mysql should use when creating survey results tables and token tables (if mysql is used). If available, InnoDB is recommended. Default is myISAM.
+$databasetabletype  =   'myISAM';	   // Storage engine mysql should use when creating survey results tables and token tables (if mysql is used). Default is myISAM.
 $databasepersistent =   false;	       // If you want to enable persistent database connections set this to 'true' - this might be faster for some database drivers. Default is false.
 
 // FILE LOCATIONS
@@ -86,9 +86,9 @@ $admintheme         =  'default';         // This setting specifys the directory
 
 $defaulttemplate    =  'default';         // This setting specifys the default theme used for the 'public list' of surveys
 
-$allowedtemplateuploads = 'gif,ico,jpg,png';  // File types allowed to be uploaded in the templates section.
+$allowedtemplateuploads = 'gif,ico,jpg,jpe,jpeg,png';  // File types allowed to be uploaded in the templates section.
 
-$allowedresourcesuploads = '7z,aiff,asf,avi,bmp,csv,doc,fla,flv,gif,gz,gzip,ico,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xml,zip,pstpl,css,js';   // File types allowed to be uploaded in the resources sections, and with the HTML Editor
+$allowedresourcesuploads = '7z,aiff,asf,avi,bmp,csv,doc,fla,flv,gif,gz,gzip,ico,jpeg,jpg,jpe,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xml,zip,pstpl,css,js';   // File types allowed to be uploaded in the resources sections, and with the HTML Editor
 
 $memorylimit        =  '32M';   // This sets how much memory LimeSurvey can access. 32M is the minimum (M=mb) recommended - if you are using PDF functions up to 64M may be needed
 

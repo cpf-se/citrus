@@ -10,7 +10,7 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  *
- * $Id: tokens.php 9849 2011-03-07 17:11:48Z lemeur $
+ * $Id: tokens.php 9963 2011-04-04 15:30:43Z anishseth $
  */
 
 
@@ -299,14 +299,16 @@ if($subaction=='bounceprocessing')
 		if($mbox=imap_open('{'.$hostname.$flags.'}INBOX',$username,$pass))
 		{   
             imap_errors();          
-			$count=imap_num_msg($mbox);
-			$lasthinfo=imap_headerinfo($mbox,$count);
+            $count=imap_num_msg($mbox);
+            if($count>0)
+           {
+             $lasthinfo=imap_headerinfo($mbox,$count);
 			$datelcu = strtotime($lasthinfo->date);
 			$datelastbounce= $datelcu;
 			$lastbounce = $thissurvey['bouncetime'];
-			while($datelcu > $lastbounce)
+            while($datelcu > $lastbounce)
 			{
-				$header = explode("\r\n", imap_body($mbox,$count,FT_PEEK)); // Don't put read
+				$header = explode("\r\n",@imap_body($mbox,$count,FT_PEEK)); // Don't put read
 				foreach ($header as $item)
 				{
 					if (preg_match('/^X-surveyid/',$item))
@@ -329,23 +331,31 @@ if($subaction=='bounceprocessing')
 						}
 					}
 				}
+                
 				$count--;
-				$lasthinfo=imap_headerinfo($mbox,$count);
-				$datelc=$lasthinfo->date;
+				$lasthinfo=@imap_headerinfo($mbox,$count);
+                $datelc=$lasthinfo->date;
 				$datelcu = strtotime($datelc);
-				$checktotal++;
-			    imap_close($mbox);
+  				$checktotal++;
+                
+		       }
+               if($bouncetotal>0)
+                {
+                    echo sprintf($clang->gT("%s messages were scanned out of which %s were marked as bounce by the system."), $checktotal,$bouncetotal);
+                }       
+               else 
+                {
+                  echo sprintf($clang->gT("%s messages were scanned, none were marked as bounce by the system."),$checktotal);
+                }
             }
+           else
+            {
+                echo sprintf($clang->gT("Your inbox is empty"));
+            }           
+            @imap_close($mbox);
 			$entertimestamp = "update ".db_table_name("surveys")." set bouncetime='$datelastbounce' where sid='$surveyid'";
 			$executetimestamp = $connect->Execute($entertimestamp);
-			if($bouncetotal>0)
-			{
-				echo sprintf($clang->gT("%s messages were scanned out of which %s were marked as bounce by the system."), $checktotal,$bouncetotal);
-			}
-			else 
-			{
-				echo sprintf($clang->gT("%s messages were scanned, none were marked as bounce by the system."),$checktotal);
-			}
+			
 		}
 		else
 		{
@@ -509,7 +519,7 @@ if (!$tokenexists) //If no tokens table exists
         ."<br /><strong>".$clang->gT("Tokens have not been initialised for this survey.")."</strong><br /><br />\n";
         if (bHasSurveyPermission($surveyid, 'surveyactivation','update'))
         {
-            $tokenoutput .= "".$clang->gT("If you initialise tokens for this survey then this survey will only be accessible to users who provide a token either smanually or by URL.")
+            $tokenoutput .= $clang->gT("If you initialise tokens for this survey then this survey will only be accessible to users who provide a token either manually or by URL.")
             ."<br /><br />\n";
 
             $thissurvey=getSurveyInfo($surveyid);
@@ -1404,20 +1414,30 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
         {
             //GET SURVEY DETAILS
             $thissurvey=getSurveyInfo($surveyid,$language);
+            $bplang = new limesurvey_lang($language);
+
+            if ($ishtml===true)
+            {
+               $aDefaultTexts=aTemplateDefaultTexts($bplang);     
+            }
+            else
+            {
+                $aDefaultTexts=aTemplateDefaultTexts($bplang,'unescaped');     
+            }
             if (!$thissurvey['email_invite'])
             {
                 if ($ishtml===true)
                 {
-                    $thissurvey['email_invite']=html_escape(str_replace("\n", "<br />", $clang->gT("Dear {FIRSTNAME},\n\nYou have been invited to participate in a survey.\n\nThe survey is titled:\n\"{SURVEYNAME}\"\n\n\"{SURVEYDESCRIPTION}\"\n\nTo participate, please click on the link below.\n\nSincerely,\n\n{ADMINNAME} ({ADMINEMAIL})\n\n----------------------------------------------\nClick here to do the survey:\n{SURVEYURL}",'unescaped')."\n\n".$bplang->gT("If you do not want to participate in this survey and don't want to receive any more invitations please click the following link:\n{OPTOUTURL}",'unescaped')));
+                    $thissurvey['email_invite']=html_escape($aDefaultTexts['invitation']);
                 }
                 else
                 {
-                    $thissurvey['email_invite']=str_replace("\n", "\r\n", $clang->gT("Dear {FIRSTNAME},\n\nYou have been invited to participate in a survey.\n\nThe survey is titled:\n\"{SURVEYNAME}\"\n\n\"{SURVEYDESCRIPTION}\"\n\nTo participate, please click on the link below.\n\nSincerely,\n\n{ADMINNAME} ({ADMINEMAIL})\n\n----------------------------------------------\nClick here to do the survey:\n{SURVEYURL}")."\n\n".$bplang->gT("If you do not want to participate in this survey and don't want to receive any more invitations please click the following link:\n{OPTOUTURL}"));
+                    $thissurvey['email_invite']=$aDefaultTexts['invitation'];
                 }
             }
             if (!$thissurvey['email_invite_subj'])
             {
-                $thissurvey['email_invite_subj']=$clang->gT("Invitation to participate in a survey");
+                $thissurvey['email_invite_subj']=$aDefaultTexts['invitation_subject'];
             }
             $fieldsarray["{ADMINNAME}"]= $thissurvey['adminname'];
             $fieldsarray["{ADMINEMAIL}"]=$thissurvey['adminemail'];
@@ -1622,6 +1642,10 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
             }
             if ($ctcount > $emcount)
             {
+                $i = 0;
+                while($i < $maxemails)
+                { array_shift($tokenids); $i++; }
+                $tids = '|'.implode('|',$tokenids);
                 $lefttosend = $ctcount-$maxemails;
                 $tokenoutput .= "</ul>\n"
                 ."<div class='warningheader'>".$clang->gT("Warning")."</div><br />\n"
@@ -1634,7 +1658,8 @@ if ($subaction == "email" && bHasSurveyPermission($surveyid, 'tokens','update'))
                 ."<input type='hidden' name='subaction' value=\"email\" />\n"
                 ."<input type='hidden' name='action' value=\"tokens\" />\n"
                 ."<input type='hidden' name='bypassbademails' value=\"".$_POST['bypassbademails']."\" />\n"
-                ."<input type='hidden' name='sid' value=\"{$surveyid}\" />\n";
+                ."<input type='hidden' name='sid' value=\"{$surveyid}\" />\n"
+                ."<input type='hidden' name='tids' value=\"{$tids}\" />\n";
                 foreach ($surveylangs as $language)
                 {
                     $message = html_escape($_POST['message_'.$language]);
